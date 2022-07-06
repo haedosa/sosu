@@ -86,7 +86,7 @@ d=\frac{|na-mb|}{\sqrt{n^2+m^2}}
 $$
 
 $\forall\varepsilon>0$, $\exists a,b\in\mathbb{N}$ such that 
-$\frac{|na-mb|}{\sqrt{n^2+m^2}}<\varepsilon ~~~~~ \Leftarrow$ (Is this clear????)
+$\frac{|na-mb|}{\sqrt{n^2+m^2}}<\varepsilon ~~~~~ \Leftarrow$ (Is this clear????)  
 Therefore, there is always a point that is arbitrarily close to the line.
 
 # 1.3.7
