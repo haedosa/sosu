@@ -70,7 +70,7 @@ By means of the division processes, or otherwise, explain why each rational numb
 
 
 # 1.3.6
-If each rational point in the plane is surrouned by a disk of fixed size $\varepsilon$, show that there is _no_ line from $<0,0>$ that misses all other disks.  
+If each rational point in the plane is surrouned by a disk of fixed size $\varepsilon$, show that there is _no_ line from $\langle0,0\rangle$ that misses all other disks.  
 
 A line from $\langle 0,0\rangle$
 that passes a point $\langle m,n\rangle$ is
@@ -85,9 +85,9 @@ $$
 d=\frac{|na-mb|}{\sqrt{n^2+m^2}}
 $$
 
-$\forall\varepsilon>0$, $\exists n,m\in\mathbb{N}$ such that 
-$\frac{|na-mb|}{\sqrt{n^2+m^2}}<\varepsilon$.  
-Therefore, there is always a line that passes the disk at any point $\langle a,b\rangle$.
+$\forall\varepsilon>0$, $\exists a,b\in\mathbb{N}$ such that 
+$\frac{|na-mb|}{\sqrt{n^2+m^2}}<\varepsilon ~~~~~ \Leftarrow$ (Is this clear????)
+Therefore, there is always a point that is arbitrarily close to the line.
 
 # 1.3.7
 Conclude that, if space were filled uniformly with stars of uniform size, the whole sky would be filled with light (the Olbers paradox).
