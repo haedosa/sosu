@@ -1,0 +1,28 @@
+#+title: Dedekind
+#+LATEX_HEADER: \usepackage{a4wide}
+
+In [[https://www.gutenberg.org/files/21016/21016-pdf.pdf][Dedekind's essay]], he says that it is easy to show that there exists
+infinitely many cuts not produced by rational numbers. As a typeical example, he
+lets $D$ a positive integer but not the square of in integer and defines a cut
+using $D$ as
+\begin{equation}
+(A_1, A_2) \,,
+\end{equation}
+where
+\begin{align}
+A_1 &= \{ q \in \mathbb{Q} \mid q \notin A_2 \} \\
+A_2 &= \{ q \in \mathbb{Q} \mid| q^2 > D, q > 0 \} \,.
+\end{align}
+
+He says that this cut $(A_1, A_2)$ is not produced by a rational number and shows us a proof.
+We shall reproduce his proof here using the structured derivation syntax.
+
+\vspace{1em}
+
+ \bullet The cut $(A_1, A_2)$ is not produced by a rational number
+-  If a rational number $q$ produces a cut $(L, H)$, then $q$ is either the greatest of $L$ or the least of $H$
+
+\begin{align*}
+ & \bullet \text{ The cut $(A_1, A_2)$ is not produced by a rational number} \\
+ & -  \text { If a rational number $q$ produces a cut $(L, H)$, then $q$ is either the greatest of $L$ or the least of $H$}
+\end{align*}
