@@ -122,7 +122,7 @@ Suppose you know that X is true if and only if Y true, and you know that Y is tr
 |F  |F  |T        |
 
 
-X iff Y states that X and Y are logically equivalent, and Y iff Z states that Y and Z are logically equivalent. Therefore, X iff Y and Y iff Z states that X, Y, Z are logically equivalent.
+X iff Y states that X and Y are logically equivalent, and Y iff Z states that Y and Z are logically equivalent. Therefore, X iff Y and Y iff Z state that X, Y, Z are logically equivalent.
 
 *** A.1.6
 Soppose you know that whenever X is true, then Y is true; that whenever Y is true, then Z is true; and whenever Z is true, then X is true. Is this enough to show that X, Y, Z are all logically equivalent? Explain.
