@@ -28,11 +28,11 @@ The truth table of logical implication
 
 - $\bullet$ What is the negation of the statement "either X is true, or Y is true, but not both"?
 
-- $(1)$ Logical symbol for "either X is true or Y is true" is $X \lor Y$
+- $(1)$ Logical expression for "either X is true or Y is true" is $X \lor Y$
 
-- $(2)$ Logical symbol for "not both" is $\lnot(X \land Y)$
+- $(2)$ Logical expression for "not both" is $\lnot(X \land Y)$
 
-- $(3)$ Logical symbol for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
+- $(3)$ Logical expression for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
 
 - $\Vdash$ $\lnot((X \lor Y) \land\lnot(X\land Y))$
 
@@ -54,7 +54,7 @@ The truth table of logical implication
 
      $(\lnot X \land \lnot Y) \lor (X\land Y)$
 
-- $\equiv$ {  By converting the logical symbols into a sentence }
+- $\equiv$ {  By converting the logical expression into a sentence }
 
       Neither X is true nor Y is true or both are true
 
