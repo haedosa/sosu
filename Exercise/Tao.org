@@ -1,3 +1,9 @@
+#+Title: Tao Solution
+#+Author: SoSu
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+
 * Chapter 2
 
 * Chapter 3
@@ -9,45 +15,61 @@ $X\implies Y$ (Y is true if X is true) is equivalent to $\lnot X\lor Y$ or $\lno
 The truth table of logical implication
 
 #+ATTR_LATEX: :align |c|c|c|c|c|
+|-----+-----+---------------+-----------+-----------------|
 | $X$ | $Y$ | $X\implies Y$ | $\lnot X$ | $\lnot X\lor Y$ |
 |-----+-----+---------------+-----------+-----------------|
 | T   | T   | T             | F         | T               |
 | T   | F   | F             | F         | F               |
 | F   | T   | T             | T         | T               |
 | F   | F   | T             | T         | T               |
+|-----+-----+---------------+-----------+-----------------|
 
 *** A.1.1
 
-\begin{itemize}
-    \item What is the negation of the statement "either X is true, or Y is true, but not both"?
-\end{itemize}
+- $\bullet$ What is the negation of the statement "either X is true, or Y is true, but not both"?
 
-either X is true or Y is true: $X \lor Y$
+- $(1)$ Logical symbol for "either X is true or Y is true" is $X \lor Y$
 
-not both: $\lnot(X \land Y)$
+- $(2)$ Logical symbol for "not both" is $\lnot(X \land Y)$
 
-either X is true or Y is true, "but" not both
+- $(3)$ Logical symbol for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
 
-$$
-(X \lor Y) \land\lnot(X\land Y)
-$$
+- $\Vdash$ $\lnot((X \lor Y) \land\lnot(X\land Y))$
 
-Negation
+- $\equiv$ {  Distribution of negation over $\land$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \land q) \equiv (\lnot p \lor \lnot q)$
+                       }
 
-$$
-\begin{align}
-\lnot((X \lor Y) \land\lnot(X\land Y))&=\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))\\
-&=(\lnot X\land\lnot Y)\lor (X\land Y)
-\end{align}
-$$
+      $\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))$
 
-Neither X is true nor Y is true or both are true
+- $\equiv$ {  Double Negation:
+                          ${}^\forall p. \ \lnot \lnot p \equiv p$
+                      }
 
-|$X$|$Y$|$X \lor Y$|$X\land Y$|$\lnot(X\land Y)$|$(X \lor Y) \land\lnot(X\land Y)$|$\lnot(X \lor Y)$|$(\lnot X\land\lnot Y)\lor (X\land Y)$|
-|T  |T  |T         |T         | F               |F                                |F                |T                                     |
-|T  |F  |T         |F         | T               |T                                |F                |F                                     |
-|F  |T  |T         |F         | T               |T                                |F                |F                                     |
-|F  |F  |F         |F         | T               |F                                |T                |T                                     |
+      $\lnot(X \lor Y) \lor (X\land Y)$
+
+- $\equiv$ {  Distribution of negation over $\lor$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \lor q) \equiv (\lnot p \land \lnot q)$
+                       }
+
+     $(\lnot X \land \lnot Y) \lor (X\land Y)$
+
+- $\equiv$ {  By converting the logical symbols into a sentence }
+
+      Neither X is true nor Y is true or both are true
+
+- $\square$
+
+
+#+ATTR_LATEX: :align |c|c|c|c|c|c|c|c|
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| $X$ | $Y$ | $X \lor Y$ | $X\land Y$ | $\lnot(X\land Y)$ | $(X \lor Y) \land\lnot(X\land Y)$ | $\lnot(X \lor Y)$ | $(\lnot X\land\lnot Y)\lor (X\land Y)$ |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| T   | T   | T          | T          | F                 | F                                 | F                 | T                                      |
+| T   | F   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | T   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | F   | F          | F          | T                 | F                                 | T                 | T                                      |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
 
 
 *** A.1.2
