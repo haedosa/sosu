@@ -7,15 +7,20 @@
 $X\implies Y$ (Y is true if X is true) is equivalent to $\lnot X\lor Y$ or $\lnot(X\land\lnot Y)$.
 
 The truth table of logical implication
-|$X$|$Y$|$X\implies Y$|$\lnot X$|$\lnot X\lor Y$|
-|T  |T  |T            |F        | T             |
-|T  |F  |F            |F        | F             |
-|F  |T  |T            |T        | T             |
-|F  |F  |T            |T        | T             |
 
-*** A.1.1 
-What is the negation of the statement "either X is true, or Y is true, but not both"?
-  
+#+ATTR_LATEX: :align |c|c|c|c|c|
+| $X$ | $Y$ | $X\implies Y$ | $\lnot X$ | $\lnot X\lor Y$ |
+|-----+-----+---------------+-----------+-----------------|
+| T   | T   | T             | F         | T               |
+| T   | F   | F             | F         | F               |
+| F   | T   | T             | T         | T               |
+| F   | F   | T             | T         | T               |
+
+*** A.1.1
+
+\begin{itemize}
+    \item What is the negation of the statement "either X is true, or Y is true, but not both"?
+\end{itemize}
 
 either X is true or Y is true: $X \lor Y$
 
@@ -45,7 +50,7 @@ Neither X is true nor Y is true or both are true
 |F  |F  |F         |F         | T               |F                                |T                |T                                     |
 
 
-*** A.1.2 
+*** A.1.2
 What is the negation of the statement "X is true if and only if Y is true"? (There may be multiple ways to phrase this negation).
 
 $$
