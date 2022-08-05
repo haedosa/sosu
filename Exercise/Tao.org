@@ -1,6 +1,8 @@
 * Chapter 2
 
-* Appendix 1
+* Chapter 3
+
+* Appendix A
 ** A.1
 $X\implies Y$ (Y is true if X is true) is equivalent to $\lnot X\lor Y$ or $\lnot(X\land\lnot Y)$.
 
