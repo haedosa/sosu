@@ -49,7 +49,7 @@ Neither X is true nor Y is true or both are true
 What is the negation of the statement "X is true if and only if Y is true"? (There may be multiple ways to phrase this negation).
 
 $$
-\lnot(X\implies Y)=X\land\lnot Y
+X\implies Y=\lnot(X\land\lnot Y)
 $$
 
 $$
