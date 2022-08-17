@@ -3,8 +3,70 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LaTeX_HEADER: \newcommand{\Incr}{{+}\hspace{-4pt}{+}}
 
 * Chapter 2
+
+** Exercises 2.2
+*** 2.2.1 Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)
+
+Proposition 2.2.5 (Addition is associative)
+
+For any natural numbers $a,b,c$, 
+we have $(a+b)+c=a+(b+c)$.
+
+$-------------------------------------------------------------------------$
+
+$\bullet~~$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
+
+$\Vdash~~$ {Proof by induction on $a$}
+
+$\hspace{16pt}\bullet~~$ Base case: show that $(a+b)+c=a+(b+c)$, when
+  
+$\hspace{16pt}--~~$ $a=0$
+ 
+$\hspace{16pt}\Vdash~~$ $(a+b)+c=a+(b+c)$
+ 
+$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$}
+
+$\hspace{32pt}$ $(0+b)+c=0+(b+c)$
+
+$\hspace{16pt}\equiv~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $(b)+c=(b+c)$
+
+$\hspace{16pt}\equiv~~$ {simplify}
+
+$\hspace{32pt}$ $b+c=b+c$
+
+$\hspace{16pt} \square$
+
+$\hspace{16pt}\bullet~~$ Inductive step: show that $((a+\hspace{-4pt}+)+b)+c=(a+\hspace{-4pt}+)+(b+c)$, when
+
+$\hspace{16pt}--~~$ $(a+b)+c=a+(b+c)$
+
+$\hspace{16pt}\Vdash~~$ $((a+\hspace{-4pt}+)+b)+c$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $((a+b)+\hspace{-4pt}+)+c$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $((a+b)+c)+\hspace{-4pt}+$
+
+$\hspace{16pt}=~~$ {inductive hypothesis}
+
+$\hspace{32pt}$ $(a+(b+c))+\hspace{-4pt}+$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $(a+\hspace{-4pt}+)+(b+c)$
+
+$\hspace{16pt}\square$
+
+$\square$
+
 
 * Chapter 3
 
