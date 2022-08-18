@@ -94,7 +94,7 @@ $\hspace{16pt}\square$
 
 $\hspace{16pt}\bullet~~$ Inductive step: show that $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$, when
 
-$\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
+$\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\hspace{-2pt}+\hspace{-4pt}+=a$
   
 $\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
 
