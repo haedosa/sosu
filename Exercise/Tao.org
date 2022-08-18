@@ -10,10 +10,10 @@
 ** Exercises 2.2
 *** 2.2.1 Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)
 
-Proposition 2.2.5 (Addition is associative)
+*Proposition 2.2.5* /(Addition is associative)/
 
-For any natural numbers $a,b,c$, 
-we have $(a+b)+c=a+(b+c)$.
+/For any natural numbers $a,b,c$, 
+we have $(a+b)+c=a+(b+c)$./
 
 $-------------------------------------------------------------------------$
 
@@ -62,6 +62,69 @@ $\hspace{32pt}$ $(a+(b+c))+\hspace{-4pt}+$
 $\hspace{16pt}=~~$ {Definition 2.2.1}
 
 $\hspace{32pt}$ $(a+\hspace{-4pt}+)+(b+c)$
+
+$\hspace{16pt}\square$
+
+$\square$
+
+*** 2.2.2 Prove Lemma 2.2.10. 
+(Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
+
+*Lemma 2.2.10.* 
+
+/Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\hspace{-2pt}+\hspace{-4pt}+=a$./
+
+$-------------------------------------------------------------------------$
+
+$\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$.
+
+$\Vdash~~$ {Proof by induction on $a$}
+
+$\hspace{16pt}\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$, when
+  
+$\hspace{16pt}--~~$ $a=0$
+
+$\hspace{16pt}\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
+ 
+$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
+
+$\hspace{32pt}$ T
+
+$\hspace{16pt}\square$
+
+$\hspace{16pt}\bullet~~$ Inductive step: show that $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$, when
+
+$\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
+  
+$\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{32pt}\bullet~~$ Existance of $b$
+
+$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{32pt}\equiv~~$ {Let $b:=a$}
+
+$\hspace{50pt}$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies a\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{32pt}\equiv~~$ {Reflexive axiom}
+
+$\hspace{50pt}$ T
+
+$\hspace{32pt}\square$
+
+$\hspace{32pt}\bullet~~$ Uniqueness of $b$
+
+$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0, ~~b,c\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\land c\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\implies b=c$
+
+$\hspace{32pt}\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+
+$\hspace{50pt}$ T
+
+$\hspace{32pt}\square$
+
+$\hspace{16pt}\cdots~~$ {Since $P(n\hspace{-2pt}+\hspace{-4pt}+)$ is true, $P(n)\implies P(n\hspace{-2pt}+\hspace{-4pt}+)$ is always true whether or not $P(n)$ is true}
+
+$\hspace{32pt}$ T
 
 $\hspace{16pt}\square$
 
