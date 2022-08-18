@@ -3,7 +3,7 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
-#+LaTeX_HEADER: \newcommand{\Incr}{{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \newcommand{\Incr}{\hspace{-2pt}{+}\hspace{-4pt}{+}}
 
 * Chapter 2
 
@@ -98,7 +98,9 @@ $\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{
   
 $\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
 
-$\hspace{32pt}\bullet~~$ Existance of $b$
+$\hspace{16pt}\equiv~~$ {Show existence and uniquness of $b$}
+
+$\hspace{32pt}\bullet~~$ Existence of $b$
 
 $\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
 
