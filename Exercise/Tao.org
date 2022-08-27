@@ -1,4 +1,137 @@
+#+Title: Tao Solution
+#+Author: SoSu
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LaTeX_HEADER: \newcommand{\Incr}{\hspace{-2pt}{+}\hspace{-4pt}{+}}
+
 * Chapter 2
+
+** Exercises 2.2
+*** 2.2.1 Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)
+
+*Proposition 2.2.5* /(Addition is associative)/
+
+/For any natural numbers $a,b,c$, 
+we have $(a+b)+c=a+(b+c)$./
+
+$-------------------------------------------------------------------------$
+
+$\bullet~~$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
+
+$\Vdash~~$ {Proof by induction on $a$}
+
+$\hspace{16pt}\bullet~~$ Base case: show that $(a+b)+c=a+(b+c)$, when
+  
+$\hspace{16pt}--~~$ $a=0$
+ 
+$\hspace{16pt}\Vdash~~$ $(a+b)+c=a+(b+c)$
+ 
+$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$}
+
+$\hspace{32pt}$ $(0+b)+c=0+(b+c)$
+
+$\hspace{16pt}\equiv~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $(b)+c=(b+c)$
+
+$\hspace{16pt}\equiv~~$ {simplify}
+
+$\hspace{32pt}$ $b+c=b+c$
+
+$\hspace{16pt} \square$
+
+$\hspace{16pt}\bullet~~$ Inductive step: show that $((a+\hspace{-4pt}+)+b)+c=(a+\hspace{-4pt}+)+(b+c)$, when
+
+$\hspace{16pt}--~~$ $(a+b)+c=a+(b+c)$
+
+$\hspace{16pt}\Vdash~~$ $((a+\hspace{-4pt}+)+b)+c$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $((a+b)+\hspace{-4pt}+)+c$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $((a+b)+c)+\hspace{-4pt}+$
+
+$\hspace{16pt}=~~$ {inductive hypothesis}
+
+$\hspace{32pt}$ $(a+(b+c))+\hspace{-4pt}+$
+
+$\hspace{16pt}=~~$ {Definition 2.2.1}
+
+$\hspace{32pt}$ $(a+\hspace{-4pt}+)+(b+c)$
+
+$\hspace{16pt}\square$
+
+$\square$
+
+*** 2.2.2 Prove Lemma 2.2.10. 
+(Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
+
+*Lemma 2.2.10.* 
+
+/Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\hspace{-2pt}+\hspace{-4pt}+=a$./
+
+$-------------------------------------------------------------------------$
+
+$\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$.
+
+$\Vdash~~$ {Proof by induction on $a$}
+
+$\hspace{16pt}\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$, when
+  
+$\hspace{16pt}--~~$ $a=0$
+
+$\hspace{16pt}\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
+ 
+$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
+
+$\hspace{32pt}$ T
+
+$\hspace{16pt}\square$
+
+$\hspace{16pt}\bullet~~$ Inductive step: show that $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$, when
+
+$\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\hspace{-2pt}+\hspace{-4pt}+=a$
+  
+$\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{16pt}\equiv~~$ {Show existence and uniquness of $b$}
+
+$\hspace{32pt}\bullet~~$ Existence of $b$
+
+$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{32pt}\equiv~~$ {Let $b:=a$}
+
+$\hspace{50pt}$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies a\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+
+$\hspace{32pt}\equiv~~$ {Reflexive axiom}
+
+$\hspace{50pt}$ T
+
+$\hspace{32pt}\square$
+
+$\hspace{32pt}\bullet~~$ Uniqueness of $b$
+
+$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0, ~~b,c\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\land c\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\implies b=c$
+
+$\hspace{32pt}\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+
+$\hspace{50pt}$ T
+
+$\hspace{32pt}\square$
+
+$\hspace{16pt}\cdots~~$ {Since $P(n\hspace{-2pt}+\hspace{-4pt}+)$ is true, $P(n)\implies P(n\hspace{-2pt}+\hspace{-4pt}+)$ is always true whether or not $P(n)$ is true}
+
+$\hspace{32pt}$ T
+
+$\hspace{16pt}\square$
+
+$\square$
+
 
 * Chapter 3
 
@@ -7,45 +140,66 @@
 $X\implies Y$ (Y is true if X is true) is equivalent to $\lnot X\lor Y$ or $\lnot(X\land\lnot Y)$.
 
 The truth table of logical implication
-|$X$|$Y$|$X\implies Y$|$\lnot X$|$\lnot X\lor Y$|
-|T  |T  |T            |F        | T             |
-|T  |F  |F            |F        | F             |
-|F  |T  |T            |T        | T             |
-|F  |F  |T            |T        | T             |
 
-*** A.1.1 
-What is the negation of the statement "either X is true, or Y is true, but not both"?
-  
+#+ATTR_LATEX: :align |c|c|c|c|c|
+|-----+-----+---------------+-----------+-----------------|
+| $X$ | $Y$ | $X\implies Y$ | $\lnot X$ | $\lnot X\lor Y$ |
+|-----+-----+---------------+-----------+-----------------|
+| T   | T   | T             | F         | T               |
+| T   | F   | F             | F         | F               |
+| F   | T   | T             | T         | T               |
+| F   | F   | T             | T         | T               |
+|-----+-----+---------------+-----------+-----------------|
 
-either X is true or Y is true: $X \lor Y$
+*** A.1.1
 
-not both: $\lnot(X \land Y)$
+- $\bullet$ What is the negation of the statement "either X is true, or Y is true, but not both"?
 
-either X is true or Y is true, "but" not both
+- $(1)$ Logical expression for "either X is true or Y is true" is $X \lor Y$
 
-$$
-(X \lor Y) \land\lnot(X\land Y)
-$$
+- $(2)$ Logical expression for "not both" is $\lnot(X \land Y)$
 
-Negation
+- $(3)$ Logical expression for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
 
-$$
-\begin{align}
-\lnot((X \lor Y) \land\lnot(X\land Y))&=\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))\\
-&=(\lnot X\land\lnot Y)\lor (X\land Y)
-\end{align}
-$$
+- $\Vdash$ $\lnot((X \lor Y) \land\lnot(X\land Y))$
 
-Neither X is true nor Y is true or both are true
+- $\equiv$ {  Distribution of negation over $\land$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \land q) \equiv (\lnot p \lor \lnot q)$
+                       }
 
-|$X$|$Y$|$X \lor Y$|$X\land Y$|$\lnot(X\land Y)$|$(X \lor Y) \land\lnot(X\land Y)$|$\lnot(X \lor Y)$|$(\lnot X\land\lnot Y)\lor (X\land Y)$|
-|T  |T  |T         |T         | F               |F                                |F                |T                                     |
-|T  |F  |T         |F         | T               |T                                |F                |F                                     |
-|F  |T  |T         |F         | T               |T                                |F                |F                                     |
-|F  |F  |F         |F         | T               |F                                |T                |T                                     |
+      $\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))$
+
+- $\equiv$ {  Double Negation:
+                          ${}^\forall p. \ \lnot \lnot p \equiv p$
+                      }
+
+      $\lnot(X \lor Y) \lor (X\land Y)$
+
+- $\equiv$ {  Distribution of negation over $\lor$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \lor q) \equiv (\lnot p \land \lnot q)$
+                       }
+
+     $(\lnot X \land \lnot Y) \lor (X\land Y)$
+
+- $\equiv$ {  By converting the logical expression into a sentence }
+
+      Neither X is true nor Y is true or both are true
+
+- $\square$
 
 
-*** A.1.2 
+#+ATTR_LATEX: :align |c|c|c|c|c|c|c|c|
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| $X$ | $Y$ | $X \lor Y$ | $X\land Y$ | $\lnot(X\land Y)$ | $(X \lor Y) \land\lnot(X\land Y)$ | $\lnot(X \lor Y)$ | $(\lnot X\land\lnot Y)\lor (X\land Y)$ |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| T   | T   | T          | T          | F                 | F                                 | F                 | T                                      |
+| T   | F   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | T   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | F   | F          | F          | T                 | F                                 | T                 | T                                      |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+
+
+*** A.1.2
 What is the negation of the statement "X is true if and only if Y is true"? (There may be multiple ways to phrase this negation).
 
 $$
