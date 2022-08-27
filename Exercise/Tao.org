@@ -65,7 +65,7 @@ we have $(a+b)+c=a+(b+c)$./
 
   - $\square$
 
-  $\square$
+- $\square$
 
 *** 2.2.2 Prove Lemma 2.2.10.
 (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
