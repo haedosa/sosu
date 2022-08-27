@@ -5,7 +5,7 @@
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
 #+LATEX_HEADER: \renewcommand{\labelitemii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
-#+LaTeX_HEADER: \newcommand{\Incr}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
 #+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
 #+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
 #+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
@@ -40,28 +40,28 @@ we have $(a+b)+c=a+(b+c)$./
 
   - $\square$
 
-  - $\bullet~~$ Inductive step: show that $((a\Incr)+b)+c=(a\Incr)+(b+c)$, when
+  - $\bullet~~$ Inductive step: show that $((a\pp)+b)+c=(a\pp)+(b+c)$, when
 
   - $\textnormal{--}~~$ $(a+b)+c=a+(b+c)$
 
-  - $\Vdash~~$ $((a\Incr)+b)+c$
+  - $\Vdash~~$ $((a\pp)+b)+c$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
-    - $((a+b)\Incr)+c$
+    - $((a+b)\pp)+c$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
-    - $((a+b)+c)\Incr$
+    - $((a+b)+c)\pp$
 
   - $=~~$ { inductive hypothesis,
   - $~~~~~~~~$  Substitution Axiom ${}^\forall f{}^\forall a{}^\forall b.~ a = b \rightarrow f(a) = f(b)$}
 
-    - $(a+(b+c))\Incr$
+    - $(a+(b+c))\pp$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
-    - $(a\Incr)+(b+c)$
+    - $(a\pp)+(b+c)$
 
   - $\square$
 
