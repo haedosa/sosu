@@ -3,7 +3,12 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
-#+LaTeX_HEADER: \newcommand{\Incr}{\hspace{-2pt}{+}\hspace{-4pt}{+}}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LaTeX_HEADER: \newcommand{\Incr}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
 
 * Chapter 2
 
@@ -12,65 +17,60 @@
 
 *Proposition 2.2.5* /(Addition is associative)/
 
-/For any natural numbers $a,b,c$, 
+/For any natural numbers $a,b,c$,
 we have $(a+b)+c=a+(b+c)$./
 
-$-------------------------------------------------------------------------$
+- $\bullet~~$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
 
-$\bullet~~$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
+- $\Vdash~~$ { Proof by induction on $a$ }
 
-$\Vdash~~$ {Proof by induction on $a$}
+  - $\bullet~~$ Base case: show that $(a+b)+c=a+(b+c)$, when
 
-$\hspace{16pt}\bullet~~$ Base case: show that $(a+b)+c=a+(b+c)$, when
-  
-$\hspace{16pt}--~~$ $a=0$
- 
-$\hspace{16pt}\Vdash~~$ $(a+b)+c=a+(b+c)$
- 
-$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$}
+  - $\textnormal{--}~~$ $a=0$
 
-$\hspace{32pt}$ $(0+b)+c=0+(b+c)$
+  - $\Vdash~~$ $(a+b)+c=a+(b+c)$
 
-$\hspace{16pt}\equiv~~$ {Definition 2.2.1}
+  - $\equiv~~$ { substitute assumption $a=0$ }
 
-$\hspace{32pt}$ $(b)+c=(b+c)$
+    - $(0+b)+c=0+(b+c)$
 
-$\hspace{16pt}\equiv~~$ {simplify}
+  - $\equiv~~$ { Definition 2.2.1: ${}^\forall m.~ 0 + m := m$ }
 
-$\hspace{32pt}$ $b+c=b+c$
+    - $b+c=b+c$
 
-$\hspace{16pt} \square$
+  - $\square$
 
-$\hspace{16pt}\bullet~~$ Inductive step: show that $((a+\hspace{-4pt}+)+b)+c=(a+\hspace{-4pt}+)+(b+c)$, when
+  - $\bullet~~$ Inductive step: show that $((a\Incr)+b)+c=(a\Incr)+(b+c)$, when
 
-$\hspace{16pt}--~~$ $(a+b)+c=a+(b+c)$
+  - $\textnormal{--}~~$ $(a+b)+c=a+(b+c)$
 
-$\hspace{16pt}\Vdash~~$ $((a+\hspace{-4pt}+)+b)+c$
+  - $\Vdash~~$ $((a\Incr)+b)+c$
 
-$\hspace{16pt}=~~$ {Definition 2.2.1}
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
 
-$\hspace{32pt}$ $((a+b)+\hspace{-4pt}+)+c$
+    - $((a+b)\Incr)+c$
 
-$\hspace{16pt}=~~$ {Definition 2.2.1}
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
 
-$\hspace{32pt}$ $((a+b)+c)+\hspace{-4pt}+$
+    - $((a+b)+c)\Incr$
 
-$\hspace{16pt}=~~$ {inductive hypothesis}
+  - $=~~$ { inductive hypothesis,
+  - $~~~~~~~~$  Substitution Axiom ${}^\forall f{}^\forall a{}^\forall b.~ a = b \rightarrow f(a) = f(b)$}
 
-$\hspace{32pt}$ $(a+(b+c))+\hspace{-4pt}+$
+    - $(a+(b+c))\Incr$
 
-$\hspace{16pt}=~~$ {Definition 2.2.1}
+  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\Incr)+m := (n+m)\Incr$ }
 
-$\hspace{32pt}$ $(a+\hspace{-4pt}+)+(b+c)$
+    - $(a\Incr)+(b+c)$
 
-$\hspace{16pt}\square$
+  - $\square$
 
-$\square$
+  $\square$
 
-*** 2.2.2 Prove Lemma 2.2.10. 
+*** 2.2.2 Prove Lemma 2.2.10.
 (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
 
-*Lemma 2.2.10.* 
+*Lemma 2.2.10.*
 
 /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\hspace{-2pt}+\hspace{-4pt}+=a$./
 
@@ -81,11 +81,11 @@ $\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb
 $\Vdash~~$ {Proof by induction on $a$}
 
 $\hspace{16pt}\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$, when
-  
+
 $\hspace{16pt}--~~$ $a=0$
 
 $\hspace{16pt}\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
- 
+
 $\hspace{16pt}\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
 
 $\hspace{32pt}$ T
@@ -95,7 +95,7 @@ $\hspace{16pt}\square$
 $\hspace{16pt}\bullet~~$ Inductive step: show that $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$, when
 
 $\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\hspace{-2pt}+\hspace{-4pt}+=a$
-  
+
 $\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
 
 $\hspace{16pt}\equiv~~$ {Show existence and uniquness of $b$}
