@@ -5,6 +5,7 @@
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
 #+LATEX_HEADER: \renewcommand{\labelitemii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiiii}{}
 #+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
 #+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
 #+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
@@ -72,63 +73,62 @@ we have $(a+b)+c=a+(b+c)$./
 
 *Lemma 2.2.10.*
 
-/Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\hspace{-2pt}+\hspace{-4pt}+=a$./
+/Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./
 
-$-------------------------------------------------------------------------$
 
-$\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$.
+- $\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$.
 
-$\Vdash~~$ {Proof by induction on $a$}
+- $\Vdash~~$ {Proof by induction on $a$}
 
-$\hspace{16pt}\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$, when
+ - $\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$, when
 
-$\hspace{16pt}--~~$ $a=0$
+ - $\textnormal{--}~~$ $a=0$
 
-$\hspace{16pt}\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a$
+ - $\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
 
-$\hspace{16pt}\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
+ - $\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
 
-$\hspace{32pt}$ T
+   - True
 
-$\hspace{16pt}\square$
+ - $\square$
 
-$\hspace{16pt}\bullet~~$ Inductive step: show that $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$, when
+ - $\bullet~~$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
 
-$\hspace{16pt}--~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\hspace{-2pt}+\hspace{-4pt}+=a$
+ - $\textnormal{--}~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
 
-$\hspace{16pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists!b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+ - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
 
-$\hspace{16pt}\equiv~~$ {Show existence and uniquness of $b$}
+ - $\equiv~~$ {Show existence and uniquness of $b$}
 
-$\hspace{32pt}\bullet~~$ Existence of $b$
+  - $\bullet~~$ Existence of $b$
 
-$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies \exists b\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists b\in\mathbb{N}:b\pp=a\pp$
 
-$\hspace{32pt}\equiv~~$ {Let $b:=a$}
+  - $\equiv~~$ {Let $b:=a$}
 
-$\hspace{50pt}$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0\implies a\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+$
+   - $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies a\pp=a\pp$
 
-$\hspace{32pt}\equiv~~$ {Reflexive axiom}
+  - $\equiv~~$ {Reflexive axiom}
 
-$\hspace{50pt}$ T
+   - True
 
-$\hspace{32pt}\square$
+  - $\square$
 
-$\hspace{32pt}\bullet~~$ Uniqueness of $b$
+  - $\bullet~~$ Uniqueness of $b$
 
-$\hspace{32pt}\Vdash~~$ $\forall a\hspace{-2pt}+\hspace{-4pt}+\in\mathbb{N}:a\hspace{-2pt}+\hspace{-4pt}+\neq0, ~~b,c\in\mathbb{N}:b\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\land c\hspace{-2pt}+\hspace{-4pt}+=a\hspace{-2pt}+\hspace{-4pt}+\implies b=c$
+  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, ~~b,c\in\mathbb{N}:b\pp=a\pp\land c\pp=a\pp\implies b=c$
 
-$\hspace{32pt}\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+  - $\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
 
-$\hspace{50pt}$ T
+   - True
 
-$\hspace{32pt}\square$
+  - $\square$
 
-$\hspace{16pt}\cdots~~$ {Since $P(n\hspace{-2pt}+\hspace{-4pt}+)$ is true, $P(n)\implies P(n\hspace{-2pt}+\hspace{-4pt}+)$ is always true whether or not $P(n)$ is true}
+ - $\cdots~~$ {Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true}
 
-$\hspace{32pt}$ T
+  - True
 
-$\hspace{16pt}\square$
+ - $\square$
 
 $\square$
 
