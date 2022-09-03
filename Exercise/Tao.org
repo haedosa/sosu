@@ -80,57 +80,57 @@ we have $(a+b)+c=a+(b+c)$./
 
 - $\Vdash~~$ {Proof by induction on $a$}
 
- - $\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$, when
+  - $\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$, when
 
- - $\textnormal{--}~~$ $a=0$
+  - $\textnormal{--}~~$ $a=0$
 
- - $\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
+  - $\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
 
- - $\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
+  - $\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
 
-   - True
-
- - $\square$
-
- - $\bullet~~$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
-
- - $\textnormal{--}~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
-
- - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
-
- - $\equiv~~$ {Show existence and uniquness of $b$}
-
-  - $\bullet~~$ Existence of $b$
-
-  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists b\in\mathbb{N}:b\pp=a\pp$
-
-  - $\equiv~~$ {Let $b:=a$}
-
-   - $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies a\pp=a\pp$
-
-  - $\equiv~~$ {Reflexive axiom}
-
-   - True
+    - True
 
   - $\square$
 
-  - $\bullet~~$ Uniqueness of $b$
+  - $\bullet~~$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
 
-  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, ~~b,c\in\mathbb{N}:b\pp=a\pp\land c\pp=a\pp\implies b=c$
+  - $\textnormal{--}~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
 
-  - $\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
 
-   - True
+  - $\equiv~~$ {Show existence and uniquness of $b$}
+
+    - $\bullet~~$ Existence of $b$
+
+    - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists b\in\mathbb{N}:b\pp=a\pp$
+
+    - $\equiv~~$ {Let $b:=a$}
+
+      - $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies a\pp=a\pp$
+
+    - $\equiv~~$ {Reflexive axiom}
+
+      - True
+
+    - $\square$
+
+    - $\bullet~~$ Uniqueness of $b$
+
+    - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, ~~b,c\in\mathbb{N}:b\pp=a\pp\land c\pp=a\pp\implies b=c$
+
+    - $\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+
+      - True
+
+    - $\square$
+
+  - $\cdots~~$ {Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true}
+
+    - True
 
   - $\square$
 
- - $\cdots~~$ {Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true}
-
-  - True
-
- - $\square$
-
-$\square$
+- $\square$
 
 
 * Chapter 3
