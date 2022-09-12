@@ -156,71 +156,64 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 
 - $\bullet$ Show that $a\geq a$.
 
-- $\Vdash$ $a\geq a$
+- $\Vdash$ $a=a$
 
-- $\equiv$ {Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$}
+- $\equiv$ { Lemma 2.2.2: $n+0=n$ }
 
-  - $\bullet$ Show that $a=a+0$.
+  - $a=a+0$
 
-  - $\Vdash$ $a=a+0$
+- $\equiv$ {Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$}
 
-  - $\equiv$ { Lemma 2.2.2: ${}^\forall n\in\mathbb{N},~n+0=n$ }
-
-    - True
-
-  - $\square$
-
-- $\cdots$ True
+  - $a\geq a$.
 
 - $\square$
 
 (b)
 
 - $\bullet$ Show that $(a\geq b)\land(b\geq c)\implies a\geq c$
-- $\Vdash$ $(a\geq b)\land(b\geq c)\implies a\geq c$
-- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
-  - $(a=b+d)\land(b=c+e)\implies a\geq c$ for some $d,e\in\mathbb{N}$
+- $\Vdash$ $(a\geq b)\land(b\geq c)$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $(a=b+d)\land(b=c+e)$ for some natural numbers $d,e$
 - $\equiv$ { Substitute $b$ using $b=c+e$ }
-  - $a=c+e+d\impies a\geq c$ for some $d,e\in\mathbb{N}$
-- $\equiv$ { sum of two natural numbers is a natural number: $e+d=r$ for some $r\in\mathbb{N}$ }
-  - $a=c+r\implies a\geq c$ for some $r\in\mathbb{N}$
-- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
-  - True
+  - $a=c+e+d$ for some natural numbers $d,e$
+- $\equiv$ { sum of two natural numbers is a natural number: $e+d=n$ for some natural number $n$ }
+  - $a=c+n$ for some natural number $n$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $a\geq c$
 - $\square$
 
 (c)
 
 - $\bullet$ Show that $(a\geq b)\land(b\geq a)\implies a=b$
-- $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
-  - $(a=b+d)\land(b=a+e)\implies a=b$ for some $d,e\in\mathbb{N}$
+- $\Vdash$ $(a\geq b)\land(b\geq a)$
+- $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $(a=b+d)\land(b=a+e)$ for some natural numbers $d,e$
 
-- $\equivl$ { Substitute $b$ using $b=a+e$ }
+- $\equiv$ { Substitute $b$ using $b=a+e$ }
 
-  - $a=a+e+d\implies a=b$ for some $d,e\in\mathbb{N}$
+  - $a=a+e+d$ for some natural numbers $d,e$
 
 - $\equiv$ { find $d,e$ such that $a=a+e+d$ }
 
-  - $\bullet$ Show that $a=a+e+d\implies (e=0)\land(d=0)$
-
-  - $\Vdash$ $a=a+e+d\implies (e=0)\land(d=0)$
+  - $\Vdash$ $a=a+e+d$
 
   - $\equiv$ { Lemma 2.2.2: ${}^\forall n,~n+0=n$ }
 
-    - $a+0=a+e+d\implies (e=0)\land(d=0)$
+    - $a+0=a+e+d$
 
   - $\equiv$ { Proposition 2.2.6: Cancelation law, ${}^\forall a{}^\forall b{}^\forall c\in\mathbb{N},~ a+b=a+c\implies b=c$ }
 
-    - $0=e+d\implies (e=0)\land(d=0)$
+    - $0=e+d$
 
   - $\equiv$ { Corollary 2.2.9: ${}^\forall a{}^\forall b\in\mathbb{N},~a+b=0\implies (a=0)\land(b=0)$ }
 
-    - True
+    - $(d=0)\land(e=0)$
 
-- $\cdots$ $(a=b+0)\land(b=a+0)\implies a=b$
+- $\cdots$ $(a=b+0)\land(b=a+0)$
 
 - $\equiv$ { Lemma 2.2.2:${}^\forall n,~n+0=n$ }
 
-  - $(a=b)\land(b=c)\implies a=b$
+  - $(a=b)\land(b=a)$
 
 - $\square$
 
@@ -230,24 +223,24 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 - $\Vdash$ $a\geq b\iff a+c\geq b+c$
   - $\bullet$ Show that $a\geq b\implies a+c\geq b+c$
   - $\Vdash$ $a\geq b$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a=b+d$
   - $\equiv$ { Substitution axiom: $x=y\implies f(x)=f(y)$ }
     - $a+c=b+d+c$
   - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
     - $a+c=b+c+d$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a+c\geq b+c$
   - $\square$
   - $\bullet$ Show that $a+c\geq b+c\implies a\geq b$
   - $\Vdash$ $a+c\geq b+c$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a+c=b+c+d$
   - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
     - $a+c=b+d+c$
   - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
     - $a=b+d$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a\geq d$
   - $\square$
 - $\square$
@@ -266,7 +259,7 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 
     - $(a\leq b)\land(a\neq b)$
 
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
 
     - $(b=a+d)\land(a\neq b)$
 
