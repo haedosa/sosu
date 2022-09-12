@@ -189,13 +189,11 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
   - $(a=b+d)\land(b=a+e)$ for some natural numbers $d,e$
 
-- $\equiv$ { Substitute $b$ using $b=a+e$ }
+- $\equiv$ { find $d,e$ }
+  - $\Vdash$ $(a=b+d)\land(b=a+e)$
+  - $\equiv$ { Substitute $b$ using $b=a+e$ }
 
-  - $a=a+e+d$ for some natural numbers $d,e$
-
-- $\equiv$ { find $d,e$ such that $a=a+e+d$ }
-
-  - $\Vdash$ $a=a+e+d$
+    - $a=a+e+d$
 
   - $\equiv$ { Lemma 2.2.2: ${}^\forall n,~n+0=n$ }
 
@@ -269,7 +267,7 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 
     - $\textnormal{--}$ $d=0$
 
-    - $\Vdash$ $(b=a+d)$
+    - $\Vdash$ $b=a+d$
 
     - $\equiv$ { assumption $d=0$ }
 
