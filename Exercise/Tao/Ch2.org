@@ -414,6 +414,46 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 - $\square$
 
 
+*** 2.2.4. Justify the three statments marked (why?) in the proof of Proposition 2.2.13.
+*Proposition 2.2.13* (Trichotomy of order for natural numbers). /Let $a$ and $b$ be natural numbers. Then excactly one of the following statements is true: $a<b, a=b$, or $a>b$./
+
+
+When $a=0$ we have $0\leq b$ for all $b$.
+- $\bullet$ Show that $0\leq b$ for all $b$
+- $\Vdash$ $b=b$
+- $\equiv$ { Definition 2.2.1: $0+m:=m$ }
+  - $b=0+b$
+- $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$ for some natural number $a$ }
+  - $b\geq 0$
+- $\square$
+
+If $a>b$, then $a\pp>b$.
+- $\bullet$ Show that $a>b\implies a\pp>b$
+- $\Vdash$ $a>b$
+- $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+  - $(a\geq b)\land(a\neq b)$
+- $\equiv$ { Proposition 2.2.12 (d): $a\geq b$ iff $a+c\geq b+c$ }
+  - $(a+1\geq b+1)\land(a\neq b)$
+- $\equiv$ { $n\pp=n+1$ }
+  - $(a\pp\geq b\pp)\land(a\neq b)$
+- $\equiv$ { Propostion 2.2.12 (e): $a<b$ iff $a\pp\leq b$ }
+
+  - $(a\pp>b)\land(a\neq b)$
+
+- $\square$
+
+If $a=b$, then $a\pp>b$.
+- $\bullet$ Show that $a=b\implies a\pp>b$
+- $\Vdash$ $a=b$
+- $\equiv$ { Substitution axiom: $a=b\implies f(a)=f(b)$ }
+  - $a\pp=b\pp$
+- $\equiv$ { $n\pp=n+1$ }
+  - $a\pp=b+1$
+- $\equiv$ { Proposition 2.2.12 (f): $a<b$ iff $b=a+d$ for some natural number $d$ }
+  - $a\pp>b$
+- $\square$
+
+
 * Chapter 3
 
 * Appendix A
