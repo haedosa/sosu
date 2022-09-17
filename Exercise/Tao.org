@@ -5,62 +5,63 @@
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
 #+LATEX_HEADER: \renewcommand{\labelitemii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
-#+LATEX_HEADER: \renewcommand{\labelitemiiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
 #+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
 #+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
 #+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
 #+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
 
 * Chapter 2
 
 ** Exercises 2.2
-*** 2.2.1 Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)
+*** 2.2.1. Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)
 
 *Proposition 2.2.5* /(Addition is associative)/
 
 /For any natural numbers $a,b,c$,
 we have $(a+b)+c=a+(b+c)$./
 
-- $\bullet~~$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
+- $\bullet$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
 
-- $\Vdash~~$ { Proof by induction on $a$ }
+- $\Vdash$ { Proof by induction on $a$ }
 
-  - $\bullet~~$ Base case: show that $(a+b)+c=a+(b+c)$, when
+  - $\bullet$ Base case: show that $(a+b)+c=a+(b+c)$, when
 
-  - $\textnormal{--}~~$ $a=0$
+  - $\textnormal{--}$ $a=0$
 
-  - $\Vdash~~$ $(a+b)+c=a+(b+c)$
+  - $\Vdash$ $(a+b)+c=a+(b+c)$
 
-  - $\equiv~~$ { substitute assumption $a=0$ }
+  - $\equiv$ { substitute assumption $a=0$ }
 
     - $(0+b)+c=0+(b+c)$
 
-  - $\equiv~~$ { Definition 2.2.1: ${}^\forall m.~ 0 + m := m$ }
+  - $\equiv$ { Definition 2.2.1: ${}^\forall m.~ 0 + m := m$ }
 
     - $b+c=b+c$
 
   - $\square$
 
-  - $\bullet~~$ Inductive step: show that $((a\pp)+b)+c=(a\pp)+(b+c)$, when
+  - $\bullet$ Inductive step: show that $((a\pp)+b)+c=(a\pp)+(b+c)$, when
 
-  - $\textnormal{--}~~$ $(a+b)+c=a+(b+c)$
+  - $\textnormal{--}$ $(a+b)+c=a+(b+c)$
 
-  - $\Vdash~~$ $((a\pp)+b)+c$
+  - $\Vdash$ $((a\pp)+b)+c$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
+  - $=$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
     - $((a+b)\pp)+c$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
+  - $=$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
     - $((a+b)+c)\pp$
 
-  - $=~~$ { inductive hypothesis,
-  - $~~~~~~~~$  Substitution Axiom ${}^\forall f{}^\forall a{}^\forall b.~ a = b \rightarrow f(a) = f(b)$}
+  - $=$ { inductive hypothesis,
+  - $~~~~$  Substitution Axiom ${}^\forall f{}^\forall a{}^\forall b.~ a = b \rightarrow f(a) = f(b)$}
 
     - $(a+(b+c))\pp$
 
-  - $=~~$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
+  - $=$ { Definition 2.2.1: ${}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp$ }
 
     - $(a\pp)+(b+c)$
 
@@ -68,7 +69,7 @@ we have $(a+b)+c=a+(b+c)$./
 
 - $\square$
 
-*** 2.2.2 Prove Lemma 2.2.10.
+*** 2.2.2. Prove Lemma 2.2.10.
 (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
 
 *Lemma 2.2.10.*
@@ -76,60 +77,349 @@ we have $(a+b)+c=a+(b+c)$./
 /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./
 
 
-- $\bullet~~$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$.
+- $\bullet$ Show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$.
 
-- $\Vdash~~$ {Proof by induction on $a$}
+- $\Vdash$ { Proof by induction on $a$}
 
-  - $\bullet~~$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$, when
+  - $\bullet$ Base case: show that $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$, when
 
-  - $\textnormal{--}~~$ $a=0$
+  - $\textnormal{--}$ $a=0$
 
-  - $\Vdash~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
+  - $\Vdash$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
 
-  - $\equiv~~$ {substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false}
+  - $\equiv$ { substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false }
 
     - True
 
   - $\square$
 
-  - $\bullet~~$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
+  - $\bullet$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
 
-  - $\textnormal{--}~~$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
+  - $\textnormal{--}$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
 
-  - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
+  - $\Vdash$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
 
-  - $\equiv~~$ {Show existence and uniquness of $b$}
+  - $\equiv$ { Show existence and uniquness of $b$ }
 
-    - $\bullet~~$ Existence of $b$
+    - $\bullet$ Existence of $b$
 
-    - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists b\in\mathbb{N}:b\pp=a\pp$
+    - $\Vdash$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists b\in\mathbb{N}:b\pp=a\pp$
 
-    - $\equiv~~$ {Let $b:=a$}
+    - $\equiv$ { Let $b:=a$ }
 
       - $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies a\pp=a\pp$
 
-    - $\equiv~~$ {Reflexive axiom}
+    - $\equiv$ { Reflexive axiom }
 
       - True
 
     - $\square$
 
-    - $\bullet~~$ Uniqueness of $b$
+    - $\bullet$ Uniqueness of $b$
 
-    - $\Vdash~~$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, ~~b,c\in\mathbb{N}:b\pp=a\pp\land c\pp=a\pp\implies b=c$
+    - $\Vdash$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, b,c\in\mathbb{N}:(b\pp=a\pp)\land (c\pp=a\pp)\implies b=c$
 
-    - $\equiv~$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom}
+    - $\equiv$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom }
 
       - True
 
     - $\square$
 
-  - $\cdots~~$ {Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true}
+  - $\cdots$ True
+  - $\square$
+
+- $\square$
+
+In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true
+
+
+*** 2.2.3. Prove Propostion 2.2.12
+(Hint: you will need many of the preceding propositions, colloraries, and lemmas.)
+
+*Propostion 2.2.12* (Basic properties of order for natural numbers)
+/let $a,b,c$ be natural numbers. Then/
+
+- /(a) (Order is reflexive) $a\geq a$/
+
+- /(b) (Order is transitive) If $a\geq b$ and $b\geq c$, then $a\geq c$/
+
+- /(c) (Order is anti-symmetric) If $a\geq b$ and $b\geq a$, then $a=b$/
+
+- /(d) (Addition preserves order) $a\geq b$ only and only if $a+c\geq b+c$/
+
+- /(e) $a<b$ if and only if $a\pp\leq b$/
+
+- /(f) $a<b$ if and only if $b=a+d$ for some positive number $a$/
+
+
+(a)
+
+- $\bullet$ Show that $a\geq a$.
+
+- $\Vdash$ $a\geq a$
+
+- $\equiv$ {Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$}
+
+  - $\bullet$ Show that $a=a+0$.
+
+  - $\Vdash$ $a=a+0$
+
+  - $\equiv$ { Lemma 2.2.2: ${}^\forall n\in\mathbb{N},~n+0=n$ }
 
     - True
 
   - $\square$
 
+- $\cdots$ True
+
+- $\square$
+
+(b)
+
+- $\bullet$ Show that $(a\geq b)\land(b\geq c)\implies a\geq c$
+- $\Vdash$ $(a\geq b)\land(b\geq c)\implies a\geq c$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $(a=b+d)\land(b=c+e)\implies a\geq c$ for some $d,e\in\mathbb{N}$
+- $\equiv$ { Substitute $b$ using $b=c+e$ }
+  - $a=c+e+d\impies a\geq c$ for some $d,e\in\mathbb{N}$
+- $\equiv$ { sum of two natural numbers is a natural number: $e+d=r$ for some $r\in\mathbb{N}$ }
+  - $a=c+r\implies a\geq c$ for some $r\in\mathbb{N}$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - True
+- $\square$
+
+(c)
+
+- $\bullet$ Show that $(a\geq b)\land(b\geq a)\implies a=b$
+- $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+  - $(a=b+d)\land(b=a+e)\implies a=b$ for some $d,e\in\mathbb{N}$
+
+- $\equivl$ { Substitute $b$ using $b=a+e$ }
+
+  - $a=a+e+d\implies a=b$ for some $d,e\in\mathbb{N}$
+
+- $\equiv$ { find $d,e$ such that $a=a+e+d$ }
+
+  - $\bullet$ Show that $a=a+e+d\implies (e=0)\land(d=0)$
+
+  - $\Vdash$ $a=a+e+d\implies (e=0)\land(d=0)$
+
+  - $\equiv$ { Lemma 2.2.2: ${}^\forall n,~n+0=n$ }
+
+    - $a+0=a+e+d\implies (e=0)\land(d=0)$
+
+  - $\equiv$ { Proposition 2.2.6: Cancelation law, ${}^\forall a{}^\forall b{}^\forall c\in\mathbb{N},~ a+b=a+c\implies b=c$ }
+
+    - $0=e+d\implies (e=0)\land(d=0)$
+
+  - $\equiv$ { Corollary 2.2.9: ${}^\forall a{}^\forall b\in\mathbb{N},~a+b=0\implies (a=0)\land(b=0)$ }
+
+    - True
+
+- $\cdots$ $(a=b+0)\land(b=a+0)\implies a=b$
+
+- $\equiv$ { Lemma 2.2.2:${}^\forall n,~n+0=n$ }
+
+  - $(a=b)\land(b=c)\implies a=b$
+
+- $\square$
+
+(d)
+
+- $\bullet$ Show that $a\geq b\iff a+c\geq b+c$
+- $\Vdash$ $a\geq b\iff a+c\geq b+c$
+  - $\bullet$ Show that $a\geq b\implies a+c\geq b+c$
+  - $\Vdash$ $a\geq b$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+    - $a=b+d$
+  - $\equiv$ { Substitution axiom: $x=y\implies f(x)=f(y)$ }
+    - $a+c=b+d+c$
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+    - $a+c=b+c+d$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+    - $a+c\geq b+c$
+  - $\square$
+  - $\bullet$ Show that $a+c\geq b+c\implies a\geq b$
+  - $\Vdash$ $a+c\geq b+c$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+    - $a+c=b+c+d$
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+    - $a+c=b+d+c$
+  - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+    - $a=b+d$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+    - $a\geq d$
+  - $\square$
+- $\square$
+
+(e)
+
+- $\bullet$ Show that $a<b\iff a\pp\leq b$
+
+- $\Vdash$ $a<b\iff a\pp\leq b$
+
+  - $\bullet$ Show that $a<b\implies a\pp\leq b$
+
+  - $\Vdash$ $a<b$
+
+  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+
+    - $(a\leq b)\land(a\neq b)$
+
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some $a\in\mathbb{N}$ }
+
+    - $(b=a+d)\land(a\neq b)$
+
+  - $\equiv$ { show that $d\neq0$ }
+
+    - $\bullet$ For sake of constradiction, suppose that
+
+    - $\textnormal{--}$ $d=0$
+
+    - $\Vdash$ $(b=a+d)$
+
+    - $\equiv$ { assumption $d=0$ }
+
+      - $b=a+0$
+
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+
+      - $b=a$
+
+    - $\equiv$ { $a\neq b$ }
+
+      - Contradiction
+
+    - $\square$
+
+  - $\cdots$ $(b=a+d)\land(d\neq0)$
+
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+
+    - $(b=a+d)\land(d\textnormal{ is positive})$
+
+  - $\equiv$ { Lemma 2.2.10: For a positive number $n$, $\exists! m,~ m\pp=n$ }
+
+    - $b=a+(m\pp)$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=(a+m)\pp$
+
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+
+    - $b=(m+a)\pp$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=m+(a\pp)$
+
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$  }
+
+    - $b=(a\pp)+m$
+
+  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+
+    - $a\pp\leq b$
+
+  - $\square$
+
+  - $\bullet$ Show that $a\pp\leq b\implies a<b$
+
+  - $\Vdash$ $a\pp\leq b$
+
+  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+
+    - $b=(a\pp)+n$
+
+  - $\equiv$ { Deifinition 2.2.1: $(n\pp)+m := (n+m)\pp$ }
+
+    - $b=(a+n)\pp$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=a+(n\pp)$
+
+  - $\equiv$ { show that $b=a+(n\pp)\implies b\neq a$ }
+
+    - $\bullet$ For sake of contradiction, suppose that
+
+    - $\textnormal{--}$ $b=a$
+
+    - $\Vdash$ $b=a+(n\pp)$
+
+    - $\equiv$ { assumption $b=a$ }
+
+      - $a=a+(n\pp)$
+
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+
+      - $a+0=a+(n\pp)$
+
+    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+
+      - $0=n\pp$
+
+    - $\equiv$ { Axiom 2.3: $n\pp\neq0$ for every natural number $n$ }
+
+      - Contradiction
+
+    - $\square$
+
+  - $\cdots$ $(b=a+(n\pp))\land(b\neq a)$
+  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+
+    - $a<b$
+
+  - $\square$
+
+- $\square$
+
+(f)
+- $\bullet$ Show that $a<b$ iff $b=a+d$ for some positive number $d$
+- $\Vdash$ $a<b\iff(b=a+d)\land(d\textnormal{ is positive})$
+  - $\bullet$ Show that $a<b\implies (b=a+d)\land(d\textnormal{ is positive})$
+  - $\Vdash$ $a<b$
+  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
+  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+    - $(b=a+d)\land(a\neq b)$
+  - $\equiv$ { show that $d\neq0$ }
+    - $\bullet$ For sake of contradiction, suppose that
+    - $\textnormal{--}$ $d=0$
+    - $\Vdash$ $b=a+d$
+    - $\equiv$ { assumption $d=0$ }
+      - $b=a+0$
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+      - $b=a$
+    - $\equiv$ { $a\neq b$ }
+      - Contradiction
+    - $\square$
+  - $\cdots$ $(b=a+d)\land(d\neq0)$
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+    - $(b=a+d)\land(d\textnormal{ is positive})$
+  - $\square$
+  - $\bullet$ Show that $(b=a+d)\land(d\textnormal{ is positive})\implies a<b$
+  - $\Vdash$ $(b=a+d)\land(d\textnormal{ is positive})$
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+    - $(b=a+d)\land(d\neq0)$
+  - $\equiv$ { show that $b\neq a$ }
+    - $\bullet$ For sake of contradiction, suppose that
+    - $\textnormal{--}$ $b=a$
+    - $\Vdash$ $b=a+d$
+    - $\equiv$ { assumption $b=a$ }
+      - $a=a+d$
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+      - $a+0=a+d$
+    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+      - $0=d$
+    - $\equiv$ { $d\neq0$ }
+      - Contradiction
+    - $\square$
+  - $\cdots$ $(b=a+d)\land(b\neq a)$
+  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
+  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+    - $a<b$
+  - $\square$
 - $\square$
 
 
