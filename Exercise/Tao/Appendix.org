@@ -1,1 +1,163 @@
 #+title: Appendix
+
+* Appendix A
+** A.1
+$X\implies Y$ (Y is true if X is true) is equivalent to $\lnot X\lor Y$ or $\lnot(X\land\lnot Y)$.
+
+The truth table of logical implication
+
+#+ATTR_LATEX: :align |c|c|c|c|c|
+|-----+-----+---------------+-----------+-----------------|
+| $X$ | $Y$ | $X\implies Y$ | $\lnot X$ | $\lnot X\lor Y$ |
+|-----+-----+---------------+-----------+-----------------|
+| T   | T   | T             | F         | T               |
+| T   | F   | F             | F         | F               |
+| F   | T   | T             | T         | T               |
+| F   | F   | T             | T         | T               |
+|-----+-----+---------------+-----------+-----------------|
+
+*** A.1.1
+
+- $\bullet$ What is the negation of the statement "either X is true, or Y is true, but not both"?
+
+- $(1)$ Logical expression for "either X is true or Y is true" is $X \lor Y$
+
+- $(2)$ Logical expression for "not both" is $\lnot(X \land Y)$
+
+- $(3)$ Logical expression for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
+
+- $\Vdash$ $\lnot((X \lor Y) \land\lnot(X\land Y))$
+
+- $\equiv$ {  Distribution of negation over $\land$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \land q) \equiv (\lnot p \lor \lnot q)$
+                       }
+
+      $\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))$
+
+- $\equiv$ {  Double Negation:
+                          ${}^\forall p. \ \lnot \lnot p \equiv p$
+                      }
+
+      $\lnot(X \lor Y) \lor (X\land Y)$
+
+- $\equiv$ {  Distribution of negation over $\lor$:
+                          ${}^\forall p {}^\forall q. \ \lnot (p \lor q) \equiv (\lnot p \land \lnot q)$
+                       }
+
+     $(\lnot X \land \lnot Y) \lor (X\land Y)$
+
+- $\equiv$ {  By converting the logical expression into a sentence }
+
+      Neither X is true nor Y is true or both are true
+
+- $\square$
+
+
+#+ATTR_LATEX: :align |c|c|c|c|c|c|c|c|
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| $X$ | $Y$ | $X \lor Y$ | $X\land Y$ | $\lnot(X\land Y)$ | $(X \lor Y) \land\lnot(X\land Y)$ | $\lnot(X \lor Y)$ | $(\lnot X\land\lnot Y)\lor (X\land Y)$ |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+| T   | T   | T          | T          | F                 | F                                 | F                 | T                                      |
+| T   | F   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | T   | T          | F          | T                 | T                                 | F                 | F                                      |
+| F   | F   | F          | F          | T                 | F                                 | T                 | T                                      |
+|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
+
+
+*** A.1.2
+What is the negation of the statement "X is true if and only if Y is true"? (There may be multiple ways to phrase this negation).
+
+$$
+X\implies Y=\lnot(X\land\lnot Y)
+$$
+
+$$
+X \iff Y = (X\implies Y)\land(Y\implies X)=\lnot(X\land\lnot Y)\land\lnot(Y\land\lnot X)
+$$
+
+$$
+\lnot(\lnot(X\land\lnot Y)\land\lnot(Y\land\lnot X))=(X\land\lnot Y)\lor(Y\land\lnot X)
+$$
+
+Either X is true and Y is false, or X is false and Y is true.
+
+
+|$X$|$Y$|$\lnot X$|$\lnot Y$|$\lnot X\lor Y$|$\lnot Y\lor X$|$(\lnot X\lor Y)\land(\lnot Y\lor X)$|$X\land\lnot Y$|$Y\land\lnot X$|$(X\land\lnot Y)\lor(Y\land\lnot X)$|
+| T | T | F       | F       | T             | T             |T                                    |F              |F              |F|
+| T | F | F       | T       | F             | T             |F                                    |T              | F             |T|
+| F | T | T       | F       | T             | F             |F                                    |F              | T             |T|
+| F | F | T       | T       | T             | T             |T                                    |F              | F             |F|
+
+*** A.1.3
+Suppose that you have shown that whenever X is true, the Y is true, and whenever Y is false, then X is false. Have you now demonstrated that X is true if and only if Y is true? Explain.
+
+$$
+X\iff Y = (X\implies Y)\land(Y\implies X)
+$$
+
+$\lnot X\implies\lnot Y$ is contraposition of $Y\implies X$. Hence,
+
+$$
+(X\implies Y)\land((\lnot X\implies\lnot Y)=(X\implies Y)\land(Y\implies X)=X\iff Y
+$$
+
+It demonstrates that X is true if and only if Y is true.
+
+|$X$|$Y$|$X\implies Y$|$Y\implies X$|$\lnot X$|$\lnot Y$|$\lnot X\implies\lnot Y$|$(X\implies Y)\land(Y\implies X)$|$(X\implies Y)\land(\lnot X\implies\lnot Y)$|
+|T  |T  |T            |T            |F        |F        |T                       |T                                |T                                           |
+|T  |F  |F            |T            |F        |T        |T                       |F                                |F                                           |
+|F  |T  |T            |F            |T        |F        |F                       |F                                |F                                           |
+|F  |F  |T            |T            |T        |T        |T                       |T                                |T                                           |
+
+*** A.1.4
+Suppose that you have shown that whenever X is true, then Y is true, and whenever Y is false, then X is false. Have you now demonstrated that X is true if and only if Y is true? Explain.
+
+$$
+X\iff Y = (X\implies Y)\land(Y\implies X)
+$$
+
+$\lnot Y\implies\lnot X$ is contraposition of $X\implies Y$. Hence,
+
+$$
+(X\implies Y)\land((\lnot Y\implies\lnot X)=(X\implies Y)\land(X\implies Y)=X\implies Y
+$$
+
+It does not demonstrate that X is true if and only if Y is true.
+
+|$X$|$Y$|$X\implies Y$|$Y\implies X$|$\lnot X$|$\lnot Y$|$\lnot Y\implies\lnot X$|$(X\implies Y)\land(Y\implies X)$|$(X\implies Y)\land(\lnot Y\implies\lnot X)$|
+|T  |T  |T            |T            |F        |F        |T                       |T                                |T                                           |
+|T  |F  |F            |T            |F        |T        |F                       |F                                |F                                           |
+|F  |T  |T            |F            |T        |F        |T                       |F                                |T                                           |
+|F  |F  |T            |T            |T        |T        |T                       |T                                |T                                           |
+
+*** A.1.5
+Suppose you know that X is true if and only if Y true, and you know that Y is true if and only if Z is true. Is this enough to show that X, Y, Z are all logically quivalent? Explain.
+
+
+|$A$|$B$|$A\iff B$|
+|T  |T  |T        |
+|T  |F  |F        |
+|F  |T  |F        |
+|F  |F  |T        |
+
+
+X iff Y states that X and Y are logically equivalent, and Y iff Z states that Y and Z are logically equivalent. Therefore, X iff Y and Y iff Z state that X, Y, Z are logically equivalent.
+
+*** A.1.6
+Soppose you know that whenever X is true, then Y is true; that whenever Y is true, then Z is true; and whenever Z is true, then X is true. Is this enough to show that X, Y, Z are all logically equivalent? Explain.
+
+$$
+(X\implies Y)\land(Y\implies Z)\land(Z\implies X)
+$$
+
+|$X$|$Y$|$Z$|$X\implies Y$|$Y\implies Z$|$Z\implies X$|$(X\implies Y)\land(Y\implies Z)\land(Z\implies X)$|
+|T  |T  |T  |T            |T            |T            |T                                                  |
+|T  |T  |F  |T            |F            |T            |F                                                  |
+|T  |F  |T  |F            |T            |T            |F |
+|T  |F  |F  |F            |T            |T            |F |
+|F  |T  |T  |T            |T            |F            |F |
+|F  |T  |F  |T            |F            |T            |F |
+|F  |F  |T  |T            |T            |F            |F |
+|F  |F  |F  |T            |T            |T            |T |
+
+$(X\implies Y)\land(Y\implies Z)\land(Z\implies X)$ states that X, Y, Z are logically equivalent.
