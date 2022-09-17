@@ -84,9 +84,9 @@ we have $(a+b)+c=a+(b+c)$./
 
   - $\textnormal{--}$ $a=0$
 
-  - $\Vdash$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
+  - $\Vdash$ $0\neq0\implies \exists!b\in\mathbb{N}:b\pp=0$
 
-  - $\equiv$ { substitute assumption $a=0$, implication is vacuously true since $0\neq0$ is false }
+  - $\equiv$ { implication is vacuously true since $0\neq0$ is false }
 
     - True
 
@@ -94,7 +94,7 @@ we have $(a+b)+c=a+(b+c)$./
 
   - $\bullet$ Inductive step: show that $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$, when
 
-  - $\textnormal{--}$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b'\in\mathbb{N}:b'\pp=a$
+  - $\textnormal{--}$ $\forall a\in\mathbb{N}:a\neq0\implies \exists!b\in\mathbb{N}:b\pp=a$
 
   - $\Vdash$ $\forall a\pp\in\mathbb{N}:a\pp\neq0\implies \exists!b\in\mathbb{N}:b\pp=a\pp$
 
@@ -116,12 +116,14 @@ we have $(a+b)+c=a+(b+c)$./
 
     - $\bullet$ Uniqueness of $b$
 
-    - $\Vdash$ $\forall a\pp\in\mathbb{N}:a\pp\neq0, b,c\in\mathbb{N}:(b\pp=a\pp)\land (c\pp=a\pp)\implies b=c$
-
-    - $\equiv$ { $b=a$, $c=a$ by Axiom 2.4, then $b=a$, $a=c$ by Symmetry axiom, then $b=c$ by Transitive axiom }
-
-      - True
-
+    - $\textnormal{--}$ $\forall a\pp\in\mathbb{N}:a\pp\neq0$
+    - $\Vdash$           $\forall b, \forall c\in\mathbb{N}:(b\pp=a\pp)\land (c\pp=a\pp)$
+    - $\Rightarrow$  {$b=a$, $c=a$ by Axiom 2.4 }
+      - $\forall b, \forall c\in\mathbb{N}:(b=a)\land (c=a)$
+    - $\equiv$   { Symmetry axiom : $(c = a) \equiv (a = c)$  }
+      - $\forall b, \forall c\in\mathbb{N}:(b=a)\land (a=c)$
+    - $\Rightarrow$   { Transitive axiom  }
+      - $b=c$
     - $\square$
 
   - $\cdots$ True
@@ -130,7 +132,6 @@ we have $(a+b)+c=a+(b+c)$./
 - $\square$
 
 In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true
-
 
 ** 2.2.3. Prove Propostion 2.2.12
 (Hint: you will need many of the preceding propositions, colloraries, and lemmas.)
@@ -411,7 +412,6 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
     - $a<b$
   - $\square$
 - $\square$
-
 
 ** 2.2.4. Justify the three statments marked (why?) in the proof of Proposition 2.2.13.
 *Proposition 2.2.13* (Trichotomy of order for natural numbers). /Let $a$ and $b$ be natural numbers. Then excactly one of the following statements is true: $a<b, a=b$, or $a>b$./
