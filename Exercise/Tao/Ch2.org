@@ -19,8 +19,7 @@
 
 *Proposition 2.2.5* /(Addition is associative)/
 
-/For any natural numbers $a,b,c$,
-we have $(a+b)+c=a+(b+c)$./
+/For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./
 
 - $\bullet$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
 
@@ -221,7 +220,8 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
 - $\bullet$ Show that $a\geq b\iff a+c\geq b+c$
 - $\Vdash$ $a\geq b\iff a+c\geq b+c$
   - $\bullet$ Show that $a\geq b\implies a+c\geq b+c$
-  - $\Vdash$ $a\geq b$
+  - $
+\Vdash$ $a\geq b$
   - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a=b+d$
   - $\equiv$ { Substitution axiom: $x=y\implies f(x)=f(y)$ }
@@ -450,4 +450,66 @@ If $a=b$, then $a\pp>b$.
   - $a\pp=b+1$
 - $\equiv$ { Proposition 2.2.12 (f): $a<b$ iff $b=a+d$ for some natural number $d$ }
   - $a\pp>b$
+- $\square$
+
+* Exercises 2.3
+** 2.3.1. Prove Lemma 2.3.2 (Hint: modify the proofs of Lemmas 2.2.2, 2.2.3 and Proposition 2.2.4)
+
+*Proposition 2.3.2* (Multiplication is commutative). /Let $n$ and $m$ be natural numbers. Then $n \times m = m \times n$./
+
+- $\bullet$ Show that $\forall n \forall m \in \mathbb{N}.~ n \times m = m \times n$.
+
+- $\Vdash$ { Proof by induction on $n$}
+  - $\bullet$ Base case: show that $\forall m \in \mathbb{N}.~ 0 \times m = m \times 0$
+  - $\Vdash$ $\forall m \in \mathbb{N}.~ 0 \times m = m \times 0$
+  - $\equiv$ { Definition 2.3.1: $0 \times m := 0$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ 0 = m \times 0$
+  - $\equiv$ { Proof by induction on $m$}
+    - $\bullet$ Base case: show that $0 = 0 \times 0$
+    - $\Vdash$ $0 \times 0$
+    - $\equiv$ { Definition 2.3.1: $0 \times m := 0$ }
+    - $~~~$ True
+    - $\bullet$ Inductive step: show that $0 = (m\pp) \times 0$ when
+    - $\textnormal{--}$ $0 = m \times 0$
+    - $\Vdash$ $(m\pp) \times 0$
+    - $=$ { Definition 2.3.1: $(n\pp) \times m := (n \times m) + m$ }
+    - $~~~$ $(m \times 0) + 0$
+    - $=$ { Induction Hypothesis: }
+    - $~~~$ $~~~$ $0 + 0$
+    - $=$ { Definition 2.2.1: $0+m := m$ }
+    - $~~~$ $0$
+  - $\square$
+  - $\bullet$ Inductive step: show that $\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)$ when
+  - $\textnormal{--}$ $\forall m \in \mathbb{N}.~ n \times m = m \times n$
+  - $\Vdash$ $\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)$
+  - $\equiv$ { Definition 2.3.1: $(n\pp) \times m := (n \times m) + m$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ (n \times m) + m = m \times (n\pp)$
+  - $\equiv$ { Induction hypothesis: $\forall m \in \mathbb{N}.~ n \times m = m \times n$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ (m \times n) + m = m \times (n\pp)$
+  - $\Vdash$ { Proof by induction on $m$}
+    - $\bullet$ Base case: show that $(0 \times n) + 0 = 0 \times (n\pp)$
+    - $\Vdash$ { Definition 2.3.1: $0 \times m := 0$ }
+    - $~~~$ 0 + 0 = 0
+    - $\equiv$ { Definition 2.2.1: $0+m := m$ }
+    - $~~~$ True
+    - $\bullet$ Inductive step: show that $((m\pp) \times n) + (m\pp) = (m\pp) \times (n\pp)$ when
+    - $\textnormal{--}$ $(m \times n) + m = m \times (n\pp)$
+    - $\Vdash$ $((m\pp) \times n) + (m\pp)$
+    - $=$ { Definition 2.3.1: $(n\pp) \times m := (n \times m) + m$ }
+    - $~~~$ $((m \times n) + n) + (m\pp)$
+    - $=$ { Addition is associative }
+    - $~~~$ $(m \times n) + (n + (m\pp))$
+    - $=$ { Definition of Addition }
+    - $~~~$ $(m \times n) + (n + m)\pp$
+    - $=$ { Addition is commutative }
+    - $~~~$ $(m \times n) + (m + n)\pp$
+    - $=$ { Definition of Addition }
+    - $~~~$ $(m \times n) + (m + n\pp)$
+    - $=$ { Addition is associative }
+    - $~~~$ $((m \times n) + m) + n\pp$
+    - $=$ { Induction hypothesis }
+    - $~~~$ $m \times (n\pp) + n\pp$
+    - $=$ { Definition 2.3.1: $(n\pp) \times m := (n \times m) + m$ }
+    - $~~~$ $(m\pp) \times (n\pp)$
+  - $\square$
 - $\square$
