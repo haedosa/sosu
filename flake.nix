@@ -20,10 +20,11 @@
                  inherit system;
                  overlays = [ self.overlay ];
                };
+
     in
     rec {
 
-      packages.default = pkgs.callPackage ./. { };
+      packages = pkgs.callPackage ./packages {};
 
       # for `nix develop`
       devShell = pkgs.mkShell {

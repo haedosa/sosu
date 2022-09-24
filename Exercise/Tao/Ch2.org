@@ -242,7 +242,6 @@ In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\
     - $a\geq d$
   - $\square$
 - $\square$
-
 (e)
 
 - $\bullet$ Show that $a<b\iff a\pp\leq b$
