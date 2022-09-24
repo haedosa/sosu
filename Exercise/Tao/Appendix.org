@@ -1,4 +1,5 @@
 #+title: Appendix
+#+LATEX_HEADER: \usepackage{a4wide}
 
 * Appendix A
 ** A.1

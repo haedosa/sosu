@@ -2,6 +2,7 @@
 #+Author: SoSu
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
 #+LATEX_HEADER: \renewcommand{\labelitemi}{}
 #+LATEX_HEADER: \renewcommand{\labelitemii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
