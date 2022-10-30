@@ -8,7 +8,6 @@
     nixpkgs.follows = "haedosa/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
     emanote.url = "github:EmaApps/emanote";
-    # flake-utils.follows = "haedosa/flake-utils";
 
   };
 
