@@ -49,10 +49,22 @@ inputs: final: prev: with final;
 
   emanote = inputs.emanote.packages.${pkgs.system}.default;
 
-  note = runCommand "note" {} ''
+  note = let
+    configFile = (formats.yaml { }).generate "emanote-index.yaml" {
+      template = {
+        baseUrl = "/sosu";
+        urlStrategy = "pretty";
+      };
+    };
+    configDir = runCommand "emanote-deploy-layer" { } ''
+      mkdir -p $out
+      cp ${configFile} $out/index.yaml
+    '';
+    layers = lib.concatStringsSep ";" cfg.layers;
+  in runCommand "note" {} ''
     mkdir $out
     export LANG=C.UTF-8 LC_ALL=C.UTF-8  # https://github.com/EmaApps/emanote/issues/125
-    ${pkgs.lib.getExe emanote} --layers ${./content} gen $out
+    ${pkgs.lib.getExe emanote} --layers "${configDir};${./content}" gen $out
   '';
 
   mk-run-note = {layers ? "content", port ? 7001 }:
