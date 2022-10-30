@@ -52,8 +52,8 @@ inputs: final: prev: with final;
   note = let
     configFile = (formats.yaml { }).generate "emanote-index.yaml" {
       template = {
-        baseUrl = "/sosu";
-        urlStrategy = "direct";
+        baseUrl = "/sosu/";
+        urlStrategy = "pretty";
       };
     };
     configDir = runCommand "emanote-deploy-layer" { } ''
@@ -71,7 +71,7 @@ inputs: final: prev: with final;
     runCommand "run-note" { buildInputs = [ makeWrapper ]; } ''
       mkdir $out
       export LANG=C.UTF-8 LC_ALL=C.UTF-8  # https://github.com/EmaApps/emanote/issues/125
-      makeWrapper ${lib.getExe emanote} $out/bin/run-site \
+      makeWrapper ${lib.getExe emanote} $out/bin/run-note \
         --set LANG C.UTF-8 \
         --set LC_ALL C.UTF-8 \
         --add-flags "--layers ${layers} run --port ${toString port}"
