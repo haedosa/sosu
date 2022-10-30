@@ -1,14 +1,19 @@
-{ symlinkJoin, exportOrgToPdf }: rec {
+{ system
+, runCommand
+, makeWrapper
+, symlinkJoin
+, exportOrgToPdf
+, lib
+, formats
+, emanote
+, note
+, run-note
+}:
+let
 
-  default = symlinkJoin {
-    name = "all";
-    paths = [
-      tao-ch2
-      tao-appendix
-    ];
-  };
+in rec {
 
-  tao-ch2 = exportOrgToPdf { orgFile = ../Exercise/Tao/Ch2.org;  };
-  tao-appendix = exportOrgToPdf { orgFile = ../Exercise/Tao/Appendix.org;  };
+
+  inherit note run-note;
 
 }

@@ -1,4 +1,4 @@
-final: prev: with final;
+inputs: final: prev: with final;
 {
   mytex = texlive.combine {
     inherit (texlive)
@@ -45,6 +45,24 @@ final: prev: with final;
     emacs --batch -q $strippedFile -f org-latex-export-to-pdf
 
     mkdir -p $out && cp *.pdf $out
-  ''
-  ;
-  }
+  '';
+
+  emanote = inputs.emanote.packages.${pkgs.system}.default;
+
+  note = runCommand "note" {} ''
+    mkdir $out
+    export LANG=C.UTF-8 LC_ALL=C.UTF-8  # https://github.com/EmaApps/emanote/issues/125
+    ${pkgs.lib.getExe emanote} --layers ${./content} gen $out
+  '';
+
+  mk-run-note = {layers ? "content", port ? 7001 }:
+    runCommand "run-note" { buildInputs = [ makeWrapper ]; } ''
+      mkdir $out
+      export LANG=C.UTF-8 LC_ALL=C.UTF-8  # https://github.com/EmaApps/emanote/issues/125
+      makeWrapper ${lib.getExe emanote} $out/bin/run-site \
+        --set LANG C.UTF-8 \
+        --set LC_ALL C.UTF-8 \
+        --add-flags "--layers ${layers} run --port ${toString port}"
+    '';
+
+}

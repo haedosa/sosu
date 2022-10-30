@@ -4,15 +4,17 @@
 
   inputs = {
 
-    haedosa.url = "github:haedosa/flakes/22.05";
+    haedosa.url = "github:haedosa/flakes";
     nixpkgs.follows = "haedosa/nixpkgs";
-    flake-utils.follows = "haedosa/flake-utils";
+    flake-utils.url = "github:numtide/flake-utils";
+    emanote.url = "github:EmaApps/emanote";
+    # flake-utils.follows = "haedosa/flake-utils";
 
   };
 
   outputs = inputs@{self, ...} : {
 
-    overlay = import ./overlay.nix;
+    overlay = import ./overlay.nix inputs;
 
   } // inputs.flake-utils.lib.eachDefaultSystem (system:
 
@@ -24,12 +26,29 @@
     in
     rec {
 
-      packages = pkgs.callPackage ./packages {};
+      packages = with pkgs; rec {
+        default = note;
+        pdfs = symlinkJoin {
+          name = "all";
+          paths = [
+            tao-ch2
+            tao-appendix
+          ];
+        };
+        inherit note;
+        tao-ch2 = exportOrgToPdf { orgFile = ./content/Tao/Ch2.org;  };
+        tao-appendix = exportOrgToPdf { orgFile = ./content/Tao/Appendix.org;  };
+        run-note = mk-run-note { layers = ./content; port = 7001; };
+      };
 
       # for `nix develop`
-      devShell = pkgs.mkShell {
+      devShell = let
+        run-note = pkgs.mk-run-note { layers = "content"; port = 7001; };
+      in pkgs.mkShell {
         buildInputs = with pkgs; [
           mytex
+          emanote
+          run-note
         ];
       };
 
