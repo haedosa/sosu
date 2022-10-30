@@ -22,10 +22,51 @@
       <base href='/sosu/' />
       <link href='favicon.svg' rel='icon' />
     
-    <meta name='generator' content='Emanote' />
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    },
+    tex: {
+      macros: {
+        pp: "{\\hspace{-0.5pt}{+}\\hspace{-4pt}{+}}"
+      }
+    }
+  };
+</script>
+<style>
+  li {
+    list-style-type: none;
+  }
+</style>
 
   
-  <link href='tailwind.css?instanceId=e6748eab-b3a9-4263-983f-41d9e7e80865' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=82e6f8ec-6bca-434c-b4ea-5c8ffba43f08' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -220,8 +261,8 @@
               <span data-nosnippet class='mr-2 text-right text-gray-600'>
               </span>
             
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Tao/Appendix'>
-              Appendix
+            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Tao/chapter2'>
+              chapter2
             </a>
           </div>
         </li>
@@ -232,8 +273,8 @@
               <span data-nosnippet class='mr-2 text-right text-gray-600'>
               </span>
             
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Tao/Ch2'>
-              Tao solution: Chapter 2
+            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Tao/Appendix'>
+              Appendix
             </a>
           </div>
         </li>

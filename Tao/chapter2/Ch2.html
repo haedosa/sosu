@@ -22,10 +22,51 @@
       <base href='/sosu/' />
       <link href='favicon.svg' rel='icon' />
     
-    <meta name='generator' content='Emanote' />
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    },
+    tex: {
+      macros: {
+        pp: "{\\hspace{-0.5pt}{+}\\hspace{-4pt}{+}}"
+      }
+    }
+  };
+</script>
+<style>
+  li {
+    list-style-type: none;
+  }
+</style>
 
   
-  <link href='tailwind.css?instanceId=e6748eab-b3a9-4263-983f-41d9e7e80865' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=82e6f8ec-6bca-434c-b4ea-5c8ffba43f08' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -174,6 +215,17 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2'>
+      chapter2
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href='Tao'>
       Tao
     </a>
@@ -190,6 +242,10 @@
     </a>
   </div>
 
+  
+</li>
+      
+    </ul>
   
 </li>
       
@@ -2570,7 +2626,7 @@
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Ch2.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/Ch2.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>

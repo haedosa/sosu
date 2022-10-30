@@ -18,10 +18,51 @@
       <base href='/sosu/' />
       <link href='favicon.svg' rel='icon' />
     
-    <meta name='generator' content='Emanote' />
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    },
+    tex: {
+      macros: {
+        pp: "{\\hspace{-0.5pt}{+}\\hspace{-4pt}{+}}"
+      }
+    }
+  };
+</script>
+<style>
+  li {
+    list-style-type: none;
+  }
+</style>
 
   
-  <link href='tailwind.css?instanceId=e6748eab-b3a9-4263-983f-41d9e7e80865' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=82e6f8ec-6bca-434c-b4ea-5c8ffba43f08' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -324,6 +365,42 @@
   
     
       
+      
+    
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
+      </svg>
+      
+  
+    <a class='font-bold hover:underline truncate' title='chapter2' href='Tao/chapter2'>
+      chapter2
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
     
     
 
@@ -344,8 +421,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Appendix' href='Tao/Appendix'>
-      Appendix
+    <a class='hover:underline truncate' title='Tao solution: Chapter 2' href='Tao/chapter2/Ch2'>
+      Tao solution: Chapter 2
     </a>
     
       
@@ -383,8 +460,50 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Tao solution: Chapter 2' href='Tao/Ch2'>
-      Tao solution: Chapter 2
+    <a class='hover:underline truncate' title='Exercise 2.3.2 (Lemma 2.3.3 )' href='Tao/chapter2/exercise-2.3.2'>
+      Exercise 2.3.2 (Lemma 2.3.3 )
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+    
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
+    
+    
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Appendix' href='Tao/Appendix'>
+      Appendix
     </a>
     
       
