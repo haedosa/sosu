@@ -53,7 +53,7 @@ inputs: final: prev: with final;
     configFile = (formats.yaml { }).generate "emanote-index.yaml" {
       template = {
         baseUrl = "/sosu";
-        urlStrategy = "pretty";
+        urlStrategy = "direct";
       };
     };
     configDir = runCommand "emanote-deploy-layer" { } ''
