@@ -5,4 +5,4 @@ Mathemacians but mostly scientists, engineers, and programmers.
 
 ----------
 
-[View all content 🗄️](-/all) or [browse the content by tag 🏷️](-/tags).
+[View all content](-/all) or [browse the content by tag](-/tags).

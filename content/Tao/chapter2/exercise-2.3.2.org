@@ -1,0 +1,106 @@
+#+title: Exercise 2.3.2 (Lemma 2.3.3 )
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+(Positive natural numbers have no zero divisors). /Let $n$, $m$ be natural numbers. Then $n × m = 0$ if and only if at least one of $n$, $m$ is equal to zero. In particular, if $n$ and $m$ are both positive, then $nm$ is also positive/.
+
+
+**** Proof of the second statement
+
+- $\bullet$
+    $\forall n \in \mathbb{N}\ \forall m \in \mathbb{N}\
+       n > 0 \land m > 0 \Rightarrow nm > 0$
+
+- $\Vdash$ { Proof by induction on $n$ }
+
+  - $\bullet$ Base case: Show that $\forall m \in \mathbb{N}\
+       0 > 0 \land m > 0 \Rightarrow 0 \times m > 0$
+
+  - { $0 > 0\equiv$ Flase. The implication is vacously true. }
+
+  - $\square$
+
+  - $\bullet$ Inductive step: Show that $\forall m \in \mathbb{N}\
+       n\pp > 0 \land m > 0 \Rightarrow (n\pp) \times m > 0$, when
+
+  - -- $\forall m \in \mathbb{N}\
+       n > 0 \land m > 0 \Rightarrow n \times m > 0$
+
+  - $\Vdash$ $\forall m \in \mathbb{N}\
+       n\pp > 0 \land m > 0 \Rightarrow (n\pp) \times m > 0$
+
+  - $\equiv$ { $n\pp > 0 \Leftrightarrow n >0 \lor n = 0$, Distribution of $\land$ over $\lor$ }
+
+    - $\forall m \in \mathbb{N}\
+       (n > 0 \land m > 0) \lor (n = 0 \land m >0 ) \Rightarrow (n\pp) \times m > 0$
+
+  - $\equiv$ { $a \lor b \Rightarrow c \equiv a \Rightarrow c \land b \Rightarrow c$ }
+
+    - $\forall m \in \mathbb{N}\
+       (n > 0 \land m > 0 \Rightarrow (n\pp) \times m > 0) \land (n = 0 \land m > 0 \Rightarrow (n\pp) \times m > 0)$
+
+  - $\equiv$ { proof by cases }
+
+    - $\bullet$ $(n\pp) \times m > 0$, when
+
+    - -- n > 0
+    - -- m > 0
+
+    - $\Vdash$ $(n\pp) \times m$
+
+    - $\equiv$ { Def. 2.3.1: $(n\pp)\times m := (n \times m) + m$  }
+
+      - (n \times m) + m
+
+    - $>$ { Proposition. 2.2.8: $a > 0 \land b \in \mathbb{N} \Rightarrow a + b > 0$,
+    - \qquad Assumption $m > 0$ }
+
+      - 0
+
+    - $\square$
+
+    - $\bullet$ $(n\pp) \times m > 0$, when
+
+    - -- n = 0
+    - -- m > 0
+
+    - $\Vdash$ $(n\pp) \times m$
+
+    - $\equiv$ { Assumption $n = 0$ }
+
+      - $(0 \pp) \times m$
+
+    - $\equiv$ { Def. 2.3.1: $(n\pp)\times m := (n \times m) + m$  }
+
+      - (0 \times m) + m
+
+    - $\equiv$ { Def. 2.3.1: $0 \times m := 0$  }
+
+      - 0 + m
+
+    - $\equiv$ { Def. 2.2.1: $0 + m := m$  }
+
+      - m
+
+    - $>$ { Assumption $m > 0$ }
+
+      - 0
+
+    - $\square$
+
+  - $\square$
+
+- $\square$

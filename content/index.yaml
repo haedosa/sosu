@@ -2,9 +2,46 @@
 page:
   siteTitle: Sosu
   siteName: sosu
+  headHtml: |
+    <snippet var="js.highlightjs" />
+    <snippet var="js.mathjax" />
+    <with var="js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/${value:highlightjs-ver}/languages/haskell.min.js"></script>
+    </with>
+    <script>
+      window.MathJax = {
+        startup: {
+          ready: () => {
+            MathJax.startup.defaultReady();
+          }
+        },
+        tex: {
+          macros: {
+            pp: "{\\hspace{-0.5pt}{+}\\hspace{-4pt}{+}}"
+          }
+        }
+      };
+    </script>
+    <style>
+      li {
+        list-style-type: none;
+      }
+    </style>
 
 template:
   name: /templates/layouts/note
   theme: purple
   urlStrategy: pretty
   collapsed: true
+
+pandoc:
+  rewriteClass:
+    prose: max-w-prose mx-auto
+    # Centered photo
+    photoframe-center: sm:w-3/4 md:w-1/2 mx-auto flex items-center justify-center
+    # Photo floating to right
+    photoframe: w-full sm:w-64 float-right sm:ml-2 mb-2 sm:mb-0 border-2 p-1 bg-gray-50
+    # Content immediately following a right-floated photo
+    photoframe-below: clear-right
+    page-note: text-sm text-gray-600 flex items-center justify-center my-4 italic
+    editor-note: text-gray-500 text-sm
