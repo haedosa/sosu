@@ -51,6 +51,13 @@
         ];
       };
 
+      apps = {
+        default = {
+          type = "app";
+          program = "${pkgs.run-note}/bin/run-note";
+        };
+      };
+
     });
 
 }

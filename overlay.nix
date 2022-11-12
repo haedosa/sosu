@@ -77,4 +77,5 @@ inputs: final: prev: with final;
         --add-flags "--layers ${layers} run --port ${toString port}"
     '';
 
+   run-note = mk-run-note { layers = "content"; port = 7001; };
 }
