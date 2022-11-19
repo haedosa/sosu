@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=f19f6ebb-695b-4762-a0fc-8a43e0593345' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=fce8e6d4-9873-4c62-8ecc-6cf54a7dfeff' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -215,6 +215,17 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2/Exercise'>
+      Exercise
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href='Tao/chapter2'>
       chapter2
     </a>
@@ -252,6 +263,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -278,214 +293,6 @@
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  <h2 class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>2.2.1. Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)</h2>
-    <p class='mb-3'>
-      <strong>Proposition 2.2.5</strong> <em>(Addition is associative)</em>
-    </p>
-  
-    <p class='mb-3'>
-      <em>For any natural numbers <span class='math inline'>\(a,b,c\)</span>, we have <span class='math inline'>\((a+b)+c=a+(b+c)\)</span>.</em>
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\((a+b)+c=a+(b+c)\)</span> for each <span class='math inline'>\(a,b,c\in\mathbb{N}\)</span>.
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(a\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\((a+b)+c=a+(b+c)\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(a=0\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((a+b)+c=a+(b+c)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { substitute assumption <span class='math inline'>\(a=0\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\((0+b)+c=0+(b+c)\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.1: <span class='math inline'>\({}^\forall m.~ 0 + m := m\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(b+c=b+c\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(((a\pp)+b)+c=(a\pp)+(b+c)\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\((a+b)+c=a+(b+c)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(((a\pp)+b)+c\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Definition 2.2.1: <span class='math inline'>\({}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(((a+b)\pp)+c\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Definition 2.2.1: <span class='math inline'>\({}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(((a+b)+c)\pp\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { inductive hypothesis,
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(~~~~\)</span> Substitution Axiom ${}^∀ f{}^∀ a{}^∀ b.~ a = b → f(a) = f(b)$}
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\((a+(b+c))\pp\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Definition 2.2.1: <span class='math inline'>\({}^\forall n{}^\forall m.~ (n\pp)+m := (n+m)\pp\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\((a\pp)+(b+c)\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-    </ul>
   <h2 class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>2.2.2. Prove Lemma 2.2.10.</h2>
     <p class='mb-3'>
       (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
@@ -2626,7 +2433,7 @@
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/Ch2.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/Exercise/Ch2.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>

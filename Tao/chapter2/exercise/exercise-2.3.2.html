@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Stillwell – Sosu
+    Exercise 2.3.2 (Lemma 2.3.3 ) – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Stillwell' />
+      <meta property='og:title' content='Exercise 2.3.2 (Lemma 2.3.3 )' />
     
     
       <base href='/sosu/' />
@@ -215,11 +215,56 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2/exercise'>
+      exercise
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2'>
+      chapter2
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao'>
+      Tao
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href=''>
       Sosu
     </a>
   </div>
 
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
   
 </li>
           
@@ -243,41 +288,363 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Stillwell
+    Exercise 2.3.2 (Lemma 2.3.3 )
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  <nav>
-  <div class='mb-8'>
-    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './*'
-    </header>
-    <ul>
+  
+    <p class='mb-3'>
+      (Positive natural numbers have no zero divisors). <em>Let <span class='math inline'>\(n\)</span>, <span class='math inline'>\(m\)</span> be natural numbers. Then <span class='math inline'>\(n × m = 0\)</span> if and only if at least one of <span class='math inline'>\(n\)</span>, <span class='math inline'>\(m\)</span> is equal to zero. In particular, if <span class='math inline'>\(n\)</span> and <span class='math inline'>\(m\)</span> are both positive, then <span class='math inline'>\(nm\)</span> is also positive</em>.
+    </p>
+  
+    <p class='mb-3'>
+      Proof of the second statement
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <div class='flex flex-wrap my-2'>
-            
-              <span data-nosnippet class='mr-2 text-right text-gray-600'>
-              </span>
-            
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Stillwell/Ch1'>
-              Ch1
-            </a>
-          </div>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> <span class='math inline'>\(\forall n \in \mathbb{N}\ \forall m \in \mathbb{N}\
+      n &gt; 0 \land m &gt; 0 \Rightarrow nm &gt; 0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Base case: Show that <span class='math inline'>\(\forall m \in \mathbb{N}\
+    0 &gt; 0 \land m &gt; 0 \Rightarrow 0 \times m &gt; 0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      { <span class='math inline'>\(0 &gt; 0\equiv\)</span> Flase. The implication is vacously true. }
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Inductive step: Show that <span class='math inline'>\(\forall m \in \mathbb{N}\
+    n\pp &gt; 0 \land m &gt; 0 \Rightarrow (n\pp) \times m &gt; 0\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(\forall m \in \mathbb{N}\
+    n &gt; 0 \land m &gt; 0 \Rightarrow n \times m &gt; 0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}\
+    n\pp &gt; 0 \land m &gt; 0 \Rightarrow (n\pp) \times m &gt; 0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(n\pp &gt; 0 \Leftrightarrow n &gt;0 \lor n = 0\)</span>, Distribution of <span class='math inline'>\(\land\)</span> over <span class='math inline'>\(\lor\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall m \in \mathbb{N}\
+  (n &gt; 0 \land m &gt; 0) \lor (n = 0 \land m &gt;0 ) \Rightarrow (n\pp) \times m &gt; 0\)</span>
         </li>
       
     </ul>
-  </div>
-</nav><div class='text-gray-400 border-t-2 inline-block pt-0.5'>
+  
+        </li>
+      
+        <li>
+          
     <p class='mb-3'>
-      Note: To override the auto-generated content here, create a file named one of: <span class='font-mono text-sm'>Stillwell.md, Stillwell.org</span>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(a \lor b \Rightarrow c \equiv a \Rightarrow c \land b \Rightarrow c\)</span> }
     </p>
-  </div>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall m \in \mathbb{N}\
+  (n &gt; 0 \land m &gt; 0 \Rightarrow (n\pp) \times m &gt; 0) \land (n = 0 \land m &gt; 0 \Rightarrow (n\pp) \times m &gt; 0)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { proof by cases }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> <span class='math inline'>\((n\pp) \times m &gt; 0\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – n &gt; 0
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – m &gt; 0
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((n\pp) \times m\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Def. 2.3.1: <span class='math inline'>\((n\pp)\times m := (n \times m) + m\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          (n × m) + m
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(&gt;\)</span> { Proposition. 2.2.8: <span class='math inline'>\(a &gt; 0 \land b \in \mathbb{N} \Rightarrow a + b &gt; 0\)</span>,
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+          Assumption <span class='math inline'>\(m &gt; 0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          0
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> <span class='math inline'>\((n\pp) \times m &gt; 0\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – n = 0
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – m &gt; 0
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((n\pp) \times m\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Assumption <span class='math inline'>\(n = 0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((0 \pp) \times m\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Def. 2.3.1: <span class='math inline'>\((n\pp)\times m := (n \times m) + m\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          (0 × m) + m
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Def. 2.3.1: <span class='math inline'>\(0 \times m := 0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          0 + m
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Def. 2.2.1: <span class='math inline'>\(0 + m := m\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          m
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(&gt;\)</span> { Assumption <span class='math inline'>\(m &gt; 0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          0
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Stillwell.md'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/exercise/exercise-2.3.2.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
