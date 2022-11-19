@@ -1,0 +1,65 @@
+#+title: Exercise 2.2.1 (Proposition 2.2.5)
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+ *Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)*
+
+*Proposition 2.2.5* /(Addition is associative)/
+
+/For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./
+
+- $\bullet$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
+
+- $\Vdash$ { Proof by induction on $a$ }
+
+  - $\bullet$ Base case: show that $(a+b)+c=a+(b+c)$, when
+
+  - $\textnormal{--}$ $a=0$
+
+  - $\Vdash$ $(0+b)+c=0+(b+c)$
+
+  - $\equiv$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $0 + m := m$ }
+
+    - $b+c=b+c$
+
+  - $\square$
+
+  - $\bullet$ Inductive step: show that $((a\pp)+b)+c=(a\pp)+(b+c)$, when
+
+  - $\textnormal{--}$ $(a+b)+c=a+(b+c)$
+
+  - $\Vdash$ $((a\pp)+b)+c$
+
+  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+
+    - $((a+b)\pp)+c$
+
+  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+
+    - $((a+b)+c)\pp$
+
+  - $=$ { inductive hypothesis,
+  - $~~~~$  Substitution Axiom $\forall f\forall a\forall b.~ a = b \rightarrow f(a) = f(b)$}
+
+    - $(a+(b+c))\pp$
+
+  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+
+    - $(a\pp)+(b+c)$
+
+  - $\square$
+
+- $\square$
