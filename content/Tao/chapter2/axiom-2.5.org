@@ -1,5 +1,4 @@
-#+title: Definition 2.2.1
-
+#+title: Axiom 2.5
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
 #+LATEX_HEADER: \usepackage{a4wide}
@@ -16,4 +15,4 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-**Definition 2.2.1.** (Addition of natural numbers). Let $m$ be a natural number. To add zero to $m$, we define $0+m:=m$. Now suppose inductively that we have defined how to add $n$ to $m$. Then we can add $n\pp$ to $m$ by defining $(n\pp)+m:=(n+m)\pp$
+**Axiom 2.5.** (Principle of mathematical induction). /Let $P(n)$ be any property pertaining to a natural number $n$. Suppose that $P(0)$ is true, and suppose that whenever $P(n)$ is true, $P(n\pp)$ is also true. Then $P(n)$ is true for every natural number $n$./

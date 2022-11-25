@@ -1,0 +1,3 @@
+#+title: Proposition 2.2.13
+
+*Proposition 2.2.13* (Trichotomy of order for natural numbers). /Let $a$ and $b$ be natural numbers. Then excactly one of the following statements is true: $a<b, a=b$, or $a>b$./

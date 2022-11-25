@@ -1,0 +1,62 @@
+#+title: Exercise 2.2.2 (Lemma 2.2.10)
+
+Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
+(Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
+
+
+- $\bullet$ Show that $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$.
+
+- $\Vdash$ { Proof by induction on $a$ }
+
+  - $\bullet$ Base case: show that $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$, when
+
+  - $\textnormal{--}$ $a=0$
+
+  - $\Vdash$ $0\neq0\implies \exists!b\in\mathbb{N}.~b\pp=0$
+
+  - $\equiv$ { implication is vacuously true since $0\neq0$ is false }
+
+    - True
+
+  - $\square$
+
+  - $\bullet$ Inductive step: show that $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp$, when
+
+  - $\textnormal{--}$ $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$
+
+  - $\Vdash$ $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp$
+
+  - $\equiv$ { Show existence and uniquness of $b$ }
+
+    - $\bullet$ Existence of $b$
+
+    - $\Vdash$ $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists b\in\mathbb{N}.~b\pp=a\pp$
+
+    - $\equiv$ { Let $b:=a$ }
+
+      - $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies a\pp=a\pp$
+
+    - $\equiv$ { [[../../Appendix/AxiomOfEquality.org][Reflexive axiom]] }
+
+      - True
+
+    - $\square$
+
+    - $\bullet$ Uniqueness of $b$
+
+    - $\textnormal{--}$ $\forall a\pp\in\mathbb{N}.~a\pp\neq0$
+    - $\Vdash$           $\forall b, \forall c\in\mathbb{N}.~(b\pp=a\pp)\land (c\pp=a\pp)$
+    - $\Rightarrow$  {$b=a$, $c=a$ by [[../axiom-2.4.org][Axiom 2.4]] }
+      - $\forall b, \forall c\in\mathbb{N}.~(b=a)\land (c=a)$
+    - $\equiv$   { [[../../Appendix/AxiomOfEquality.org][Symmetry axiom]] : $(c = a) \equiv (a = c)$  }
+      - $\forall b, \forall c\in\mathbb{N}.~(b=a)\land (a=c)$
+    - $\Rightarrow$   { [[../../Appendix/AxiomOfEquality.org][Transitive axiom]]  }
+      - $b=c$
+    - $\square$
+
+  - $\cdots$ True
+  - $\square$
+
+- $\square$
+
+In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true

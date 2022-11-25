@@ -1,4 +1,4 @@
-#+title: Definition 2.2.1
+#+title: Axiom 2.2
 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
@@ -16,4 +16,4 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-**Definition 2.2.1.** (Addition of natural numbers). Let $m$ be a natural number. To add zero to $m$, we define $0+m:=m$. Now suppose inductively that we have defined how to add $n$ to $m$. Then we can add $n\pp$ to $m$ by defining $(n\pp)+m:=(n+m)\pp$
+**Axiom 2.2.** /If $n$ is a natural number, then $n\pp$ is also a natural number./

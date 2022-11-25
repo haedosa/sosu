@@ -1,0 +1,5 @@
+#+title: Lemma 2.2.2
+
+**Lemma 2.2.2.** /For any natural number $n$, $n+0=n$./
+
+$Proof$. We use induction. The base case $0+0=0$ follows since we know that $0+m=m$ for every natural number $m$, and $0$ is a natural number. Now suppose inductively that $n+0=n$. We wish to show that $(n\pp)+0=n\pp$. But by definition of addition, $(n\pp)+0$ is equal to $(n+0)\pp$, which is equal to $n\pp$ since $n+0=n$. This closes the induction. $\square$

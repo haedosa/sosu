@@ -1,0 +1,15 @@
+#+title: Proposition 2.2.12
+
+*Propostion 2.2.12* (Basic properties of order for natural numbers) /let $a,b,c$ be natural numbers. Then/
+
+- /(a) (Order is reflexive) $a\geq a$./
+
+- /(b) (Order is transitive) If $a\geq b$ and $b\geq c$, then $a\geq c$./
+
+- /(c) (Order is anti-symmetric) If $a\geq b$ and $b\geq a$, then $a=b$./
+
+- /(d) (Addition preserves order) $a\geq b$ only and only if $a+c\geq b+c$./
+
+- /(e) $a<b$ if and only if $a\pp\leq b$./
+
+- /(f) $a<b$ if and only if $b=a+d$ for some positive number $a$./

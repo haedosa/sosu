@@ -1,0 +1,279 @@
+#+title: Exercise 2.2.3 (Propostion 2.2.12)
+
+#+Author: SoSu
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+
+
+Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
+(Hint: you will need many of the preceding propositions, colloraries, and lemmas.)
+
+(a)
+
+- $\bullet$ Show that $a\geq a$.
+
+- $\Vdash$ $a=a$
+
+- $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+
+  - $a=a+0$
+
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+
+  - $a\geq a$.
+
+- $\square$
+
+(b)
+
+- $\bullet$ Show that $(a\geq b)\land(b\geq c)\implies a\geq c$
+- $\Vdash$ $(a\geq b)\land(b\geq c)$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $(a=b+d)\land(b=c+e)$ for some natural numbers $d,e$
+- $\equiv$ { Substitute $b$ using $b=c+e$ }
+  - $a=c+e+d$ for some natural numbers $d,e$
+- $\equiv$ { sum of two natural numbers is a natural number: $e+d=n$ for some natural number $n$ }
+  - $a=c+n$ for some natural number $n$
+- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $a\geq c$
+- $\square$
+
+(c)
+
+- $\bullet$ Show that $(a\geq b)\land(b\geq a)\implies a=b$
+- $\Vdash$ $(a\geq b)\land(b\geq a)$
+- $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $(a=b+d)\land(b=a+e)$ for some natural numbers $d,e$
+
+- $\equiv$ { find $d,e$ }
+  - $\Vdash$ $(a=b+d)\land(b=a+e)$
+  - $\equiv$ { Substitute $b$ using $b=a+e$ }
+
+    - $a=a+e+d$
+
+  - $\equiv$ { Lemma 2.2.2: ${}^\forall n,~n+0=n$ }
+
+    - $a+0=a+e+d$
+
+  - $\equiv$ { Proposition 2.2.6: Cancelation law, ${}^\forall a{}^\forall b{}^\forall c\in\mathbb{N},~ a+b=a+c\implies b=c$ }
+
+    - $0=e+d$
+
+  - $\equiv$ { Corollary 2.2.9: ${}^\forall a{}^\forall b\in\mathbb{N},~a+b=0\implies (a=0)\land(b=0)$ }
+
+    - $(d=0)\land(e=0)$
+
+- $\cdots$ $(a=b+0)\land(b=a+0)$
+
+- $\equiv$ { Lemma 2.2.2:${}^\forall n,~n+0=n$ }
+
+  - $(a=b)\land(b=a)$
+
+- $\square$
+
+(d)
+
+- $\bullet$ Show that $a\geq b\iff a+c\geq b+c$
+- $\Vdash$ $a\geq b\iff a+c\geq b+c$
+  - $\bullet$ Show that $a\geq b\implies a+c\geq b+c$
+  - $\Vdash$ $a\geq b$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+    - $a=b+d$
+  - $\equiv$ { Substitution axiom: $x=y\implies f(x)=f(y)$ }
+    - $a+c=b+d+c$
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+    - $a+c=b+c+d$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+    - $a+c\geq b+c$
+  - $\square$
+  - $\bullet$ Show that $a+c\geq b+c\implies a\geq b$
+  - $\Vdash$ $a+c\geq b+c$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+    - $a+c=b+c+d$
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+    - $a+c=b+d+c$
+  - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+    - $a=b+d$
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+    - $a\geq d$
+  - $\square$
+- $\square$
+(e)
+
+- $\bullet$ Show that $a<b\iff a\pp\leq b$
+
+- $\Vdash$ $a<b\iff a\pp\leq b$
+
+  - $\bullet$ Show that $a<b\implies a\pp\leq b$
+
+  - $\Vdash$ $a<b$
+
+  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+
+    - $(a\leq b)\land(a\neq b)$
+
+  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+
+    - $(b=a+d)\land(a\neq b)$
+
+  - $\equiv$ { show that $d\neq0$ }
+
+    - $\bullet$ For sake of constradiction, suppose that
+
+    - $\textnormal{--}$ $d=0$
+
+    - $\Vdash$ $b=a+d$
+
+    - $\equiv$ { assumption $d=0$ }
+
+      - $b=a+0$
+
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+
+      - $b=a$
+
+    - $\equiv$ { $a\neq b$ }
+
+      - Contradiction
+
+    - $\square$
+
+  - $\cdots$ $(b=a+d)\land(d\neq0)$
+
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+
+    - $(b=a+d)\land(d\textnormal{ is positive})$
+
+  - $\equiv$ { Lemma 2.2.10: For a positive number $n$, $\exists! m,~ m\pp=n$ }
+
+    - $b=a+(m\pp)$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=(a+m)\pp$
+
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+
+    - $b=(m+a)\pp$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=m+(a\pp)$
+
+  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$  }
+
+    - $b=(a\pp)+m$
+
+  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+
+    - $a\pp\leq b$
+
+  - $\square$
+
+  - $\bullet$ Show that $a\pp\leq b\implies a<b$
+
+  - $\Vdash$ $a\pp\leq b$
+
+  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+
+    - $b=(a\pp)+n$
+
+  - $\equiv$ { Deifinition 2.2.1: $(n\pp)+m := (n+m)\pp$ }
+
+    - $b=(a+n)\pp$
+
+  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+
+    - $b=a+(n\pp)$
+
+  - $\equiv$ { show that $b=a+(n\pp)\implies b\neq a$ }
+
+    - $\bullet$ For sake of contradiction, suppose that
+
+    - $\textnormal{--}$ $b=a$
+
+    - $\Vdash$ $b=a+(n\pp)$
+
+    - $\equiv$ { assumption $b=a$ }
+
+      - $a=a+(n\pp)$
+
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+
+      - $a+0=a+(n\pp)$
+
+    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+
+      - $0=n\pp$
+
+    - $\equiv$ { Axiom 2.3: $n\pp\neq0$ for every natural number $n$ }
+
+      - Contradiction
+
+    - $\square$
+
+  - $\cdots$ $(b=a+(n\pp))\land(b\neq a)$
+  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+
+    - $a<b$
+
+  - $\square$
+
+- $\square$
+
+(f)
+- $\bullet$ Show that $a<b$ iff $b=a+d$ for some positive number $d$
+- $\Vdash$ $a<b\iff(b=a+d)\land(d\textnormal{ is positive})$
+  - $\bullet$ Show that $a<b\implies (b=a+d)\land(d\textnormal{ is positive})$
+  - $\Vdash$ $a<b$
+  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
+  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+    - $(b=a+d)\land(a\neq b)$
+  - $\equiv$ { show that $d\neq0$ }
+    - $\bullet$ For sake of contradiction, suppose that
+    - $\textnormal{--}$ $d=0$
+    - $\Vdash$ $b=a+d$
+    - $\equiv$ { assumption $d=0$ }
+      - $b=a+0$
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+      - $b=a$
+    - $\equiv$ { $a\neq b$ }
+      - Contradiction
+    - $\square$
+  - $\cdots$ $(b=a+d)\land(d\neq0)$
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+    - $(b=a+d)\land(d\textnormal{ is positive})$
+  - $\square$
+  - $\bullet$ Show that $(b=a+d)\land(d\textnormal{ is positive})\implies a<b$
+  - $\Vdash$ $(b=a+d)\land(d\textnormal{ is positive})$
+  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+    - $(b=a+d)\land(d\neq0)$
+  - $\equiv$ { show that $b\neq a$ }
+    - $\bullet$ For sake of contradiction, suppose that
+    - $\textnormal{--}$ $b=a$
+    - $\Vdash$ $b=a+d$
+    - $\equiv$ { assumption $b=a$ }
+      - $a=a+d$
+    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+      - $a+0=a+d$
+    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+      - $0=d$
+    - $\equiv$ { $d\neq0$ }
+      - Contradiction
+    - $\square$
+  - $\cdots$ $(b=a+d)\land(b\neq a)$
+  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
+  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+    - $a<b$
+  - $\square$
+- $\square$

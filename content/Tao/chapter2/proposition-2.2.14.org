@@ -1,0 +1,3 @@
+#+title: Proposition 2.2.14
+
+*Proposition 2.2.14* (Strong principle of induction). /Let $m_0$ be a natural number, and let $P(m)$ be a property pertaining to an arbitrary natural number $m$. Suppose that for each $m\geq m_0$, we have the following implication: if $P(m')$ is true for all natural numbers $m_0\leq m'<m$, then $P(m)$ is also true. (In particular, this means that $P(m_0)$ is true, since in this case the hypothesis is vacuous.) Then we can conclude that $P(m)$ is true for all natrual numbers $m\geq m_0$./

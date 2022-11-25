@@ -1,0 +1,4 @@
+#+title: Lemma 2.2.10
+
+
+**Lemma 2.2.10.** /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./

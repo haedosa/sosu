@@ -15,11 +15,7 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
- *Prove Proposition 2.2.5 (Hint: fix two of the variables and induct on the third)*
-
-*Proposition 2.2.5* /(Addition is associative)/
-
-/For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./
+ Prove [[../proposition-2.2.5.org][Proposition 2.2.5]] (Hint: fix two of the variables and induct on the third)
 
 - $\bullet$ Show that $(a+b)+c=a+(b+c)$ for each $a,b,c\in\mathbb{N}$.
 

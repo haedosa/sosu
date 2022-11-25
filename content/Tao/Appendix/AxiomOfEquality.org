@@ -1,4 +1,4 @@
-#+title: Definition 2.2.1
+#+title: Axiom Of Equality
 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
@@ -16,4 +16,9 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-**Definition 2.2.1.** (Addition of natural numbers). Let $m$ be a natural number. To add zero to $m$, we define $0+m:=m$. Now suppose inductively that we have defined how to add $n$ to $m$. Then we can add $n\pp$ to $m$ by defining $(n\pp)+m:=(n+m)\pp$
+
+* Axiom of equallity
+  - (Reflexive axiom). Given any object $x$, we have $x=x$.
+  - (Symmetry axiom) . Given any two object $x$ and $y$ of the same type, if $x=y$, then $y=x$.
+  - (Transitive axiom). Given any three objects $x,~y,~z$ of the same type, if $x=y$ and $y=z$, then $x=z$.
+  - (Substitution axiom). Given any two objects $x$ and $y$ of the same type, if $x=y$, then $f(x)=f(y)$ for all functions or operations $f$.

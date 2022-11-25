@@ -1,0 +1,66 @@
+#+title: Exercise 2.3.1 (Lemma 2.3.2)
+
+2.3.1. Prove [[../lemma-2.3.2.org][Lemma 2.3.2]] (Hint: modify the proofs of [[../lemma-2.2.2.org][Lemmas 2.2.2]], [[../lemma-2.2.3.org][2.2.3]] and [[../proposition-2.2.4.org][Proposition 2.2.4]])
+
+
+- $\bullet$ Show that $\forall n \forall m \in \mathbb{N}.~ n \times m = m \times n$.
+
+- $\Vdash$ { Proof by induction on $n$ }
+  - $\bullet$ Base case: show that $\forall m \in \mathbb{N}.~ 0 \times m = m \times 0$
+  - $\Vdash$ $\forall m \in \mathbb{N}.~ 0 \times m = m \times 0$
+  - $\equiv$ { Definition 2.3.1: $0 \times m := 0$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ 0 = m \times 0$
+  - $\equiv$ { Proof by induction on $m$ }
+    - $\bullet$ Base case: show that $0 = 0 \times 0$
+    - $\Vdash$ $0 \times 0$
+    - $\equiv$ { Definition 2.3.1: $0 \times m := 0$ }
+    - $~~~$ True
+    - $\square$
+    - $\bullet$ Inductive step: show that $0 = (m\pp) \times 0$ when
+    - $\textnormal{--}$ $0 = m \times 0$
+    - $\Vdash$ $(m\pp) \times 0$
+    - $=$ { Definition 2.3.1: $(n\pp) \times m := (n \times m) + m$ }
+    - $~~~$ $(m \times 0) + 0$
+    - $=$ { Induction Hypothesis: }
+    - $~~~$ $~~~$ $0 + 0$
+    - $=$ { Definition 2.2.1: $0+m := m$ }
+    - $~~~$ $0$
+    - $\square$
+  - $\square$
+  - $\bullet$ Inductive step: show that $\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)$ when
+  - $\textnormal{--}$ $\forall m \in \mathbb{N}.~ n \times m = m \times n$
+  - $\Vdash$ $\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)$
+  - $\equiv$ { Definition 2.3.1: $(a\pp) \times b := (a \times b) + b$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ (n \times m) + m = m \times (n\pp)$
+  - $\equiv$ { Induction hypothesis: $\forall m \in \mathbb{N}.~ n \times m = m \times n$ }
+  - $~~~$ $\forall m \in \mathbb{N}.~ (m \times n) + m = m \times (n\pp)$
+  - $\equiv$ { Proof by induction on $m$}
+    - $\bullet$ Base case: show that $(0 \times n) + 0 = 0 \times (n\pp)$
+    - $\Vdash$ $(0 \times n) + 0 = 0 \times (n\pp)$
+    - $\equiv$ { Definition 2.3.1: $0 \times b := 0$ }
+    - $~~~$ 0 + 0 = 0
+    - $\equiv$ { Definition 2.2.1: $0+b := b$ }
+    - $~~~$ True
+    - $\square$
+    - $\bullet$ Inductive step: show that $((m\pp) \times n) + (m\pp) = (m\pp) \times (n\pp)$ when
+    - $\textnormal{--}$ $(m \times n) + m = m \times (n\pp)$
+    - $\Vdash$ $((m\pp) \times n) + (m\pp)$
+    - $=$ { Definition 2.3.1: $(a\pp) \times b := (a \times b) + b$ }
+    - $~~~$ $((m \times n) + n) + (m\pp)$
+    - $=$ { Addition is associative }
+    - $~~~$ $(m \times n) + (n + (m\pp))$
+    - $=$ { Definition of Addition }
+    - $~~~$ $(m \times n) + (n + m)\pp$
+    - $=$ { Addition is commutative }
+    - $~~~$ $(m \times n) + (m + n)\pp$
+    - $=$ { Definition of Addition }
+    - $~~~$ $(m \times n) + (m + n\pp)$
+    - $=$ { Addition is associative }
+    - $~~~$ $((m \times n) + m) + n\pp$
+    - $=$ { Induction hypothesis }
+    - $~~~$ $m \times (n\pp) + n\pp$
+    - $=$ { Definition 2.3.1: $(a\pp) \times b := (a \times b) + b$ }
+    - $~~~$ $(m\pp) \times (n\pp)$
+    - $\square$
+  - $\square$
+- $\square$

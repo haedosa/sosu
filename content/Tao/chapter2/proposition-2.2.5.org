@@ -1,0 +1,3 @@
+#+title: Proposition 2.2.5
+
+*Proposition 2.2.5* (Addition is associative) /For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./

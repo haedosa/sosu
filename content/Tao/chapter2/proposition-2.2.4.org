@@ -1,0 +1,5 @@
+#+title: Proposition 2.2.4
+
+**Proposition 2.2.4** (Addition is commutative). /For any natural numbers $n$ and $m$, $n+m=m+n$./
+
+$Proof$. We shall use induction on $n$ (keeping $m$ fixed). First we do the base case $n=0$, i.e., we show $0+m=m+0$. By the definition of addition, $0+m=m$, while by Lemma 2.2.2, $m+0=m$. Thus the base case is done. Now suppose inductively that $n+m=m+n$, now we have to prove that $(n\pp)+m=m+(n\pp)$ to close the induction. By the definition of addition, $(n\pp)+m=(n+m)\pp$. By Lemma 2.2.3, $m+(n\pp)=(m+n)\pp$, but this is equal to $(n+m)\pp$ by the induction hypothesis $n+m=m+n$. Thus $(n\pp)+m=m+(n\pp)$ and we have closed the induction. $\square$
