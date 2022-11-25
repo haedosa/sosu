@@ -1,5 +1,5 @@
 #+title: Lemma 2.2.3
 
-**Lemma 2.2.3.** /For any natural number $n$ and $m$, $n+(m\pp)=(n+m)\pp$.
+**Lemma 2.2.3.** /For any natural number $n$ and $m$, $n+(m\pp)=(n+m)\pp$./
 
 $Proof$. We induct on $n$ (keeping $m$ fixed). We first consider the base case $n=0$. In this case we have to prove $0+(m\pp)=(0+m)\pp$. But by definition of addition, $0+(m\pp)=m\pp$ and $0+m=m$, so both sides are equal to $m\pp$ and are thus equal to each other. Now we assume inductively that $n+(m\pp)=(n+m)\pp$; we now have to show that $(n\pp)+m(\pp)=((n\pp)+m)\pp$. The left-hand side is $(n+(m\pp))\pp$ by definition of addition, which is equal to $((n+m)\pp)\pp$ by the inductive hypothesis. Similarly, we have $(n\pp)+m=(n+m)\pp$ by the definition of addition, and so the right-hand side is also equal to $((n+m)\pp)\pp$. Thus both sides are equal to each other, and we have closed the induction. $\square$

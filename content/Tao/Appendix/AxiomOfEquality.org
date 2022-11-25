@@ -17,7 +17,7 @@
 #+HTML_HEAD: </style>
 
 
-* Axiom of equallity
+**Axiom of equality**
   - (Reflexive axiom). Given any object $x$, we have $x=x$.
   - (Symmetry axiom) . Given any two object $x$ and $y$ of the same type, if $x=y$, then $y=x$.
   - (Transitive axiom). Given any three objects $x,~y,~z$ of the same type, if $x=y$ and $y=z$, then $x=z$.
