@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Exercise 2.2.3 (Propostion 2.2.12) – Sosu
+  </title>
+  
+    
+      <meta property='og:description' content />
+      <meta property='og:site_name' content='Sosu' />
+      <meta property='og:image' content />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Exercise 2.2.3 (Propostion 2.2.12)' />
+    
+    
+      <base href='/sosu/' />
+      <link href='favicon.svg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+
+<script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    },
+    tex: {
+      macros: {
+        pp: "{\\hspace{-0.5pt}{+}\\hspace{-4pt}{+}}"
+      }
+    }
+  };
+</script>
+<style>
+  li {
+    list-style-type: none;
+  }
+</style>
+
+  
+  <link href='tailwind.css?instanceId=d67237c2-f7f1-4b20-87b5-9828de9d4c02' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'WorkSans';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'WorkSans', sans-serif;
+    font-variation-settings: 'wght' 350;
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght' 400;
+  }
+
+  strong {
+    font-variation-settings: 'wght' 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'WorkSans', sans-serif;
+  }
+
+  h1 {
+    font-variation-settings: 'wght' 500;
+  }
+
+  h2 {
+    font-variation-settings: 'wght' 400;
+  }
+
+  h3 {
+    font-variation-settings: 'wght' 300;
+  }
+</style>
+
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script data-emanote-base-url='/sosu/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        toggleSearch: function () {
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        init: function () {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const baseUrl = document.currentScript.getAttribute('data-emanote-base-url') || '/';
+          const indexUrl = baseUrl + '-/stork.st';
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(baseUrl + '_emanote-static/stork/stork.wasm');
+              stork.register(indexName, indexUrl);
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // Override existing on Ema's hot-reload
+            stork.register(indexName, indexUrl, { forceOverwrite: true });
+          }
+        }
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='bg-gray-400 overflow-y-scroll'>
+  
+    <div class='container mx-auto'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2/Exercise'>
+      Exercise
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2'>
+      chapter2
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao'>
+      Tao
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sosu
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+
+        <div class='relative md:shadow-2xl md:mb-8'>
+
+          <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+            <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+              <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-purple-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+            </a>
+          </div>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Exercise 2.2.3 (Propostion 2.2.12)
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      Prove <a href='Tao/chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Propostion 2.2.12</a> (Hint: you will need many of the preceding propositions, colloraries, and lemmas.)
+    </p>
+  
+    <p class='mb-3'>
+      (a)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a\geq a\)</span>.
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a=a\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\(n+0=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=a+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a\geq a\)</span>.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      (b)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\((a\geq b)\land(b\geq c)\implies a\geq c\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((a\geq b)\land(b\geq c)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((a=b+d)\land(b=c+e)\)</span> for some natural numbers <span class='math inline'>\(d,e\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Substitute <span class='math inline'>\(b\)</span> using <span class='math inline'>\(b=c+e\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=c+e+d\)</span> for some natural numbers <span class='math inline'>\(d,e\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { sum of two natural numbers is a natural number: <span class='math inline'>\(e+d=n\)</span> for some natural number <span class='math inline'>\(n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=c+n\)</span> for some natural number <span class='math inline'>\(n\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a\geq c\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      (c)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\((a\geq b)\land(b\geq a)\implies a=b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((a\geq b)\land(b\geq a)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((a=b+d)\land(b=a+e)\)</span> for some natural numbers <span class='math inline'>\(d,e\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { find <span class='math inline'>\(d,e\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((a=b+d)\land(b=a+e)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Substitute <span class='math inline'>\(b\)</span> using <span class='math inline'>\(b=a+e\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=a+e+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\({}^\forall n,~n+0=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+0=a+e+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.6: Cancelation law, <span class='math inline'>\({}^\forall a{}^\forall b{}^\forall c\in\mathbb{N},~ a+b=a+c\implies b=c\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(0=e+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Corollary 2.2.9: <span class='math inline'>\({}^\forall a{}^\forall b\in\mathbb{N},~a+b=0\implies (a=0)\land(b=0)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((d=0)\land(e=0)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\cdots\)</span> <span class='math inline'>\((a=b+0)\land(b=a+0)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2:<span class='math inline'>\({}^\forall n,~n+0=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((a=b)\land(b=a)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      (d)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a\geq b\iff a+c\geq b+c\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a\geq b\iff a+c\geq b+c\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a\geq b\implies a+c\geq b+c\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a\geq b\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=b+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Substitution axiom: <span class='math inline'>\(x=y\implies f(x)=f(y)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+c=b+d+c\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.4: <span class='math inline'>\(n+m=m+n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+c=b+c+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+c\geq b+c\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a+c\geq b+c\implies a\geq b\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a+c\geq b+c\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+c=b+c+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.4: <span class='math inline'>\(n+m=m+n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+c=b+d+c\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.6: <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=b+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a\geq d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      (e)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a&lt;b\iff a\pp\leq b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a&lt;b\iff a\pp\leq b\)</span>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a&lt;b\implies a\pp\leq b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a&lt;b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(m&lt;n\)</span> iff <span class='math inline'>\((m\leq n)\land(m\neq n)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((a\leq b)\land(a\neq b)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11:<span class='math inline'>\(n\geq m\)</span> iff <span class='math inline'>\(n=m+a\)</span> for some natural number <span class='math inline'>\(a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a+d)\land(a\neq b)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { show that <span class='math inline'>\(d\neq0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> For sake of constradiction, suppose that
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(d=0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(b=a+d\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { assumption <span class='math inline'>\(d=0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\(n+0=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(a\neq b\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Contradiction
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\cdots\)</span> <span class='math inline'>\((b=a+d)\land(d\neq0)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.7: a natural number <span class='math inline'>\(n\)</span> is positive iff <span class='math inline'>\(n\neq 0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a+d)\land(d\textnormal{ is positive})\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.10: For a positive number <span class='math inline'>\(n\)</span>, <span class='math inline'>\(\exists! m,~ m\pp=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a+(m\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.3: <span class='math inline'>\(n+(m\pp)=(n+m)\pp\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=(a+m)\pp\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.4: <span class='math inline'>\(n+m=m+n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=(m+a)\pp\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.3: <span class='math inline'>\(n+(m\pp)=(n+m)\pp\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=m+(a\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.4: <span class='math inline'>\(n+m=m+n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=(a\pp)+m\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11 : <span class='math inline'>\(m\leq n\)</span> iff <span class='math inline'>\(n=m+a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a\pp\leq b\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a\pp\leq b\implies a&lt;b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a\pp\leq b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11 : <span class='math inline'>\(m\leq n\)</span> iff <span class='math inline'>\(n=m+a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=(a\pp)+n\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Deifinition 2.2.1: <span class='math inline'>\((n\pp)+m := (n+m)\pp\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=(a+n)\pp\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.3: <span class='math inline'>\(n+(m\pp)=(n+m)\pp\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a+(n\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { show that <span class='math inline'>\(b=a+(n\pp)\implies b\neq a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> For sake of contradiction, suppose that
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(b=a\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(b=a+(n\pp)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { assumption <span class='math inline'>\(b=a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=a+(n\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\(n+0=n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+0=a+(n\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.6: <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(0=n\pp\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Axiom 2.3: <span class='math inline'>\(n\pp\neq0\)</span> for every natural number <span class='math inline'>\(n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Contradiction
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\cdots\)</span> <span class='math inline'>\((b=a+(n\pp))\land(b\neq a)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(m&lt;n\)</span> iff <span class='math inline'>\((m\leq n)\land(m\neq n)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a&lt;b\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      (f)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a&lt;b\)</span> iff <span class='math inline'>\(b=a+d\)</span> for some positive number <span class='math inline'>\(d\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a&lt;b\iff(b=a+d)\land(d\textnormal{ is positive})\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(a&lt;b\implies (b=a+d)\land(d\textnormal{ is positive})\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(a&lt;b\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(m\leq n\)</span> iff <span class='math inline'>\(n=m+a\)</span>,
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~~~~~~~~~~~~~~~~\)</span> <span class='math inline'>\(m&lt;n\)</span> iff <span class='math inline'>\((m\leq n)\land(n\neq m)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a+d)\land(a\neq b)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { show that <span class='math inline'>\(d\neq0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> For sake of contradiction, suppose that
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(d=0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(b=a+d\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { assumption <span class='math inline'>\(d=0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\(n+0=n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=a\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(a\neq b\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Contradiction
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\cdots\)</span> <span class='math inline'>\((b=a+d)\land(d\neq0)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.7: a natural number <span class='math inline'>\(n\)</span> is positive iff <span class='math inline'>\(n\neq 0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a+d)\land(d\textnormal{ is positive})\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\((b=a+d)\land(d\textnormal{ is positive})\implies a&lt;b\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((b=a+d)\land(d\textnormal{ is positive})\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.7: a natural number <span class='math inline'>\(n\)</span> is positive iff <span class='math inline'>\(n\neq 0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a+d)\land(d\neq0)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { show that <span class='math inline'>\(b\neq a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> For sake of contradiction, suppose that
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(b=a\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(b=a+d\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { assumption <span class='math inline'>\(b=a\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a=a+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Lemma 2.2.2: <span class='math inline'>\(n+0=n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a+0=a+d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.6: <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(0=d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(d\neq0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Contradiction
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\cdots\)</span> <span class='math inline'>\((b=a+d)\land(b\neq a)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(m\leq n\)</span> iff <span class='math inline'>\(n=m+a\)</span>,
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~~~~~~~~~~~~~~~~\)</span> <span class='math inline'>\(m&lt;n\)</span> iff <span class='math inline'>\((m\leq n)\land(n\neq m)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(a&lt;b\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+  <div class='flex items-center justify-center mt-2'>
+  
+    
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/Exercise/exercise-2.2.3.org'>
+        <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+          <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+        </svg>
+      </a>
+    
+  
+</div>
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-purple-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-purple-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.7.16.1'>
+      <img class='w-6 h-6 hover:text-purple-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-purple-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-purple-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

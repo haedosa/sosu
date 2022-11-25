@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Definition 2.2.1 – Sosu
+    Exercise 2.2.5 (Proposition 2.2.14) – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Definition 2.2.1' />
+      <meta property='og:title' content='Exercise 2.2.5 (Proposition 2.2.14)' />
     
     
       <base href='/sosu/' />
@@ -215,6 +215,17 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/chapter2/Exercise'>
+      Exercise
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href='Tao/chapter2'>
       chapter2
     </a>
@@ -252,6 +263,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -273,20 +288,152 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Definition 2.2.1
+    Exercise 2.2.5 (Proposition 2.2.14)
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong><strong>Definition 2.2.1.</strong></strong> (Addition of natural numbers). Let <span class='math inline'>\(m\)</span> be a natural number. To add zero to <span class='math inline'>\(m\)</span>, we define <span class='math inline'>\(0+m:=m\)</span>. Now suppose inductively that we have defined how to add <span class='math inline'>\(n\)</span> to <span class='math inline'>\(m\)</span>. Then we can add <span class='math inline'>\(n\pp\)</span> to <span class='math inline'>\(m\)</span> by defining <span class='math inline'>\((n\pp)+m:=(n+m)\pp\)</span>
+      2.2.5. Prove Proposition 2.2.14. (Hint: define <span class='math inline'>\(Q(n)\)</span> to be the property that <span class='math inline'>\(P(m)\)</span> is true for all <span class='math inline'>\(m_0\leq m&lt;n\)</span>; note that <span class='math inline'>\(Q(n)\)</span> is vacuously ture when <span class='math inline'>\(n\leq m_0\)</span>.)
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          + Define <span class='math inline'>\(Q(n)\)</span>: <span class='math inline'>\(\forall n\in\mathbb{N},~Q(n)\)</span> is the property that <span class='math inline'>\(\forall m~(m_0\leq m&lt;n), ~P(m)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\forall m'~(m_0\leq m'&lt;m),~P(m')\)</span> is true <span class='math inline'>\(\implies P(m)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m'~(m_0\leq m'&lt;m),~P(m')\)</span> is true <span class='math inline'>\(\implies P(m)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { From the definition of <span class='math inline'>\(Q(n)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall m\geq m_0,~Q(m)\)</span> is true <span class='math inline'>\(\implies P(m)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\forall n,~Q(n)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Base case: Show that <span class='math inline'>\(Q(0)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m~(m_0\leq m&lt;0),~P(m)\)</span> is true.
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { show that the hypothesis is false to show that the implication is vacuously true }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m~ m&lt;0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.11: <span class='math inline'>\(m&lt;n\)</span> iff <span class='math inline'>\((n=m+a)\land (m\neq n)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((0=m+a) \land (0\neq m)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Corollary 2.2.9: <span class='math inline'>\(a+b=0\implies a=0\land b=0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          False
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\cdots\)</span> True
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(Q(n\pp)\)</span> is true when
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(Q(n)\)</span> is true <span class='math inline'>\(\equiv\forall m~(m_0\leq m&lt;n),~P(m)\)</span> is true
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m~(m_0\leq m&lt;n\pp),~P(m)\)</span> is true
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proposition 2.2.12 (e): <span class='math inline'>\(a&lt;b\)</span> iff <span class='math inline'>\(a\pp\leq b\)</span>, <span class='math inline'>\(m&lt;n\pp\implies m\pp\leq n\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~~~\)</span> Proposition 2.2.12 (d): <span class='math inline'>\(a\geq b\)</span> iff <span class='math inline'>\(a+c\geq b+c\)</span>: <span class='math inline'>\(m\pp\leq n\pp\implies m\leq b\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall m~(m_0\leq m\leq n), ~P(m)\)</span> is true
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Inductive hypothesis }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(m=n,~P(m)\)</span> is true
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/definition-2.2.1.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/chapter2/Exercise/exercise-2.2.5.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -298,32 +445,6 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/chapter2/Exercise/exercise-2.2.1'>
-            Exercise 2.2.1 (Proposition 2.2.5)
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(=\)</span> { <a href='Tao/chapter2/definition-2.2.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 2.2.1</a>: <span class='math inline'>\((n\pp)+m := (n+m)\pp\)</span> }</p></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/chapter2/definition-2.2.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 2.2.1</a>: <span class='math inline'>\(0 + m := m\)</span> }</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
