@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=164392aa-a509-4108-a5fc-8200fbd40d23' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=6403b0c4-2a39-4438-a74d-f510c6644ad2' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -281,6 +281,10 @@
   
     <p class='mb-3'>
       <strong>Proposition 2.2.13</strong> (Trichotomy of order for natural numbers). <em>Let <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> be natural numbers. Then excactly one of the following statements is true: <span class='math inline'>\(a&lt;b, a=b\)</span>, or <span class='math inline'>\(a&gt;b\)</span>.</em>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='math inline'>\(Proof~by~Tao\)</span> This is only sketch of the proof; the gaps will be filled in <a href='Tao/chapter2/Exercise/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-2.2.4</a>.<br /><span class='math inline'>\(~~\)</span> First, we show that we cannot have more than one of the statments <span class='math inline'>\(a&lt;b,~a=b,~ a&gt;b\)</span> holding at the same time. If <span class='math inline'>\(a&lt;b\)</span> then <span class='math inline'>\(a\neq b\)</span> by <a href='Tao/chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition</a>, and if <span class='math inline'>\(a&gt;b\)</span> then <span class='math inline'>\(a\neq b\)</span> by <a href='Tao/chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition</a>. If <span class='math inline'>\(a&gt;b\)</span> and <span class='math inline'>\(a&lt;b\)</span> then by <a href='Tao/chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.12</a> we have <span class='math inline'>\(a=b\)</span>, a contradiction. Thus no more than one of the statements is true. <span class='math inline'>\(~~\)</span> Now we show that at least one of the statements is true. We keep <span class='math inline'>\(b\)</span> fixed and induct on <span class='math inline'>\(a\)</span>. When <span class='math inline'>\(a=0\)</span> we have <span class='math inline'>\(0\leq b\)</span> for all <span class='math inline'>\(b\)</span> (<a href='Tao/chapter2/Exercise/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>), so we have either <span class='math inline'>\(0=b\)</span> or <span class='math inline'>\(0&lt;b\)</span>, which proves the base case. Now suppose we have proven the proposition for <span class='math inline'>\(a\)</span>, and now we prove the proposition for <span class='math inline'>\(a\pp\)</span>. Form the trichotomy for <span class='math inline'>\(a\)</span>, there are three cases: <span class='math inline'>\(a&lt;b,~a=b\)</span>, and <span class='math inline'>\(a&gt;b\)</span>. If <span class='math inline'>\(a&gt;b\)</span>, then <span class='math inline'>\(a\pp&gt;b\)</span> (<a href='Tao/chapter2/Exercise/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>). If <span class='math inline'>\(a=b\)</span>, then <span class='math inline'>\(a\pp&gt;b\)</span> (<a href='Tao/chapter2/Exercise/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>). Now suppose that <span class='math inline'>\(a&lt;b\)</span>. Then by <a href='Tao/chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.12</a>, we have <span class='math inline'>\(a\pp\leq b\)</span>. Thus either <span class='math inline'>\(a\pp=b\)</span> or <span class='math inline'>\(a\pp&lt;b\)</span>, and in either case we are done. This closes the induction. <span class='math inline'>\(\square\)</span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
