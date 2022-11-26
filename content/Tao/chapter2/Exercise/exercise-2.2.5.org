@@ -1,4 +1,4 @@
-#+title: Exercise 2.2.5 (Proposition 2.2.14) [WIP]
+#+title: Exercise 2.2.5 (Proposition 2.2.14) [TODO]
 
 2.2.5. Prove Proposition 2.2.14. (Hint: define $Q(n)$ to be the property that $P(m)$ is true for all $m_0\leq m<n$; note that $Q(n)$ is vacuously ture when $n\leq m_0$.)
 
