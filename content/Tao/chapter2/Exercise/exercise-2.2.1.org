@@ -48,7 +48,7 @@
     - $((a+b)+c)\pp$
 
   - $=$ { inductive hypothesis,
-  - $~~~~$  Substitution Axiom $\forall f\forall a\forall b.~ a = b \rightarrow f(a) = f(b)$}
+  - $~~~~$  [[../../Appendix/AxiomOfEquality.org][Substitution Axiom]] $\forall f\forall a\forall b.~ a = b \rightarrow f(a) = f(b)$ }
 
     - $(a+(b+c))\pp$
 
