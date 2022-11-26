@@ -2,3 +2,5 @@
 
 
 **Lemma 2.2.10.** /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./
+
+$Proof$. See [[./Exercise/exercise-2.2.2.org][Exercise 2.2.2]].

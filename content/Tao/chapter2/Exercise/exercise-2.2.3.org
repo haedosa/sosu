@@ -24,11 +24,11 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
 - $\Vdash$ $a=a$
 
-- $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+- $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
 
   - $a=a+0$
 
-- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+- $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
 
   - $a\geq a$.
 
@@ -38,13 +38,13 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
 - $\bullet$ Show that $(a\geq b)\land(b\geq c)\implies a\geq c$
 - $\Vdash$ $(a\geq b)\land(b\geq c)$
-- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+- $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
   - $(a=b+d)\land(b=c+e)$ for some natural numbers $d,e$
 - $\equiv$ { Substitute $b$ using $b=c+e$ }
   - $a=c+e+d$ for some natural numbers $d,e$
 - $\equiv$ { sum of two natural numbers is a natural number: $e+d=n$ for some natural number $n$ }
   - $a=c+n$ for some natural number $n$
-- $\equiv$ { Definition 2.2.11: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
+- $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
   - $a\geq c$
 - $\square$
 
@@ -52,7 +52,7 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
 - $\bullet$ Show that $(a\geq b)\land(b\geq a)\implies a=b$
 - $\Vdash$ $(a\geq b)\land(b\geq a)$
-- $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+- $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
   - $(a=b+d)\land(b=a+e)$ for some natural numbers $d,e$
 
 - $\equiv$ { find $d,e$ }
@@ -61,21 +61,21 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
     - $a=a+e+d$
 
-  - $\equiv$ { Lemma 2.2.2: ${}^\forall n,~n+0=n$ }
+  - $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
 
     - $a+0=a+e+d$
 
-  - $\equiv$ { Proposition 2.2.6: Cancelation law, ${}^\forall a{}^\forall b{}^\forall c\in\mathbb{N},~ a+b=a+c\implies b=c$ }
+  - $\equiv$ { [[../proposition-2.2.6.org][cancellation law:]] $a+b=a+c\implies b=c$ }
 
     - $0=e+d$
 
-  - $\equiv$ { Corollary 2.2.9: ${}^\forall a{}^\forall b\in\mathbb{N},~a+b=0\implies (a=0)\land(b=0)$ }
+  - $\equiv$ { [[../corollary-2.2.9.org][Corollary 2.2.9]]: $a+b=0\implies (a=0)\land(b=0)$ }
 
     - $(d=0)\land(e=0)$
 
 - $\cdots$ $(a=b+0)\land(b=a+0)$
 
-- $\equiv$ { Lemma 2.2.2:${}^\forall n,~n+0=n$ }
+- $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
 
   - $(a=b)\land(b=a)$
 
@@ -87,24 +87,24 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 - $\Vdash$ $a\geq b\iff a+c\geq b+c$
   - $\bullet$ Show that $a\geq b\implies a+c\geq b+c$
   - $\Vdash$ $a\geq b$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a=b+d$
-  - $\equiv$ { Substitution axiom: $x=y\implies f(x)=f(y)$ }
+  - $\equiv$ { [[../../Appendix/AxiomOfEquality.org][Substitution axiom]]: $x=y\implies f(x)=f(y)$ }
     - $a+c=b+d+c$
-  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+  - $\equiv$ { [[../proposition-2.2.4.org][addition is commutative]]: $n+m=m+n$ }
     - $a+c=b+c+d$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a+c\geq b+c$
   - $\square$
   - $\bullet$ Show that $a+c\geq b+c\implies a\geq b$
   - $\Vdash$ $a+c\geq b+c$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a+c=b+c+d$
-  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+  - $\equiv$ { [[../proposition-2.2.4.org][addition is commutative]]: $n+m=m+n$ }
     - $a+c=b+d+c$
-  - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+  - $\equiv$ { [[../proposition-2.2.6.org][cancellation law]]: $a+b=a+c\implies b=c$ }
     - $a=b+d$
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
     - $a\geq d$
   - $\square$
 - $\square$
@@ -118,63 +118,64 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
   - $\Vdash$ $a<b$
 
-  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
 
     - $(a\leq b)\land(a\neq b)$
 
-  - $\equiv$ { Definition 2.2.11:$n\geq m$ iff $n=m+a$ for some natural number $a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $n\geq m$ iff $n=m+a$ for some natural number $a$ }
 
     - $(b=a+d)\land(a\neq b)$
 
-  - $\equiv$ { show that $d\neq0$ }
+  - $\implies$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction }
 
-    - $\bullet$ For sake of constradiction, suppose that
+    - $\bullet$ Show that there is a contradiction, when
+    - -- $a\neq b$
 
-    - $\textnormal{--}$ $d=0$
+    - -- $d=0$
 
     - $\Vdash$ $b=a+d$
 
-    - $\equiv$ { assumption $d=0$ }
+    - $\equiv$ { assumption: $d=0$ }
 
       - $b=a+0$
 
-    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+    - $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
 
       - $b=a$
 
-    - $\equiv$ { $a\neq b$ }
+    - $\vdash$ { assumption: $a\neq b$ }
 
-      - Contradiction
+      - $\bot$
 
     - $\square$
 
   - $\cdots$ $(b=a+d)\land(d\neq0)$
 
-  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+  - $\equiv$ { [[../definition-2.2.7.org][Definition 2.2.7]]: a natural number $n$ is positive iff $n\neq 0$ }
 
     - $(b=a+d)\land(d\textnormal{ is positive})$
 
-  - $\equiv$ { Lemma 2.2.10: For a positive number $n$, $\exists! m,~ m\pp=n$ }
+  - $\equiv$ { [[../lemma-2.2.10.org][Lemma 2.2.10]]: For a positive number $n$, $\exists! m,~ m\pp=n$ }
 
     - $b=a+(m\pp)$
 
-  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+  - $\equiv$ { [[../lemma-2.2.3.org][Lemma 2.2.3]]: $n+(m\pp)=(n+m)\pp$ }
 
     - $b=(a+m)\pp$
 
-  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$ }
+  - $\equiv$ { [[../proposition-2.2.4.org][addition is commutative]]: $n+m=m+n$ }
 
     - $b=(m+a)\pp$
 
-  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+  - $\equiv$ { [[../lemma-2.2.3.org][Lemma 2.2.3]]: $n+(m\pp)=(n+m)\pp$ }
 
     - $b=m+(a\pp)$
 
-  - $\equiv$ { Proposition 2.2.4: $n+m=m+n$  }
+  - $\equiv$ { [[../proposition-2.2.4.org][addition is commutative]]: $n+m=m+n$  }
 
     - $b=(a\pp)+m$
 
-  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]] : $m\leq n$ iff $n=m+a$ }
 
     - $a\pp\leq b$
 
@@ -184,46 +185,47 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
   - $\Vdash$ $a\pp\leq b$
 
-  - $\equiv$ { Definition 2.2.11 : $m\leq n$ iff $n=m+a$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]] : $m\leq n$ iff $n=m+a$ }
 
     - $b=(a\pp)+n$
 
-  - $\equiv$ { Deifinition 2.2.1: $(n\pp)+m := (n+m)\pp$ }
+  - $\equiv$ { [[../definition-2.2.1.org][definition of addition]]: $(n\pp)+m := (n+m)\pp$ }
 
     - $b=(a+n)\pp$
 
-  - $\equiv$ { Lemma 2.2.3: $n+(m\pp)=(n+m)\pp$ }
+  - $\equiv$ { [[../lemma-2.2.3.org][Lemma 2.2.3]]: $n+(m\pp)=(n+m)\pp$ }
 
     - $b=a+(n\pp)$
 
-  - $\equiv$ { show that $b=a+(n\pp)\implies b\neq a$ }
+  - $\implies$ { show that $b=a+(n\pp)\implies b\neq a$ by a proof by contradiction }
 
-    - $\bullet$ For sake of contradiction, suppose that
+    - $\bullet$ Show that there is a contradiction, when
 
-    - $\textnormal{--}$ $b=a$
+    - -- $b=a+(n\pp)$
+    - -- $b=a$
 
     - $\Vdash$ $b=a+(n\pp)$
 
-    - $\equiv$ { assumption $b=a$ }
+    - $\equiv$ { assumption: $b=a$ }
 
       - $a=a+(n\pp)$
 
-    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+    - $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
 
       - $a+0=a+(n\pp)$
 
-    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+    - $\equiv$ { [[../proposition-2.2.6.org][cancellation law]]: $a+b=a+c\implies b=c$ }
 
       - $0=n\pp$
 
-    - $\equiv$ { Axiom 2.3: $n\pp\neq0$ for every natural number $n$ }
+    - $\vdash$ { [[../axiom-2.3.org][Axiom 2.3]]: $n\pp\neq0$ for every natural number $n$ }
 
-      - Contradiction
+      - $\bot$
 
     - $\square$
 
   - $\cdots$ $(b=a+(n\pp))\land(b\neq a)$
-  - $\equiv$ { Definition 2.2.11: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m<n$ iff $(m\leq n)\land(m\neq n)$ }
 
     - $a<b$
 
@@ -236,44 +238,46 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 - $\Vdash$ $a<b\iff(b=a+d)\land(d\textnormal{ is positive})$
   - $\bullet$ Show that $a<b\implies (b=a+d)\land(d\textnormal{ is positive})$
   - $\Vdash$ $a<b$
-  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
-  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m\leq n$ iff $n=m+a$,
+  - $\hspace{5.3cm}$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
     - $(b=a+d)\land(a\neq b)$
-  - $\equiv$ { show that $d\neq0$ }
-    - $\bullet$ For sake of contradiction, suppose that
-    - $\textnormal{--}$ $d=0$
+  - $\implies$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction}
+    - $\bullet$ Show that there is a contradiction, when
+    - -- $a\neq b$
+    - -- $d=0$
     - $\Vdash$ $b=a+d$
-    - $\equiv$ { assumption $d=0$ }
+    - $\equiv$ { assumption: $d=0$ }
       - $b=a+0$
-    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+    - $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
       - $b=a$
-    - $\equiv$ { $a\neq b$ }
-      - Contradiction
+    - $\vdash$ { assumption: $a\neq b$ }
+      - $\bot$
     - $\square$
   - $\cdots$ $(b=a+d)\land(d\neq0)$
-  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+  - $\equiv$ { [[../definition-2.2.7.org][Definition 2.2.7]]: a natural number $n$ is positive iff $n\neq 0$ }
     - $(b=a+d)\land(d\textnormal{ is positive})$
   - $\square$
   - $\bullet$ Show that $(b=a+d)\land(d\textnormal{ is positive})\implies a<b$
   - $\Vdash$ $(b=a+d)\land(d\textnormal{ is positive})$
-  - $\equiv$ { Definition 2.2.7: a natural number $n$ is positive iff $n\neq 0$ }
+  - $\equiv$ { [[../definition-2.2.7.org][Definition 2.2.7]]: a natural number $n$ is positive iff $n\neq 0$ }
     - $(b=a+d)\land(d\neq0)$
-  - $\equiv$ { show that $b\neq a$ }
-    - $\bullet$ For sake of contradiction, suppose that
-    - $\textnormal{--}$ $b=a$
+  - $\implies$ { show that when $b=a+d$, $d\neq0\implies b\neq a$ by a proof by contradiction }
+    - $\bullet$ Show that there is a contradiction, when
+    - -- $d\neq0$
+    - -- $b=a$
     - $\Vdash$ $b=a+d$
-    - $\equiv$ { assumption $b=a$ }
+    - $\equiv$ { assumption: $b=a$ }
       - $a=a+d$
-    - $\equiv$ { Lemma 2.2.2: $n+0=n$ }
+    - $\equiv$ { [[../lemma-2.2.2.org][Lemma 2.2.2]]: $n+0=n$ }
       - $a+0=a+d$
-    - $\equiv$ { Proposition 2.2.6: $a+b=a+c\implies b=c$ }
+    - $\equiv$ { [[../proposition-2.2.6.org][cancellation law]]: $a+b=a+c\implies b=c$ }
       - $0=d$
-    - $\equiv$ { $d\neq0$ }
-      - Contradiction
+    - $\vdash$ { $d\neq0$ }
+      - $\bot$
     - $\square$
   - $\cdots$ $(b=a+d)\land(b\neq a)$
-  - $\equiv$ { Definition 2.2.11: $m\leq n$ iff $n=m+a$,
-  - $~~~~~~~~~~~~~~~~~~$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
+  - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m\leq n$ iff $n=m+a$,
+  - $\hspace{5.3cm}$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
     - $a<b$
   - $\square$
 - $\square$

@@ -10,11 +10,11 @@ Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
 
   - $\bullet$ Base case: show that $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$, when
 
-  - $\textnormal{--}$ $a=0$
+  - -- $a=0$
 
   - $\Vdash$ $0\neq0\implies \exists!b\in\mathbb{N}.~b\pp=0$
 
-  - $\equiv$ { implication is vacuously true since $0\neq0$ is false }
+  - $\equiv$ { implication is vacuously true since the premise $0\neq0$ is false }
 
     - True
 
@@ -22,7 +22,7 @@ Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
 
   - $\bullet$ Inductive step: show that $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp$, when
 
-  - $\textnormal{--}$ $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$
+  - -- $\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a$
 
   - $\Vdash$ $\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp$
 
@@ -44,7 +44,7 @@ Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
 
     - $\bullet$ Uniqueness of $b$
 
-    - $\textnormal{--}$ $\forall a\pp\in\mathbb{N}.~a\pp\neq0$
+    - -- $\forall a\pp\in\mathbb{N}.~a\pp\neq0$
     - $\Vdash$           $\forall b, \forall c\in\mathbb{N}.~(b\pp=a\pp)\land (c\pp=a\pp)$
     - $\Rightarrow$  {$b=a$, $c=a$ by [[../axiom-2.4.org][Axiom 2.4]] }
       - $\forall b, \forall c\in\mathbb{N}.~(b=a)\land (c=a)$

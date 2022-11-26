@@ -1,0 +1,5 @@
+#+title: Proposition 2.2.6
+
+**Proposition 2.2.6** (Cancellation law). /Let $a,b,c$ be natural numbers such that $a+b=a+c$. Then we have $b=c$./
+
+$Proof~by~Tao$. We prove this by induction on $a$. First consider the base case $a=0$. Then we have $0+b=0+c$, which by [[./definition-2.2.1.org][definition of addition]] implies that $b=c$ as desired. Now suppose inductively that we have the cancellation law for $a$ (so that $a+b=a+c$ implies $b=c$); we now have to prove the cancellation law for $a\pp$. In other words, we assume that $(a\pp)+b=(a\pp)+c$ and need to show that $b=c$. By the [[./definition-2.2.1.org][definition of addition]], $(a\pp)+b=(a+b)\pp$ and $(a\pp)+c=(a+c)\pp$ and so we have $(a+b)\pp=(a+c)\pp$. By [[./axiom-2.4.org][Axiom 2.4]], we have $a+b=a+c$. Since we already have the cancellation law for $a$, we thus have $b=c$ as desired. This closes the induction. $\square$

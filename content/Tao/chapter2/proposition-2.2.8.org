@@ -2,4 +2,4 @@
 
 **Proposition 2.2.8** /If $a$ is positive and $b$ is a natural number, then $a+b$ is positive (and hence $b+a$ is also, by [[./proposition-2.2.4.org][Proposition 2.2.4]]./
 
-$Proof$. We use induction on $b$. If $b=0$, then $a+b=a+0=a$, which is positive, so this proves the base case Now suppose inductively that $a+b$ is positive. Then $a+(b\pp)=(a+b)\pp$, which cannot be zero by [[./axiom-2.3.org][Axiom 2.3]], and is hence positive. This closes the induction. $\square$
+$Proof~by~Tao$. We use induction on $b$. If $b=0$, then $a+b=a+0=a$, which is positive, so this proves the base case Now suppose inductively that $a+b$ is positive. Then $a+(b\pp)=(a+b)\pp$, which cannot be zero by [[./axiom-2.3.org][Axiom 2.3]], and is hence positive. This closes the induction. $\square$
