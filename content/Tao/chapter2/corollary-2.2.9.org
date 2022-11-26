@@ -6,7 +6,7 @@ $Proof$. Suppose for the sake of contradiction that $a\neq0$ or $b\neq0$. If $a\
 
 
 
-$Proof in structured derivation$
+$Proof~in~structured~derivation$
 - $\bullet$ Show that $a,b\in\mathbb{N}.~a+b=0\implies a=0\land b=0$.
 
 - $\Vdash$ { Proof by contradiction }
