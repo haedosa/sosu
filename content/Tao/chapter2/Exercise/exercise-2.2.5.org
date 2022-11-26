@@ -1,4 +1,4 @@
-#+title: Exercise 2.2.5 (Proposition 2.2.14)
+#+title: Exercise 2.2.5 (Proposition 2.2.14) [WIP]
 
 2.2.5. Prove Proposition 2.2.14. (Hint: define $Q(n)$ to be the property that $P(m)$ is true for all $m_0\leq m<n$; note that $Q(n)$ is vacuously ture when $n\leq m_0$.)
 
@@ -13,9 +13,9 @@
   - $\Vdash$ $\forall m~(m_0\leq m<0),~P(m)$ is true.
   - $\equiv$ { show that the hypothesis is false to show that the implication is vacuously true }
     - $\Vdash$ $\forall m~ m<0$
-    - $\equiv$ { Definition 2.2.11: $m<n$ iff $(n=m+a)\land (m\neq n)$  }
+    - $\equiv$ { [[../definition-2.2.11.org][Definition 2.2.11]]: $m<n$ iff $(n=m+a)\land (m\neq n)$  }
       - $(0=m+a) \land (0\neq m)$
-    - $\equiv$ { Corollary 2.2.9: $a+b=0\implies a=0\land b=0$ }
+    - $\equiv$ { [[../corollary-2.2.9.org][Corollary 2.2.9]]: $a+b=0\implies a=0\land b=0$ }
       - False
     - $\square$
   - $\cdots$ True

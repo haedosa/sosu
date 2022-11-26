@@ -1,0 +1,5 @@
+#+title: Corollary 2.2.9
+
+**Corollary 2.2.9** /If $a$ and $b$ are natural numbers such that $a+b=0$, then $a=0$ and $b=0$.
+
+$Proof$. Suppose for the sake of contradiction that $a\neq0$ or $b\neq0$. If $a\neq0$ then $a$ is positive, and hence $a+b=0$ is positive by [[proposition-2.2.8.org][Propostion 2.2.8]], a contradiction. Similarly if $b\neq0$ then $b$ is positive, and again $a+b=0$ is positive by [[proposition-2.2.8.org][Proposition 2.2.8]], a contradiction. Thus $a$ and $b$ must both be zero. $\square$

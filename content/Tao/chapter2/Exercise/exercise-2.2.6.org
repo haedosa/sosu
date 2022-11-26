@@ -1,0 +1,3 @@
+#+title: Exercise 2.2.6 [TODO]
+
+Let $n$ be a natural number, and let $P(m)$ be a property pertaining to the natural numbers such that whenever $P(m\pp)$ is true, then $P(m)$  is true. Suppose that $P(n)$ is also true. Prove that $P(m)$ is true for all natural numbers $m\leq n$; this is known as the $principle~of~backwards~induction$. (Hint: apply induction to the varable $n$.)
