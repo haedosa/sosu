@@ -15,4 +15,4 @@
 - /(f) $a<b$ if and only if $b=a+d$ for some positive number $a$./
 
 
-$Proof$ See [[./Exercise/exercise-2.2.3.org][Exercise 2.2.3]].
+$Proof$ See [[./Exercises/exercise-2.2.3.org][Exercise 2.2.3]].

@@ -1,0 +1,5 @@
+#+title: Proposition 2.3.5
+
+*Propostion 2.3.5* (Multiplication is associative). /For any natural numbers $a,b,c$, we ahve $(a \times b) \times c = a \times (b \times c)$.
+
+$Proof$ See [[./Exercises/exercise-2.3.3.org][Exercise 2.3.3]].

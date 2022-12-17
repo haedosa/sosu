@@ -37,6 +37,10 @@
   :PROPERTIES:
   :CUSTOM_ID: definition-2.2.11
   :END:
+- *Definition 2.3.1* (Multiplication of natural numbers). Let $m$ be a natural number. To multiply zero to $m$, we deﬁne $0 \times m := 0$. Now suppose inductively that we have deﬁned how to multiply $n$ to $m$. Then we can multiply $n\pp$ to $m$ by deﬁning $(n\pp) \times m := (n \times m) + m$.
+  :PROPERTIES:
+  :CUSTOM_ID: definition-2.3.1
+  :END:
 
 * Propositions
 

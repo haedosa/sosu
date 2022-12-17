@@ -2,4 +2,4 @@
 
 *Proposition 2.2.5* (Addition is associative) /For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./
 
-$Proof$ See [[./Exercise/exercise-2.2.1.org][Exercise 2.2.1]].
+$Proof$ See [[./Exercises/exercise-2.2.1.org][Exercise 2.2.1]].
