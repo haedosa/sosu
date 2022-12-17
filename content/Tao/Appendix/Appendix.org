@@ -17,53 +17,11 @@ The truth table of logical implication
 | F   | F   | T             | T         | T               |
 |-----+-----+---------------+-----------+-----------------|
 
-*** A.1.1
 
-- $\bullet$ What is the negation of the statement "either X is true, or Y is true, but not both"?
+** Exercise
 
-- $(1)$ Logical expression for "either X is true or Y is true" is $X \lor Y$
-
-- $(2)$ Logical expression for "not both" is $\lnot(X \land Y)$
-
-- $(3)$ Logical expression for "either X is true or Y is true, /but/ not both" is $(X \lor Y) \land\lnot(X\land Y)$
-
-- $\Vdash$ $\lnot((X \lor Y) \land\lnot(X\land Y))$
-
-- $\equiv$ {  Distribution of negation over $\land$:
-                          ${}^\forall p {}^\forall q. \ \lnot (p \land q) \equiv (\lnot p \lor \lnot q)$
-                       }
-
-      $\lnot(X \lor Y) \lor \lnot(\lnot(X\land Y))$
-
-- $\equiv$ {  Double Negation:
-                          ${}^\forall p. \ \lnot \lnot p \equiv p$
-                      }
-
-      $\lnot(X \lor Y) \lor (X\land Y)$
-
-- $\equiv$ {  Distribution of negation over $\lor$:
-                          ${}^\forall p {}^\forall q. \ \lnot (p \lor q) \equiv (\lnot p \land \lnot q)$
-                       }
-
-     $(\lnot X \land \lnot Y) \lor (X\land Y)$
-
-- $\equiv$ {  By converting the logical expression into a sentence }
-
-      Neither X is true nor Y is true or both are true
-
-- $\square$
-
-
-#+ATTR_LATEX: :align |c|c|c|c|c|c|c|c|
-|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
-| $X$ | $Y$ | $X \lor Y$ | $X\land Y$ | $\lnot(X\land Y)$ | $(X \lor Y) \land\lnot(X\land Y)$ | $\lnot(X \lor Y)$ | $(\lnot X\land\lnot Y)\lor (X\land Y)$ |
-|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
-| T   | T   | T          | T          | F                 | F                                 | F                 | T                                      |
-| T   | F   | T          | F          | T                 | T                                 | F                 | F                                      |
-| F   | T   | T          | F          | T                 | T                                 | F                 | F                                      |
-| F   | F   | F          | F          | T                 | F                                 | T                 | T                                      |
-|-----+-----+------------+------------+-------------------+-----------------------------------+-------------------+----------------------------------------|
-
+- *A.1.1*. What is the negation of the statement "either x is true, or y is true, but not both"?
+  - Our Answer [[./Exercises/exercise-A.1.1.org][A.1.1]]
 
 *** A.1.2
 What is the negation of the statement "X is true if and only if Y is true"? (There may be multiple ways to phrase this negation).
