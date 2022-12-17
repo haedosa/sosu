@@ -1,0 +1,168 @@
+
+
+* Axiom
+
+- *Axiom 2.1.* /$0$ is a natural number./
+  :PROPERTIES:
+  :CUSTOM_ID: axiom-2.1
+  :END:
+- *Axiom 2.2.* /If $n$ is a natural number, then $n\pp$ is also a natural number./
+  :PROPERTIES:
+  :CUSTOM_ID: axiom-2.2
+  :END:
+- *Axiom 2.3.* /$0$ is not the sucessor of any natural number; i.e., we have $n\pp\neq0$ for every natural number $n$./
+  :PROPERTIES:
+  :CUSTOM_ID: axiom-2.3
+  :END:
+- *Axiom 2.4.* /Different natural numbers must have different successors; i.e., if $n,~m$ are natural numbers and $n\neq m$, then $n\pp\neq m\pp$. Equivalently, if $n\pp=n\pp$, then we must have $n=m$./
+  :PROPERTIES:
+  :CUSTOM_ID: axiom-2.4
+  :END:
+- *Axiom 2.5* (Principle of mathematical induction). /Let $P(n)$ be any property pertaining to a natural number $n$. Suppose that $P(0)$ is true, and suppose that whenever $P(n)$ is true, $P(n\pp)$ is also true. Then $P(n)$ is true for every natural number $n$./
+  :PROPERTIES:
+  :CUSTOM_ID: axiom-2.5
+  :END:
+
+* Definitions
+
+- *Definition 2.2.1* (Addition of natural numbers). Let $m$ be a natural number. To add zero to $m$, we define $0+m:=m$. Now suppose inductively that we have defined how to add $n$ to $m$. Then we can add $n\pp$ to $m$ by defining $(n\pp)+m:=(n+m)\pp$
+  :PROPERTIES:
+  :CUSTOM_ID: definition-2.2.1
+  :END:
+- *Definition 2.2.7* (Positive natural numbers). A natural number $n$ is said to be $positive$ iff it is not equal to $0$.
+  :PROPERTIES:
+  :CUSTOM_ID: definition-2.2.7
+  :END:
+- *Definition 2.2.11* (Ordering of the natural numbers). Let $n$ and $m$ be natural numbers. We say that $n$ is /greater than or equal to/ $m$, and write $n\geq m$ or $m\leq n$, iff we have $n=m+a$ for some natural number $a$. We say that $n$ is /strictly greater than/ $m$, and write $n>m$ or $m<n$, iff $n\geq m$ and $n\neq m$.
+  :PROPERTIES:
+  :CUSTOM_ID: definition-2.2.11
+  :END:
+
+* Propositions
+
+- *Lemma 2.2.2.* /For any natural number $n$, $n+0=n$./
+  :PROPERTIES:
+  :CUSTOM_ID: lemma-2.2.2
+  :END:
+
+  - [[./Chapter2/lemma-2.2.2.org][Proof by Tao]]
+
+- *Lemma 2.2.3.* /For any natural number $n$ and $m$, $n+(m\pp)=(n+m)\pp$./
+  :PROPERTIES:
+  :CUSTOM_ID: lemma-2.2.3
+  :END:
+
+  - [[./Chapter2/lemma-2.2.3.org][Proof by Tao]]
+
+
+- *Proposition 2.2.4* (Addition is commutative). /For any natural numbers $n$ and $m$, $n+m=m+n$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.4
+  :END:
+
+  - [[./Chapter2/proposition-2.2.4.org][Proof by Tao]]
+
+- *Proposition 2.2.5* (Addition is associative). /For any natural numbers $a,b,c$, we have $(a+b)+c=a+(b+c)$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.5
+  :END:
+
+  - [[./Chapter2/proposition-2.2.5.org][Proof by Tao]]
+
+- *Lemma 2.2.10.* /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.10
+  :END:
+
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.2.2.org][Exercise 2.2.2]].
+
+- *Lemma 2.3.2* (Multiplication is commutative). /Let $n$ and $m$ be natural numbers. Then $n \times m = m \times n$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.2
+  :END:
+
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.1.org][Exercise 2.3.1]].
+
+* Exercises
+
+ - *Exercise 2.2.1.* Prove [[./Chapter2/proposition-2.2.5.org][Proposition 2.2.5]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.1
+  :END:
+   (Hint: fix two of the variables and induct on the third.)
+
+   [[./Chapter2/Exercises/exercise-2.2.1.org][Exercise-2.2.1 with solution]]
+
+- *Exercise 2.2.2.* Prove [[./Chapter2/lemma-2.2.10.org][Lemma 2.2.10]].
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.2
+  :END:
+  (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
+
+   [[./Chapter2/Exercises/exercise-2.2.2.org][Exercise-2.2.2 with solution]]
+
+- *Exercise 2.2.3.* Prove [[./Chapter2/proposition-2.2.12.org][Propostion 2.2.12]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.3
+  :END:
+  (Hint: you will need many of the preceding propositions, colloraries, and lemmas.)
+
+   [[./Chapter2/Exercises/exercise-2.2.3.org][Exercise-2.2.3 with solution]]
+
+- *Exercise 2.2.4.* Justify the three statments marked (why?) in the proof of [[./Chapter2/proposition-2.2.13.org][Proposition 2.2.13]].
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.4
+  :END:
+
+- *Exercise 2.2.5.* Prove [[./Chapter2/proposition-2.2.14.org][Proposition 2.2.14]].
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.5
+  :END:
+  (Hint: define $Q(n)$ to be the property that $P(m)$ is true for all $m_0\leq m<n$; note that $Q(n)$ is vacuously ture when $n\leq m_0$.)
+
+   [[./Chapter2/Exercises/exercise-2.2.5.org][Exercise-2.2.5 with solution]]
+
+- *Exercise 2.2.6.* Let $n$ be a natural number, and let $P(m)$ be a property pertaining to the natural numbers such that whenever $P(m\pp)$ is true, then $P(m)$  is true. Suppose that $P(n)$ is also true. Prove that $P(m)$ is true for all natural numbers $m\leq n$; this is known as the $principle~of~backwards~induction$. (Hint: apply induction to the varable $n$.)
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.2.6
+  :END:
+
+   [[./Chapter2/Exercises/exercise-2.2.6.org][Exercise-2.2.6 with solution]]
+
+- *Exercise 2.3.1.* Prove [[./Chapter2/lemma-2.3.2.org][Lemma 2.3.2]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.3.1
+  :END:
+  (Hint: modify the proofs of [[./Chapter2/lemma-2.2.2.org][Lemmas 2.2.2]], [[./Chapter2/lemma-2.2.3.org][2.2.3]] and [[./Chapter2/proposition-2.2.4.org][Proposition 2.2.4]])
+
+   [[./Chapter2/Exercises/exercise-2.3.1.org][Exercise-2.3.1 with solution]]
+
+- *Exercise 2.3.2.* Prove [[./Chapter2/lemma-2.3.3.org][Lemma 2.3.3]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.3.2
+  :END:
+  (Hint: prove the second statement first.)
+
+   [[./Chapter2/Exercises/exercise-2.3.2.org][Exercise-2.3.2 with solution]]
+
+- *Exercise 2.3.3.* Prove [[./Chapter2/proposition-2.3.5.org][proposition 2.3.5]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.3.3
+  :END:
+  (Hint: modify the proof of Proposition 2.2.5 and use the distributive law.)
+
+   [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise-2.3.3 with solution]]
+
+- *Exercise 2.3.4.* Prove the identity $(a + b)^2 = a^2 + 2ab + b^2$ for all natural numbers $a,b$.
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.3.4
+  :END:
+
+   [[./Chapter2/Exercises/exercise-2.3.4.org][Exercise-2.3.4 with solution]]
+
+- *Exercise 2.3.5.* Prove Proposition [[./Chapter2/proposition-2.3.9.org][proposition 2.3.9]]
+  :PROPERTIES:
+  :CUSTOM_ID: excercise-2.3.5
+  :END:
+
+   [[./Chapter2/Exercises/exercise-2.3.5.org][Exercise-2.3.5 with solution]]
