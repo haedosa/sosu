@@ -45,11 +45,11 @@ Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
     - $\bullet$ Uniqueness of $b$
 
     - -- $\forall a\pp\in\mathbb{N}.~a\pp\neq0$
-    - $\Vdash$           $\forall b, \forall c\in\mathbb{N}.~(b\pp=a\pp)\land (c\pp=a\pp)$
+    - $\Vdash$ $(b\pp=a\pp)\land (c\pp=a\pp)$
     - $\Rightarrow$  {$b=a$, $c=a$ by [[../axiom-2.4.org][Axiom 2.4]] }
-      - $\forall b, \forall c\in\mathbb{N}.~(b=a)\land (c=a)$
+      - $(b=a)\land (c=a)$
     - $\equiv$   { [[../../Appendix/AxiomOfEquality.org][Symmetry axiom]] : $(c = a) \equiv (a = c)$  }
-      - $\forall b, \forall c\in\mathbb{N}.~(b=a)\land (a=c)$
+      - $(b=a)\land (a=c)$
     - $\Rightarrow$   { [[../../Appendix/AxiomOfEquality.org][Transitive axiom]]  }
       - $b=c$
     - $\square$
@@ -59,4 +59,4 @@ Prove [[../lemma-2.2.10.org][Lemma 2.2.10]].
 
 - $\square$
 
-In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether or not $P(n)$ is true
+In the inductive step, the inductive assumption $P(n)$ was not used. Since $P(n\pp)$ is true, $P(n)\implies P(n\pp)$ is always true whether $P(n)$ is true or not

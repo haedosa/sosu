@@ -1,30 +1,52 @@
-#+title: Exercise 2.2.5 (Proposition 2.2.14) [TODO]
+#+title: Exercise 2.2.5 (Proposition 2.2.14)
 
-2.2.5. Prove [[../proposition-2.2.14.org][Proposition 2.2.14]]. (Hint: define $Q(n)$ to be the property that $P(m)$ is true for all $m_0\leq m<n$; note that $Q(n)$ is vacuously ture when $n\leq m_0$.)
+2.2.5. Prove [[../proposition-2.2.14.org][Proposition 2.2.14]]. (Hint: define $Q(n)$ to be the property that $P(m)$ is true for all $m_0\leq m<n$; note that $Q(n)$ is vacuously true when $n\leq m_0$.)
 
-- + Define $Q(n)$: $\forall n\in\mathbb{N},~Q(n)$ is the property that $\forall m~(m_0\leq m<n), ~P(m)$ is true.
-- $\bullet$ Show that $\forall m'~(m_0\leq m'<m),~P(m')$ is true $\implies P(m)$ is true.
-- $\Vdash$ $\forall m'~(m_0\leq m'<m),~P(m')$ is true $\implies P(m)$ is true.
-- $\equiv$ { From the definition of $Q(n)$ }
-  - $\forall m\geq m_0,~Q(m)$ is true $\implies P(m)$ is true.
-  - $\bullet$ Show that $\forall n,~Q(n)$ is true.
-  - $\Vdash$ { Proof by induction on $n$ }
-  - $\bullet$ Base case: Show that $Q(0)$ is true.
-  - $\Vdash$ $\forall m~(m_0\leq m<0),~P(m)$ is true.
-  - $\equiv$ { show that the hypothesis is false to show that the implication is vacuously true }
-    - $\Vdash$ $\forall m~ m<0$
-    - $\equiv$ { [[../definition-2.2.11.org][Definition 2.2.11]]: $m<n$ iff $(n=m+a)\land (m\neq n)$  }
-      - $(0=m+a) \land (0\neq m)$
-    - $\equiv$ { [[../corollary-2.2.9.org][Corollary 2.2.9]]: $a+b=0\implies a=0\land b=0$ }
-      - False
-    - $\square$
-  - $\cdots$ True
+- + Define $Q(n)$: $\forall m~ (m_0\leq m <n),~P(m)$
+- $\bullet$ Show that $(\forall m, Q(m) \implies P(m)) \implies \forall m\geq m_0,~P(m)$
+  - $\bullet$ Show that  $\forall m\geq m_0,~P(m)$
+  - -- $(\forall m, Q(m) \implies P(m))$
+  - $\Vdash$  $\forall n,~ Q(n)$
+  - $\Rightarrow$ {  by Proof2 }
+    - $\forall m\geq m_0,~P(m)$
+  - $\equiv$ { by Proof1  and modus ponens }
+    - True
   - $\square$
-  - $\bullet$ Inductive step: show that $Q(n\pp)$ is true when
-  - -- $Q(n)$ is true $\equiv\forall m~(m_0\leq m<n),~P(m)$ is true
-  - $\Vdash$ $\forall m~(m_0\leq m<n\pp),~P(m)$ is true
-  - $\equiv$ { Proposition 2.2.12 (e): $a<b$ iff $a\pp\leq b$, $m<n\pp\implies m\pp\leq n\pp$
-  - $~~~~~$ Proposition 2.2.12 (d): $a\geq b$ iff $a+c\geq b+c$: $m\pp\leq n\pp\implies m\leq b$ }
-    - $\forall m~(m_0\leq m\leq n), ~P(m)$ is true
-  - $\equiv$ { Inductive hypothesis }
-    - $m=n,~P(m)$ is true
+- $\square$
+
+Proof1. $\left(\forall n, Q(n) \implies P(n)\right) \implies \forall n,~ Q(n)$
+  - $\bullet$ Show that $\forall n,~Q(n)$
+  - -- $Q(n) \implies P(n)$
+  - $\Vdash$ { proof by induction }
+    - $\bullet$ base case: show that $Q(0)$ is true when
+    - $\Vdash$ $\forall m~(m_0\leq m<0),~P(m)$ is true.
+    - $\equiv$ { Vacuously true since $m<0$ is false }
+      - True
+    - $\square$
+    - $\bullet$ Inductive step: show that $Q(n\pp)$ is true when
+    - -- $Q(n)$ is true $\left( Q(n) := \forall m~(m_0\leq m<n),~P(m)\right)$
+    - -- $Q(n) \implies P(n)$
+    - $\Vdash$ $\forall m~(m_0\leq m<n\pp),~P(m)$
+    - $\equiv$ { Proposition 2.2.12 (e): $a<b$ iff $a\pp\leq b$, $m<n\pp\implies m\pp\leq n\pp$
+    - $~~~~~$ Proposition 2.2.12 (d): $a\geq b$ iff $a+c\geq b+c$: $m\pp\leq n\pp\implies m\leq b$ }
+      - $\forall m~(m_0\leq m\leq n), ~P(m)$
+    - $\equiv$ { by definition  }
+      - $Q(n) \land P(n)$
+    - $\equiv$ { Inductive hypothesis $Q(n)$ is true and $Q(n) \implies P(n)$  }
+      - True
+    - $\square$
+  - $\square$
+
+Proof2. $\forall n,~Q(n)\implies \forall m\geq m_0,~P(m)$
+
+  - $\bullet$ Show that there is a contradiction, when
+  - (1) $\left( \forall m\geq m_0,~P(m) \right)$ is false
+  - (2) $\forall n,~Q(n)$
+  - $\Vdash$ $m' > m_0 \land P(m')$
+  - $\equiv$ { by assumption  (1) }
+    - False
+  - $\equiv$ { by assumption  (2) and $\forall n, Q(n) \Rightarrow P(n)$ }
+    - True
+  - $\vdash$ { excluded middle }
+    - \bot
+  - $\square$

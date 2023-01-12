@@ -126,7 +126,7 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
     - $(b=a+d)\land(a\neq b)$
 
-  - $\implies$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction }
+  - $\Rightarrow$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction }
 
     - $\bullet$ Show that there is a contradiction, when
     - -- $a\neq b$
@@ -197,7 +197,7 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
 
     - $b=a+(n\pp)$
 
-  - $\implies$ { show that $b=a+(n\pp)\implies b\neq a$ by a proof by contradiction }
+  - $\Rightarrow$ { show that $b=a+(n\pp)\implies b\neq a$ by a proof by contradiction }
 
     - $\bullet$ Show that there is a contradiction, when
 
@@ -241,7 +241,7 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
   - $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m\leq n$ iff $n=m+a$,
   - $\hspace{5.3cm}$ $m<n$ iff $(m\leq n)\land(n\neq m)$ }
     - $(b=a+d)\land(a\neq b)$
-  - $\implies$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction}
+  - $\Rightarrow$ { show that when $b=a+d$, $a\neq b\implies d\neq0$ by a proof by contradiction }
     - $\bullet$ Show that there is a contradiction, when
     - -- $a\neq b$
     - -- $d=0$
@@ -261,7 +261,7 @@ Prove [[../proposition-2.2.12.org][Propostion 2.2.12]]
   - $\Vdash$ $(b=a+d)\land(d\textnormal{ is positive})$
   - $\equiv$ { [[../definition-2.2.7.org][Definition 2.2.7]]: a natural number $n$ is positive iff $n\neq 0$ }
     - $(b=a+d)\land(d\neq0)$
-  - $\implies$ { show that when $b=a+d$, $d\neq0\implies b\neq a$ by a proof by contradiction }
+  - $\Rightarrow$ { show that when $b=a+d$, $d\neq0\implies b\neq a$ by a proof by contradiction }
     - $\bullet$ Show that there is a contradiction, when
     - -- $d\neq0$
     - -- $b=a$

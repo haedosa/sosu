@@ -23,11 +23,11 @@
 
   - $\bullet$ Base case: show that $(a+b)+c=a+(b+c)$, when
 
-  - $\textnormal{--}$ $a=0$
+  - -- $a=0$
 
   - $\Vdash$ $(0+b)+c=0+(b+c)$
 
-  - $\equiv$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $0 + m := m$ }
+  - $\equiv$ { [[../definition-2.2.1.org][definition of addition]]: $0 + m := m$ }
 
     - $b+c=b+c$
 
@@ -35,24 +35,24 @@
 
   - $\bullet$ Inductive step: show that $((a\pp)+b)+c=(a\pp)+(b+c)$, when
 
-  - $\textnormal{--}$ $(a+b)+c=a+(b+c)$
+  - -- $(a+b)+c=a+(b+c)$
 
   - $\Vdash$ $((a\pp)+b)+c$
 
-  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+  - $=$ { [[../definition-2.2.1.org][definition of addition]]: $(n\pp)+m := (n+m)\pp$ }
 
     - $((a+b)\pp)+c$
 
-  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+  - $=$ { [[../definition-2.2.1.org][definition of addition]]: $(n\pp)+m := (n+m)\pp$ }
 
     - $((a+b)+c)\pp$
 
   - $=$ { inductive hypothesis,
-  - $~~~~$  [[../../Appendix/AxiomOfEquality.org][Substitution Axiom]] $\forall f\forall a\forall b.~ a = b \rightarrow f(a) = f(b)$ }
+  - $~~~~~$  [[../../Appendix/AxiomOfEquality.org][Substitution Axiom]]: $a = b \implies f(a) = f(b)$ }
 
     - $(a+(b+c))\pp$
 
-  - $=$ { [[../definition-2.2.1.org][Definition 2.2.1]]: $(n\pp)+m := (n+m)\pp$ }
+  - $=$ { [[../definition-2.2.1.org][definition of addition]]: $(n\pp)+m := (n+m)\pp$ }
 
     - $(a\pp)+(b+c)$
 

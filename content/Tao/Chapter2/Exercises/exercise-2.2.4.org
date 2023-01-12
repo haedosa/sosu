@@ -2,12 +2,12 @@
 
 2.2.4. Justify the three statments marked (why?) in the proof of [[../proposition-2.2.13.org][Proposition 2.2.13]].
 
-When $a=0$ we have $0\leq b$ for all $b$.
+$0\leq b$ for all $b$.
 - $\bullet$ Show that $0\leq b$ for all $b$
-- $\Vdash$ $b=b$
-- $\equiv$ { [[../definition-2.2.1.org][definition of addition]]: $0+m:=m$ }
-  - $b=0+b$
-- $\equiv$ { [[../definition-2.2.11.org][definition of ordering]]: $m\leq n$ iff $n=m+a$ for some natural number $a$ }
+- $\Vdash$ $b$
+- $=$ { [[../definition-2.2.1.org][definition of addition]]: $0+m:=m$ }
+  - $0+b$
+- $\Rightarrow$ { [[../definition-2.2.11.org][definition of ordering]]: $m\leq n$ iff $n=m+a$ for some natural number $a$ }
   - $b\geq 0$
 - $\square$
 
@@ -24,7 +24,7 @@ If $a>b$, then $a\pp>b$.
 
   - $(a\pp>b)\land(a\neq b)$
 
-- $\implies$ { $P\land Q\implies P$ }
+- $\Rightarrow$ { $P\land Q\implies P$ }
 
   - $a\pp>b$
 
@@ -33,10 +33,10 @@ If $a>b$, then $a\pp>b$.
 If $a=b$, then $a\pp>b$.
 - $\bullet$ Show that $a=b\implies a\pp>b$
 - $\Vdash$ $a=b$
-- $\implies$ { [[../../Appendix/AxiomOfEquality.org][Substitution axiom]]: $a=b\implies f(a)=f(b)$ }
+- $\Rightarrow$ { [[../../Appendix/AxiomOfEquality.org][Substitution axiom]]: $a=b\implies f(a)=f(b)$ }
   - $a\pp=b\pp$
 - $\equiv$ { $n\pp=n+1$ }
   - $a\pp=b+1$
-- $\equiv$ { [[../proposition-2.2.12.org][properties of order]] (f): $a<b$ iff $b=a+d$ for some natural number $d$ }
+- $\equiv$ { [[../proposition-2.2.12.org][properties of order]] (f): $a<b$ iff $b=a+d$ for some positive number $d$ }
   - $a\pp>b$
 - $\square$

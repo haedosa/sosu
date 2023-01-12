@@ -73,6 +73,28 @@
 
   - [[./Chapter2/proposition-2.2.5.org][Proof by Tao]]
 
+- *Proposition 2.2.6* (Cancellation law). /Let $a,b,c$ be natural numbers such that $a+b=a+c$. Then we have $b=c$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.6
+  :END:
+
+  - [[./Chapter2/proposition-2.2.6.org][Proof by Tao]]
+
+- *Proposition 2.2.8* /If $a$ is positive and $b$ is a natural number, then $a+b$ is positive (and hence $b+a$ is also, by [[./Chapter2/proposition-2.2.4.org][Proposition 2.2.4]]/
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.8
+  :END:
+
+  - [[./Chapter2/proposition-2.2.8.org][Proof by Tao]]
+
+- *Corollary 2.2.9* /If $a$ and $b$ are natural numbers such that $a+b=0$, then $a=0$ and $b=0$./
+  :PROPERTIES:
+  :CUSTOM_ID: corollary-2.2.9
+  :END:
+
+  - [[./Chapter2/corollary-2.2.9.org][Proof by Tao]]
+
+
 - *Lemma 2.2.10.* /Let $a$ be a positive number. Then there exists exactly one natural number $b$ such that $b\pp=a$./
   :PROPERTIES:
   :CUSTOM_ID: proposition-2.2.10
@@ -80,12 +102,59 @@
 
   - $Proof$. See [[./Chapter2/Exercises/exercise-2.2.2.org][Exercise 2.2.2]].
 
+- *Propostion 2.2.12* (Basic properties of order for natural numbers) /let $a,b,c$ be natural numbers. Then/
+
+  - /(a) (Order is reflexive) $a\geq a$./
+
+  - /(b) (Order is transitive) If $a\geq b$ and $b\geq c$, then $a\geq c$./
+
+  - /(c) (Order is anti-symmetric) If $a\geq b$ and $b\geq a$, then $a=b$./
+
+  - /(d) (Addition preserves order) $a\geq b$ only and only if $a+c\geq b+c$./
+
+  - /(e) $a<b$ if and only if $a\pp\leq b$./
+
+  - /(f) $a<b$ if and only if $b=a+d$ for some positive number $a$./
+    :PROPERTIES:
+    :CUSTOM_ID: proposition-2.2.12
+    :END:
+
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.2.3.org][Exercise 2.2.3]].
+
+
+
+- *Proposition 2.2.13* (Trichotomy of order for natural numbers). /Let $a$ and $b$ be natural numbers. Then excactly one of the following statements is true: $a<b, a=b$, or $a>b$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.13
+  :END:
+
+  - [[./Chapter2/proposition-2.2.13.org][Proof by Tao]]
+
+
+
+- *Proposition 2.2.14* (Strong principle of induction). /Let $m_0$ be a natural number, and let $P(m)$ be a property pertaining to an arbitrary natural number $m$. Suppose that for each $m\geq m_0$, we have the following implication: if $P(m')$ is true for all natural numbers $m_0\leq m'<m$, then $P(m)$ is also true. (In particular, this means that $P(m_0)$ is true, since in this case the hypothesis is vacuous.) Then we can conclude that $P(m)$ is true for all natrual numbers $m\geq m_0$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.2.14
+  :END:
+
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.2.5.org][Exercise 2.2.5]]
+
+
 - *Lemma 2.3.2* (Multiplication is commutative). /Let $n$ and $m$ be natural numbers. Then $n \times m = m \times n$./
   :PROPERTIES:
   :CUSTOM_ID: proposition-2.3.2
   :END:
 
   - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.1.org][Exercise 2.3.1]].
+
+
+- *Propostion 2.3.5* (Multiplication is associative). /For any natural numbers $a,b,c$, we ahve $(a \times b) \times c = a \times (b \times c)$.
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.5
+  :END:
+
+  - $Proof$ See [[../Exercises/exercise-2.3.3.org][Exercise 2.3.3]].
+
 
 * Exercises
 
