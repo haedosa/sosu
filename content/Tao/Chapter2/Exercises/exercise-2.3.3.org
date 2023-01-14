@@ -1,0 +1,53 @@
+#+title: Exercise 2.3.3 (Proporsition 2.3.5 )
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+2.3.3. Prove [[../proposition-2.3.5.org][Proposition 2.3.5]] (Hint: modify the proof of [[../proposition-2.2.5.org][Proposition of 2.2.5]] and use the distribution law.)
+
+- $\bullet$ Show that $(a\times b)\times c=a\times(b\times c)$ for each $a,b,c\in\mathbb{N}$.
+
+- $\Vdash$ { Proof by induction on $a$ }
+
+  - $\bullet$ Base case: Show that $(a\times b)\times c=a\times(b\times c)$, when
+  - -- $a=0$
+  - $\Vdash$ $(0\times b)\times c=0\times(b\times c)$
+  - $\equiv$ { [[../definition-2.3.1.org][Definition 2.3.1]]: $\forall m.~0\times m:=0$ }
+    - $0\times c=0$
+  - $\equiv$ { [[../definition-2.3.1.org][Definition 2.3.1]]: $\forall m.~0\times m:=0$ }
+    - $0=0$
+  - $\square$
+
+  - $\bullet$ Inductive step: Show that $((a\pp)\times b)\times c=(a\pp)\times(b\times c)$ for each $a,b,c\in\mathbb{N}$., when
+
+  - -- $(a\times b)\times c=a\times(b\times c)$
+
+  - $\Vdash$ $((a\pp)\times b)\times c$
+
+  - $=$ { [[../definition-2.3.1.org][Definition 2.3.1]]: $(n\pp)\times m:=(n\times m)+m$ }
+    - $((a\times b)\times b)\times c$
+  - $=$ { [[../proposition-2.3.4.org][Proposition 2.3.4]]: $(b+c)a=ba+ca$ }
+
+    - $(a\times b)\times c+b\times c$
+  - $=$ { inductive hypothesis }
+    - $a\times(b\times c)+(b\times c)$
+
+  - $=$ { [[../definition-2.3.1.org][Definition 2.3.1]]: $(n\pp)\times m:=(n\times m)+m$ }
+
+    - $(a\pp)\times(b\times c)$
+
+  - $\square$
+
+- $\square$
