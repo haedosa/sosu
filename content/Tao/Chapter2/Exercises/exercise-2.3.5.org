@@ -1,4 +1,4 @@
-#+title: Exercise 2.3.5
+#+title: Exercise 2.3.5 (Proposition 2.3.9)
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
 #+LATEX_HEADER: \usepackage{a4wide}
@@ -16,3 +16,39 @@
 #+HTML_HEAD: </style>
 
 2.3.5 Prove Proposition [[../proposition-2.3.9.org][proposition 2.3.9]] (Hint: fix $q$ and induct on $n$.)
+
+- $\bullet$ Show that $\exists m\exists r\in\mathbb{N}$ such that $0\leq r<q$ and $n=mq+r$, when
+- -- $q\neq0$
+- $\Vdash$ { Proof by induction on $n$ }
+  - $\bullet$ Base case: show that $\exists m\exists r\in\mathbb{N}$ such that $0\leq r<q$ and $n=mq+r$, when
+  - -- $n=0$
+  - $\Vdash$ $0$
+  - $=$ { [[../definition-2.2.1.org][Definition of addition]]: $0+m:=m$;  $0+0=0$ }
+    - $0+0$
+  - $=$ { [[../definition-2.3.1.org][Definition of multiplication]]: $0\times m:=0$ }
+    - $0\times q+0$
+  - $\square$
+  - $\bullet$ Inductive step: show that $\exists m\exists r\in\mathbb{N}$ such that $0\leq r<q$ and $n\pp=mq+r$, when
+  - --$\exists m'\exists r'\in\mathbb{N}$ such that $0\leq r'<q'$ and $n=m'q'+r'$
+  - $\Vdash$ $n\pp$
+  - $=$ { $n\pp=n+1$ and the inductive hypothesis }
+    - $m'q'+r'+1$
+  - $=$ { Proof by cases: $r'<q'\implies r'\pp=r'+1\leq q'$ by [[../proposition-2.2.12.org][Proposition 2.2.12]] (e) }
+    - $\bullet$ case1: $r'+1=q'$
+    - $=$ { substitue $r'+1$ with $q'$ }
+      - $m'q'+q'$
+    - $=$ { [[../definition-2.3.1.org][Definition of multiplication]]: $(n\pp)\times m:=(n\times m)+m$;  $n\pp=n+1$ }
+      - $(m'+1)q'$
+    - $=$ { [[../definition-2.2.1.org][Definition of addition]]: $0+m:=m$ }
+      - $(m'+1)q'+0$
+    - $=$ { Let $m=m'+1,~q=q',~r=0$ }
+      - $mq+r$
+    - $\square$
+    - $\bullet$ case2: $r'+1<q'$
+    - $=$ { Let $r=r'+1$ }
+      - $m'q'+r$
+    - $=$ { Let $m=m',~q=q'$ }
+      - $mq+r$
+    - $\square$
+  - $\square$
+- $\square$

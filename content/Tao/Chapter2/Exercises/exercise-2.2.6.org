@@ -1,3 +1,47 @@
-#+title: Exercise 2.2.6 [TODO]
+#+title: Exercise 2.2.6
 
-Let $n$ be a natural number, and let $P(m)$ be a property pertaining to the natural numbers such that whenever $P(m\pp)$ is true, then $P(m)$  is true. Suppose that $P(n)$ is also true. Prove that $P(m)$ is true for all natural numbers $m\leq n$; this is known as the $principle~of~backwards~induction$. (Hint: apply induction to the varable $n$.)
+Let $n$ be a natural number, and let $P(m)$ be a property pertaining to the natural numbers such that whenever $P(m\pp)$ is true, then $P(m)$  is true. Suppose that $P(n)$ is also true. Prove that $P(m)$ is true for all natural numbers $m\leq n$; this is known as the $principle~of~backwards~induction$. (Hint: apply induction to the variable $n$.)
+
+- $\bullet$ Show that $P(n)\implies \forall m\leq n,~P(m)$, when
+
+- -- $P(m\pp)\implies P(m)$
+
+- $\Vdash$ { Proof by induction on $n$ }
+
+  - $\bullet$ Base case: show that $P(n)\implies \forall m\leq n,~P(m)$, when
+
+  - -- $n=0$
+
+  - $\Vdash$ $P(0)\implies \forall m\leq 0,~ P(m)$
+
+  - $\equiv$ { By the [[../definition-2.2.11.org][definition of ordering]],  $m+a=0$, then by [[../corollary-2.2.9.org][Corollary 2.2.9]] $m=0$ }
+
+    - $P(0)\implies P(0)$
+
+  - $\square$
+
+  - $\bullet$ Inductive step: show that $P(n\pp)\implies \forall m\leq n\pp,~P(m)$, when
+
+  - -- $P(n)\implies \forall m\leq n,~P(m)$
+
+  - $P(n\pp)\implies \forall m\leq n\pp,~P(m)$
+
+  - $\equiv$ { $\forall m\leq n\pp,~ P(m)\equiv \left((\forall m\leq n,~ P(m))\land P(n\pp)\right)$ }
+
+    - $P(n\pp)\implies (\forall m\leq n,~ P(m))\land P(n\pp)$
+
+  - $\equiv$ { $P\implies (Q\land R)\equiv (P\implies Q)\land (P\implies R)$ (is it true????) }
+
+    - $(P(n\pp)\implies (\forall m\leq n. P(m)))\land( P(n\pp)\implies P(n\pp))$
+
+  - $\equiv$ { $P\land T\equiv P$ }
+
+    - $P(n\pp)\implies \forall m\leq n,~ P(m)$
+
+  - $\equiv$ { from the assumption $P(m\pp)\implies  P(m)$ and the inductive hypothesis\\
+                            $\hspace{1cm} P(n\pp)\implies P(n)\implies \forall m\leq n,~P(m)$ }
+    - True
+
+  - $\square$
+
+- $\square$

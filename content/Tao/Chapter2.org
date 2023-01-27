@@ -75,7 +75,7 @@
   :CUSTOM_ID: proposition-2.2.5
   :END:
 
-  - [[./Chapter2/proposition-2.2.5.org][Proof by Tao]]
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.2.1.org][Exercise 2.2.1]]
 
 - *Proposition 2.2.6* (Cancellation law). /Let $a,b,c$ be natural numbers such that $a+b=a+c$. Then we have $b=c$./
   :PROPERTIES:
@@ -170,7 +170,7 @@
   :CUSTOM_ID: proposition-2.3.5
   :END:
 
-  - $Proof$ See [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise 2.3.3]].
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise 2.3.3]].
 
 
 - *Propostion 2.3.6* (Multiplication preserves order). /If $a,b$ are natural numbers such that $a<b$, and $c$ is positive, then $ac<bc$./
@@ -193,7 +193,7 @@
   :CUSTOM_ID: proposition-2.3.9
   :END:
 
-  - $Proof$ See [[./Chapter2/Exercises/exercise-2.3.5.org][Exercise 2.3.5]].
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.5.org][Exercise 2.3.5]].
 
 
 * Exercises

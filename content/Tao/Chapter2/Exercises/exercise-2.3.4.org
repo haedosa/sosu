@@ -16,3 +16,22 @@
 #+HTML_HEAD: </style>
 
 2.3.4. Prove the identity $(a+b)^2=a^2+2ab+b^2$ for all natural numbers $a,b$.
+
+- $\bullet$ Show that $(a+b)^2=a^2+2ab+b^2$ for all natural numbers $a,b$.
+- $\Vdash$ $(a+b)^2$
+- $=$ { [[../definition-2.3.11.org][Definition of exponentiation]]: $m^0:=1$; $m^{n\pp}:=m^n\times m$;\\
+              $\hspace{1cm} m^2=m^{1\pp}=m^1\times m=m^0\times m\times m=1\times m\times m=m\times m$ }
+  - $(a+b)\times (a+b)$
+- $=$ { [[../proposition-2.3.4.org][Distributive law]]: $(b+c)a=ba+ca$ }
+  - $a(a+b)+b(a+b)$
+- $=$ { [[../proposition-2.3.4.org][Distributive law]]: $a(b+c)=ab+ac$ }
+  - $aa+ab+ba+bb$
+- $=$ { [[../lemma-2.3.2.org][Commutative law]]: $nm=mn$ }
+  - $aa+ab+ab+bb$
+- $=$ { [[../definition-2.3.1.org][Definition of multiplication]]: $(n\pp)\times m:=n\times m+m$;\\
+             $\hspace{1cm} 2m=(1\pp)m=1m+m=m+m$ }
+  - $aa+2ab+bb$
+- $=$ { [[../definition-2.3.11.org][Definition of exponentiation]]: $m^0:=1$; $m^{n\pp}:=m^n\times m$;\\
+  $\hspace{1cm} a^2=a^{1\pp}=a^1a=a^0aa=1aa=aa$  }
+  - $a^2+2ab+b^2$
+- $\square$
