@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Stillwell – Sosu
+    Proposition 2.2.13 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Stillwell' />
+      <meta property='og:title' content='Proposition 2.2.13' />
     
     
       <base href='/sosu/' />
@@ -215,11 +215,41 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter2'>
+      Chapter2
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao'>
+      Tao
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href=''>
       Sosu
     </a>
   </div>
 
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
   
 </li>
           
@@ -243,41 +273,24 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Stillwell
+    Proposition 2.2.13
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  <nav>
-  <div class='mb-8'>
-    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './*'
-    </header>
-    <ul>
-      
-        <li>
-          <div class='flex flex-wrap my-2'>
-            
-              <span data-nosnippet class='mr-2 text-right text-gray-600'>
-              </span>
-            
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Stillwell/Ch1'>
-              Ch1
-            </a>
-          </div>
-        </li>
-      
-    </ul>
-  </div>
-</nav><div class='text-gray-400 border-t-2 inline-block pt-0.5'>
+  
     <p class='mb-3'>
-      Note: To override the auto-generated content here, create a file named one of: <span class='font-mono text-sm'>Stillwell.md, Stillwell.org</span>
+      <strong>Proposition 2.2.13</strong> (Trichotomy of order for natural numbers). <em>Let <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> be natural numbers. Then excactly one of the following statements is true: <span class='math inline'>\(a&lt;b, a=b\)</span>, or <span class='math inline'>\(a&gt;b\)</span>.</em>
     </p>
-  </div>
+  
+    <p class='mb-3'>
+      <span class='math inline'>\(Proof~by~Tao\)</span> This is only sketch of the proof; the gaps will be filled in <a href='Tao/Chapter2/Exercises/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-2.2.4</a>.<br /><span class='math inline'>\(~~\)</span> First, we show that we cannot have more than one of the statments <span class='math inline'>\(a&lt;b,~a=b,~ a&gt;b\)</span> holding at the same time. If <span class='math inline'>\(a&lt;b\)</span> then <span class='math inline'>\(a\neq b\)</span> by <a href='Tao/Chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition</a>, and if <span class='math inline'>\(a&gt;b\)</span> then <span class='math inline'>\(a\neq b\)</span> by <a href='Tao/Chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition</a>. If <span class='math inline'>\(a&gt;b\)</span> and <span class='math inline'>\(a&lt;b\)</span> then by <a href='Tao/Chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.12</a> we have <span class='math inline'>\(a=b\)</span>, a contradiction. Thus no more than one of the statements is true. <span class='math inline'>\(~~\)</span> Now we show that at least one of the statements is true. We keep <span class='math inline'>\(b\)</span> fixed and induct on <span class='math inline'>\(a\)</span>. When <span class='math inline'>\(a=0\)</span> we have <span class='math inline'>\(0\leq b\)</span> for all <span class='math inline'>\(b\)</span> (<a href='Tao/Chapter2/Exercises/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>), so we have either <span class='math inline'>\(0=b\)</span> or <span class='math inline'>\(0&lt;b\)</span>, which proves the base case. Now suppose we have proven the proposition for <span class='math inline'>\(a\)</span>, and now we prove the proposition for <span class='math inline'>\(a\pp\)</span>. Form the trichotomy for <span class='math inline'>\(a\)</span>, there are three cases: <span class='math inline'>\(a&lt;b,~a=b\)</span>, and <span class='math inline'>\(a&gt;b\)</span>. If <span class='math inline'>\(a&gt;b\)</span>, then <span class='math inline'>\(a\pp&gt;b\)</span> (<a href='Tao/Chapter2/Exercises/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>). If <span class='math inline'>\(a=b\)</span>, then <span class='math inline'>\(a\pp&gt;b\)</span> (<a href='Tao/Chapter2/Exercises/exercise-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>why?</a>). Now suppose that <span class='math inline'>\(a&lt;b\)</span>. Then by <a href='Tao/Chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.12</a>, we have <span class='math inline'>\(a\pp\leq b\)</span>. Thus either <span class='math inline'>\(a\pp=b\)</span> or <span class='math inline'>\(a\pp&lt;b\)</span>, and in either case we are done. This closes the induction. <span class='math inline'>\(\square\)</span>
+    </p>
+  
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Stillwell.md'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/proposition-2.2.13.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -289,6 +302,62 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.4'>
+            Exercise 2.2.4 (Propostion 2.2.13)
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p>2.2.4. Justify the three statments marked (why?) in the proof of <a href='Tao/Chapter2/proposition-2.2.13' class='text-gray-600 font-bold hover:bg-gray-50'>Proposition 2.2.13</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/corollary-2.3.7'>
+            Corollary 2.3.7
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><span class='math inline'>\(Proof\)</span>. By the trichotomy of order (<a href='Tao/Chapter2/proposition-2.2.13' class='text-gray-600 font-bold hover:bg-gray-50'>Proposition 2.2.1</a>), we have three cases: <span class='math inline'>\(a&lt;b,a=b,a&gt;b\)</span>. Suppose first that <span class='math inline'>\(a&lt;b\)</span>, then by <a href='Tao/Chapter2/proposition-2.3.6' class='text-gray-600 font-bold hover:bg-gray-50'>Proposition 2.3.6</a> we have <span class='math inline'>\(ac&lt;bc\)</span>, a contradiction. We can obtain a similar contradiction when <span class='math inline'>\(a&gt;b\)</span>. Thus the only possibility is that <span class='math inline'>\(a=b\)</span>, as desired. <span class='math inline'>\(\square\)</span></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2'>
+            Chapter2
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><a href='Tao/Chapter2/proposition-2.2.13' class='text-gray-600 font-bold hover:bg-gray-50'>Proof by Tao</a></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><strong>Exercise 2.2.4.</strong> Justify the three statments marked (why?) in the proof of <a href='Tao/Chapter2/proposition-2.2.13' class='text-gray-600 font-bold hover:bg-gray-50'>Proposition 2.2.13</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>

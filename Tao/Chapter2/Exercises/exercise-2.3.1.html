@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Axiom Of Equality – Sosu
+    Exercise 2.3.1 (Lemma 2.3.2) – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Axiom Of Equality' />
+      <meta property='og:title' content='Exercise 2.3.1 (Lemma 2.3.2)' />
     
     
       <base href='/sosu/' />
@@ -215,8 +215,19 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Tao/Appendix'>
-      Appendix
+    <a href='Tao/Chapter2/Exercises'>
+      Exercises
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter2'>
+      Chapter2
     </a>
   </div>
 
@@ -252,6 +263,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -273,32 +288,280 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Axiom Of Equality
+    Exercise 2.3.1 (Lemma 2.3.2)
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong><strong>Axiom of equality</strong></strong>
+      2.3.1. Prove <a href='Tao/Chapter2/lemma-2.3.2' class='text-purple-600 mavenLinkBold hover:underline'>Lemma 2.3.2</a> (Hint: modify the proofs of <a href='Tao/Chapter2/lemma-2.2.2' class='text-purple-600 mavenLinkBold hover:underline'>Lemmas 2.2.2</a>, <a href='Tao/Chapter2/lemma-2.2.3' class='text-purple-600 mavenLinkBold hover:underline'>2.2.3</a> and <a href='Tao/Chapter2/proposition-2.2.4' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.4</a>)
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          (Reflexive axiom). Given any object <span class='math inline'>\(x\)</span>, we have <span class='math inline'>\(x=x\)</span>.
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\forall n \forall m \in \mathbb{N}.~ n \times m = m \times n\)</span>.
+    </p>
+  
         </li>
       
         <li>
-          (Symmetry axiom) . Given any two object <span class='math inline'>\(x\)</span> and <span class='math inline'>\(y\)</span> of the same type, if <span class='math inline'>\(x=y\)</span>, then <span class='math inline'>\(y=x\)</span>.
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(\forall m \in \mathbb{N}.~ 0 \times m = m \times 0\)</span>
         </li>
       
         <li>
-          (Transitive axiom). Given any three objects <span class='math inline'>\(x,~y,~z\)</span> of the same type, if <span class='math inline'>\(x=y\)</span> and <span class='math inline'>\(y=z\)</span>, then <span class='math inline'>\(x=z\)</span>.
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ 0 \times m = m \times 0\)</span>
         </li>
       
         <li>
-          (Substitution axiom). Given any two objects <span class='math inline'>\(x\)</span> and <span class='math inline'>\(y\)</span> of the same type, if <span class='math inline'>\(x=y\)</span>, then <span class='math inline'>\(f(x)=f(y)\)</span> for all functions or operations <span class='math inline'>\(f\)</span>.
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.3.1: <span class='math inline'>\(0 \times m := 0\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ 0 = m \times 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proof by induction on <span class='math inline'>\(m\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(0 = 0 \times 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(0 \times 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.3.1: <span class='math inline'>\(0 \times m := 0\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> True
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(0 = (m\pp) \times 0\)</span> when
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(0 = m \times 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((m\pp) \times 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition 2.3.1: <span class='math inline'>\((n\pp) \times m := (n \times m) + m\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m \times 0) + 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Induction Hypothesis: }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(0 + 0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition 2.2.1: <span class='math inline'>\(0+m := m\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)\)</span> when
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ n \times m = m \times n\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ (n\pp) \times m = m \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.3.1: <span class='math inline'>\((a\pp) \times b := (a \times b) + b\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ (n \times m) + m = m \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Induction hypothesis: <span class='math inline'>\(\forall m \in \mathbb{N}.~ n \times m = m \times n\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(\forall m \in \mathbb{N}.~ (m \times n) + m = m \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Proof by induction on $m$}
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\((0 \times n) + 0 = 0 \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((0 \times n) + 0 = 0 \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.3.1: <span class='math inline'>\(0 \times b := 0\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> 0 + 0 = 0
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { Definition 2.2.1: <span class='math inline'>\(0+b := b\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> True
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(((m\pp) \times n) + (m\pp) = (m\pp) \times (n\pp)\)</span> when
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\textnormal{--}\)</span> <span class='math inline'>\((m \times n) + m = m \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(((m\pp) \times n) + (m\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition 2.3.1: <span class='math inline'>\((a\pp) \times b := (a \times b) + b\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(((m \times n) + n) + (m\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Addition is associative }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m \times n) + (n + (m\pp))\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition of Addition }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m \times n) + (n + m)\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Addition is commutative }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m \times n) + (m + n)\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition of Addition }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m \times n) + (m + n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Addition is associative }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(((m \times n) + m) + n\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Induction hypothesis }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\(m \times (n\pp) + n\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Definition 2.3.1: <span class='math inline'>\((a\pp) \times b := (a \times b) + b\)</span> }
+        </li>
+      
+        <li>
+          <span class='math inline'>\(~~~\)</span> <span class='math inline'>\((m\pp) \times (n\pp)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
         </li>
       
     </ul>
@@ -306,7 +569,7 @@
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Appendix/AxiomOfEquality.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/Exercises/exercise-2.3.1.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -323,67 +586,22 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.4'>
-            Exercise 2.2.4 (Propostion 2.2.13)
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2'>
+            Chapter2
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Substitution axiom</a>: <span class='math inline'>\(a=b\implies f(a)=f(b)\)</span> }</div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.3'>
-            Exercise 2.2.3 (Propostion 2.2.12)
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Substitution axiom</a>: <span class='math inline'>\(x=y\implies f(x)=f(y)\)</span> }</div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.2'>
-            Exercise 2.2.2 (Lemma 2.2.10)
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Transitive axiom</a> }</p></div>
+      <div><span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter2/Exercises/exercise-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.3.1</a>.</div>
     </div>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Reflexive axiom</a> }</p></div>
+      <div><span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter2/Exercises/exercise-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.3.2</a>.</div>
     </div>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Symmetry axiom</a> : <span class='math inline'>\((c = a) \equiv (a = c)\)</span> }</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.1'>
-            Exercise 2.2.1 (Proposition 2.2.5)
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(~~~~~\)</span> <a href='Tao/Appendix/AxiomOfEquality' class='text-gray-600 font-bold hover:bg-gray-50'>Substitution Axiom</a>: <span class='math inline'>\(a = b \implies f(a) = f(b)\)</span> }</p></div>
+      <div><p><a href='Tao/Chapter2/Exercises/exercise-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise-2.3.1 with solution</a></p></div>
     </div>
   
 </div>

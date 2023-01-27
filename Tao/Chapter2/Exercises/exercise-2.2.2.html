@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Stillwell – Sosu
+    Exercise 2.2.2 (Lemma 2.2.10) – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Stillwell' />
+      <meta property='og:title' content='Exercise 2.2.2 (Lemma 2.2.10)' />
     
     
       <base href='/sosu/' />
@@ -215,11 +215,56 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter2/Exercises'>
+      Exercises
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter2'>
+      Chapter2
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao'>
+      Tao
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href=''>
       Sosu
     </a>
   </div>
 
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
   
 </li>
           
@@ -243,41 +288,292 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Stillwell
+    Exercise 2.2.2 (Lemma 2.2.10)
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  <nav>
-  <div class='mb-8'>
-    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './*'
-    </header>
-    <ul>
+  
+    <p class='mb-3'>
+      Prove <a href='Tao/Chapter2/lemma-2.2.10' class='text-purple-600 mavenLinkBold hover:underline'>Lemma 2.2.10</a>. (Hint: use induction. the induction here is somewhat degenerate, in that the induction hypothesis is not actually used, but this does not prevent the argument from remaining valid; cf. the discussion on implication and causality in Appendix A.2.)
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <div class='flex flex-wrap my-2'>
-            
-              <span data-nosnippet class='mr-2 text-right text-gray-600'>
-              </span>
-            
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Stillwell/Ch1'>
-              Ch1
-            </a>
-          </div>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\)</span>.
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(a=0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(0\neq0\implies \exists!b\in\mathbb{N}.~b\pp=0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { implication is vacuously true since the premise <span class='math inline'>\(0\neq0\)</span> is false }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          True
         </li>
       
     </ul>
-  </div>
-</nav><div class='text-gray-400 border-t-2 inline-block pt-0.5'>
+  
+        </li>
+      
+        <li>
+          
     <p class='mb-3'>
-      Note: To override the auto-generated content here, create a file named one of: <span class='font-mono text-sm'>Stillwell.md, Stillwell.org</span>
+      <span class='math inline'>\(\square\)</span>
     </p>
-  </div>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(\forall a\in\mathbb{N}.~a\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists!b\in\mathbb{N}.~b\pp=a\pp\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Show existence and uniquness of <span class='math inline'>\(b\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Existence of <span class='math inline'>\(b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies \exists b\in\mathbb{N}.~b\pp=a\pp\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { Let <span class='math inline'>\(b:=a\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall a\pp\in\mathbb{N}.~a\pp\neq0\implies a\pp=a\pp\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-purple-600 mavenLinkBold hover:underline'>Reflexive axiom</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          True
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Uniqueness of <span class='math inline'>\(b\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(\forall a\pp\in\mathbb{N}.~a\pp\neq0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((b\pp=a\pp)\land (c\pp=a\pp)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Rightarrow\)</span> {<span class='math inline'>\(b=a\)</span>, <span class='math inline'>\(c=a\)</span> by <a href='Tao/Chapter2/axiom-2.4' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 2.4</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a)\land (c=a)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-purple-600 mavenLinkBold hover:underline'>Symmetry axiom</a> : <span class='math inline'>\((c = a) \equiv (a = c)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((b=a)\land (a=c)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Appendix/AxiomOfEquality' class='text-purple-600 mavenLinkBold hover:underline'>Transitive axiom</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(b=c\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\cdots\)</span> True
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      In the inductive step, the inductive assumption <span class='math inline'>\(P(n)\)</span> was not used. Since <span class='math inline'>\(P(n\pp)\)</span> is true, <span class='math inline'>\(P(n)\implies P(n\pp)\)</span> is always true whether <span class='math inline'>\(P(n)\)</span> is true or not
+    </p>
+  
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Stillwell.md'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/Exercises/exercise-2.2.2.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -289,6 +585,47 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/lemma-2.2.10'>
+            Lemma 2.2.10
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter2/Exercises/exercise-2.2.2' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.2.2</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2'>
+            Chapter2
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter2/Exercises/exercise-2.2.2' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.2.2</a>.</div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><a href='Tao/Chapter2/Exercises/exercise-2.2.2' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise-2.2.2 with solution</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
