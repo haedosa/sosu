@@ -1,0 +1,5 @@
+#+title: Proposition 2.3.9
+
+*Propostion 2.3.9* (Euclidean algorithm). /Let $n$ be a natural number, and let $q$ be a positive number. Then there exist natrual numbers $m,r$ such that $0\leq r<q$ and $n=mq+r$./
+
+$Proof$. See [[./Exercises/exercise-2.3.5.org][Exercise 2.3.5]].

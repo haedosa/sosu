@@ -1,0 +1,5 @@
+#+title: Corollary 2.3.7
+
+*Corollary 2.3.7*  (Cancellation law). $Let $a,b,c$ be natural numbers such that $ac=bc$ and $c$ is non-zero. Then $a=b$.
+
+$Proof$. By the trichotomy of order ([[./proposition-2.2.13.org][Proposition 2.2.1]]), we have three cases: $a<b,a=b,a>b$. Suppose first that $a<b$, then by [[./proposition-2.3.6.org][Proposition 2.3.6]] we have $ac<bc$, a contradiction. We can obtain a similar contradiction when $a>b$. Thus the only possibility is that $a=b$, as desired. $\square$

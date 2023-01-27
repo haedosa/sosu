@@ -1,0 +1,5 @@
+#+title: Proposition 2.3.6
+
+*Propostion 2.3.6* (Multiplication preserves order). /If $a,b$ are natural numbers such that $a<b$, and $c$ is positive, then $ac<bc$./
+
+$Proof$. Since $a<b$, we have $b=a+d$ for some positive $d$. Multiplying by $c$ and using the distributive law we obtain $bc=ac+dc$. Since $d$ is positive, and $c$ is positive, $dc$ is positive, and hence $ac<bc$ as desired. $\square$

@@ -42,6 +42,10 @@
   :CUSTOM_ID: definition-2.3.1
   :END:
 
+- *Definition 2.3.11* (Exponentiation for natural numbers). Let $m$ be a natural number. To raise $m$ to the power $0$, we define $m^0:=1$; in particular, we define $0^0:=1$. Now suppose recursively that $m^n$ has been defined for some natural number $n$, then we define $m^{n\pp}:=m^n\times m$.
+  :PROPERTIES:
+  :CUSTOM_ID: definition-2.3.11
+  :END:
 * Propositions
 
 - *Lemma 2.2.2.* /For any natural number $n$, $n+0=n$./
@@ -147,13 +151,49 @@
 
   - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.1.org][Exercise 2.3.1]].
 
+- *Lemma 2.3.3* (Positive natural numbers have no zero divisors). /Let $n, m$ be natural numbers. Then $n \times m = 0$ if and only if at least one of $n, m$ is equal to zero. In particular, if $n$ and $m$ are both positive, then $nm$ is also positive./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.3
+  :END:
+
+  - $Proof$. See [[./Chapter2/Exercises/exercise-2.3.1.org][Exercise 2.3.2]].
+
+- *Propostion 2.3.4* (Distributive law). /For any natural numbers/ $a,b,c$, /we have/ $a(b+c)=ab+ac$ /and/ $(b+c)a=ba+ca$.
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.4
+  :END:
+
+  - [[./Chapter2/proposition-2.3.4.org][Proof by Tao]].
 
 - *Propostion 2.3.5* (Multiplication is associative). /For any natural numbers $a,b,c$, we ahve $(a \times b) \times c = a \times (b \times c)$.
   :PROPERTIES:
   :CUSTOM_ID: proposition-2.3.5
   :END:
 
-  - $Proof$ See [[../Exercises/exercise-2.3.3.org][Exercise 2.3.3]].
+  - $Proof$ See [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise 2.3.3]].
+
+
+- *Propostion 2.3.6* (Multiplication preserves order). /If $a,b$ are natural numbers such that $a<b$, and $c$ is positive, then $ac<bc$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.6
+  :END:
+
+  - [[./Chapter2/proposition-2.3.6.org][Proof by Tao]].
+
+- *Corollary 2.3.7*  (Cancellation law). /Let $a,b,c$ be natural numbers such that $ac=bc$ and $c$ is non-zero. Then $a=b$./
+  :PROPERTIES:
+  :CUSTOM_ID: corollary-2.3.7
+  :END:
+
+  - [[./Chapter2/corollary-2.3.7.org][Proof by Tao]]
+
+
+- *Propostion 2.3.9* (Euclidean algorithm). /Let $n$ be a natural number, and let $q$ be a positive number. Then there exist natrual numbers $m,r$ such that $0\leq r<q$ and $n=mq+r$./
+  :PROPERTIES:
+  :CUSTOM_ID: proposition-2.3.9
+  :END:
+
+  - $Proof$ See [[./Chapter2/Exercises/exercise-2.3.5.org][Exercise 2.3.5]].
 
 
 * Exercises
@@ -224,7 +264,7 @@
   :END:
   (Hint: modify the proof of Proposition 2.2.5 and use the distributive law.)
 
-   [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise-2.3.3 with solution]]
+    [[./Chapter2/Exercises/exercise-2.3.3.org][Exercise-2.3.3 with solution]]
 
 - *Exercise 2.3.4.* Prove the identity $(a + b)^2 = a^2 + 2ab + b^2$ for all natural numbers $a,b$.
   :PROPERTIES:

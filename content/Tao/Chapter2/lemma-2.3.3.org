@@ -1,9 +1,6 @@
 #+title: Lemma 2.3.3
 
 
-*Lemma 2.2.3* (Positive natural numbers have no zero divisors). Let
-$n, m$ be natural numbers. Then $n \times m = 0$ if and only if at least one of
-$n, m$ is equal to zero. In particular, if $n$ and $m$ are both positive, then
-$nm$ is also positive.
+*Lemma 2.3.3* (Positive natural numbers have no zero divisors). /Let $n, m$ be natural numbers. Then $n \times m = 0$ if and only if at least one of $n, m$ is equal to zero. In particular, if $n$ and $m$ are both positive, then $nm$ is also positive./
 
-/Proof/. See [[./Exercises/exercise-2.3.2.org][Exercise 2.3.2]].
+$Proof$. See [[./Exercises/exercise-2.3.2.org][Exercise 2.3.2]].
