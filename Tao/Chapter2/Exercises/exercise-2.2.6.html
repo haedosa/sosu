@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Exercise 2.2.6 [TODO] – Sosu
+    Exercise 2.2.6 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Exercise 2.2.6 [TODO]' />
+      <meta property='og:title' content='Exercise 2.2.6' />
     
     
       <base href='/sosu/' />
@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=0742c10a-2f5f-443b-ad6e-c11292a1073e' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=e699cf78-674c-4151-b650-26c1815c31c3' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -288,15 +288,199 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Exercise 2.2.6 [TODO]
+    Exercise 2.2.6
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      Let <span class='math inline'>\(n\)</span> be a natural number, and let <span class='math inline'>\(P(m)\)</span> be a property pertaining to the natural numbers such that whenever <span class='math inline'>\(P(m\pp)\)</span> is true, then <span class='math inline'>\(P(m)\)</span> is true. Suppose that <span class='math inline'>\(P(n)\)</span> is also true. Prove that <span class='math inline'>\(P(m)\)</span> is true for all natural numbers <span class='math inline'>\(m\leq n\)</span>; this is known as the <span class='math inline'>\(principle~of~backwards~induction\)</span>. (Hint: apply induction to the varable <span class='math inline'>\(n\)</span>.)
+      Let <span class='math inline'>\(n\)</span> be a natural number, and let <span class='math inline'>\(P(m)\)</span> be a property pertaining to the natural numbers such that whenever <span class='math inline'>\(P(m\pp)\)</span> is true, then <span class='math inline'>\(P(m)\)</span> is true. Suppose that <span class='math inline'>\(P(n)\)</span> is also true. Prove that <span class='math inline'>\(P(m)\)</span> is true for all natural numbers <span class='math inline'>\(m\leq n\)</span>; this is known as the <span class='math inline'>\(principle~of~backwards~induction\)</span>. (Hint: apply induction to the variable <span class='math inline'>\(n\)</span>.)
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(P(m\pp)\implies P(m)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(n=0\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(P(0)\implies \forall m\leq 0,~ P(m)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { By the <a href='Tao/Chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition of ordering</a>, <span class='math inline'>\(m+a=0\)</span>, then by <a href='Tao/Chapter2/corollary-2.2.9' class='text-purple-600 mavenLinkBold hover:underline'>Corollary 2.2.9</a> <span class='math inline'>\(m=0\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(P(0)\implies P(0)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(P(n\pp)\implies \forall m\leq n\pp,~P(m)\)</span>, when
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(P(n\pp)\implies \forall m\leq n\pp,~P(m)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(\forall m\leq n\pp,~ P(m)\equiv \left((\forall m\leq n,~ P(m))\land P(n\pp)\right)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(P(n\pp)\implies (\forall m\leq n,~ P(m))\land P(n\pp)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(P\implies (Q\land R)\equiv (P\implies Q)\land (P\implies R)\)</span> (is it true????) }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((P(n\pp)\implies (\forall m\leq n. P(m)))\land( P(n\pp)\implies P(n\pp))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(P\land T\equiv P\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(P(n\pp)\implies \forall m\leq n,~ P(m)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { from the assumption <span class='math inline'>\(P(m\pp)\implies  P(m)\)</span> and the inductive hypothesis<br /><span class='math inline'>\(\hspace{1cm} P(n\pp)\implies P(n)\implies \forall m\leq n,~P(m)\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          True
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   

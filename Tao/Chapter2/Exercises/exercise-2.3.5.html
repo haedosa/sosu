@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Exercise 2.3.5 – Sosu
+    Exercise 2.3.5 (Proposition 2.3.9) – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Exercise 2.3.5' />
+      <meta property='og:title' content='Exercise 2.3.5 (Proposition 2.3.9)' />
     
     
       <base href='/sosu/' />
@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=0742c10a-2f5f-443b-ad6e-c11292a1073e' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=e699cf78-674c-4151-b650-26c1815c31c3' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -288,7 +288,7 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Exercise 2.3.5
+    Exercise 2.3.5 (Proposition 2.3.9)
   </a>
 </h1>
               <article class='overflow-auto'>
@@ -297,6 +297,194 @@
     <p class='mb-3'>
       2.3.5 Prove Proposition <a href='Tao/Chapter2/proposition-2.3.9' class='text-purple-600 mavenLinkBold hover:underline'>proposition 2.3.9</a> (Hint: fix <span class='math inline'>\(q\)</span> and induct on <span class='math inline'>\(n\)</span>.)
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\exists m\exists r\in\mathbb{N}\)</span> such that <span class='math inline'>\(0\leq r&lt;q\)</span> and <span class='math inline'>\(n=mq+r\)</span>, when
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(q\neq0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(\exists m\exists r\in\mathbb{N}\)</span> such that <span class='math inline'>\(0\leq r&lt;q\)</span> and <span class='math inline'>\(n=mq+r\)</span>, when
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(n=0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(0\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.2.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition of addition</a>: <span class='math inline'>\(0+m:=m\)</span>; <span class='math inline'>\(0+0=0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(0+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition of multiplication</a>: <span class='math inline'>\(0\times m:=0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(0\times q+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(\exists m\exists r\in\mathbb{N}\)</span> such that <span class='math inline'>\(0\leq r&lt;q\)</span> and <span class='math inline'>\(n\pp=mq+r\)</span>, when
+        </li>
+      
+        <li>
+          –<span class='math inline'>\(\exists m'\exists r'\in\mathbb{N}\)</span> such that <span class='math inline'>\(0\leq r'&lt;q'\)</span> and <span class='math inline'>\(n=m'q'+r'\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(n\pp\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(n\pp=n+1\)</span> and the inductive hypothesis }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(m'q'+r'+1\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Proof by cases: <span class='math inline'>\(r'&lt;q'\implies r'\pp=r'+1\leq q'\)</span> by <a href='Tao/Chapter2/proposition-2.2.12' class='text-purple-600 mavenLinkBold hover:underline'>Proposition 2.2.12</a> (e) }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> case1: <span class='math inline'>\(r'+1=q'\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { substitue <span class='math inline'>\(r'+1\)</span> with <span class='math inline'>\(q'\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(m'q'+q'\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition of multiplication</a>: <span class='math inline'>\((n\pp)\times m:=(n\times m)+m\)</span>; <span class='math inline'>\(n\pp=n+1\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((m'+1)q'\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.2.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition of addition</a>: <span class='math inline'>\(0+m:=m\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((m'+1)q'+0\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Let <span class='math inline'>\(m=m'+1,~q=q',~r=0\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(mq+r\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> case2: <span class='math inline'>\(r'+1&lt;q'\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Let <span class='math inline'>\(r=r'+1\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(m'q'+r\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { Let <span class='math inline'>\(m=m',~q=q'\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(mq+r\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
@@ -340,7 +528,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(Proof\)</span> See <a href='Tao/Chapter2/Exercises/exercise-2.3.5' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.3.5</a>.</div>
+      <div><span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter2/Exercises/exercise-2.3.5' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 2.3.5</a>.</div>
     </div>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
