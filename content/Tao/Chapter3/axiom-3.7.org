@@ -1,0 +1,6 @@
+#+title: Axiom 3.7
+
+*Axiom 3.7.* (Replacement). /Let $A$ be a set. For any object $x\in A$, and any object $y$, suppose we have a statement $P(x,y)$ pertaining to $x$ and $y$, such that for each $x\in A$ there is at most one $y$ for which $P(x,y)$ is true. Then there exists a set $\{y:~P(x,y)\text{ is true for some} x\in A\}$, such that for any object $z$,/
+  $$
+  z\in\{y:~P(x,y)\text{ is true for some } x \in A\}\iff P(x,z)\text{ is true for some } x\in A.
+  $$

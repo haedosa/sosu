@@ -1,0 +1,3 @@
+#+title: Axiom 3.1
+
+*Axiom 3.1.* (Sets are objects). /IF $A$ is a set, then $A$ is also an object. In particular, given two sets $A$ and $B$, it is meaningful to ask whether $A$ is also an element of $B$./

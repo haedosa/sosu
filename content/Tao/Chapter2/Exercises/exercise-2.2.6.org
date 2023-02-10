@@ -24,7 +24,7 @@ Let $n$ be a natural number, and let $P(m)$ be a property pertaining to the natu
 
   - -- $P(n)\implies \forall m\leq n,~P(m)$
 
-  - $P(n\pp)\implies \forall m\leq n\pp,~P(m)$
+  - $\Vdash$ $P(n\pp)\implies \forall m\leq n\pp,~P(m)$
 
   - $\equiv$ { $\forall m\leq n\pp,~ P(m)\equiv \left((\forall m\leq n,~ P(m))\land P(n\pp)\right)$ }
 
