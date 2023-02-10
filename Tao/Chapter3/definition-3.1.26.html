@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Proposition 2.2.6 – Sosu
+    Definition 3.1.26 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Proposition 2.2.6' />
+      <meta property='og:title' content='Definition 3.1.26' />
     
     
       <base href='/sosu/' />
@@ -215,8 +215,8 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Tao/Chapter2'>
-      Chapter2
+    <a href='Tao/Chapter3'>
+      Chapter3
     </a>
   </div>
 
@@ -273,24 +273,22 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Proposition 2.2.6
+    Definition 3.1.26
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong><strong>Proposition 2.2.6</strong></strong> (Cancellation law). <em>Let <span class='math inline'>\(a,b,c\)</span> be natural numbers such that <span class='math inline'>\(a+b=a+c\)</span>. Then we have <span class='math inline'>\(b=c\)</span>.</em>
-    </p>
-  
-    <p class='mb-3'>
-      <span class='math inline'>\(Proof~by~Tao\)</span>. We prove this by induction on <span class='math inline'>\(a\)</span>. First consider the base case <span class='math inline'>\(a=0\)</span>. Then we have <span class='math inline'>\(0+b=0+c\)</span>, which by <a href='Tao/Chapter2/definition-2.2.1' class='text-purple-600 mavenLinkBold hover:underline'>definition of addition</a> implies that <span class='math inline'>\(b=c\)</span> as desired. Now suppose inductively that we have the cancellation law for <span class='math inline'>\(a\)</span> (so that <span class='math inline'>\(a+b=a+c\)</span> implies <span class='math inline'>\(b=c\)</span>); we now have to prove the cancellation law for <span class='math inline'>\(a\pp\)</span>. In other words, we assume that <span class='math inline'>\((a\pp)+b=(a\pp)+c\)</span> and need to show that <span class='math inline'>\(b=c\)</span>. By the <a href='Tao/Chapter2/definition-2.2.1' class='text-purple-600 mavenLinkBold hover:underline'>definition of addition</a>, <span class='math inline'>\((a\pp)+b=(a+b)\pp\)</span> and <span class='math inline'>\((a\pp)+c=(a+c)\pp\)</span> and so we have <span class='math inline'>\((a+b)\pp=(a+c)\pp\)</span>. By <a href='Tao/Chapter2/axiom-2.4' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 2.4</a>, we have <span class='math inline'>\(a+b=a+c\)</span>. Since we already have the cancellation law for <span class='math inline'>\(a\)</span>, we thus have <span class='math inline'>\(b=c\)</span> as desired. This closes the induction. <span class='math inline'>\(\square\)</span>
+      <strong>Definition 3.1.26</strong> (Difference sets). Given two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, we define the set <span class='math inline'>\(A-B\)</span> or <span class='math inline'>\(A\setminus B\)</span> to be the set <span class='math inline'>\(A\)</span> with any elements of <span class='math inline'>\(B\)</span> removed: <span class='math display'>$$
+A\setminus B:=\{x\in A:x\notin B\};
+$$</span> for instance, <span class='math inline'>\(\{1,2,3,4\}\setminus\{2,4,6\}=\{1,3\}\)</span>. In many cases <span class='math inline'>\(B\)</span> will be a subset of <span class='math inline'>\(A\)</span>, but not necessarily.
     </p>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/proposition-2.2.6.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/definition-3.1.26.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -302,51 +300,6 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.2.3'>
-            Exercise 2.2.3 (Propostion 2.2.12)
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter2/proposition-2.2.6' class='text-gray-600 font-bold hover:bg-gray-50'>cancellation law</a>: <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter2/proposition-2.2.6' class='text-gray-600 font-bold hover:bg-gray-50'>cancellation law</a>: <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }</p></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter2/proposition-2.2.6' class='text-gray-600 font-bold hover:bg-gray-50'>cancellation law:</a> <span class='math inline'>\(a+b=a+c\implies b=c\)</span> }</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2'>
-            Chapter2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><a href='Tao/Chapter2/proposition-2.2.6' class='text-gray-600 font-bold hover:bg-gray-50'>Proof by Tao</a></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
