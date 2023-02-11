@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=51248402-4f16-4af2-95ef-377d66c36201' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=d8a52675-8f1b-46b9-a435-bb3eadcfde5b' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -280,7 +280,11 @@
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Lemma 3.1.12.</strong>
+      <strong>Lemma 3.1.12</strong> <em>If <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then <span class='math inline'>\(\{a,b\}=\{a\}\cup\{b\}\)</span>. If <span class='math inline'>\(A,B,C\)</span> are sets, then the union operation is commutative (i.e., <span class='math inline'>\(A\cup B= B\cup A\)</span>) and associative (i.e., <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C))\)</span>. Also, we have <span class='math inline'>\(A\cup A=A\cup\emptyset=\emptyset\cup A=A\)</span>.</em>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='math inline'>\(Proof~by~Tao\)</span>. We prove just the associativity identity <span class='math inline'>\((A\cup B)\cup C=A\cup (B\cup C)\)</span>, and leave the remaining claims to <a href='Tao/Chapter3/Exercises/exercise-3.1.3' class='text-purple-600 mavenLinkBold hover:underline'>Exercise 3.1.3</a>. By <a href='Tao/Chapter3/axiom-3.2' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.2</a>, we need to show that every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\((A\cup B)\cup C\)</span> is an element of <span class='math inline'>\(A\cup(B\cup C)\)</span>, and vice versa. So suppose first that <span class='math inline'>\(x\)</span> is an element of <span class='math inline'>\((A\cup B)\cup C\)</span>. By <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a>, this means that at least one of <span class='math inline'>\(x\in A\cup B\)</span> or <span class='math inline'>\(x\in C\)</span> is true. We now divide into two cases. If <span class='math inline'>\(x\in C\)</span>, then by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again <span class='math inline'>\(x\in B\cup C\)</span>, and so by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again we have <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Now suppose instead <span class='math inline'>\(x\in A\cup B\)</span>, then by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again <span class='math inline'>\(x\in A\)</span> or <span class='math inline'>\(x\in B\)</span>. If <span class='math inline'>\(x\in A\)</span> then <span class='math inline'>\(x\in A\cup(B\cup C)\)</span> by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a>, while if <span class='math inline'>\(x\in B\)</span> then by consecutive applications of <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> we have <span class='math inline'>\(x\in B\cup C\)</span> and hence <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Thus in all cases we see that every element of <span class='math inline'>\((A\cup B)\cup C\)</span> lies in <span class='math inline'>\(A\cup(B\cup C)\)</span>. A similar argument shows that every element of <span class='math inline'>\(A\cup(B\cup C)\)</span> lies in <span class='math inline'>\((A\cup B)\cup C\)</span>, and so <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C)\)</span> as desired. <span class='math inline'>\(\square\)</span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
@@ -323,6 +327,10 @@
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><a href='Tao/Chapter3/lemma-3.1.12' class='text-gray-600 font-bold hover:bg-gray-50'>Proof by Tao</a></div>
+    </div>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
       <div><p><strong>Exercise 3.1.3.</strong> Prove <a href='Tao/Chapter3/lemma-3.1.12' class='text-gray-600 font-bold hover:bg-gray-50'>Lemma 3.1.12</a></p></div>
