@@ -1,3 +1,3 @@
 #+title: Axiom 3.2
 
-*Axiom 3.2.* (Equality of sets). /Two sets $A$ and $B$ are equal, $A=B$ iff every element of $A$ is and element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
+*Axiom 3.2.* (Equality of sets). /Two sets $A$ and $B$ are equal, $A=B$ iff every element of $A$ is an element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
