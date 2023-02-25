@@ -1,0 +1,7 @@
+#+title: Definition 3.1.4
+
+*Definition 3.1.4* (Equality of sets). /Two sets $A$ and $B$ are $equal$, $A=B$, iff every element of $A$ is an element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
+
+  $$
+  (\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)
+  $$
