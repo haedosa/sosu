@@ -1,8 +1,0 @@
-#+title: Lemma 3.1.12
-
-*Lemma 3.1.12* /If $a$ and $b$ are objects, then $\{a,b\}=\{a\}\cup\{b\}$. If $A,B,C$ are sets, then the union operation is commutative (i.e., $A\cup B= B\cup A$) and associative (i.e., $(A\cup B)\cup C=A\cup(B\cup C))$. Also, we have $A\cup A=A\cup\emptyset=\emptyset\cup A=A$./
-
-$Proof~by~Tao$. We prove just the associativity identity $(A\cup B)\cup C=A\cup (B\cup C)$, and leave the remaining claims to [[./Exercises/exercise-3.1.3.org][Exercise 3.1.3]]. By [[./axiom-3.2.org][Axiom 3.2]], we need to show that every element $x$ of $(A\cup B)\cup C$ is an element of $A\cup(B\cup C)$, and vice versa. So suppose first that $x$ is an element of $(A\cup B)\cup C$. By [[./axiom-3.5.org][Axiom 3.5]], this means that at least one of $x\in A\cup B$ or $x\in C$ is true.
-We now divide into two cases. If $x\in C$, then by [[./axiom-3.5.org][Axiom 3.5]] again $x\in B\cup C$, and so by [[./axiom-3.5.org][Axiom 3.5]] again we have $x\in A\cup(B\cup C)$.
-Now suppose instead $x\in A\cup B$, then by [[./axiom-3.5.org][Axiom 3.5]] again $x\in A$ or $x\in B$. If $x\in A$ then $x\in A\cup(B\cup C)$ by [[./axiom-3.5.org][Axiom 3.5]], while if $x\in B$ then by consecutive applications of [[./axiom-3.5.org][Axiom 3.5]] we have $x\in B\cup C$ and hence $x\in A\cup(B\cup C)$.
-Thus in all cases we see that every element of $(A\cup B)\cup C$ lies in $A\cup(B\cup C)$. A similar argument shows that every element of $A\cup(B\cup C)$ lies in $(A\cup B)\cup C$, and so $(A\cup B)\cup C=A\cup(B\cup C)$ as desired. $\square$

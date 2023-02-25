@@ -71,23 +71,21 @@
   :CUSTOM_ID: lemma-3.1.5
   :END:
 
-  - [[./Chapter3/lemma-3.1.5.org][Proof by Tao]]
+  - [[./Chapter3/lemma-3.1.6.org][Proof by Tao]]
 
 - *Lemma 3.1.13* /If $a$ and $b$ are objects, then $\{a,b\}=\{a\}\cup\{b\}$. If $A,B,C$ are sets, then the union operation is commutative (i.e., $A\cup B= B\cup A$) and associative (i.e., $(A\cup B)\cup C=A\cup(B\cup C))$. Also, we have $A\cup A=A\cup\emptyset=\emptyset\cup A=A$./
   :PROPERTIES:
   :CUSTOM_ID: lemma-3.1.12
   :END:
 
-  - [[./Chapter3/lemma-3.1.12.org][Proof by Tao]]
+  - [[./Chapter3/lemma-3.1.13.org][Proof by Tao]]
   - $Proof$. See [[./Chapter3/Exercises/exercise-3.1.3.org][Exercise 3.1.3]]
 
 * Exercises
  - *Exercise 3.1.2* /Using only [[./Chapter3/definition-3.1.4.org][Definition 3.1.4]], [[./Chapter3/axiom-3.1.org][Axiom 3.1]], [[./Chapter3/axiom-3.2.org][Axiom 3.2]], and [[./Chapter3/axiom-3.3.org][Axiom 3.3]], prove that the sets $\emptyset, \{\emptyset\}, \{\{\emptyset\}\}$, and $\{\emptyset, \{\emptyset\}\}$ are all distinct (i.e, no two of them are equal to each other)./
  - [[./Chapter3/Exercises/exercise-3.1.2.org][Exercise-3.1.2 with solution]]
 
-
-
- - *Exercise 3.1.3.* Prove [[./Chapter3/lemma-3.1.12.org][Lemma 3.1.12]]
+ - *Exercise 3.1.3.* Prove [[./Chapter3/lemma-3.1.13.org][Lemma 3.1.13]]
   :PROPERTIES:
   :CUSTOM_ID: excercise-3.1.3
   :END:
