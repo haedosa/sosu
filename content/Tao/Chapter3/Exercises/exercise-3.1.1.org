@@ -1,0 +1,47 @@
+#+title: Exercise 3.1.1
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+Show that the definition of equality in Definition 3.1.4 is reflexive, symmetric, and transitive.
+
+- $\bullet$ Show that Definition 3.1.4 is reflexive, symmetric, and transitive.
+- $\Vdash$ { prove by cases }
+  - $\bullet$ Show that Definition 3.1.4 is reflexive, i.e., $A=A$
+  - $\Vdash$ $A=A$
+  - $\equiv$ { $x\in A \iff x\in A$ }
+    - $\text{True}$
+  - $\square$
+  - $\bullet$ Show that Definition 3.1.4 is symmetric, i.e., $A=B\implies B=A$
+  - $\Vdash$ $A=B$
+  - $\equiv$ { Definition 3.1.4 }
+    - $(x\in A\implies x\in B)\land (x\in B\implies x\in A)$
+  - $\equiv$ { $P\land Q\equiv Q\land P$ }
+    - $(x\in B\implies x\in A)\land (x\in A\implies x\in B)$
+  - $\equiv$ { Definition 3.1.4 }
+    - $B=A$
+  - $\square$
+  - $\bullet$ Show that Definition 3.1.4 is transitive, i.e., $(A=B)\land(B=C)\implies A=C$
+  - $\Vdash$ $(A=B)\land(B=C)$
+  - $\equiv$ { Definition 3.1.4  }
+    - $(x\in A\implies x\in B)\land (x\in B\implies x\in A)\land (x\in B\implies x\in C)\land (x\in C\implies x\in B)$
+  - $\equiv$ { $P\land Q\equiv Q\land P$ }
+    - $(x\in A\implies x\in B)\land (x\in B\implies x\in C)\land (x\in C\implies x\in B)\land (x\in B\implies x\in A)$
+  - $\Rightarrow$ { $[(P\implies Q)\land (Q\implies R)]\implies (P\implies R)$ }
+    - $(x\in A \implies x\in C)\land (x\in C\implies x\in A)$
+  - $\equiv$ { Definition 3.1.4 }
+    - $A=C$
+  - $\square$
+- $\square$

@@ -3,9 +3,7 @@
 
 - *Axiom 3.1.* (Sets are objects). /IF $A$ is a set, then $A$ is also an object. In particular, given two sets $A$ and $B$, it is meaningful to ask whether $A$ is also an element of $B$./
 
-- *Axiom 3.2.* (Equality of sets). /Two sets $A$ and $B$ are equal, $A=B$ iff every element of $A$ is an element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
-
-- *Axiom 3.3.* (Empty set). /There exists a set $\emptyset$, known as the empty set, which contains no elements, i.e., for every object $x$ we have $x\notin\emptyset$./
+- *Axiom 3.2.* (Empty set). /There exists a set $\emptyset$, known as the empty set, which contains no elements, i.e., for every object $x$ we have $x\notin\emptyset$./
 
 - *Axiom 3.4.* (Singleton sets and pair sets). /If $a$ is an object, then there exists a set $\{a\}$ whose only element is $a$, i.e., for every object $y$, we have $y\in\{a\}$ if and only if $y=a$; we refer to $\{a\}$ as the *singleton set* whose element is $a$. Furthermore, if $a$ and $b$ are objects, then there exists a set $\{a,b\}$ whose only elements are $a$ and $b$; i.e., for every object $y$, we have $y\in\{a,b\}$ if and only if $y=a$ or $y=b$; we refer to this set as the *pair set* formed by $a$ and $b$./
 
@@ -28,6 +26,7 @@
 
 
 * Definitions
+ - *Definition 3.1.4.* (Equality of sets). /Two sets $A$ and $B$ are equal, $A=B$ iff every element of $A$ is an element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
 
 - *Definition 3.1.1* (Informal). We define a /set/ $A$ to be any unordered collection of objects, e.g., $\{3,8,5,2\}$ is a set. If $x$ is an object, we say that $x$ /is an element of/ $A$ or $x\in A$ if $x$ lies in the collection; otherwise we say that $x\notin A$. For instance, $3\in\{1,2,3,4,5\}$ but $7\notin\{1,2,3,4,5\}$.
     :PROPERTIES:
