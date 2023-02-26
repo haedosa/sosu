@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Lemma 3.1.12 – Sosu
+    Definition 3.1.4 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Lemma 3.1.12' />
+      <meta property='og:title' content='Definition 3.1.4' />
     
     
       <base href='/sosu/' />
@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=501b9775-e10e-46b7-ad91-9fe8b24fbdfe' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=e1b4abb4-78f6-41d5-b570-4bf1d283f2ac' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -273,24 +273,26 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Lemma 3.1.12
+    Definition 3.1.4
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Lemma 3.1.12</strong> <em>If <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then <span class='math inline'>\(\{a,b\}=\{a\}\cup\{b\}\)</span>. If <span class='math inline'>\(A,B,C\)</span> are sets, then the union operation is commutative (i.e., <span class='math inline'>\(A\cup B= B\cup A\)</span>) and associative (i.e., <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C))\)</span>. Also, we have <span class='math inline'>\(A\cup A=A\cup\emptyset=\emptyset\cup A=A\)</span>.</em>
+      <strong>Definition 3.1.4</strong> (Equality of sets). <em>Two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are <span class='math inline'>\(equal\)</span>, <span class='math inline'>\(A=B\)</span>, iff every element of <span class='math inline'>\(A\)</span> is an element of <span class='math inline'>\(B\)</span> and vice versa. To put it another way, <span class='math inline'>\(A=B\)</span> if and only if every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> belongs also to <span class='math inline'>\(B\)</span>, and every element <span class='math inline'>\(y\)</span> of <span class='math inline'>\(B\)</span> belongs also to <span class='math inline'>\(A\)</span>.</em>
     </p>
   
     <p class='mb-3'>
-      <span class='math inline'>\(Proof~by~Tao\)</span>. We prove just the associativity identity <span class='math inline'>\((A\cup B)\cup C=A\cup (B\cup C)\)</span>, and leave the remaining claims to <a href='Tao/Chapter3/Exercises/exercise-3.1.3' class='text-purple-600 mavenLinkBold hover:underline'>Exercise 3.1.3</a>. By <a href='Tao/Chapter3/axiom-3.2' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.2</a>, we need to show that every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\((A\cup B)\cup C\)</span> is an element of <span class='math inline'>\(A\cup(B\cup C)\)</span>, and vice versa. So suppose first that <span class='math inline'>\(x\)</span> is an element of <span class='math inline'>\((A\cup B)\cup C\)</span>. By <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a>, this means that at least one of <span class='math inline'>\(x\in A\cup B\)</span> or <span class='math inline'>\(x\in C\)</span> is true. We now divide into two cases. If <span class='math inline'>\(x\in C\)</span>, then by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again <span class='math inline'>\(x\in B\cup C\)</span>, and so by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again we have <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Now suppose instead <span class='math inline'>\(x\in A\cup B\)</span>, then by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> again <span class='math inline'>\(x\in A\)</span> or <span class='math inline'>\(x\in B\)</span>. If <span class='math inline'>\(x\in A\)</span> then <span class='math inline'>\(x\in A\cup(B\cup C)\)</span> by <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a>, while if <span class='math inline'>\(x\in B\)</span> then by consecutive applications of <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.5</a> we have <span class='math inline'>\(x\in B\cup C\)</span> and hence <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Thus in all cases we see that every element of <span class='math inline'>\((A\cup B)\cup C\)</span> lies in <span class='math inline'>\(A\cup(B\cup C)\)</span>. A similar argument shows that every element of <span class='math inline'>\(A\cup(B\cup C)\)</span> lies in <span class='math inline'>\((A\cup B)\cup C\)</span>, and so <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C)\)</span> as desired. <span class='math inline'>\(\square\)</span>
+      <span class='math display'>$$
+  (\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)
+  $$</span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/lemma-3.1.12.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/definition-3.1.4.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -307,14 +309,44 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.1.3'>
-            Exercise 3.1.3 (Lemma 3.1.12)
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/lemma-3.1.6'>
+            Lemma 3.1.6
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p>Prove the remainig claims in Lemma <a href='Tao/Chapter3/lemma-3.1.12' class='text-gray-600 font-bold hover:bg-gray-50'>Lemma 3 1.12</a>.</p></div>
+      <div><p><span class='math inline'>\(Proof~by~Tao\)</span>. We prove by contradiction. Suppose there does not exist any object <span class='math inline'>\(x\)</span> such that <span class='math inline'>\(x\in A\)</span>. Then for all objects <span class='math inline'>\(x\)</span>, we have <span class='math inline'>\(x\notin A\)</span>. Also, by <a href='Tao/Chapter3/axiom-3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.2</a> we have <span class='math inline'>\(x\notin\emptyset\)</span>. Thus <span class='math inline'>\(x\in A\iff x\in\emptyset\)</span> (both statements are equally false), and so <span class='math inline'>\(A=\emptyset\)</span> by <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, a contradiction.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/lemma-3.1.13'>
+            Lemma 3.1.13
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><span class='math inline'>\(Proof~by~Tao\)</span>. We prove just the associativity identity <span class='math inline'>\((A\cup B)\cup C=A\cup (B\cup C)\)</span>, and leave the remaining claims to <a href='Tao/Chapter3/Exercises/exercise-3.1.3' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 3.1.3</a>. By <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, we need to show that every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\((A\cup B)\cup C\)</span> is an element of <span class='math inline'>\(A\cup(B\cup C)\)</span>, and vice versa. So suppose first that <span class='math inline'>\(x\)</span> is an element of <span class='math inline'>\((A\cup B)\cup C\)</span>. By <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a>, this means that at least one of <span class='math inline'>\(x\in A\cup B\)</span> or <span class='math inline'>\(x\in C\)</span> is true. We now divide into two cases. If <span class='math inline'>\(x\in C\)</span>, then by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again <span class='math inline'>\(x\in B\cup C\)</span>, and so by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again we have <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Now suppose instead <span class='math inline'>\(x\in A\cup B\)</span>, then by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again <span class='math inline'>\(x\in A\)</span> or <span class='math inline'>\(x\in B\)</span>. If <span class='math inline'>\(x\in A\)</span> then <span class='math inline'>\(x\in A\cup(B\cup C)\)</span> by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a>, while if <span class='math inline'>\(x\in B\)</span> then by consecutive applications of <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> we have <span class='math inline'>\(x\in B\cup C\)</span> and hence <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Thus in all cases we see that every element of <span class='math inline'>\((A\cup B)\cup C\)</span> lies in <span class='math inline'>\(A\cup(B\cup C)\)</span>. A similar argument shows that every element of <span class='math inline'>\(A\cup(B\cup C)\)</span> lies in <span class='math inline'>\((A\cup B)\cup C\)</span>, and so <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C)\)</span> as desired. <span class='math inline'>\(\square\)</span></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.1.2'>
+            Exercise 3.1.2
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em></p></div>
     </div>
   
 </div>
@@ -329,11 +361,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><a href='Tao/Chapter3/lemma-3.1.12' class='text-gray-600 font-bold hover:bg-gray-50'>Proof by Tao</a></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><strong>Exercise 3.1.3.</strong> Prove <a href='Tao/Chapter3/lemma-3.1.12' class='text-gray-600 font-bold hover:bg-gray-50'>Lemma 3.1.12</a></p></div>
+      <div><p><strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em></p></div>
     </div>
   
 </div>

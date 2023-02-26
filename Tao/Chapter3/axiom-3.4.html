@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=501b9775-e10e-46b7-ad91-9fe8b24fbdfe' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=e1b4abb4-78f6-41d5-b570-4bf1d283f2ac' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -280,7 +280,9 @@
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Axiom 3.4.</strong> (Singleton sets and pair sets). <em>If <span class='math inline'>\(a\)</span> is an object, then there exists a set <span class='math inline'>\(\{a\}\)</span> whose only element is <span class='math inline'>\(a\)</span>, i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a\}\)</span> if and only if <span class='math inline'>\(y=a\)</span>; we refer to <span class='math inline'>\(\{a\}\)</span> as the <strong>singleton set</strong> whose element is <span class='math inline'>\(a\)</span>. Furthermore, if <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then there exists a set <span class='math inline'>\(\{a,b\}\)</span> whose only elements are <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>; i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a,b\}\)</span> if and only if <span class='math inline'>\(y=a\)</span> or <span class='math inline'>\(y=b\)</span>; we refer to this set as the <strong>pair set</strong> formed by <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>.</em>
+      <strong>Axiom 3.4.</strong> (Pairwise union). <em>Given any two sets <span class='math inline'>\(A,B\)</span>, there exists a set <span class='math inline'>\(A\cup B\)</span>, called the <strong>union</strong> of <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, which consists of all the elements which belong to <span class='math inline'>\(A\)</span> to <span class='math inline'>\(B\)</span> or both. In other words, for any object <span class='math inline'>\(x\)</span>,</em> <span class='math display'>$$
+  x\in A\cup B\iff(x\in A~ or~ x\in B).
+  $$</span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
@@ -298,6 +300,28 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/lemma-3.1.13'>
+            Lemma 3.1.13
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><span class='math inline'>\(Proof~by~Tao\)</span>. We prove just the associativity identity <span class='math inline'>\((A\cup B)\cup C=A\cup (B\cup C)\)</span>, and leave the remaining claims to <a href='Tao/Chapter3/Exercises/exercise-3.1.3' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise 3.1.3</a>. By <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, we need to show that every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\((A\cup B)\cup C\)</span> is an element of <span class='math inline'>\(A\cup(B\cup C)\)</span>, and vice versa. So suppose first that <span class='math inline'>\(x\)</span> is an element of <span class='math inline'>\((A\cup B)\cup C\)</span>. By <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a>, this means that at least one of <span class='math inline'>\(x\in A\cup B\)</span> or <span class='math inline'>\(x\in C\)</span> is true. We now divide into two cases. If <span class='math inline'>\(x\in C\)</span>, then by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again <span class='math inline'>\(x\in B\cup C\)</span>, and so by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again we have <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Now suppose instead <span class='math inline'>\(x\in A\cup B\)</span>, then by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> again <span class='math inline'>\(x\in A\)</span> or <span class='math inline'>\(x\in B\)</span>. If <span class='math inline'>\(x\in A\)</span> then <span class='math inline'>\(x\in A\cup(B\cup C)\)</span> by <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a>, while if <span class='math inline'>\(x\in B\)</span> then by consecutive applications of <a href='Tao/Chapter3/axiom-3.4' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.4</a> we have <span class='math inline'>\(x\in B\cup C\)</span> and hence <span class='math inline'>\(x\in A\cup(B\cup C)\)</span>. Thus in all cases we see that every element of <span class='math inline'>\((A\cup B)\cup C\)</span> lies in <span class='math inline'>\(A\cup(B\cup C)\)</span>. A similar argument shows that every element of <span class='math inline'>\(A\cup(B\cup C)\)</span> lies in <span class='math inline'>\((A\cup B)\cup C\)</span>, and so <span class='math inline'>\((A\cup B)\cup C=A\cup(B\cup C)\)</span> as desired. <span class='math inline'>\(\square\)</span></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
