@@ -1,0 +1,94 @@
+#+title: Exercise 3.1.2
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+*Exercise 3.1.2* /Using only [[../definition-3.1.4.org][Definition 3.1.4]], [[../axiom-3.1.org][Axiom 3.1]], [[../axiom-3.2.org][Axiom 3.2]], and [[../axiom-3.3.org][Axiom 3.3]], prove that the sets $\emptyset, \{\emptyset\}, \{\{\emptyset\}\}$, and $\{\emptyset, \{\emptyset\}\}$ are all distinct (i.e, no two of them are equal to each other)./
+
+- $\bullet$ Show that sets are all distinct from each other
+
+- $\Vdash$ { Prove by cases }
+
+  - $\bullet$ Show that $\emptyset \neq \{\emptyset\}$
+
+  - $\Vdash$ { Proof by contradiction }
+
+    - $\bullet$ Show that there is a contradiction, when
+
+    - -- $\emptyset = \{\emptyset\}$
+
+    - $\Vdash \emptyset = \{\emptyset\}$
+
+    - $\equiv$ { Definition 3.1.4 }
+      - $(\forall x, x \in \emptyset \implies x \in \{\emptyset\}) \land (\forall x, x\in \{\emptyset\} \implies x \in \emptyset)$
+
+    - $\vdash$ { And-Elimination: $(P \land Q) \vdash Q$ }
+      - $(\forall x, x \in \{\emptyset\} \implies x \in \emptyset)$
+
+    - $\vdash$ { Substitute $s$ into $x$ }
+      - $s \in \{\emptyset\} \implies s \in \emptyset$
+
+    - $\equiv$ { Axiom 3.2 }
+      - $s \in \emptyset$
+
+    - $\equiv$ { Modus tollens: $(P \implies Q, \lnot Q) \vdash \lnot P$ }
+      - $s \notin \{\emptyset\}$
+
+    - $\vdash$ { Generalization }
+      - $\forall x, x \notin \{\emptyset\}$
+
+    - $\vdash \{\emptyset \in \{\emptyset\} \land \emptyset \notin \{\emptyset\}\}$
+      - $\bot$
+
+    - $\square$
+
+  - $\square$
+
+
+  - $\bullet$ Show that $\emptyset \neq \{\{\emptyset\}\}$
+
+  - $\cdots$
+
+  - $\square$
+
+
+  - $\bullet$ Show that $\emptyset \neq \{\emptyset, \{\emptyset\}\}$
+
+  - $\cdots$
+
+  - $\square$
+
+
+   - $\bullet$ Show that $\{\emptyset\} \neq \{\{\emptyset\}\}$
+
+  - $\cdots$
+
+  - $\square$
+
+
+   - $\bullet$ Show that $\{\emptyset\} \neq \{\emptyset, \{\emptyset\}\}$
+
+  - $\cdots$
+
+  - $\square$
+
+
+   - $\bullet$ Show that $\{\{\emptyset\}\} \neq \{\emptyset, \{\emptyset\}\}$
+
+  - $\cdots$
+
+  - $\square$
+
+- $\square$

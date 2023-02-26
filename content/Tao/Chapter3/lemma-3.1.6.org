@@ -1,0 +1,5 @@
+#+title: Lemma 3.1.6
+
+*Lemma 3.1.6.* (Single choice). /Let $A$ be a non-empty set. Then there exists an objet $x$ such that $x\in A$./
+
+$Proof~by~Tao$. We prove by contradiction. Suppose there does not exist any object $x$ such that $x\in A$. Then for all objects $x$, we have $x\notin A$. Also, by [[./axiom-3.2.org][Axiom 3.2]] we have $x\notin\emptyset$. Thus $x\in A\iff x\in\emptyset$ (both statements are equally false), and so $A=\emptyset$ by [[./definition-3.1.4.org][Definition 3.1.4]], a contradiction.
