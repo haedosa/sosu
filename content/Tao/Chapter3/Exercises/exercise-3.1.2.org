@@ -37,19 +37,16 @@
     - $\vdash$ { And-Elimination: $(P \land Q) \vdash Q$ }
       - $(\forall x, x \in \{\emptyset\} \implies x \in \emptyset)$
 
-    - $\vdash$ { Substitute $s$ into $x$ }
-      - $s \in \{\emptyset\} \implies s \in \emptyset$
+    - $\vdash$ { Substitute $\emptyset$ into $x$ }
+      - $\emptyset \in \{\emptyset\} \implies \emptyset \in \emptyset$
 
-    - $\equiv$ { Axiom 3.2 }
-      - $s \in \emptyset$
+    - $\equiv$ { Axiom 3.2: $\emptyset \notin \emptyset$ and Modus tollens: $(P \implies Q, \lnot Q) \vdash \lnot P$ }
+      - $\emptyset \notin \{ \emptyset \}$
 
-    - $\equiv$ { Modus tollens: $(P \implies Q, \lnot Q) \vdash \lnot P$ }
-      - $s \notin \{\emptyset\}$
+    - $\vdash$ { $\emptyset \in \{\emptyset\}$ by definition of $\in$ and And-introduction $(P , Q ) \vdash P \land Q$ }
+      - $\emptyset \in \{\emptyset\} \land \emptyset \notin \{\emptyset\}$
 
-    - $\vdash$ { Generalization }
-      - $\forall x, x \notin \{\emptyset\}$
-
-    - $\vdash \{\emptyset \in \{\emptyset\} \land \emptyset \notin \{\emptyset\}\}$
+    - $\vdash$ { $P , \lnot P \vdash \bot$ }
       - $\bot$
 
     - $\square$
