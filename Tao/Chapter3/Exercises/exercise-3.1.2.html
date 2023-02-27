@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=e1b4abb4-78f6-41d5-b570-4bf1d283f2ac' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=bd422998-d06b-443c-8fcf-c03055c8f6bb' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -391,13 +391,13 @@
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\vdash\)</span> { Substitute <span class='math inline'>\(s\)</span> into <span class='math inline'>\(x\)</span> }
+      <span class='math inline'>\(\vdash\)</span> { Substitute <span class='math inline'>\(\emptyset\)</span> into <span class='math inline'>\(x\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(s \in \{\emptyset\} \implies s \in \emptyset\)</span>
+          <span class='math inline'>\(\emptyset \in \{\emptyset\} \implies \emptyset \in \emptyset\)</span>
         </li>
       
     </ul>
@@ -407,13 +407,13 @@
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { Axiom 3.2 }
+      <span class='math inline'>\(\equiv\)</span> { Axiom 3.2: <span class='math inline'>\(\emptyset \notin \emptyset\)</span> and Modus tollens: <span class='math inline'>\((P \implies Q, \lnot Q) \vdash \lnot P\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(s \in \emptyset\)</span>
+          <span class='math inline'>\(\emptyset \notin \{ \emptyset \}\)</span>
         </li>
       
     </ul>
@@ -423,13 +423,13 @@
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { Modus tollens: <span class='math inline'>\((P \implies Q, \lnot Q) \vdash \lnot P\)</span> }
+      <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\emptyset \in \{\emptyset\}\)</span> by definition of <span class='math inline'>\(\in\)</span> and And-introduction <span class='math inline'>\((P , Q ) \vdash P \land Q\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(s \notin \{\emptyset\}\)</span>
+          <span class='math inline'>\(\emptyset \in \{\emptyset\} \land \emptyset \notin \{\emptyset\}\)</span>
         </li>
       
     </ul>
@@ -439,23 +439,7 @@
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\vdash\)</span> { Generalization }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(\forall x, x \notin \{\emptyset\}\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\vdash \{\emptyset \in \{\emptyset\} \land \emptyset \notin \{\emptyset\}\}\)</span>
+      <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(P , \lnot P \vdash \bot\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
