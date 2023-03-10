@@ -24,6 +24,12 @@
 
 - *Axiom 3.7.* (Infinity). /There exists a set $\mathbb{N}$, whose elements are called natural numbers, as well as an object $0$ in $\mathbb{N}$, and an object $n\pp$ assigned to every natural number $n\in\mathbb{N}$, such that the Peano axioms [[./Chapter2.org][(Axioms 2.1-2.5)]] hold./
 
+- *Axiom 3.8.* (Univeral specification). /(Dangerous!) Suppose for every object $x$ we have a property $P(x)$ pertaining to $x$ (so that every $x, P(x)$ is either a true statment or a false statement). Then there exists a set $\{x:p(x)\text{ is true}\}$ such that for every object $y$,/
+  $$
+  y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
+  $$
+
+- *Axiom 3.9.* (Regularity). /If $A$ is a non-empty set, then there is at least one element $x$ of $A$ which is either not a set, or is disjoint from $A$./
 
 * Definitions
 - *Definition 3.1.1* (Informal). We define a /set/ $A$ to be any unordered collection of objects, e.g., $\{3,8,5,2\}$ is a set. If $x$ is an object, we say that $x$ /is an element of/ $A$ or $x\in A$ if $x$ lies in the collection; otherwise we say that $x\notin A$. For instance, $3\in\{1,2,3,4,5\}$ but $7\notin\{1,2,3,4,5\}$.

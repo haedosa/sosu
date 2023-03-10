@@ -1,0 +1,3 @@
+#+title: Axiom 3.9
+
+- *Axiom 3.9.* (Regularity). /If $A$ is a non-empty set, then there is at least one element $x$ of $A$ which is either not a set, or is disjoint from $A$./
