@@ -58,3 +58,16 @@ Show that the universal specification axiom, [[../axiom-3.8.org][Axiom 3.8]], if
   - { let  $\{x:x\in A\lor x\in B\}:=A\cup B$ }
 - $\equiv$ $y\in A\cup B$
 - $\square$
+\\
+
+
+[[../axiom-3.5.org][Axiom 3.5]]
+- $\bullet$ Show that $\exists\{x\in A:P(x)\}$ such that $y\in \{x\in A:P(x)\}\iff(y\in A~ \land~ P(y))$
+- -- $Q(y):\equiv y\in A\land P(y)$
+- $\Vdash$ $y\in A\land P(y)$
+  - { assumption }
+- $\equiv$ $Q(y)$
+  - { [[../axiom-3.8.org][Axiom 3.8]]: $y\in\{x:Q(x)\}\iff Q(y)$ }
+- $\equiv$ $y\in\{x:Q(x)\}$
+  - { assumption }
+- $\equiv$ $y\in\{x:x\in A\land P(x)\}$
