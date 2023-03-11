@@ -1,6 +1,6 @@
 #+title: Axiom 3.8
 
-- *Axiom 3.8.* (Univeral specification). /(Dangerous!) Suppose for every object $x$ we have a property $P(x)$ pertaining to $x$ (so that every $x, P(x)$ is either a true statment or a false statement). Then there exists a set $\{x:p(x)\text{ is true}\}$ such that for every object $y$,/
+- *Axiom 3.8.* (Univeral specification). /(Dangerous!) Suppose for every object $x$ we have a property $P(x)$ pertaining to $x$ (so that every $x, P(x)$ is either a true statment or a false statement). Then there exists a set $\{x:P(x)\text{ is true}\}$ such that for every object $y$,/
   $$
   y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
   $$

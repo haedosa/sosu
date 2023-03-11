@@ -1,0 +1,60 @@
+ #+title: Exercise 3.2.1
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+Show that the universal specification axiom, [[../axiom-3.8.org][Axiom 3.8]], if assumed to be true, would imply [[../../Chapter3.org][Axioms 3.2, 3.3, 3.4, 3.5, and 3.6]]. (If we assume that all natrual numbers are object, we also obtain [[../axiom-3.7.org][Axiom 3.7]].) Thus, this axiom, if permitted, would simplify the foundations of set theory tremendously (and can be viewed as one basis for an intuitive model of set theory known as "naive set theory"). Unfortunately, as we have seen, [[../axiom-3.8.org][Axiom 3.8]] is "too good to be true"!
+
+[[../axiom-3.2.org][Axiom 3.2]]
+- $\bullet$ Show that $\exists S$ such that $\forall x,~x\notin S$
+- -- $P(x):=\forall x,\text{ False}$
+- $\Vdash$ $\forall y,~P(y)$ is False
+  - { assumption }
+- $\equiv$ $\text{True}$
+  - { [[../axiom-3.8.org][Axiom 3.8]]: $y\in\{x:P(x)\}\iff P(y)$ }
+- $\equiv$ $\forall y,~y\in\{x:P(x)\}$ is False
+  - { $y\in S$ is False $\iff$ $y\notin S$ }
+- $\equiv$ $\forall y,~y\notin\{x:P(x)\}$
+- $\square$
+\\
+
+[[../axiom-3.3.org][Axiom 3.3]]
+- $\bullet$ Show that $\exists \{a\}$ such that $\forall y,~y\in\{a\}\iff y=a$
+- -- $P(x):\equiv \forall x,~x=a$
+- $\Vdash$ $\forall y,~y=a$
+  - { assumption }
+- $\equiv$ $P(y)$
+  - { [[../axiom-3.8.org][Axiom 3.8]]: $y\in\{x:P(x)\}\iff P(y)$ }
+- $\equiv$ $y\in\{x:P(x)\}$
+  - { assumption }
+- $\equiv$ $y\in\{x:\forall x,~x=a\}$
+  - { $\{x:\forall x,~x=a\} = \{a\}$ }
+- $\equiv$ $y\in\{a\}$
+- $\square$
+
+\\
+[[../axiom-3.4.org][Axiom 3.4]]
+- $\bullet$ Show that $\exists(A\cup B)$ such that $x\in A\cup B\iff(x\in A~ or~ x\in B)$
+- -- $P(x):\equiv x\in A\lor x\in B$
+- $\Vdash$ $y\in A\lor y\in B$
+  - { assumption }
+- $\equiv$ $P(y)$
+  - { [[../axiom-3.8.org][Axiom 3.8]]: $y\in\{x:P(x)\}\iff P(y)$ }
+- $\equiv$ $y\in\{x:P(x)\}$
+  - { asuumption }
+- $\equiv$ $y\in\{x:x\in A\lor x\in B\}$
+  - { let  $\{x:x\in A\lor x\in B\}:=A\cup B$ }
+- $\equiv$ $y\in A\cup B$
+- $\square$
