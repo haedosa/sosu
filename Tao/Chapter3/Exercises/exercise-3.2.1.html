@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Definition 2.3.1 – Sosu
+    Exercise 3.2.1 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Definition 2.3.1' />
+      <meta property='og:title' content='Exercise 3.2.1' />
     
     
       <base href='/sosu/' />
@@ -215,8 +215,19 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Tao/Chapter2'>
-      Chapter2
+    <a href='Tao/Chapter3/Exercises'>
+      Exercises
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter3'>
+      Chapter3
     </a>
   </div>
 
@@ -252,6 +263,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -273,20 +288,224 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Definition 2.3.1
+    Exercise 3.2.1
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Definition 2.3.1</strong> (Multiplication of natural numbers). Let <span class='math inline'>\(m\)</span> be a natural number. To multiply zero to <span class='math inline'>\(m\)</span>, we deﬁne <span class='math inline'>\(0 \times m := 0\)</span>. Now suppose inductively that we have deﬁned how to multiply <span class='math inline'>\(n\)</span> to <span class='math inline'>\(m\)</span>. Then we can multiply <span class='math inline'>\(n\pp\)</span> to <span class='math inline'>\(m\)</span> by deﬁning <span class='math inline'>\((n\pp) \times m := (n \times m) + m\)</span>.
+      Show that the universal specification axiom, <a href='Tao/Chapter3/axiom-3.8' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.8</a>, if assumed to be true, would imply <a href='Tao/Chapter3' class='text-purple-600 mavenLinkBold hover:underline'>Axioms 3.2, 3.3, 3.4, 3.5, and 3.6</a>. (If we assume that all natrual numbers are object, we also obtain <a href='Tao/Chapter3/axiom-3.7' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.7</a>.) Thus, this axiom, if permitted, would simplify the foundations of set theory tremendously (and can be viewed as one basis for an intuitive model of set theory known as "naive set theory"). Unfortunately, as we have seen, <a href='Tao/Chapter3/axiom-3.8' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.8</a> is "too good to be true"!
     </p>
+  
+    <p class='mb-3'>
+      <a href='Tao/Chapter3/axiom-3.2' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.2</a>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\exists S\)</span> such that <span class='math inline'>\(\forall x,~x\notin S\)</span>
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(P(x):=\forall x,\text{ False}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall y,~P(y)\)</span> is False
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { assumption }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(\text{True}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { <a href='Tao/Chapter3/axiom-3.8' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.8</a>: <span class='math inline'>\(y\in\{x:P(x)\}\iff P(y)\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(\forall y,~y\in\{x:P(x)\}\)</span> is False
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { <span class='math inline'>\(y\in S\)</span> is False <span class='math inline'>\(\iff\)</span> <span class='math inline'>\(y\notin S\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(\forall y,~y\notin\{x:P(x)\}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.3</a>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\exists \{a\}\)</span> such that <span class='math inline'>\(\forall y,~y\in\{a\}\iff y=a\)</span>
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(P(x):\equiv \forall x,~x=a\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall y,~y=a\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { assumption }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(P(y)\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { <a href='Tao/Chapter3/axiom-3.8' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.8</a>: <span class='math inline'>\(y\in\{x:P(x)\}\iff P(y)\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in\{x:P(x)\}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { assumption }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in\{x:\forall x,~x=a\}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { <span class='math inline'>\(\{x:\forall x,~x=a\} = \{a\}\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in\{a\}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><a href='Tao/Chapter3/axiom-3.4' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.4</a>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\exists(A\cup B)\)</span> such that <span class='math inline'>\(x\in A\cup B\iff(x\in A~ or~ x\in B)\)</span>
+        </li>
+      
+        <li>
+          – <span class='math inline'>\(P(x):\equiv x\in A\lor x\in B\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(y\in A\lor y\in B\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { assumption }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(P(y)\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { <a href='Tao/Chapter3/axiom-3.8' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.8</a>: <span class='math inline'>\(y\in\{x:P(x)\}\iff P(y)\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in\{x:P(x)\}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { asuumption }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in\{x:x\in A\lor x\in B\}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          { let <span class='math inline'>\(\{x:x\in A\lor x\in B\}:=A\cup B\)</span> }
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> <span class='math inline'>\(y\in A\cup B\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/definition-2.3.1.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/Exercises/exercise-3.2.1.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -303,52 +522,14 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.3.5'>
-            Exercise 2.3.5 (Proposition 2.3.9)
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3'>
+            Chapter3
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition of multiplication</a>: <span class='math inline'>\((n\pp)\times m:=(n\times m)+m\)</span>; <span class='math inline'>\(n\pp=n+1\)</span> }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition of multiplication</a>: <span class='math inline'>\(0\times m:=0\)</span> }</div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.3.4'>
-            Exercise 2.3.4
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition of multiplication</a>: <span class='math inline'>\((n\pp)\times m:=n\times m+m\)</span>;<br /><span class='math inline'>\(\hspace{1cm} 2m=(1\pp)m=1m+m=m+m\)</span> }</div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2/Exercises/exercise-2.3.3'>
-            Exercise 2.3.3 (Proporsition 2.3.5 )
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(=\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 2.3.1</a>: <span class='math inline'>\((n\pp)\times m:=(n\times m)+m\)</span> }</p></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter2/definition-2.3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 2.3.1</a>: <span class='math inline'>\(\forall m.~0\times m:=0\)</span> }</p></div>
+      <div><p><a href='Tao/Chapter3/Exercises/exercise-3.2.1' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise-3.2.1 with solution</a></p></div>
     </div>
   
 </div>
