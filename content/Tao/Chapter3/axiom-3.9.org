@@ -1,3 +1,6 @@
 #+title: Axiom 3.9
 
 - *Axiom 3.9.* (Regularity). /If $A$ is a non-empty set, then there is at least one element $x$ of $A$ which is either not a set, or is disjoint from $A$./
+
+
+- In first order logic, it can be written as $\forall x (x \neq \emptyset \implies \exists y ( y \in x \land y \cap x = \emptyset))$
