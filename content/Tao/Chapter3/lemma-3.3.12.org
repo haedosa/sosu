@@ -1,0 +1,27 @@
+#+title: Lemma 3.3.12
+
+*Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions.
+Then $f\circ(g\circ h)=(f\circ g)\circ h$.
+
+$Proof~by~Tao$. Since $g\circ g$ is a function form $X$ to $Z$, $f\circ(g\circ h)$ is a function from $X$ to $W$.
+Simliarly $f\circ g$ is a function from $Y$ to $W$, and hence $(f\circ g)\circ h$ is a function from $X$ to $W$.
+Thus $f\circ(g\circ h)$ and $(f\circ g)\circ h$ have the same domain and range. In order to check that they are equal,
+we see from [[./definition-3.3.7.org][Definition 3.3.7]] that we have verify that $(f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)$ for all $x\in X$.
+But by [[./definition-3.3.10.org][Definition 3.3.10]]
+$$
+(f\circ (g\circ h))(x)=f((g\circ h)(x))
+$$
+
+$$
+=f(g(h(x)))
+$$
+
+$$
+=(f\circ g)(h(x))
+$$
+
+$$
+=((f\circ g)\circ h)(x)
+$$
+
+as desired. $\square$

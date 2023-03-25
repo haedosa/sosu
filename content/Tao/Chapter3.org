@@ -98,6 +98,10 @@
   - [[./Chapter3/lemma-3.1.13.org][Proof by Tao]]
   - $Proof$. See [[./Chapter3/Exercises/exercise-3.1.3.org][Exercise 3.1.3]]
 
+- *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions. Then $f\circ(g\circ h)=(f\circ g)\circ h$.
+  - [[./Chapter3/lemma-3.3.12.org][Proof by Tao]]
+
+
 * Exercises
  - *Exercise 3.1.2* /Using only [[./Chapter3/definition-3.1.4.org][Definition 3.1.4]], [[./Chapter3/axiom-3.1.org][Axiom 3.1]], [[./Chapter3/axiom-3.2.org][Axiom 3.2]], and [[./Chapter3/axiom-3.3.org][Axiom 3.3]], prove that the sets $\emptyset, \{\emptyset\}, \{\{\emptyset\}\}$, and $\{\emptyset, \{\emptyset\}\}$ are all distinct (i.e, no two of them are equal to each other)./
  - [[./Chapter3/Exercises/exercise-3.1.2.org][Exercise-3.1.2 with solution]]
