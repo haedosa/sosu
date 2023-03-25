@@ -1,0 +1,7 @@
+#+title: Definition 3.1.15
+
+*Definition 3.1.15* (Subsets). Let $A,B$ be sets. We say that $A$ is a /subset/ of $B$, denoted $A\subseteq B$, iff every every element of $A$ is also an element of $B$, i.e.
+      $$
+      \text{For any object }x,~~x\in A\implies x\in B.
+      $$
+      We say that $A$ is a proper subset of $B$, denoted $A\subsetneq B$, if $A\subseteq B$ and $A\neq B$.
