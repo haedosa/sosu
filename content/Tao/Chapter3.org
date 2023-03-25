@@ -74,6 +74,13 @@
        y=f(x)\iff P(x,y)\text{ is true. }
      $$
 
+- *Definition 3.3.7* (Equality of functions). Two functions $f:X\to Y,~g:X\to Y$ with the same domain and range are said to be *equal*, $f=g$ if and only if $f(x)=g(x)$ for /all/ $x\in X$. (If $f(x)$ and $g(x)$ agree for some values of $x$, but not others, then we do not consider $f$ and $g$ to be equal[fn:E: In Chapter 11.45, we shall introduce a weaker notion of equality, that of two functions being equal almost everywhere].)
+
+- *Definition 3.3.10* (Composition). Let $f:X\to Y$ and $g:Y\to Z$ be two functions, such that the range of $f$ is the same set as the domain of $g$. We then define the /composition/ $g\circ f:X\to Z$ of two functions $g$ and $f$ to be the function defined explicitly by the formula
+      $$
+      (g\circ f)(x):=g(f(x))
+      $$
+    If the range of $f$ does not match the domain of $g$, we leave the composition $g\circ f$ undefined.
 * Propositions
 
 - *Lemma 3.1.6.* (Single choice). /Let $A$ be a non-empty set. Then there exists an objet $x$ such that $x\in A$./

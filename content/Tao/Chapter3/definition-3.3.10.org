@@ -1,0 +1,8 @@
+#+title: Definition 3.3.10
+
+*Definition 3.3.10* (Composition). Let $f:X\to Y$ and $g:Y\to Z$ be two functions, such that the range of $f$ is the same set as the domain of $g$.
+We then define the /composition/ $g\circ f:X\to Z$ of two functions $g$ and $f$ to be the function defined explicitly by the formula
+$$
+(g\circ f)(x):=g(f(x))
+$$
+If the range of $f$ does not match the domain of $g$, we leave the composition $g\circ f$ undefined.
