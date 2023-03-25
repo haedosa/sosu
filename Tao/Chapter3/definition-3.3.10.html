@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Axiom 3.3 – Sosu
+    Definition 3.3.10 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Axiom 3.3' />
+      <meta property='og:title' content='Definition 3.3.10' />
     
     
       <base href='/sosu/' />
@@ -273,20 +273,22 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Axiom 3.3
+    Definition 3.3.10
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Axiom 3.3.</strong> (Singleton sets and pair sets). <em>If <span class='math inline'>\(a\)</span> is an object, then there exists a set <span class='math inline'>\(\{a\}\)</span> whose only element is <span class='math inline'>\(a\)</span>, i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a\}\)</span> if and only if <span class='math inline'>\(y=a\)</span>; we refer to <span class='math inline'>\(\{a\}\)</span> as the <strong>singleton set</strong> whose element is <span class='math inline'>\(a\)</span>. Furthermore, if <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then there exists a set <span class='math inline'>\(\{a,b\}\)</span> whose only elements are <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>; i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a,b\}\)</span> if and only if <span class='math inline'>\(y=a\)</span> or <span class='math inline'>\(y=b\)</span>; we refer to this set as the <strong>pair set</strong> formed by <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>.</em>
+      <strong>Definition 3.3.10</strong> (Composition). Let <span class='math inline'>\(f:X\to Y\)</span> and <span class='math inline'>\(g:Y\to Z\)</span> be two functions, such that the range of <span class='math inline'>\(f\)</span> is the same set as the domain of <span class='math inline'>\(g\)</span>. We then define the <em>composition</em> <span class='math inline'>\(g\circ f:X\to Z\)</span> of two functions <span class='math inline'>\(g\)</span> and <span class='math inline'>\(f\)</span> to be the function defined explicitly by the formula <span class='math display'>$$
+(g\circ f)(x):=g(f(x))
+$$</span> If the range of <span class='math inline'>\(f\)</span> does not match the domain of <span class='math inline'>\(g\)</span>, we leave the composition <span class='math inline'>\(g\circ f\)</span> undefined.
     </p>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/axiom-3.3.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/definition-3.3.10.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -298,77 +300,6 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.2.2'>
-            Exercise 3.2.2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div>– <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>axiom 3.3: the singleton set axiom</a></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p>Use <a href='Tao/Chapter3/axiom-3.9' class='text-gray-600 font-bold hover:bg-gray-50'>the axiom of regularity</a> (and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>the singleton set axiom</a>) to show that if <span class='math inline'>\(A\)</span> is a set, then <span class='math inline'>\(A \in A\)</span>. Furthermore, show that if <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are two sets, then either <span class='math inline'>\(A \notin B\)</span> or <span class='math inline'>\(B \notin A\)</span> (or both).</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.2.1'>
-            Exercise 3.2.1
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><br /><a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.3</a></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.1.2'>
-            Exercise 3.1.2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3'>
-            Chapter3
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
