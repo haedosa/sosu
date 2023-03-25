@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Axiom 3.8 – Sosu
+    Lemma 3.3.12 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Axiom 3.8' />
+      <meta property='og:title' content='Lemma 3.3.12' />
     
     
       <base href='/sosu/' />
@@ -273,34 +273,48 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Axiom 3.8
+    Lemma 3.3.12
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <strong>Axiom 3.8.</strong> (Univeral specification). <em>(Dangerous!) Suppose for every object <span class='math inline'>\(x\)</span> we have a property <span class='math inline'>\(P(x)\)</span> pertaining to <span class='math inline'>\(x\)</span> (so that every <span class='math inline'>\(x, P(x)\)</span> is either a true statment or a false statement). Then there exists a set <span class='math inline'>\(\{x:P(x)\text{ is true}\}\)</span> such that for every object <span class='math inline'>\(y\)</span>,</em> <span class='math display'>$$
- y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
- $$</span>
-        </li>
-      
-    </ul>
+    <p class='mb-3'>
+      <strong>Lemma 3.3.12</strong> (Composition is associative). /Let <span class='math inline'>\(f:Z\to W,~g:Y\to Z\)</span>, and <span class='math inline'>\(h:X\to Y\)</span> be functions. Then <span class='math inline'>\(f\circ(g\circ h)=(f\circ g)\circ h\)</span>.
+    </p>
   
     <p class='mb-3'>
-      <br />This axiom is also known as the <strong>axiom of comprehension</strong>. It asserts that every property corresponds to a set; if we assumed that axiom, we could talk about the set of all blue objects, the set of all natural numbers, the set of all sets, and so forth.<br /><br /><strong>Russell's paradox</strong> <span class='math display'>$$
- \Omega:=\{x:x\text{ is a set and }x\notin x\}
- $$</span> <span class='math display'>$$
- \Omega\in\Omega?
- $$</span>
+      <span class='math inline'>\(Proof~by~Tao\)</span>. Since <span class='math inline'>\(g\circ g\)</span> is a function form <span class='math inline'>\(X\)</span> to <span class='math inline'>\(Z\)</span>, <span class='math inline'>\(f\circ(g\circ h)\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Simliarly <span class='math inline'>\(f\circ g\)</span> is a function from <span class='math inline'>\(Y\)</span> to <span class='math inline'>\(W\)</span>, and hence <span class='math inline'>\((f\circ g)\circ h\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Thus <span class='math inline'>\(f\circ(g\circ h)\)</span> and <span class='math inline'>\((f\circ g)\circ h\)</span> have the same domain and range. In order to check that they are equal, we see from <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a> that we have verify that <span class='math inline'>\((f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)\)</span> for all <span class='math inline'>\(x\in X\)</span>. But by <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math display'>$$
+(f\circ (g\circ h))(x)=f((g\circ h)(x))
+$$</span>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='math display'>$$
+=f(g(h(x)))
+$$</span>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='math display'>$$
+=(f\circ g)(h(x))
+$$</span>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='math display'>$$
+=((f\circ g)\circ h)(x)
+$$</span>
+    </p>
+  
+    <p class='mb-3'>
+      as desired. <span class='math inline'>\(\square\)</span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/axiom-3.8.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/lemma-3.3.12.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -317,29 +331,6 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.2.1'>
-            Exercise 3.2.1
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div>{ <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a>: <span class='math inline'>\(y\in\{x:P(x)\}\iff P(y)\)</span> }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div>{ <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a>: <span class='math inline'>\(y\in\{x:Q(x)\}\iff Q(y)\)</span> }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p>Show that the universal specification axiom, <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a>, if assumed to be true, would imply <a href='Tao/Chapter3' class='text-gray-600 font-bold hover:bg-gray-50'>Axioms 3.2, 3.3, 3.4, 3.5, and 3.6</a>. (If we assume that all natrual numbers are object, we also obtain <a href='Tao/Chapter3/axiom-3.7' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.7</a>.) Thus, this axiom, if permitted, would simplify the foundations of set theory tremendously (and can be viewed as one basis for an intuitive model of set theory known as "naive set theory"). Unfortunately, as we have seen, <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a> is "too good to be true"!</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
           <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3'>
             Chapter3
           </a>
@@ -347,7 +338,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><strong>Exercise 3.2.1.</strong> Show that the universal specification axiom, <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a>, if assumed to be true, would imply Axioms 3.2, 3.3, 3.4, 3.5, and 3.6. (If we assume that all natrual numbers are object, we also obtain <a href='Tao/Chapter3/axiom-3.7' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.7</a>.) Thus, this axiom, if permitted, would simplify the foundations of set theory tremendously (and can be viewed as one basis for an intuitive model of set theory known as "naive set theory"). Unfortunately, as we have seen, <a href='Tao/Chapter3/axiom-3.8' class='text-gray-600 font-bold hover:bg-gray-50'>Axiom 3.8</a> is "too good to be true"!</p></div>
+      <div><a href='Tao/Chapter3/lemma-3.3.12' class='text-gray-600 font-bold hover:bg-gray-50'>Proof by Tao</a></div>
     </div>
   
 </div>
