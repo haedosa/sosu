@@ -1,0 +1,13 @@
+#+title: Remark 3.3.10
+
+*Remark 3.3.10*.[fn:E: This remark is from printed version] It is not immediately apparent that [[./definition-3.3.7.org][Definition 3.3.7]] is compatible with the axioms of eqaulity in Addendix A.7, although Exercise 3.3.1 below provides evidence towards this compatibility.
+There are at least three ways to address this issue.
+One is to regard [[./definition-3.3.7.org][Definition 3.3.7]] as an /axiom/ about equality of functions rather than a definition.
+Another is to provide a more explicit definition of a function in which [[./definition-3.3.7.org][Definition 3.3.7]] becomes a theorem;
+for instance, one can define a function $f:X\to Y$ to be an ordered triple $(X,Y.Z)$ consisting of a domain set $X$,
+a range set $Y$, and a graph $G=\{(x,f(x)):x\in X\}$ that obeys the vertical line test,
+and use this latter graph to define the value of $f(x)\in Y$ for each element $x$ of the domain (cf. Exerciese 3.5.10).
+A third way is to start with a mathematical universe $\mathcal{U}$ without any funtions in it, and use [[./definition-3.3.7.org][Definition 3.3.7]] to create a larger extension of this universe
+that contains function objects that behave as specified as in [[./definition-3.3.7.org][Definition 3.3.7]].
+This final procedure however requires a bit more of the formalism of logic and model theory
+than is provided by this text, and so will not be detailed here.

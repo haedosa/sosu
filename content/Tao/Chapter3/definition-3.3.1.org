@@ -3,7 +3,7 @@
 *Definition 3.3.1* (Functions). Let $X,Y$ be sets, and let $P(x,y)$ be a property pertaining to an object $x\in X$ and an object $y\in Y$,
 such that for every $x\in X$, there is exactly one $y\in Y$ for which $P(x,y)$ is true
 (this is sometimes known as the /vertical line test/).  The we define the
-/function $f:X\to Y$ defined by $P$ on the domain $X$ and range/ $Y$ to be the object wihch, given any input $x\in X$,
+/function $f:X\to Y$ defined by $P$ on the domain $X$ and range/ $Y$ to be the object which, given any input $x\in X$,
 assigns an output $f(x)\in Y$, defined to be the unique object $f(x)$ for which $P(x,f(x))$ is true.
 Thus for any $x\in X$ and $y\in Y$,
 $$
