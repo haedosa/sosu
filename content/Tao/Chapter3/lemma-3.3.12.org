@@ -47,58 +47,58 @@ $Proof~in~Structured~Derivation~Form$.
 
 - -- $f:Z\to W,~g:Y\to Z,~h:X\to Y$, [[./definition-3.3.7.org][Definition 3.3.7]]
 
-  - $\bullet$ Claim 1. Show that $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))=(\text{Domain}(h'),~\text{Range}(g'))$, when
+- $\Vdash$ $f\circ(g\circ h)=(f\circ g)\circ h$
+
+- $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]], Claim 1., Claim 2., modus ponens}
+
+  - True
+
+  - $\bullet$ Claim 1. Show that $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h))=(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+
+  - $\Vdash$ $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h)))$
+
+  - $=$ { Claim 3., $f:Z\to W$,By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$ }
+
+    - $(\text{Domain}(g\circ h),~\text{Range}(f))$
+
+  - $=$ { Claim 3., $g:Y\to Z,~h:X\to Y$ }
+
+    - $(\text{Domain}(h),~\text{Range}(f))$
+
+  - $=$ { Claim 3., $f:Z\to W,~g:Y\to Z$ }
+
+    - $(\text{Domain}(h),~\text{Range}(f\circ g))$
+
+  - $=$ { Claim 3., By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W,~h:X\to Y$ }
+
+    - $(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+
+  - $\bullet$ Claim 2. Show that $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+
+  - $\Vdash$ True
+
+  - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]] }
+
+    - $\forall x,~f(g(h(x)))=f(g(h(x)))$
+
+  - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]], $f:Z\to W,~g:Y\to Z,~h:X\to Y$ }
+
+    - $\forall x,~f((g\circ h)(x))=(f\circ g)(h(x))$
+
+  - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]], $f:Z\to W$, By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$, By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W~h:X\to Y$ }
+
+    - $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+
+  - $\bullet$ Claim 3. Show that $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))=(\text{Domain}(h'),~\text{Range}(g'))$, when
 
   - -- $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'$
 
-    - $\Vdash$ $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))$
+  - $\Vdash$ $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))$
 
-    - $=$ { By [[./definition-3.3.10.org][Definition 3.3.10]] $g'\circ h':X'\to Z',~\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$ }
+  - $=$ { $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$, By [[./definition-3.3.10.org][Definition 3.3.10]] $g'\circ h':X'\to Z'$ }
 
-      - $(X', Z')$
+    - $(X', Z')$
 
-    - $=$ { $g':Y'\to Z',~h':X'\to Y',~\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$ }
+  - $=$ { $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'$ }
 
-      - $(\text{Domain}(h'),~\text{Range}(g'))$
-
-  - $\bullet$ Claim 2. Show that $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h))=(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
-
-    - $\Vdash$ $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h)))$
-
-    - $=$ { $f:Z\to W$,By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$, Claim 1. }
-
-      - $(\text{Domain}(g\circ h),~\text{Range}(f))$
-
-    - $=$ { $g:Y\to Z,~h:X\to Y$, Claim 1. }
-
-      - $(\text{Domain}(h),~\text{Range}(f))$
-
-    - $=$ { $f:Z\to W,~g:Y\to Z$, Claim 1. }
-
-      - $(\text{Domain}(h),~\text{Range}(f\circ g))$
-
-    - $=$ { By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W,~h:X\to Y$, Claim 1. }
-
-      - $(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
-
-  - $\bullet$ Claim 3. Show that $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
-
-    - $\Vdash$ True
-
-      - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]] }
-
-        - $\forall x,~f(g(h(x)))=f(g(h(x)))$
-
-      - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
-
-        - $\forall x,~(f\circ g)(h(x))=f((g\circ h)(x))$
-
-      - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
-
-        - $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
-
-  - $\Vdash$ $f\circ(g\circ h)=(f\circ g)\circ h$
-
-    - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]], Claim 2., Claim 3., modus ponens}
-
-    - True
+    - $(\text{Domain}(h'),~\text{Range}(g'))$
