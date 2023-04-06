@@ -1,7 +1,22 @@
 #+title: Lemma 3.3.12
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
 
 *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions.
-Then $f\circ(g\circ h)=(f\circ g)\circ h$.
+Then $f\circ(g\circ h)=(f\circ g)\circ h$./
 
 $Proof~by~Tao$. Since $g\circ g$ is a function form $X$ to $Z$, $f\circ(g\circ h)$ is a function from $X$ to $W$.
 Simliarly $f\circ g$ is a function from $Y$ to $W$, and hence $(f\circ g)\circ h$ is a function from $X$ to $W$.
@@ -25,3 +40,65 @@ $$
 $$
 
 as desired. $\square$
+
+$Proof~in~Structured~Derivation~Form$.
+
+- $\bullet$ Show that $f\circ(g\circ h)=(f\circ g)\circ h$, when
+
+- -- $f:Z\to W,~g:Y\to Z,~h:X\to Y$, [[./definition-3.3.7.org][Definition 3.3.7]]
+
+  - $\bullet$ Claim 1. Show that $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))=(\text{Domain}(h'),~\text{Range}(g'))$, when
+
+  - -- $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'$
+
+    - $\Vdash$ $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))$
+
+    - $=$ { By [[./definition-3.3.10.org][Definition 3.3.10]] $g'\circ h':X'\to Z',~\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$ }
+
+      - $(X', Z')$
+
+    - $=$ { $g':Y'\to Z',~h':X'\to Y',~\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$ }
+
+      - $(\text{Domain}(h'),~\text{Range}(g'))$
+
+  - $\bullet$ Claim 2. Show that $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h))=(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+
+    - $\Vdash$ $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h)))$
+
+    - $=$ { $f:Z\to W$,By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$, Claim 1. }
+
+      - $(\text{Domain}(g\circ h),~\text{Range}(f))$
+
+    - $=$ { $g:Y\to Z,~h:X\to Y$, Claim 1. }
+
+      - $(\text{Domain}(h),~\text{Range}(f))$
+
+    - $=$ { $f:Z\to W,~g:Y\to Z$, Claim 1. }
+
+      - $(\text{Domain}(h),~\text{Range}(f\circ g))$
+
+    - $=$ { By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W,~h:X\to Y$, Claim 1. }
+
+      - $(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+
+  - $\bullet$ Claim 3. Show that $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+
+    - $\Vdash$ True
+
+      - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]] }
+
+        - $\forall x,~f(g(h(x)))=f(g(h(x)))$
+
+      - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+        - $\forall x,~(f\circ g)(h(x))=f((g\circ h)(x))$
+
+      - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+        - $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+
+  - $\Vdash$ $f\circ(g\circ h)=(f\circ g)\circ h$
+
+    - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]], Claim 2., Claim 3., modus ponens}
+
+    - True
