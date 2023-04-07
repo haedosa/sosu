@@ -1,0 +1,11 @@
+#+title: Definition 3.3.14
+
+*Definition 3.3.14* (One-to-one functions). A function $f$ is /one-to-one/ (or /injective/) if different elements map to different elements:
+$$
+x\neq x'\implies f(x)\neq f(x')
+$$
+
+Equivalently, a function is one-to-one if
+$$
+f(x)=f(x')\implies x=x'
+$$

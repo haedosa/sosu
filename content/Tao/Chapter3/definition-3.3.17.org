@@ -1,0 +1,7 @@
+#+title: Definition 3.3.17
+
+*Definition 3.3.17* (Onto functions). A function $f$ is /onto/ (or /surjective/) if $f(X)=Y$, i.e.,
+every element in $Y$ comes from applying $f$ to some element in $X$:
+$$
+\text{For every } y\in Y,\text{ there exists } x\in X \text{ such that } f(x)=y.
+$$

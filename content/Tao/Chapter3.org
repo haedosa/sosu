@@ -2,42 +2,56 @@
 * Axiom
 
 - *Axiom 3.1.* (Sets are objects). /IF $A$ is a set, then $A$ is also an object. In particular, given two sets $A$ and $B$, it is meaningful to ask whether $A$ is also an element of $B$./
+\\
 
 - *Axiom 3.2.* (Empty set). /There exists a set $\emptyset$, known as the empty set, which contains no elements, i.e., for every object $x$ we have $x\notin\emptyset$./
+\\
 
 - *Axiom 3.3.* (Singleton sets and pair sets). /If $a$ is an object, then there exists a set $\{a\}$ whose only element is $a$, i.e., for every object $y$, we have $y\in\{a\}$ if and only if $y=a$; we refer to $\{a\}$ as the *singleton set* whose element is $a$. Furthermore, if $a$ and $b$ are objects, then there exists a set $\{a,b\}$ whose only elements are $a$ and $b$; i.e., for every object $y$, we have $y\in\{a,b\}$ if and only if $y=a$ or $y=b$; we refer to this set as the *pair set* formed by $a$ and $b$./
+\\
 
 - *Axiom 3.4.* (Pairwise union). /Given any two sets $A,B$, there exists a set $A\cup B$, called the *union* of $A$ and $B$, which consists of all the elements which belong to $A$ to $B$ or both. In other words, for any object $x$,/
   $$
   x\in A\cup B\iff(x\in A~ or~ x\in B).
   $$
+\\
 
 - *Axiom 3.5.* (Axiom of specification). /Let $A$ be a set, and for each $x\in A$, let $P(x)$ be a property pertaining to $x$ (i.e., $P(x)$ is either a true statement or a false statement). Then there exists a set, called $\{x\in A:~P(x)\text{ is true}\}$ (or simply $\{x\in A:~P(x)\})$ for short), whose elements are precisely the elements $x$ in $A$ for which $P(x)$ is true. In other words, for any object $y$,/
   $$
   y\in\{x\in A:~P(x)\text{ is true}\}\iff (y\in A \text{ and } P(y)\text{ is true }).
   $$
+\\
 
 - *Axiom 3.6.* (Replacement). /Let $A$ be a set. For any object $x\in A$, and any object $y$, suppose we have a statement $P(x,y)$ pertaining to $x$ and $y$, such that for each $x\in A$ there is at most one $y$ for which $P(x,y)$ is true. Then there exists a set $\{y:~P(x,y)\text{ is true for some } x\in A\}$, such that for any object $z$,/
       $$
       z\in\{y:~P(x,y)\text{ is true for some } x \in A\}\iff P(x,z)\text{ is true for some } x\in A.
       $$
+\\
 
 - *Axiom 3.7.* (Infinity). /There exists a set $\mathbb{N}$, whose elements are called natural numbers, as well as an object $0$ in $\mathbb{N}$, and an object $n\pp$ assigned to every natural number $n\in\mathbb{N}$, such that the Peano axioms [[./Chapter2.org][(Axioms 2.1-2.5)]] hold./
+\\
 
 - *Axiom 3.8.* (Univeral specification). /(Dangerous!) Suppose for every object $x$ we have a property $P(x)$ pertaining to $x$ (so that every $x, P(x)$ is either a true statment or a false statement). Then there exists a set $\{x:P(x)\text{ is true}\}$ such that for every object $y$,/
   $$
   y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
   $$
+\\
 
 - *Axiom 3.9.* (Regularity). /If $A$ is a non-empty set, then there is at least one element $x$ of $A$ which is either not a set, or is disjoint from $A$./
+\\
+\\
 
 * Definitions
 - *Definition 3.1.1* (Informal). We define a /set/ $A$ to be any unordered collection of objects, e.g., $\{3,8,5,2\}$ is a set. If $x$ is an object, we say that $x$ /is an element of/ $A$ or $x\in A$ if $x$ lies in the collection; otherwise we say that $x\notin A$. For instance, $3\in\{1,2,3,4,5\}$ but $7\notin\{1,2,3,4,5\}$.
     :PROPERTIES:
   :CUSTOM_ID: definition-3.1.1
   :END:
+\\
+
 
 - *Definition 3.1.4.* (Equality of sets). /Two sets $A$ and $B$ are equal, $A=B$ iff every element of $A$ is an element of $B$ and vice versa. To put it another way, $A=B$ if and only if every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$./
+\\
+\\
 
 - *Definition 3.1.15* (Subsets). Let $A,B$ be sets. We say that $A$ is a /subset/ of $B$, denoted $A\subseteq B$, iff every every element of $A$ is also an element of $B$, i.e.
       $$
@@ -47,6 +61,8 @@
     :PROPERTIES:
   :CUSTOM_ID: definition-3.1.14
   :END:
+\\
+\\
 
 - *Definition 3.1.23* (Intersections). The /intersection/ $S_1\cap S_2$ of two sets is defined to be the set
       $$
@@ -59,6 +75,8 @@
     :PROPERTIES:
   :CUSTOM_ID: definition-3.1.22
   :END:
+\\
+\\
 
 - *Definition 3.1.27* (Difference sets). Given two sets $A$ and $B$, we define the set $A-B$ or $A\setminus B$ to be the set $A$ with any elements of $B$ removed:
       $$
@@ -68,19 +86,49 @@
     :PROPERTIES:
   :CUSTOM_ID: definition-3.1.26
   :END:
+\\
+\\
 
-- *Definition 3.3.1* (Functions). Let $X,Y$ be sets, and let $P(x,y)$ be a property pertaining to an object $x\in X$ and an object $y\in Y$, such that for every $x\in X$, there is exactly one $y\in Y$ for which $P(x,y)$ is true (this is sometimes known as the /vertical line test/).  The we define the /function $f:X\to Y$ defined by $P$ on the domain $X$ and range/ $Y$ to be the object which, given any input $x\in X$, assigns an output $f(x)\in Y$, defined to be the unique object $f(x)$ for which $P(x,f(x))$ is true. Thus for any $x\in X$ and $y\in Y$,
+- *Definition 3.3.1* (Functions). Let $X,Y$ be sets, and let $P(x,y)$ be a property pertaining to an object $x\in X$ and an object $y\in Y$, such that for every $x\in X$, there is exactly one $y\in Y$ for which $P(x,y)$ is true (this is sometimes known as the /vertical line test/).  Then we define the /function $f:X\to Y$ defined by $P$ on the domain $X$ and range/ $Y$ to be the object which, given any input $x\in X$, assigns an output $f(x)\in Y$, defined to be the unique object $f(x)$ for which $P(x,f(x))$ is true. Thus for any $x\in X$ and $y\in Y$,
      $$
        y=f(x)\iff P(x,y)\text{ is true. }
      $$
+\\
+\\
 
 - *Definition 3.3.7* (Equality of functions). Two functions $f:X\to Y,~g:X\to Y$ with the same domain and range are said to be *equal*, $f=g$ if and only if $f(x)=g(x)$ for /all/ $x\in X$. (If $f(x)$ and $g(x)$ agree for some values of $x$, but not others, then we do not consider $f$ and $g$ to be equal[fn:E: In Chapter 11.45, we shall introduce a weaker notion of equality, that of two functions being equal almost everywhere].)
+\\
+\\
 
 - *Definition 3.3.10* (Composition). Let $f:X\to Y$ and $g:Y\to Z$ be two functions, such that the range of $f$ is the same set as the domain of $g$. We then define the /composition/ $g\circ f:X\to Z$ of two functions $g$ and $f$ to be the function defined explicitly by the formula
       $$
       (g\circ f)(x):=g(f(x))
       $$
     If the range of $f$ does not match the domain of $g$, we leave the composition $g\circ f$ undefined.
+- *Definition 3.3.14* (One-to-one functions). A function $f$ is /one-to-one/ (or /injective/) if different elements map to different elements:
+      $$
+      x\neq x'\implies f(x)\neq f(x')
+      $$
+
+      Equivalently, a function is one-to-one if
+      $$
+      f(x)=f(x')\implies x=x'
+      $$
+\\
+\\
+
+- *Definition 3.3.17* (Onto functions). A function $f$ is /onto/ (or /surjective/) if $f(X)=Y$, i.e., every element in $Y$ comes from applying $f$ to some element in $X$:
+    $$
+    \text{For every } y\in Y,\text{ there exists } x\in X \text{ such that } f(x)=y.
+    $$
+\\
+\\
+
+- *Definition 3.3.20* (Bijective functions). Functions $f:X\to Y$ which are both one-to-one and onto are also called /bijective/ or /invertible/.
+
+\\
+\\
+
 * Propositions
 
 - *Lemma 3.1.6.* (Single choice). /Let $A$ be a non-empty set. Then there exists an objet $x$ such that $x\in A$./
@@ -89,6 +137,8 @@
   :END:
 
   - [[./Chapter3/lemma-3.1.6.org][Proof by Tao]]
+\\
+\\
 
 - *Lemma 3.1.13* /If $a$ and $b$ are objects, then $\{a,b\}=\{a\}\cup\{b\}$. If $A,B,C$ are sets, then the union operation is commutative (i.e., $A\cup B= B\cup A$) and associative (i.e., $(A\cup B)\cup C=A\cup(B\cup C))$. Also, we have $A\cup A=A\cup\emptyset=\emptyset\cup A=A$./
   :PROPERTIES:
@@ -97,14 +147,20 @@
 
   - [[./Chapter3/lemma-3.1.13.org][Proof by Tao]]
   - $Proof$. See [[./Chapter3/Exercises/exercise-3.1.3.org][Exercise 3.1.3]]
+\\
+\\
 
-- *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions. Then $f\circ(g\circ h)=(f\circ g)\circ h$.
+- *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions. Then $f\circ(g\circ h)=(f\circ g)\circ h$./
   - [[./Chapter3/lemma-3.3.12.org][Proof by Tao]]
 
+\\
+\\
 
 * Exercises
  - *Exercise 3.1.2* /Using only [[./Chapter3/definition-3.1.4.org][Definition 3.1.4]], [[./Chapter3/axiom-3.1.org][Axiom 3.1]], [[./Chapter3/axiom-3.2.org][Axiom 3.2]], and [[./Chapter3/axiom-3.3.org][Axiom 3.3]], prove that the sets $\emptyset, \{\emptyset\}, \{\{\emptyset\}\}$, and $\{\emptyset, \{\emptyset\}\}$ are all distinct (i.e, no two of them are equal to each other)./
  - [[./Chapter3/Exercises/exercise-3.1.2.org][Exercise-3.1.2 with solution]]
+\\
+\\
 
  - *Exercise 3.1.3.* Prove [[./Chapter3/lemma-3.1.13.org][Lemma 3.1.13]]
   :PROPERTIES:
@@ -112,6 +168,8 @@
   :END:
 
    [[./Chapter3/Exercises/exercise-3.1.3.org][Exercise-3.1.3 with solution]]
+\\
+\\
 
  - *Exercise 3.2.1.* Show that the universal specification axiom, [[./Chapter3/axiom-3.8.org][Axiom 3.8]], if assumed to be true, would imply Axioms 3.2, 3.3, 3.4, 3.5, and 3.6. (If we assume that all natrual numbers are object, we also obtain [[./Chapter3/axiom-3.7.org][Axiom 3.7]].) Thus, this axiom, if permitted, would simplify the foundations of set theory tremendously (and can be viewed as one basis for an intuitive model of set theory known as "naive set theory"). Unfortunately, as we have seen, [[./Chapter3/axiom-3.8.org][Axiom 3.8]] is "too good to be true"!
   :PROPERTIES:
@@ -119,3 +177,9 @@
   :END:
 
    [[./Chapter3/Exercises/exercise-3.2.1.org][Exercise-3.2.1 with solution]]
+\\
+\\
+
+ - *Exercise 3.3.1.* Show that the definition of equality in [[./Chapter3/definition-3.3.7.org][Definition 3.3.7]] is reflexive, symmetric, and transitive. Also verity the substitution property: if $f,\tilde{f}:X\to Y$ and $g,\tilde{g}:Y\to Z$ are functions such that $f=\tilde{f}$ and $g=\tilde{g}$, then $g\circ f=\tilde{g}\circ\tilde{f}$.
+
+   [[./Chapter3/Exercises/exercise-3.3.1.org][Exercise-3.3.1 with solution]]

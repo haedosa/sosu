@@ -1,0 +1,60 @@
+#+title: Exercise 3.3.1
+
+ *Exercise 3.3.1.* Show that the definition of equality in [[../definition-3.3.7.org][Definition 3.3.7]] is reflexive, symmetric, and transitive. Also verity the substitution property: if $f,\tilde{f}:X\to Y$ and $g,\tilde{g}:Y\to Z$ are functions such that $f=\tilde{f}$ and $g=\tilde{g}$, then $g\circ f=\tilde{g}\circ\tilde{f}$.
+\\
+
+- $+$ Notation: $\text{Domain}(f:X\to Y)= X$
+- $+$ Notation: $\text{Range}(f:X\to Y)=Y$
+
+[[../../Appendix/AxiomOfEquality.org][Reflexive]]
+- $\bullet$ Show that $\forall f,~f=f$
+- -- $f:X\to Y$
+- $\Vdash$ $f=f$
+  - { Claim 1, Claim2, Claim 3, and [[../definition-3.3.7.org][Definition 3.3.7]] }
+- $\equiv$ $\text{True}$
+- $\square$
+  - $\bullet$ Claim 1: $\forall x,~f(x)=f(x)$
+  - $\Vdash$ $f(x)=f(x)$
+    - { $f(x)$ is an object by [[../definition-3.3.1.org][definition of function]],\\
+                 $~~$ the [[../../Appendix/AxiomOfEquality.org][axiom of reflexive]] for any object  }
+  - $\equiv$ $\text{True}$
+  - $\square$
+  - $\bullet$ Claim 2: $\text{Domain}(f)=\text{Domain}(f)$
+  - -- $f:X\to Y$
+  - $\Vdash$ $X=X$
+    - { $X$ is an object by [[../axiom-3.1.org][Axiom 3.1]],\\
+            $~~$ the [[../../Appendix/AxiomOfEquality.org][axiom of reflexive]] for any object }
+  - $\equiv$ $\text{True}$
+  - $\square$
+  - $\bullet$ Claim 3: $\text{Range}(f)=\text{Range}(f)$
+  - -- $f:X\to Y$
+  - $\Vdash$ $Y=Y$
+    - { $Y$ is an object by [[../axiom-3.1.org][Axiom 3.1]],\\
+            $~~$ the [[../../Appendix/AxiomOfEquality.org][axiom of reflexive]] for any object }
+  - $\equiv$ $\text{True}$
+  - $\square$
+  \\
+
+[[../../Appendix/AxiomOfEquality.org][Symmetric]]
+- $\bullet$ Show that $f=g\implies g=f$
+- $\Vdash$ $f=g$
+  - { [[../definition-3.3.7.org][Definition 3.3.7]] }
+- $\equiv$ $\forall x,~f(x)=g(x)$
+  - { Claim 1 }
+- $\equiv$ $\forall x,~g(x)=f(x)$
+  - { [[../definition-3.3.7.org][Definition 3.3.7]] }
+- $\equiv$ $g=f$
+- $\square$
+  - $\bullet$ Claim 1: $\forall x,~g(x)=f(x)$
+  - $\Vdash$ $f=g$
+    - { [[../definition-3.3.7.org][Definition 3.3.7]] }
+  - $\equiv$ $f(x)=g(x)$
+    - { $f(x)$ and $g(x)$ are objects by [[../definition-3.3.1.org][definition of function]],\\
+                 $~~$ the [[../../Appendix/AxiomOfEquality.org][axiom of symmetry]] for any objects of the same type  }
+  - $\equiv$ $g(x)=f(x)$
+  - $\square$
+\\
+
+[[../../Appendix/AxiomOfEquality.org][Transitive]]
+- $\bullet$ Show that $(f=g)\land(g=h)\implies f=h$
+- $\Vdash$
