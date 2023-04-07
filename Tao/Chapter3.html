@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=0e1eb205-2758-4e99-94d2-5c957e154ef7' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=d375f0dc-3214-4f17-a022-6bdbbac17503' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -342,160 +342,220 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.1.</strong> (Sets are objects). <em>IF <span class='math inline'>\(A\)</span> is a set, then <span class='math inline'>\(A\)</span> is also an object. In particular, given two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, it is meaningful to ask whether <span class='math inline'>\(A\)</span> is also an element of <span class='math inline'>\(B\)</span>.</em>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.2.</strong> (Empty set). <em>There exists a set <span class='math inline'>\(\emptyset\)</span>, known as the empty set, which contains no elements, i.e., for every object <span class='math inline'>\(x\)</span> we have <span class='math inline'>\(x\notin\emptyset\)</span>.</em>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.3.</strong> (Singleton sets and pair sets). <em>If <span class='math inline'>\(a\)</span> is an object, then there exists a set <span class='math inline'>\(\{a\}\)</span> whose only element is <span class='math inline'>\(a\)</span>, i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a\}\)</span> if and only if <span class='math inline'>\(y=a\)</span>; we refer to <span class='math inline'>\(\{a\}\)</span> as the <strong>singleton set</strong> whose element is <span class='math inline'>\(a\)</span>. Furthermore, if <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then there exists a set <span class='math inline'>\(\{a,b\}\)</span> whose only elements are <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>; i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a,b\}\)</span> if and only if <span class='math inline'>\(y=a\)</span> or <span class='math inline'>\(y=b\)</span>; we refer to this set as the <strong>pair set</strong> formed by <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>.</em>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.4.</strong> (Pairwise union). <em>Given any two sets <span class='math inline'>\(A,B\)</span>, there exists a set <span class='math inline'>\(A\cup B\)</span>, called the <strong>union</strong> of <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, which consists of all the elements which belong to <span class='math inline'>\(A\)</span> to <span class='math inline'>\(B\)</span> or both. In other words, for any object <span class='math inline'>\(x\)</span>,</em> <span class='math display'>$$
- x\in A\cup B\iff(x\in A~ or~ x\in B).
- $$</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.5.</strong> (Axiom of specification). <em>Let <span class='math inline'>\(A\)</span> be a set, and for each <span class='math inline'>\(x\in A\)</span>, let <span class='math inline'>\(P(x)\)</span> be a property pertaining to <span class='math inline'>\(x\)</span> (i.e., <span class='math inline'>\(P(x)\)</span> is either a true statement or a false statement). Then there exists a set, called <span class='math inline'>\(\{x\in A:~P(x)\text{ is true}\}\)</span> (or simply <span class='math inline'>\(\{x\in A:~P(x)\})\)</span> for short), whose elements are precisely the elements <span class='math inline'>\(x\)</span> in <span class='math inline'>\(A\)</span> for which <span class='math inline'>\(P(x)\)</span> is true. In other words, for any object <span class='math inline'>\(y\)</span>,</em> <span class='math display'>$$
- y\in\{x\in A:~P(x)\text{ is true}\}\iff (y\in A \text{ and } P(y)\text{ is true }).
- $$</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.6.</strong> (Replacement). <em>Let <span class='math inline'>\(A\)</span> be a set. For any object <span class='math inline'>\(x\in A\)</span>, and any object <span class='math inline'>\(y\)</span>, suppose we have a statement <span class='math inline'>\(P(x,y)\)</span> pertaining to <span class='math inline'>\(x\)</span> and <span class='math inline'>\(y\)</span>, such that for each <span class='math inline'>\(x\in A\)</span> there is at most one <span class='math inline'>\(y\)</span> for which <span class='math inline'>\(P(x,y)\)</span> is true. Then there exists a set <span class='math inline'>\(\{y:~P(x,y)\text{ is true for some } x\in A\}\)</span>, such that for any object <span class='math inline'>\(z\)</span>,</em> <span class='math display'>$$
-     z\in\{y:~P(x,y)\text{ is true for some } x \in A\}\iff P(x,z)\text{ is true for some } x\in A.
-     $$</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.7.</strong> (Infinity). <em>There exists a set <span class='math inline'>\(\mathbb{N}\)</span>, whose elements are called natural numbers, as well as an object <span class='math inline'>\(0\)</span> in <span class='math inline'>\(\mathbb{N}\)</span>, and an object <span class='math inline'>\(n\pp\)</span> assigned to every natural number <span class='math inline'>\(n\in\mathbb{N}\)</span>, such that the Peano axioms <a href='Tao/Chapter2' class='text-purple-600 mavenLinkBold hover:underline'>(Axioms 2.1-2.5)</a> hold.</em>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.8.</strong> (Univeral specification). <em>(Dangerous!) Suppose for every object <span class='math inline'>\(x\)</span> we have a property <span class='math inline'>\(P(x)\)</span> pertaining to <span class='math inline'>\(x\)</span> (so that every <span class='math inline'>\(x, P(x)\)</span> is either a true statment or a false statement). Then there exists a set <span class='math inline'>\(\{x:P(x)\text{ is true}\}\)</span> such that for every object <span class='math inline'>\(y\)</span>,</em> <span class='math display'>$$
- y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
- $$</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <strong>Axiom 3.9.</strong> (Regularity). <em>If <span class='math inline'>\(A\)</span> is a non-empty set, then there is at least one element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> which is either not a set, or is disjoint from <span class='math inline'>\(A\)</span>.</em>
-    </p>
-  
+          <strong>Axiom 3.1.</strong> (Sets are objects). <em>IF <span class='math inline'>\(A\)</span> is a set, then <span class='math inline'>\(A\)</span> is also an object. In particular, given two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, it is meaningful to ask whether <span class='math inline'>\(A\)</span> is also an element of <span class='math inline'>\(B\)</span>.</em>
         </li>
       
     </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.2.</strong> (Empty set). <em>There exists a set <span class='math inline'>\(\emptyset\)</span>, known as the empty set, which contains no elements, i.e., for every object <span class='math inline'>\(x\)</span> we have <span class='math inline'>\(x\notin\emptyset\)</span>.</em>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.3.</strong> (Singleton sets and pair sets). <em>If <span class='math inline'>\(a\)</span> is an object, then there exists a set <span class='math inline'>\(\{a\}\)</span> whose only element is <span class='math inline'>\(a\)</span>, i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a\}\)</span> if and only if <span class='math inline'>\(y=a\)</span>; we refer to <span class='math inline'>\(\{a\}\)</span> as the <strong>singleton set</strong> whose element is <span class='math inline'>\(a\)</span>. Furthermore, if <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span> are objects, then there exists a set <span class='math inline'>\(\{a,b\}\)</span> whose only elements are <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>; i.e., for every object <span class='math inline'>\(y\)</span>, we have <span class='math inline'>\(y\in\{a,b\}\)</span> if and only if <span class='math inline'>\(y=a\)</span> or <span class='math inline'>\(y=b\)</span>; we refer to this set as the <strong>pair set</strong> formed by <span class='math inline'>\(a\)</span> and <span class='math inline'>\(b\)</span>.</em>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.4.</strong> (Pairwise union). <em>Given any two sets <span class='math inline'>\(A,B\)</span>, there exists a set <span class='math inline'>\(A\cup B\)</span>, called the <strong>union</strong> of <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, which consists of all the elements which belong to <span class='math inline'>\(A\)</span> to <span class='math inline'>\(B\)</span> or both. In other words, for any object <span class='math inline'>\(x\)</span>,</em> <span class='math display'>$$
+ x\in A\cup B\iff(x\in A~ or~ x\in B).
+ $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.5.</strong> (Axiom of specification). <em>Let <span class='math inline'>\(A\)</span> be a set, and for each <span class='math inline'>\(x\in A\)</span>, let <span class='math inline'>\(P(x)\)</span> be a property pertaining to <span class='math inline'>\(x\)</span> (i.e., <span class='math inline'>\(P(x)\)</span> is either a true statement or a false statement). Then there exists a set, called <span class='math inline'>\(\{x\in A:~P(x)\text{ is true}\}\)</span> (or simply <span class='math inline'>\(\{x\in A:~P(x)\})\)</span> for short), whose elements are precisely the elements <span class='math inline'>\(x\)</span> in <span class='math inline'>\(A\)</span> for which <span class='math inline'>\(P(x)\)</span> is true. In other words, for any object <span class='math inline'>\(y\)</span>,</em> <span class='math display'>$$
+ y\in\{x\in A:~P(x)\text{ is true}\}\iff (y\in A \text{ and } P(y)\text{ is true }).
+ $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.6.</strong> (Replacement). <em>Let <span class='math inline'>\(A\)</span> be a set. For any object <span class='math inline'>\(x\in A\)</span>, and any object <span class='math inline'>\(y\)</span>, suppose we have a statement <span class='math inline'>\(P(x,y)\)</span> pertaining to <span class='math inline'>\(x\)</span> and <span class='math inline'>\(y\)</span>, such that for each <span class='math inline'>\(x\in A\)</span> there is at most one <span class='math inline'>\(y\)</span> for which <span class='math inline'>\(P(x,y)\)</span> is true. Then there exists a set <span class='math inline'>\(\{y:~P(x,y)\text{ is true for some } x\in A\}\)</span>, such that for any object <span class='math inline'>\(z\)</span>,</em> <span class='math display'>$$
+     z\in\{y:~P(x,y)\text{ is true for some } x \in A\}\iff P(x,z)\text{ is true for some } x\in A.
+     $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.7.</strong> (Infinity). <em>There exists a set <span class='math inline'>\(\mathbb{N}\)</span>, whose elements are called natural numbers, as well as an object <span class='math inline'>\(0\)</span> in <span class='math inline'>\(\mathbb{N}\)</span>, and an object <span class='math inline'>\(n\pp\)</span> assigned to every natural number <span class='math inline'>\(n\in\mathbb{N}\)</span>, such that the Peano axioms <a href='Tao/Chapter2' class='text-purple-600 mavenLinkBold hover:underline'>(Axioms 2.1-2.5)</a> hold.</em>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.8.</strong> (Univeral specification). <em>(Dangerous!) Suppose for every object <span class='math inline'>\(x\)</span> we have a property <span class='math inline'>\(P(x)\)</span> pertaining to <span class='math inline'>\(x\)</span> (so that every <span class='math inline'>\(x, P(x)\)</span> is either a true statment or a false statement). Then there exists a set <span class='math inline'>\(\{x:P(x)\text{ is true}\}\)</span> such that for every object <span class='math inline'>\(y\)</span>,</em> <span class='math display'>$$
+ y\in\{x:P(x)\text{ is true}\}\iff P(y)\text{ is true}.
+ $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axiom 3.9.</strong> (Regularity). <em>If <span class='math inline'>\(A\)</span> is a non-empty set, then there is at least one element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> which is either not a set, or is disjoint from <span class='math inline'>\(A\)</span>.</em>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
   <h1 class='pb-2 mb-2 text-5xl font-bold text-center'>Definitions</h1>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          
-    <p class='mb-3'>
-      <strong>Definition 3.1.1</strong> (Informal). We define a <em>set</em> <span class='math inline'>\(A\)</span> to be any unordered collection of objects, e.g., <span class='math inline'>\(\{3,8,5,2\}\)</span> is a set. If <span class='math inline'>\(x\)</span> is an object, we say that <span class='math inline'>\(x\)</span> <em>is an element of</em> <span class='math inline'>\(A\)</span> or <span class='math inline'>\(x\in A\)</span> if <span class='math inline'>\(x\)</span> lies in the collection; otherwise we say that <span class='math inline'>\(x\notin A\)</span>. For instance, <span class='math inline'>\(3\in\{1,2,3,4,5\}\)</span> but <span class='math inline'>\(7\notin\{1,2,3,4,5\}\)</span>.
-    </p>
-  
+          <strong>Definition 3.1.1</strong> (Informal). We define a <em>set</em> <span class='math inline'>\(A\)</span> to be any unordered collection of objects, e.g., <span class='math inline'>\(\{3,8,5,2\}\)</span> is a set. If <span class='math inline'>\(x\)</span> is an object, we say that <span class='math inline'>\(x\)</span> <em>is an element of</em> <span class='math inline'>\(A\)</span> or <span class='math inline'>\(x\in A\)</span> if <span class='math inline'>\(x\)</span> lies in the collection; otherwise we say that <span class='math inline'>\(x\notin A\)</span>. For instance, <span class='math inline'>\(3\in\{1,2,3,4,5\}\)</span> but <span class='math inline'>\(7\notin\{1,2,3,4,5\}\)</span>.
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.1.4.</strong> (Equality of sets). <em>Two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are equal, <span class='math inline'>\(A=B\)</span> iff every element of <span class='math inline'>\(A\)</span> is an element of <span class='math inline'>\(B\)</span> and vice versa. To put it another way, <span class='math inline'>\(A=B\)</span> if and only if every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> belongs also to <span class='math inline'>\(B\)</span>, and every element <span class='math inline'>\(y\)</span> of <span class='math inline'>\(B\)</span> belongs also to <span class='math inline'>\(A\)</span>.</em>
+      <br />
     </p>
   
-        </li>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          
+          <strong>Definition 3.1.4.</strong> (Equality of sets). <em>Two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are equal, <span class='math inline'>\(A=B\)</span> iff every element of <span class='math inline'>\(A\)</span> is an element of <span class='math inline'>\(B\)</span> and vice versa. To put it another way, <span class='math inline'>\(A=B\)</span> if and only if every element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> belongs also to <span class='math inline'>\(B\)</span>, and every element <span class='math inline'>\(y\)</span> of <span class='math inline'>\(B\)</span> belongs also to <span class='math inline'>\(A\)</span>.</em>
+        </li>
+      
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.1.15</strong> (Subsets). Let <span class='math inline'>\(A,B\)</span> be sets. We say that <span class='math inline'>\(A\)</span> is a <em>subset</em> of <span class='math inline'>\(B\)</span>, denoted <span class='math inline'>\(A\subseteq B\)</span>, iff every every element of <span class='math inline'>\(A\)</span> is also an element of <span class='math inline'>\(B\)</span>, i.e. <span class='math display'>$$
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.1.15</strong> (Subsets). Let <span class='math inline'>\(A,B\)</span> be sets. We say that <span class='math inline'>\(A\)</span> is a <em>subset</em> of <span class='math inline'>\(B\)</span>, denoted <span class='math inline'>\(A\subseteq B\)</span>, iff every every element of <span class='math inline'>\(A\)</span> is also an element of <span class='math inline'>\(B\)</span>, i.e. <span class='math display'>$$
      \text{For any object }x,~~x\in A\implies x\in B.
      $$</span> We say that <span class='math inline'>\(A\)</span> is a proper subset of <span class='math inline'>\(B\)</span>, denoted <span class='math inline'>\(A\subsetneq B\)</span>, if <span class='math inline'>\(A\subseteq B\)</span> and <span class='math inline'>\(A\neq B\)</span>.
-    </p>
-  
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.1.23</strong> (Intersections). The <em>intersection</em> <span class='math inline'>\(S_1\cap S_2\)</span> of two sets is defined to be the set <span class='math display'>$$
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.1.23</strong> (Intersections). The <em>intersection</em> <span class='math inline'>\(S_1\cap S_2\)</span> of two sets is defined to be the set <span class='math display'>$$
      S_1\cap S_2:=\{s\in S_1:x\in S_2\}.
      $$</span> In other words, <span class='math inline'>\(S_1\cap S_2\)</span> consists of all the elements which belong to both <span class='math inline'>\(S_1\)</span> and <span class='math inline'>\(S_2\)</span>. Thus, for all objects <span class='math inline'>\(x\)</span>, <span class='math display'>$$
      x\in S_1\cap S_2\iff x\in S_1\text{ and }x\in S_2.
      $$</span>
-    </p>
-  
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.1.27</strong> (Difference sets). Given two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, we define the set <span class='math inline'>\(A-B\)</span> or <span class='math inline'>\(A\setminus B\)</span> to be the set <span class='math inline'>\(A\)</span> with any elements of <span class='math inline'>\(B\)</span> removed: <span class='math display'>$$
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.1.27</strong> (Difference sets). Given two sets <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span>, we define the set <span class='math inline'>\(A-B\)</span> or <span class='math inline'>\(A\setminus B\)</span> to be the set <span class='math inline'>\(A\)</span> with any elements of <span class='math inline'>\(B\)</span> removed: <span class='math display'>$$
      A\setminus B:=\{x\in A:x\notin B\};
      $$</span> for instance, <span class='math inline'>\(\{1,2,3,4\}\setminus\{2,4,6\}=\{1,3\}\)</span>. In many cases <span class='math inline'>\(B\)</span> will be a subset of <span class='math inline'>\(A\)</span>, but not necessarily.
-    </p>
-  
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.3.1</strong> (Functions). Let <span class='math inline'>\(X,Y\)</span> be sets, and let <span class='math inline'>\(P(x,y)\)</span> be a property pertaining to an object <span class='math inline'>\(x\in X\)</span> and an object <span class='math inline'>\(y\in Y\)</span>, such that for every <span class='math inline'>\(x\in X\)</span>, there is exactly one <span class='math inline'>\(y\in Y\)</span> for which <span class='math inline'>\(P(x,y)\)</span> is true (this is sometimes known as the <em>vertical line test</em>). The we define the <em>function <span class='math inline'>\(f:X\to Y\)</span> defined by <span class='math inline'>\(P\)</span> on the domain <span class='math inline'>\(X\)</span> and range</em> <span class='math inline'>\(Y\)</span> to be the object which, given any input <span class='math inline'>\(x\in X\)</span>, assigns an output <span class='math inline'>\(f(x)\in Y\)</span>, defined to be the unique object <span class='math inline'>\(f(x)\)</span> for which <span class='math inline'>\(P(x,f(x))\)</span> is true. Thus for any <span class='math inline'>\(x\in X\)</span> and <span class='math inline'>\(y\in Y\)</span>, <span class='math display'>$$
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.3.1</strong> (Functions). Let <span class='math inline'>\(X,Y\)</span> be sets, and let <span class='math inline'>\(P(x,y)\)</span> be a property pertaining to an object <span class='math inline'>\(x\in X\)</span> and an object <span class='math inline'>\(y\in Y\)</span>, such that for every <span class='math inline'>\(x\in X\)</span>, there is exactly one <span class='math inline'>\(y\in Y\)</span> for which <span class='math inline'>\(P(x,y)\)</span> is true (this is sometimes known as the <em>vertical line test</em>). Then we define the <em>function <span class='math inline'>\(f:X\to Y\)</span> defined by <span class='math inline'>\(P\)</span> on the domain <span class='math inline'>\(X\)</span> and range</em> <span class='math inline'>\(Y\)</span> to be the object which, given any input <span class='math inline'>\(x\in X\)</span>, assigns an output <span class='math inline'>\(f(x)\in Y\)</span>, defined to be the unique object <span class='math inline'>\(f(x)\)</span> for which <span class='math inline'>\(P(x,f(x))\)</span> is true. Thus for any <span class='math inline'>\(x\in X\)</span> and <span class='math inline'>\(y\in Y\)</span>, <span class='math display'>$$
       y=f(x)\iff P(x,y)\text{ is true. }
     $$</span>
-    </p>
-  
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Definition 3.3.7</strong> (Equality of functions). Two functions <span class='math inline'>\(f:X\to Y,~g:X\to Y\)</span> with the same domain and range are said to be <strong>equal</strong>, <span class='math inline'>\(f=g\)</span> if and only if <span class='math inline'>\(f(x)=g(x)\)</span> for <em>all</em> <span class='math inline'>\(x\in X\)</span>. (If <span class='math inline'>\(f(x)\)</span> and <span class='math inline'>\(g(x)\)</span> agree for some values of <span class='math inline'>\(x\)</span>, but not others, then we do not consider <span class='math inline'>\(f\)</span> and <span class='math inline'>\(g\)</span> to be equal
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.3.7</strong> (Equality of functions). Two functions <span class='math inline'>\(f:X\to Y,~g:X\to Y\)</span> with the same domain and range are said to be <strong>equal</strong>, <span class='math inline'>\(f=g\)</span> if and only if <span class='math inline'>\(f(x)=g(x)\)</span> for <em>all</em> <span class='math inline'>\(x\in X\)</span>. (If <span class='math inline'>\(f(x)\)</span> and <span class='math inline'>\(g(x)\)</span> agree for some values of <span class='math inline'>\(x\)</span>, but not others, then we do not consider <span class='math inline'>\(f\)</span> and <span class='math inline'>\(g\)</span> to be equal
     <sup class='px-0.5'>
       <a class='text-purple-600 hover:underline' href='Tao/Chapter3#fn1'>
         1
       </a>
     </sup>
   .)
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
     </p>
   
-        </li>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
           
@@ -507,7 +567,53 @@
   
         </li>
       
+        <li>
+          
+    <p class='mb-3'>
+      <strong>Definition 3.3.14</strong> (One-to-one functions). A function <span class='math inline'>\(f\)</span> is <em>one-to-one</em> (or <em>injective</em>) if different elements map to different elements: <span class='math display'>$$
+     x\neq x'\implies f(x)\neq f(x')
+     $$</span>
+    </p>
+  
+    <p class='mb-3'>
+      Equivalently, a function is one-to-one if <span class='math display'>$$
+     f(x)=f(x')\implies x=x'
+     $$</span>
+    </p>
+  
+        </li>
+      
     </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.3.17</strong> (Onto functions). A function <span class='math inline'>\(f\)</span> is <em>onto</em> (or <em>surjective</em>) if <span class='math inline'>\(f(X)=Y\)</span>, i.e., every element in <span class='math inline'>\(Y\)</span> comes from applying <span class='math inline'>\(f\)</span> to some element in <span class='math inline'>\(X\)</span>: <span class='math display'>$$
+   \text{For every } y\in Y,\text{ there exists } x\in X \text{ such that } f(x)=y.
+   $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.3.20</strong> (Bijective functions). Functions <span class='math inline'>\(f:X\to Y\)</span> which are both one-to-one and onto are also called <em>bijective</em> or <em>invertible</em>.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
   <h1 class='pb-2 mb-2 text-5xl font-bold text-center'>Propositions</h1>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
@@ -526,6 +632,14 @@
     </ul>
   
         </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
           
@@ -547,12 +661,16 @@
   
         </li>
       
-        <li>
-          
+    </ul>
+  
     <p class='mb-3'>
-      <strong>Lemma 3.3.12</strong> (Composition is associative). /Let <span class='math inline'>\(f:Z\to W,~g:Y\to Z\)</span>, and <span class='math inline'>\(h:X\to Y\)</span> be functions. Then <span class='math inline'>\(f\circ(g\circ h)=(f\circ g)\circ h\)</span>.
+      <br /><br />
     </p>
   
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Lemma 3.3.12</strong> (Composition is associative). <em>Let <span class='math inline'>\(f:Z\to W,~g:Y\to Z\)</span>, and <span class='math inline'>\(h:X\to Y\)</span> be functions. Then <span class='math inline'>\(f\circ(g\circ h)=(f\circ g)\circ h\)</span>.</em>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -564,24 +682,28 @@
         </li>
       
     </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
   <h1 class='pb-2 mb-2 text-5xl font-bold text-center'>Exercises</h1>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          
-    <p class='mb-3'>
-      <strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em>
-    </p>
-  
+          <strong>Exercise 3.1.2</strong> <em>Using only <a href='Tao/Chapter3/definition-3.1.4' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.4</a>, <a href='Tao/Chapter3/axiom-3.1' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.1</a>, <a href='Tao/Chapter3/axiom-3.2' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.2</a>, and <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>Axiom 3.3</a>, prove that the sets <span class='math inline'>\(\emptyset, \{\emptyset\}, \{\{\emptyset\}\}\)</span>, and <span class='math inline'>\(\{\emptyset, \{\emptyset\}\}\)</span> are all distinct (i.e, no two of them are equal to each other).</em>
         </li>
       
         <li>
-          
+          <a href='Tao/Chapter3/Exercises/exercise-3.1.2' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-3.1.2 with solution</a>
+        </li>
+      
+    </ul>
+  
     <p class='mb-3'>
-      <a href='Tao/Chapter3/Exercises/exercise-3.1.2' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-3.1.2 with solution</a>
+      <br /><br />
     </p>
   
-        </li>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
           
@@ -595,6 +717,14 @@
   
         </li>
       
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
         <li>
           
     <p class='mb-3'>
@@ -603,6 +733,26 @@
   
     <p class='mb-3'>
       <a href='Tao/Chapter3/Exercises/exercise-3.2.1' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-3.2.1 with solution</a>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <strong>Exercise 3.3.1.</strong> Show that the definition of equality in <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a> is reflexive, symmetric, and transitive. Also verity the substitution property: if <span class='math inline'>\(f,\tilde{f}:X\to Y\)</span> and <span class='math inline'>\(g,\tilde{g}:Y\to Z\)</span> are functions such that <span class='math inline'>\(f=\tilde{f}\)</span> and <span class='math inline'>\(g=\tilde{g}\)</span>, then <span class='math inline'>\(g\circ f=\tilde{g}\circ\tilde{f}\)</span>.
+    </p>
+  
+    <p class='mb-3'>
+      <a href='Tao/Chapter3/Exercises/exercise-3.3.1' class='text-purple-600 mavenLinkBold hover:underline'>Exercise-3.3.1 with solution</a>
     </p>
   
         </li>
