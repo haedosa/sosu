@@ -7,8 +7,7 @@
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiv}{}
 #+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
-#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
-#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_Hormat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
 #+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
 #+OPTIONS: num:nil
 #+HTML_HEAD: <style type="text/css">
@@ -21,9 +20,9 @@ two sets, then either $A \notin B$ or $B \notin A$ (or both).
 
 
 - $\bullet$ Show that $A \notin A$, when
-- -- $A$ is a set
-- -- [[../axiom-3.9.org][axiom 3.9: the axiom of regularity]]
-- -- [[../axiom-3.3.org][axiom 3.3: the singleton set axiom]]
+- - $A$ is a set
+- - [[../axiom-3.9.org][axiom 3.9: the axiom of regularity]]
+- - [[../axiom-3.3.org][axiom 3.3: the singleton set axiom]]
 - $\Vdash$ { If $A$ is an set then $A$ is an object and by axiom 3.3 }
   - $\{A\}$ exists and is a set
 - $\vdash$ { $\{A\} \neq \emptyset$ and axiom 3.9 }
@@ -32,7 +31,24 @@ two sets, then either $A \notin B$ or $B \notin A$ (or both).
   - $A \cap \{A\} = \emptyset$
 - $\vdash$ { $A \in A \implies A \cap \{A\} \neq \emptyset$ and moduls tollens }
   - $A \notin A$
+- $\square$
 
 
-- $\bullet$ Show $(A \notin B) \lor (B \notin A) \lor ((A \notin B) \land (B \notin A))$
-- -- $A$ and $B$ are sets
+- $\bullet$ Show $A \notin B \lor B \notin A$
+- - $A$ and $B$ are sets
+- - [[../axiom-3.9.org][axiom 3.9: the axiom of regularity]]
+- - [[../axiom-3.3.org][axiom 3.3: the singleton set axiom]]
+- - $S \notin S$ for any set $S$
+- $\Vdash$ { [[../axiom-3.3.org][axiom 3.3]] }
+  - $\{A, B\}$ exists and is a non-empty set
+- $\vdash$ { [[../axiom-3.9.org][axiom 3.9]] and modus ponens }
+  - $\exists y ( y \in \{A, B\} \land (y \cap \{A, B\} = \emptyset))$
+- $\vdash$ { [[../axiom-3.9.org][axiom 3.3]]: $\exists y ( y \in \{A, B\}) \vdash y = A \lor y = B$ }
+  - $(A \cap \{A, B\} = \emptyset) \lor (B \cap \{A, B\} = \emptyset)$
+- $\vdash$ { Definition of $\cap$ }
+  - $((A \notin A) \land (B \notin A)) \lor ((A \notin B) \land (B \notin B))$
+- $\vdash$ { $S \notin S$ for any set $S$ and And-elimination }
+  - $(B \notin A) \lor (A \notin B)$
+- $\vdash$ { $\land$-commutation }
+  - $(A \notin B) \lor (B \notin A)$
+- $\square$
