@@ -48,6 +48,6 @@ two sets, then either $A \notin B$ or $B \notin A$ (or both).
   - $((A \notin A) \land (B \notin A)) \lor ((A \notin B) \land (B \notin B))$
 - $\vdash$ { $S \notin S$ for any set $S$ and And-elimination }
   - $(B \notin A) \lor (A \notin B)$
-- $\vdash$ { $\land$-commutation }
+- $\vdash$ { $\lor$-commutation }
   - $(A \notin B) \lor (B \notin A)$
 - $\square$
