@@ -12,24 +12,24 @@
 - $\equiv$ { Claim 1, Claim2, Claim 3, and [[../definition-3.3.7.org][Definition 3.3.7]] }
   - $\text{True}$
 - $\square$
-  - $\bullet$ Claim 1: $\forall x,~f(x)=f(x)$
-  - $\Vdash$ $f(x)=f(x)$
-  - $\equiv$  { $f(x)$ is an object by [[../definition-3.3.1.org][definition of function]],\\
-               $~~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object  }
-    - $\text{True}$
-  - $\square$
-  - $\bullet$ Claim 2: $\text{Domain}(f)=\text{Domain}(f)$
+  - $\bullet$ Claim 1: $\text{Domain}(f)=\text{Domain}(f)$
   - -- $f:X\to Y$
   - $\Vdash$ $X=X$
   - $\equiv$ { $X$ is an object by [[../axiom-3.1.org][Axiom 3.1]],\\
           $~~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object }
     - $\text{True}$
   - $\square$
-  - $\bullet$ Claim 3: $\text{Range}(f)=\text{Range}(f)$
+  - $\bullet$ Claim 2: $\text{Range}(f)=\text{Range}(f)$
   - -- $f:X\to Y$
   - $\Vdash$ $Y=Y$
   - $\equiv$ { $Y$ is an object by [[../axiom-3.1.org][Axiom 3.1]],\\
           $~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object }
+    - $\text{True}$
+  - $\square$
+  - $\bullet$ Claim 3: $\forall x \in X,~f(x)=f(x)$
+  - $\Vdash$ $f(x)=f(x)$
+  - $\equiv$  { $f(x)$ is an object by [[../definition-3.3.1.org][definition of function]],\\
+               $~~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object  }
     - $\text{True}$
   - $\square$
   \\
@@ -40,13 +40,7 @@
 - $\Rightarrow$ { Claim1, Claim2, Claim3 and  [[../definition-3.3.7.org][Definition 3.3.7]] }
   - $g=f$
 - $\square$
-  - $\bullet$ Claim 1: $\forall x,~f(x)=g(x)\implies g(x)=f(x)$
-  - $\Vdash$ $f(x)=g(x)$
-  - $\Rightarrow$ { $f(x)$ and $g(x)$ are objects by [[../definition-3.3.1.org][definition of function]],\\
-               $~~~$ the [[../../Appendix/AxiomOfEquality.org][symmetry axiom]] for any two objects of the same type  }
-    - $g(x)=f(x)$
-  - $\square$
-  - $\bullet$ Claim 2: $\text{Domain}(f)=\text{Domain}(g)\implies\text{Domain}(g)=\text{Domain}(f)$
+  - $\bullet$ Claim 1: $\text{Domain}(f)=\text{Domain}(g)\implies\text{Domain}(g)=\text{Domain}(f)$
   - -- $f:X\to Y$
   - -- $g:X'\to Y'$
   - $\Vdash$ $X=X'$
@@ -54,13 +48,19 @@
           $~~~$ [[../../Appendix/AxiomOfEquality.org][symmetry axiom]] for any two objects of the same type }
     - $X'=X$
   - $\square$
-  - $\bullet$ Claim 3: $\text{Range}(f)=\text{Range}(g)\implies\text{Range}(g)=\text{Range}(f)$
+  - $\bullet$ Claim 2: $\text{Range}(f)=\text{Range}(g)\implies\text{Range}(g)=\text{Range}(f)$
   - -- $f:X\to Y$
   - -- $g:X'\to Y'$
   - $\Vdash$ $Y=Y'$
   - $\Rightarrow$ { $X$ and $X'$ are objects by [[../axiom-3.1.org][Axiom 3.1]],\\
           $~~~$ [[../../Appendix/AxiomOfEquality.org][symmetry axiom]] for any two objects of the same type }
     - $Y'=Y$
+  - $\square$
+  - $\bullet$ Claim 3: $\forall x \in X,~f(x)=g(x)\implies \forall x \in X,~g(x)=f(x)$
+  - $\Vdash$ $f(x)=g(x)$
+  - $\Rightarrow$ { $f(x)$ and $g(x)$ are objects by [[../definition-3.3.1.org][definition of function]],\\
+               $~~~$ the [[../../Appendix/AxiomOfEquality.org][symmetry axiom]] for any two objects of the same type  }
+    - $g(x)=f(x)$
   - $\square$
 \\
 
@@ -70,17 +70,7 @@
 - $\Rightarrow$ { Claim1, Claim2, Claim3 and  [[../definition-3.3.7.org][Definition 3.3.7]] }
   - $f=h$
 - $\square$
-  - $\bullet$ Claim 1: $\forall x,~(f(x)=g(x))\land(g(x)=h(x))\implies f(x)=h(x)$
-  - $\Vdash$ $f(x)$
-  - $=$ { $f(x)=g(x)$ }
-    - $g(x)$
-  - $=$ { $g(x)=h(x)$ }
-    - $h(x)$
-  - $\Rightarrow$ { $f(x)$, $g(x)$ and $h(x)$ are objects by [[../definition-3.3.1.org][definition of function]],\\
-           $~~~$ [[../../Appendix/AxiomOfEquality.org][transitive axiom]] for any three objects of the same type }
-    - $f(x)=h(x)$
-  - $\square$
-  - $\bullet$ Claim 2: $(\text{Domain}(f)=\text{Domain}(g))\land(\text{Domain}(g)=\text{Domain}(h))\implies\text{Domain}(f)=\text{Domain}(g)$
+  - $\bullet$ Claim 1: $(\text{Domain}(f)=\text{Domain}(g))\land(\text{Domain}(g)=\text{Domain}(h))\implies\text{Domain}(f)=\text{Domain}(h)$
   - -- $f:X\to Y$
   - -- $g:X'\to Y'$
   - -- $h:X''\to Y''$
@@ -93,7 +83,7 @@
           $~~~$ [[../../Appendix/AxiomOfEquality.org][transitive axiom]] for any three objects of the same type }
     - $X=X''$
   - $\square$
-  - $\bullet$ Claim 2: $(\text{Range}(f)=\text{Range}(g))\land(\text{Range}(g)=\text{Range}(h))\implies\text{Range}(f)=\text{Range}(g)$
+  - $\bullet$ Claim 2: $(\text{Range}(f)=\text{Range}(g))\land(\text{Range}(g)=\text{Range}(h))\implies\text{Range}(f)=\text{Range}(h)$
   - -- $f:X\to Y$
   - -- $g:X'\to Y'$
   - -- $h:X''\to Y''$
@@ -106,6 +96,16 @@
           $~~~$ [[../../Appendix/AxiomOfEquality.org][transitive axiom]] for any three objects of the same type }
     - $Y=Y''$
   - $\square$
+  - $\bullet$ Claim 3: $(\forall x \in X,~(f(x)=g(x)))\land (\forall x \in X,~(g(x)=h(x))) \implies (\forall x \in X,~f(x)=h(x))$
+  - $\Vdash$ $f(x)$
+  - $=$ { $f(x)=g(x)$ }
+    - $g(x)$
+  - $=$ { $g(x)=h(x)$ }
+    - $h(x)$
+  - $\Rightarrow$ { $f(x)$, $g(x)$ and $h(x)$ are objects by [[../definition-3.3.1.org][definition of function]],\\
+           $~~~$ [[../../Appendix/AxiomOfEquality.org][transitive axiom]] for any three objects of the same type }
+    - $f(x)=h(x)$
+  - $\square$
 
 
   [[../../Appendix/AxiomOfEquality.org][Substitution]]
@@ -116,15 +116,7 @@
   - $=$ { Claim 1, Claim 2, Claim 3, [[../definition-3.3.7.org][Definition 3.3.7]] and [[../definition-3.3.10.org][Definition 3.3.10]] }
     - $\tilde{g}\circ\tilde{f}$
   - $\square$
-    - $\bullet$ Claim 1: $\forall x\in X, \forall y\in Y, ~(f(x)=\tilde{f}(x))\land (g(y)=\tilde{g}(y))\implies g(f(x))=\tilde{g}(\tilde{f}(x))$
-    - $\Vdash$ $g(f(x))$
-    - $=$ { $f(x)=\tilde{f}(x)$,\\
-                 $~~~$ [[../../Appendix/AxiomOfEquality.org][substitution axiom]] for any two objects of the same type }
-      - $g(\tilde{f}(x))$
-    - $=$ { $g(y)=\tilde{g}(y)$ }
-      - $g(\tilde{f}(x))=\tilde{g}(\tilde{f}(x))$
-    - $\square$
-    - $\bullet$ Claim 2: $\text{Domain}(g\circ f)=\text{Domain}(\tilde{g}\circ\tilde{f})$
+    - $\bullet$ Claim 1: $\text{Domain}(g\circ f)=\text{Domain}(\tilde{g}\circ\tilde{f})$
     - $\Vdash$ $\text{Domain}(g\circ f)=\text{Domain}(\tilde{g}\circ\tilde{f})$
     - $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10 ]] }
       - $X=X$
@@ -132,11 +124,19 @@
                  $~~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object }
       - $\text{True}$
     - $\square$
-    - $\bullet$ Claim 3: $\text{Range}(g\circ f)=\text{Range}(\tilde{g}\circ\tilde{f})$
+    - $\bullet$ Claim 2: $\text{Range}(g\circ f)=\text{Range}(\tilde{g}\circ\tilde{f})$
     - $\Vdash$ $\text{Range}(g\circ f)=\text{Range}(\tilde{g}\circ\tilde{f})$
     - $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10 ]] }
       - $Y=Y$
     - $\equiv$ { $Y$ is an objects by [[../axiom-3.1.org][Axiom 3.1]],\\
                  $~~~$ [[../../Appendix/AxiomOfEquality.org][reflexive axiom]] for any object }
       - $\text{True}$
+    - $\square$
+    - $\bullet$ Claim 3: $(\forall x\in X, ~(f(x)=\tilde{f}(x)))\land (\forall y\in Y,(g(y)=\tilde{g}(y))) \implies (\forall x\in X, g(f(x))=\tilde{g}(\tilde{f}(x)))$
+    - $\Vdash$ $g(f(x))$
+    - $=$ { $\forall x\in X, f(x)=\tilde{f}(x)$,\\
+                 $~~~$ [[../../Appendix/AxiomOfEquality.org][substitution axiom]] for any two objects of the same type }
+      - $g(\tilde{f}(x))$
+    - $=$ {$\forall y\in Y, g(y)=\tilde{g}(y)$ and let $y=\tilde{f}(x)$ }
+      - $\tilde{g}(\tilde{f}(x))$
     - $\square$
