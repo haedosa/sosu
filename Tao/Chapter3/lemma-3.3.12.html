@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=d101f5ee-38a2-4d38-8119-9884823f57f8' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=5a6b97d7-b216-4457-bedf-a7c5c219d22a' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -359,7 +359,7 @@
     </p>
   
     <p class='mb-3'>
-      <span class='math inline'>\(Proof~by~Tao\)</span>. Since <span class='math inline'>\(f\circ g\)</span> is a function form <span class='math inline'>\(X\)</span> to <span class='math inline'>\(Z\)</span>, <span class='math inline'>\(f\circ(g\circ h)\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Simliarly <span class='math inline'>\(f\circ g\)</span> is a function from <span class='math inline'>\(Y\)</span> to <span class='math inline'>\(W\)</span>, and hence <span class='math inline'>\((f\circ g)\circ h\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Thus <span class='math inline'>\(f\circ(g\circ h)\)</span> and <span class='math inline'>\((f\circ g)\circ h\)</span> have the same domain and range. In order to check that they are equal, we see from <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a> that we have verify that <span class='math inline'>\((f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)\)</span> for all <span class='math inline'>\(x\in X\)</span>. But by <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math display'>$$
+      <span class='math inline'>\(Proof~by~Tao\)</span>. Since <span class='math inline'>\(f\circ g\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(Z\)</span>, <span class='math inline'>\(f\circ(g\circ h)\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Simliarly <span class='math inline'>\(f\circ g\)</span> is a function from <span class='math inline'>\(Y\)</span> to <span class='math inline'>\(W\)</span>, and hence <span class='math inline'>\((f\circ g)\circ h\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(W\)</span>. Thus <span class='math inline'>\(f\circ(g\circ h)\)</span> and <span class='math inline'>\((f\circ g)\circ h\)</span> have the same domain and range. In order to check that they are equal, we see from <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a> that we have to verify that <span class='math inline'>\((f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)\)</span> for all <span class='math inline'>\(x\in X\)</span>. But by <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math display'>$$
 (f\circ (g\circ h))(x)=f((g\circ h)(x))
 $$</span>
     </p>
@@ -395,6 +395,22 @@ $$</span>
         <li>
           
     <p class='mb-3'>
+      <span class='math inline'>\(+\)</span> Notation: <span class='math inline'>\(\text{Domain}(f:X\to Y)= X\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(+\)</span> Notation: <span class='math inline'>\(\text{Range}(f:X\to Y)=Y\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
       <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(f\circ(g\circ h)=(f\circ g)\circ h\)</span>, when
     </p>
   
@@ -403,7 +419,23 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      – <span class='math inline'>\(f:Z\to W,~g:Y\to Z,~h:X\to Y\)</span>, <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a>
+      – <span class='math inline'>\(f:Z\to W\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(g:Y\to Z\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – <span class='math inline'>\(h:X\to Y\)</span>
     </p>
   
         </li>
@@ -419,45 +451,13 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a>, Claim 1., Claim 2., modus ponens}
+      <span class='math inline'>\(\equiv\)</span> { Claim 1, Claim2, Claim 3, and <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a>, modus ponens}
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          
-    <p class='mb-3'>
-      True
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Claim 1. Show that <span class='math inline'>\((\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h))=(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h)))\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Claim 3., <span class='math inline'>\(f:Z\to W\)</span>,By <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math inline'>\(g\circ h:X\to Z\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\((\text{Domain}(g\circ h),~\text{Range}(f))\)</span>
+          <span class='math inline'>\(\text{True}\)</span>
         </li>
       
     </ul>
@@ -467,13 +467,53 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Claim 3., <span class='math inline'>\(g:Y\to Z,~h:X\to Y\)</span> }
+      <span class='math inline'>\(\square\)</span>
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((\text{Domain}(h),~\text{Range}(f))\)</span>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Claim 1. Show that <span class='math inline'>\(\text{Domain}(f\circ (g\circ h))=\text{Domain}((f\circ g)\circ h)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { show that domains of both sides are <span class='math inline'>\(X\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\text{Domain}(f\circ (g\circ h))=X\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\text{Domain}(f\circ (g\circ h))\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(p=g\circ h\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(p:X\to Z\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\text{Domain}(f\circ p)\)</span>
         </li>
       
     </ul>
@@ -483,13 +523,13 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Claim 3., <span class='math inline'>\(f:Z\to W,~g:Y\to Z\)</span> }
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(q=f\circ p\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(q:X\to W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((\text{Domain}(h),~\text{Range}(f\circ g))\)</span>
+          <span class='math inline'>\(X\)</span>
         </li>
       
     </ul>
@@ -499,13 +539,37 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { Claim 3., By <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math inline'>\(f\circ g:Y\to W,~h:X\to Y\)</span> }
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\text{Domain}((f\circ g)\circ h)=X\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\text{Domain}((f\circ g)\circ h)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(p=f\circ g\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(p:Y\to W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))\)</span>
+          <span class='math inline'>\(\text{Domain}(p\circ h)\)</span>
         </li>
       
     </ul>
@@ -515,29 +579,13 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Claim 2. Show that <span class='math inline'>\(\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> True
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.7' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.7</a> }
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(q=p\circ h\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(q:Z\to W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\forall x,~f(g(h(x)))=f(g(h(x)))\)</span>
+          <span class='math inline'>\(X\)</span>
         </li>
       
     </ul>
@@ -547,13 +595,9 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(f:Z\to W,~g:Y\to Z,~h:X\to Y\)</span> }
+      <span class='math inline'>\(\square\)</span>
     </p>
   
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(\forall x,~f((g\circ h)(x))=(f\circ g)(h(x))\)</span>
         </li>
       
     </ul>
@@ -563,13 +607,57 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(f:Z\to W\)</span>, By <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math inline'>\(g\circ h:X\to Z\)</span>, By <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math inline'>\(f\circ g:Y\to W~h:X\to Y\)</span> }
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Claim 2. Show that <span class='math inline'>\(\text{Range}(f\circ (g\circ h))=\text{Range}((f\circ g)\circ h)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> { show that ranges of both sides are <span class='math inline'>\(W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)\)</span>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\text{Range}(f\circ (g\circ h))=W\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\text{Range}(f\circ (g\circ h))\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(p=g\circ h\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(p:X\to Z\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\text{Range}(f\circ p)\)</span>
         </li>
       
     </ul>
@@ -579,37 +667,13 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Claim 3. Show that <span class='math inline'>\((\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))=(\text{Domain}(h'),~\text{Range}(g'))\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      – <span class='math inline'>\(\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { <span class='math inline'>\(\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B\)</span>, By <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> <span class='math inline'>\(g'\circ h':X'\to Z'\)</span> }
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(q=f\circ p\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(q:X\to W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((X', Z')\)</span>
+          <span class='math inline'>\(W\)</span>
         </li>
       
     </ul>
@@ -619,16 +683,168 @@ $$</span>
         <li>
           
     <p class='mb-3'>
-      <span class='math inline'>\(=\)</span> { <span class='math inline'>\(\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'\)</span> }
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(\text{Range}((f\circ g)\circ h)=W\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\text{Range}((f\circ g)\circ h)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(p=f\circ g\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(p:Y\to W\)</span> }
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((\text{Domain}(h'),~\text{Range}(g'))\)</span>
+          <span class='math inline'>\(\text{Range}(p\circ h)\)</span>
         </li>
       
     </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { let <span class='math inline'>\(q=p\circ h\)</span>,<br /><span class='math inline'>\(~~~\)</span> <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a>, <span class='math inline'>\(q:Z\to W\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(W\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+    </ul>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Claim 3. Show that <span class='math inline'>\(\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\((f\circ (g\circ h))(x)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(f((g\circ h)(x))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(f((g(h(x)))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((f\circ g)(h(x))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((f\circ g)\circ h)(x)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
   
         </li>
       
