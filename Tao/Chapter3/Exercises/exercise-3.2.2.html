@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=d375f0dc-3214-4f17-a022-6bdbbac17503' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=d246a1d8-5125-479d-b44e-2282af146864' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -368,7 +368,7 @@
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  
+  <pre class='pandoc-raw-"org"'>#+LaTeX_Hormat{\chapter}[block]{\bfseries\Huge}{}{0em}{}</pre>
     <p class='mb-3'>
       Use <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>the axiom of regularity</a> (and <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>the singleton set axiom</a>) to show that if <span class='math inline'>\(A\)</span> is a set, then <span class='math inline'>\(A \in A\)</span>. Furthermore, show that if <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are two sets, then either <span class='math inline'>\(A \notin B\)</span> or <span class='math inline'>\(B \notin A\)</span> (or both).
     </p>
@@ -380,15 +380,15 @@
         </li>
       
         <li>
-          – <span class='math inline'>\(A\)</span> is a set
+          - <span class='math inline'>\(A\)</span> is a set
         </li>
       
         <li>
-          – <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.9: the axiom of regularity</a>
+          - <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.9: the axiom of regularity</a>
         </li>
       
         <li>
-          – <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.3: the singleton set axiom</a>
+          - <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.3: the singleton set axiom</a>
         </li>
       
         <li>
@@ -440,11 +440,107 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\bullet\)</span> Show <span class='math inline'>\((A \notin B) \lor (B \notin A) \lor ((A \notin B) \land (B \notin A))\)</span>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show <span class='math inline'>\(A \notin B \lor B \notin A\)</span>
         </li>
       
         <li>
-          – <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are sets
+          - <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are sets
+        </li>
+      
+        <li>
+          - <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.9: the axiom of regularity</a>
+        </li>
+      
+        <li>
+          - <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.3: the singleton set axiom</a>
+        </li>
+      
+        <li>
+          - <span class='math inline'>\(S \notin S\)</span> for any set <span class='math inline'>\(S\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> { <a href='Tao/Chapter3/axiom-3.3' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.3</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{A, B\}\)</span> exists and is a non-empty set
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.9</a> and modus ponens }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists y ( y \in \{A, B\} \land (y \cap \{A, B\} = \emptyset))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/axiom-3.9' class='text-purple-600 mavenLinkBold hover:underline'>axiom 3.3</a>: <span class='math inline'>\(\exists y ( y \in \{A, B\}) \vdash y = A \lor y = B\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((A \cap \{A, B\} = \emptyset) \lor (B \cap \{A, B\} = \emptyset)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Definition of <span class='math inline'>\(\cap\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(((A \notin A) \land (B \notin A)) \lor ((A \notin B) \land (B \notin B))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(S \notin S\)</span> for any set <span class='math inline'>\(S\)</span> and And-elimination }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((B \notin A) \lor (A \notin B)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\land\)</span>-commutation }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((A \notin B) \lor (B \notin A)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
         </li>
       
     </ul>
