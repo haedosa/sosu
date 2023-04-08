@@ -28,16 +28,13 @@ specifically rules out the axiom of universal specification.
 - - other axioms of set theory
 - $\Vdash$ { Prove each direction }
   - $\bullet$ Show that if Axiom 3.8 is true, then a universal set exists
-  - $\Vdash$ { Define $P(x)$ to be "$x$ is object" }
+  - $\Vdash$ { Define $P(x)$ to be "$x = x$" }
     - $\{ x : P(x) \}$ exists and $x \in \{ x : P(x) \}$ for all object $x$
   - $\square$
   - $\bullet$ Show that if a universal set exists, then Axiom 3.8 is true
   - - Let $\Omega$ the universal set
-  - $\Vdash$ { Prove existence and implications separately }
-    - $\bullet$ set $\{ x : P(x) \text{ is true} \}$ exists
-    - $\square$
-    - $\bullet$ $y \in \{ x : P(x) \text{ is true} \} \implies P(y) \text{ is true}$
-    - $\square$
-    - $\bullet$ $P(y) \text{ is true} \implies y \in \{ x : P(x) \text{ is true} \}$
-    - $\square$
-- $\square$
+  - $\Vdash$ { [[../axiom-3.5.org][axiom-3.5]] }
+    - $\{ x \in \Omega : P(x) \text{ is true} \}$ exists $y \in \{ x \in \Omega: P(x) \text{ is true} \} \Leftrightarrow P(y) \text{ is true}$
+  - $\vdash$ { Since $x \in \Omega$, $x$ is object }
+    - $\{ x : P(x) \text{ is true} \}$ exists $y \in \{ x : P(x) \text{ is true} \} \Leftrightarrow P(y) \text{ is true}$
+  - $\square$
