@@ -1,0 +1,43 @@
+ #+title: Exercise 3.2.3
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+Show (assuming the other axioms of set theory) that the universal specification
+axiom, Axiom 3.8, is equivalent to an axiom postulating the existence of a
+“universal set” $\Omega$ consisting of all objects (i.e., for all objects $x$,
+we have $x \in \Omega$). In other words, if Axiom 3.8 is true, then a universal
+set exists, and conversely, if a universal set exists, then Axiom 3.8 is true.
+(This may explain why Axiom 3.8 is called the axiom of universal specification).
+Note that if a universal set $\Omega$ existed, then we would have $\Omega \in
+\Omega$ by Axiom 3.1, contradicting Exercise 3.2.2. Thus the axiom of foundation
+specifically rules out the axiom of universal specification.
+
+
+- $\bullet$ Show that if Axiom 3.8 is true, then a universal set exists, and conversely, if a universal set exists, then Axiom 3.8 is true
+- - other axioms of set theory
+- $\Vdash$ { Prove each direction }
+  - $\bullet$ Show that if Axiom 3.8 is true, then a universal set exists
+  - $\Vdash$ { Define $P(x)$ to be "$x$ is object" }
+    - $\{ x : P(x) \}$ exists and $x \in \{ x : P(x) \}$ for all object $x$
+  - $\square$
+  - $\bullet$ Show that if a universal set exists, then Axiom 3.8 is true
+  - - Let $\Omega$ the universal set
+  - $\Vdash$ { Prove existence and implications separately }
+    - $\bullet$ set $\{ x : P(x) \text{ is true} \}$ exists
+    - $\square$
+    - $\bullet$ $y \in \{ x : P(x) \text{ is true} \} \implies P(y) \text{ is true}$
+    - $\square$
+    - $\bullet$ $P(y) \text{ is true} \implies y \in \{ x : P(x) \text{ is true} \}$
+    - $\square$
+- $\square$

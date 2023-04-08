@@ -7,7 +7,6 @@
 #+LATEX_HEADER: \renewcommand{\labelitemiii}{}
 #+LATEX_HEADER: \renewcommand{\labelitemiv}{}
 #+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
-#+LaTeX_Hormat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
 #+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
 #+OPTIONS: num:nil
 #+HTML_HEAD: <style type="text/css">
