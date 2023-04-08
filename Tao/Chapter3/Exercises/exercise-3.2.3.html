@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=0cce9f45-798e-4199-995b-60bc7525b51a' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=62f16d35-a0c3-4c0a-ab14-67bae20f6035' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -393,7 +393,7 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Vdash\)</span> { Define <span class='math inline'>\(P(x)\)</span> to be "<span class='math inline'>\(x\)</span> is object" }
+          <span class='math inline'>\(\Vdash\)</span> { Define <span class='math inline'>\(P(x)\)</span> to be "<span class='math inline'>\(x = x\)</span>" }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -417,35 +417,23 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Vdash\)</span> { Prove existence and implications separately }
+          <span class='math inline'>\(\Vdash\)</span> { <a href='Tao/Chapter3/axiom-3.5' class='text-purple-600 mavenLinkBold hover:underline'>axiom-3.5</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\bullet\)</span> set <span class='math inline'>\(\{ x : P(x) \text{ is true} \}\)</span> exists
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\square\)</span>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\bullet\)</span> <span class='math inline'>\(y \in \{ x : P(x) \text{ is true} \} \implies P(y) \text{ is true}\)</span>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\square\)</span>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\bullet\)</span> <span class='math inline'>\(P(y) \text{ is true} \implies y \in \{ x : P(x) \text{ is true} \}\)</span>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\square\)</span>
+          <span class='math inline'>\(\{ x \in \Omega : P(x) \text{ is true} \}\)</span> exists <span class='math inline'>\(y \in \{ x \in \Omega: P(x) \text{ is true} \} \Leftrightarrow P(y) \text{ is true}\)</span>
         </li>
       
     </ul>
   
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Since <span class='math inline'>\(x \in \Omega\)</span>, <span class='math inline'>\(x\)</span> is object }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{ x : P(x) \text{ is true} \}\)</span> exists <span class='math inline'>\(y \in \{ x : P(x) \text{ is true} \} \Leftrightarrow P(y) \text{ is true}\)</span>
         </li>
       
     </ul>
@@ -454,6 +442,10 @@
       
         <li>
           <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
         </li>
       
     </ul>
