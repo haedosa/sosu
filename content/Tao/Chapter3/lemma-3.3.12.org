@@ -18,10 +18,10 @@
 *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions.
 Then $f\circ(g\circ h)=(f\circ g)\circ h$./
 
-$Proof~by~Tao$. Since $f\circ g$ is a function form $X$ to $Z$, $f\circ(g\circ h)$ is a function from $X$ to $W$.
+$Proof~by~Tao$. Since $f\circ g$ is a function from $X$ to $Z$, $f\circ(g\circ h)$ is a function from $X$ to $W$.
 Simliarly $f\circ g$ is a function from $Y$ to $W$, and hence $(f\circ g)\circ h$ is a function from $X$ to $W$.
 Thus $f\circ(g\circ h)$ and $(f\circ g)\circ h$ have the same domain and range. In order to check that they are equal,
-we see from [[./definition-3.3.7.org][Definition 3.3.7]] that we have verify that $(f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)$ for all $x\in X$.
+we see from [[./definition-3.3.7.org][Definition 3.3.7]] that we have to verify that $(f\circ(g\circ h))(x)=((f\circ g)\circ h)(x)$ for all $x\in X$.
 But by [[./definition-3.3.10.org][Definition 3.3.10]]
 $$
 (f\circ (g\circ h))(x)=f((g\circ h)(x))
@@ -43,62 +43,118 @@ as desired. $\square$
 
 $Proof~in~Structured~Derivation~Form$.
 
+- $+$ Notation: $\text{Domain}(f:X\to Y)= X$
+- $+$ Notation: $\text{Range}(f:X\to Y)=Y$
+
 - $\bullet$ Show that $f\circ(g\circ h)=(f\circ g)\circ h$, when
 
-- -- $f:Z\to W,~g:Y\to Z,~h:X\to Y$, [[./definition-3.3.7.org][Definition 3.3.7]]
+- -- $f:Z\to W$
+- -- $g:Y\to Z$
+- -- $h:X\to Y$
 
 - $\Vdash$ $f\circ(g\circ h)=(f\circ g)\circ h$
 
-- $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]], Claim 1., Claim 2., modus ponens}
+- $\equiv$ { Claim 1, Claim2, Claim 3, and [[./definition-3.3.7.org][Definition 3.3.7]],  modus ponens}
 
-  - True
+  - $\text{True}$
 
-  - $\bullet$ Claim 1. Show that $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h))=(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+- $\square$
 
-  - $\Vdash$ $(\text{Domain}(f\circ (g\circ h)),~\text{Range}(f\circ (g\circ h)))$
+  - $\bullet$ Claim 1. Show that $\text{Domain}(f\circ (g\circ h))=\text{Domain}((f\circ g)\circ h)$
 
-  - $=$ { Claim 3., $f:Z\to W$,By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$ }
+  - $\Vdash$ { show that domains of both sides are $X$ }
 
-    - $(\text{Domain}(g\circ h),~\text{Range}(f))$
+    - $\bullet$ Show that $\text{Domain}(f\circ (g\circ h))=X$
 
-  - $=$ { Claim 3., $g:Y\to Z,~h:X\to Y$ }
+    - $\Vdash$ $\text{Domain}(f\circ (g\circ h))$
 
-    - $(\text{Domain}(h),~\text{Range}(f))$
+    - $=$ { let $p=g\circ h$,\\
+                       $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $p:X\to Z$ }
 
-  - $=$ { Claim 3., $f:Z\to W,~g:Y\to Z$ }
+      - $\text{Domain}(f\circ p)$
 
-    - $(\text{Domain}(h),~\text{Range}(f\circ g))$
+    - $=$ { let $q=f\circ p$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $q:X\to W$  }
 
-  - $=$ { Claim 3., By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W,~h:X\to Y$ }
+      - $X$
 
-    - $(\text{Domain}((f\circ g)\circ h),~\text{Range}((f\circ g)\circ h))$
+    - $\square$
 
-  - $\bullet$ Claim 2. Show that $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+    - $\bullet$ Show that $\text{Domain}((f\circ g)\circ h)=X$
 
-  - $\Vdash$ True
+    - $\Vdash$ $\text{Domain}((f\circ g)\circ h)$
 
-  - $\equiv$ { [[./definition-3.3.7.org][Definition 3.3.7]] }
+    - $=$ { let $p=f\circ g$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $p:Y\to W$  }
 
-    - $\forall x,~f(g(h(x)))=f(g(h(x)))$
+      - $\text{Domain}(p\circ h)$
+    - $=$ { let $q=p\circ h$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $q:Z\to W$  }
 
-  - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]], $f:Z\to W,~g:Y\to Z,~h:X\to Y$ }
+      - $X$
 
-    - $\forall x,~f((g\circ h)(x))=(f\circ g)(h(x))$
+    - $\square$
 
-  - $\equiv$ { [[./definition-3.3.10.org][Definition 3.3.10]], $f:Z\to W$, By [[./definition-3.3.10.org][Definition 3.3.10]] $g\circ h:X\to Z$, By [[./definition-3.3.10.org][Definition 3.3.10]] $f\circ g:Y\to W~h:X\to Y$ }
+  - $\square$
 
-    - $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
 
-  - $\bullet$ Claim 3. Show that $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))=(\text{Domain}(h'),~\text{Range}(g'))$, when
+  - $\bullet$ Claim 2. Show that $\text{Range}(f\circ (g\circ h))=\text{Range}((f\circ g)\circ h)$
 
-  - -- $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'$
+  - $\Vdash$ { show that ranges of both sides are $W$ }
 
-  - $\Vdash$ $(\text{Domain}(g'\circ h'),~\text{Range}(g'\circ h'))$
+    - $\bullet$ Show that $\text{Range}(f\circ (g\circ h))=W$
 
-  - $=$ { $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B$, By [[./definition-3.3.10.org][Definition 3.3.10]] $g'\circ h':X'\to Z'$ }
+    - $\Vdash$ $\text{Range}(f\circ (g\circ h))$
 
-    - $(X', Z')$
+    - $=$ { let $p=g\circ h$,\\
+                       $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $p:X\to Z$ }
 
-  - $=$ { $\text{Domain}(f':A\to B):=A,~\text{Range}(f':A\to B):=B,~g':Y'\to Z',~h':X'\to Y'$ }
+      - $\text{Range}(f\circ p)$
 
-    - $(\text{Domain}(h'),~\text{Range}(g'))$
+    - $=$ { let $q=f\circ p$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $q:X\to W$  }
+
+      - $W$
+
+    - $\square$
+
+    - $\bullet$ Show that $\text{Range}((f\circ g)\circ h)=W$
+
+    - $\Vdash$ $\text{Range}((f\circ g)\circ h)$
+
+    - $=$ { let $p=f\circ g$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $p:Y\to W$  }
+
+      - $\text{Range}(p\circ h)$
+    - $=$ { let $q=p\circ h$,\\
+                        $~~~$ [[./definition-3.3.10.org][Definition 3.3.10]], $q:Z\to W$  }
+
+      - $W$
+
+    - $\square$
+
+  - $\square$
+
+
+
+
+
+  - $\bullet$ Claim 3. Show that $\forall x,~(f\circ (g\circ h))(x)=((f\circ g)\circ h)(x)$
+
+  - $\Vdash$ $(f\circ (g\circ h))(x)$
+
+  - $=$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+    - $f((g\circ h)(x))$
+
+  - $=$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+    - $f((g(h(x)))$
+
+  - $=$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+    - $(f\circ g)(h(x))$
+  - $=$ { [[./definition-3.3.10.org][Definition 3.3.10]] }
+
+    - $(f\circ g)\circ h)(x)$
+  - $\square$
