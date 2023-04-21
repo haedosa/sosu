@@ -1,0 +1,11 @@
+#+title: Definition 3.4.4
+
+*Definition 3.4.4* (Inverse images). If $U$ is a subset of $Y$, we define the set $f^{-1}(U)$ to be the set
+$$
+f^{-1}(U):=\{x\in X: f(x)\in U\}
+$$
+In other words, $f^{-1}(U)$ consists of all the elements of $X$ which map into $U$:
+$$
+f(x)\in U\iff x\in f^{-1}(U)
+$$
+We call $f^{-1}(U)$ the /inverse image/ of /U/.

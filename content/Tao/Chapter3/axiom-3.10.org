@@ -1,0 +1,6 @@
+#+title: Axiom 3.10
+
+*Axim 3.10* (Power set axiom). /Let $X$ and $Y$ be sets. Then there exists a set, denoted $Y^X$, which consists of all the functions from $X$ to $Y$, thus/
+$$
+f\in Y^X\iff (f\text{ is a function with domain }X\text{ and range }Y)
+$$

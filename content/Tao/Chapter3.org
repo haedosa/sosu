@@ -41,6 +41,23 @@
 \\
 \\
 
+- *Axim 3.10* (Power set axiom). /Let $X$ and $Y$ be sets. Then there exists a set, denoted $Y^X$, which consists of all the functions from $X$ to $Y$, thus/
+      $$
+      f\in Y^X\iff (f\text{ is a function with domain }X\text{ and range }Y)
+      $$
+
+\\
+\\
+
+- *Axiom 3.11* (Union). /Let $A$ be a set, all of whose elements are themselves sets. Then there exists a set $\bigcup A$ whose elements are precisely those objects which are elements of the elements of $A$, thus for all objects/ $x$
+      $$
+      x\in\bigcup A\iff(x\in S\text{ for some }S\in A)
+      $$
+
+  \\
+  \\
+
+
 * Definitions
 - *Definition 3.1.1* (Informal). We define a /set/ $A$ to be any unordered collection of objects, e.g., $\{3,8,5,2\}$ is a set. If $x$ is an object, we say that $x$ /is an element of/ $A$ or $x\in A$ if $x$ lies in the collection; otherwise we say that $x\notin A$. For instance, $3\in\{1,2,3,4,5\}$ but $7\notin\{1,2,3,4,5\}$.
     :PROPERTIES:
@@ -129,6 +146,29 @@
 \\
 \\
 
+- *Definition 3.4.1* (Images of sets). If $f:X\to Y$ is a function from $X$ to $Y$, and $S$ is a set in $X$, we define $f(S)$ to be the set
+    $$
+    f(S):=\{f(x):x\in S\}
+    $$
+    this set is a subset of $Y$, and is sometimes called the /image/ of $S$ under the map $f$.
+    We sometimes call $f(S)$ the /forward image/ of $S$ to distinguish it from the concept of the /inverse image/ $f^{-1}(S)$ of $S$, which is defined below.
+
+\\
+\\
+
+- *Definition 3.4.4* (Inverse images). If $U$ is a subset of $Y$, we define the set $f^{-1}(U)$ to be the set
+      $$
+      f^{-1}(U):=\{x\in X: f(x)\in U\}
+      $$
+      In other words, $f^{-1}(U)$ consists of all the elements of $X$ which map into $U$:
+      $$
+      f(x)\in U\iff x\in f^{-1}(U)
+      $$
+      We call $f^{-1}(U)$ the /inverse image/ of /U/.
+
+\\
+\\
+
 * Propositions
 
 - *Lemma 3.1.6.* (Single choice). /Let $A$ be a non-empty set. Then there exists an objet $x$ such that $x\in A$./
@@ -152,6 +192,17 @@
 
 - *Lemma 3.3.12* (Composition is associative). /Let $f:Z\to W,~g:Y\to Z$, and $h:X\to Y$ be functions. Then $f\circ(g\circ h)=(f\circ g)\circ h$./
   - [[./Chapter3/lemma-3.3.12.org][Proof by Tao]]
+
+\\
+\\
+
+- *Lemma 3.4.9* /Let $X$ be a set. Then the set/
+      $$
+      \{Y:Y\text{ is a subset of }X\}
+      $$
+      /is a set/.
+
+  - $Proof$. See [[./Chapter3/Exercises/exercise-3.4.6.org][Exercies 3.4.6]].
 
 \\
 \\

@@ -1,0 +1,9 @@
+#+title: Lemma 3.4.9
+
+*Lemma 3.4.9* /Let $X$ be a set. Then the set/
+$$
+\{Y:Y\text{ is a subset of }X\}
+$$
+/is a set/.
+
+$Proof$. See [[./Exercises/exercise-3.4.6.org][Exercies 3.4.6]].

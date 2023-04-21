@@ -1,0 +1,5 @@
+#+title: Exercise 3.4.6
+
+Prove [[../lemma-3.4.9.org][Lemma 3.4.9]]. (Hint: start with the set $\{0,1\}^X$ and apply the [[../axiom-3.6.org][replacement axiom]],
+replacing each function $f$ with the object $f^{-1}(\{1\})$.)\\
+See also Exercise 3.5.11.

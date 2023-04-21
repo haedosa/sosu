@@ -1,0 +1,6 @@
+#+title: Axiom 3.11
+
+*Axiom 3.11* (Union). /Let $A$ be a set, all of whose elements are themselves sets. Then there exists a set $\bigcup A$ whose elements are precisely those objects which are elements of the elements of $A$, thus for all objects/ $x$
+$$
+x\in\bigcup A\iff(x\in S\text{ for some }S\in A)
+$$
