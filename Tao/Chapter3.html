@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=5a6b97d7-b216-4457-bedf-a7c5c219d22a' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=7088dc5f-5741-423d-904c-6ac473ca135c' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -454,6 +454,38 @@
     <p class='mb-3'>
       <br /><br />
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Axim 3.10</strong> (Power set axiom). <em>Let <span class='math inline'>\(X\)</span> and <span class='math inline'>\(Y\)</span> be sets. Then there exists a set, denoted <span class='math inline'>\(Y^X\)</span>, which consists of all the functions from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(Y\)</span>, thus</em> <span class='math display'>$$
+     f\in Y^X\iff (f\text{ is a function with domain }X\text{ and range }Y)
+     $$</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <strong>Axiom 3.11</strong> (Union). <em>Let <span class='math inline'>\(A\)</span> be a set, all of whose elements are themselves sets. Then there exists a set <span class='math inline'>\(\bigcup A\)</span> whose elements are precisely those objects which are elements of the elements of <span class='math inline'>\(A\)</span>, thus for all objects</em> <span class='math inline'>\(x\)</span> <span class='math display'>$$
+     x\in\bigcup A\iff(x\in S\text{ for some }S\in A)
+     $$</span>
+    </p>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+        </li>
+      
+    </ul>
   <h1 class='pb-2 mb-2 text-5xl font-bold text-center'>Definitions</h1>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
@@ -614,6 +646,36 @@
     <p class='mb-3'>
       <br /><br />
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.4.1</strong> (Images of sets). If <span class='math inline'>\(f:X\to Y\)</span> is a function from <span class='math inline'>\(X\)</span> to <span class='math inline'>\(Y\)</span>, and <span class='math inline'>\(S\)</span> is a set in <span class='math inline'>\(X\)</span>, we define <span class='math inline'>\(f(S)\)</span> to be the set <span class='math display'>$$
+   f(S):=\{f(x):x\in S\}
+   $$</span> this set is a subset of <span class='math inline'>\(Y\)</span>, and is sometimes called the <em>image</em> of <span class='math inline'>\(S\)</span> under the map <span class='math inline'>\(f\)</span>. We sometimes call <span class='math inline'>\(f(S)\)</span> the <em>forward image</em> of <span class='math inline'>\(S\)</span> to distinguish it from the concept of the <em>inverse image</em> <span class='math inline'>\(f^{-1}(S)\)</span> of <span class='math inline'>\(S\)</span>, which is defined below.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Definition 3.4.4</strong> (Inverse images). If <span class='math inline'>\(U\)</span> is a subset of <span class='math inline'>\(Y\)</span>, we define the set <span class='math inline'>\(f^{-1}(U)\)</span> to be the set <span class='math display'>$$
+     f^{-1}(U):=\{x\in X: f(x)\in U\}
+     $$</span> In other words, <span class='math inline'>\(f^{-1}(U)\)</span> consists of all the elements of <span class='math inline'>\(X\)</span> which map into <span class='math inline'>\(U\)</span>: <span class='math display'>$$
+     f(x)\in U\iff x\in f^{-1}(U)
+     $$</span> We call <span class='math inline'>\(f^{-1}(U)\)</span> the <em>inverse image</em> of <em>U</em>.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
   <h1 class='pb-2 mb-2 text-5xl font-bold text-center'>Propositions</h1>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
@@ -675,6 +737,32 @@
       
         <li>
           <a href='Tao/Chapter3/lemma-3.3.12' class='text-purple-600 mavenLinkBold hover:underline'>Proof by Tao</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <br /><br />
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <strong>Lemma 3.4.9</strong> <em>Let <span class='math inline'>\(X\)</span> be a set. Then the set</em> <span class='math display'>$$
+     \{Y:Y\text{ is a subset of }X\}
+     $$</span> <em>is a set</em>.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(Proof\)</span>. See <a href='Tao/Chapter3/Exercises/exercise-3.4.6' class='text-purple-600 mavenLinkBold hover:underline'>Exercies 3.4.6</a>.
         </li>
       
     </ul>
