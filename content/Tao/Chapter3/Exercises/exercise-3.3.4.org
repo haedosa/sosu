@@ -1,0 +1,45 @@
+#+title: Exercise 3.3.4
+
+In this section we give some cancellation laws for composition.
+Let $f:X\to Y,~\tilde{f}:X\to Y,~g:Y\to Z$, and $\tilde{g}:Y\to Z$ be functions.
+Show that if $g\circ f=g\circ\tilde{f}$ and $g$ is injective, then $f=\tilde{f}$.
+Is this same statement true if $g$ is not injective?
+Show that if $g\circ f=\tilde{g}\circ f$ and $f$ is surjective, then $g=\tilde{g}$.
+Is the same statement true if $f$ is not surjective?
+
+- $\bullet$ Show that $g\circ f=g\circ\tilde{f}\implies f=\tilde{f}$ when
+- -- $g$ is injective: $g(y)=g(y')\implies y=y'$
+- $\Vdash$ $g\circ f=g\circ\tilde{f}$
+- $\equiv$ { [[../definition-3.3.7.org][Definition 3.3.7]] }
+  - $\forall x,~(g\circ f)(x)=(g\circ\tilde{f})(x)$
+- $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+  - $\forall x,~g(f(x))=g(\tilde{f}(x))$
+- $\Rightarrow$ { $g$ is injective }
+  - $\forall x,~f(x)=\tilde{f}(x)$
+- $\equiv$ { [[../definition-3.3.7.org][Definition 3.3.7 ]]}
+  - $f=\tilde{f}$
+- $\square$
+
+- $\bullet$ Show that $g\circ f=g\circ\tilde{f}$ when
+- -- $g(y)=y^2$
+- --  $f(x)=x$
+- -- $\tilde{f}(x)=-x$
+- $\Vdash$ $g(f(x))=g(\tilde{f}(x))$
+- $\equiv$ { $f(x)=x,\tilde{f}(x)=-x$ }
+  - $g(x)=g(-x)$
+- $\equiv$ { $g(x)=x^2,~ g(-x)=(-x)^2=x^2$ }
+  - $x^2=x^2$
+- $\square$
+
+- $\bullet$ Show that $g\circ f=\tilde{g}\circ f$ when
+- -- $f$ is surjective: $\forall y\in Y~\exists x\in X,~f(x)=y$
+- $\Vdash$ $g\circ f=\tilde{g}\circ f$
+- $\equiv$ { [[../definition-3.3.7.org][Definition 3.3.7]] }
+  - $\forall x,~(g\circ f)(x)=(\tilde{g}\circ f)(x)$
+- $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+  - $\forall x, g(f(x))=\tilde{g}(f(x))$
+- $\equiv$ { $f$ is surjective }
+  - $\forall y\in Y,~g(y)=\tilde{g}(y)$
+- $\equiv$ { [[../definition-3.3.7.org][Definition 3.3.7]] }
+  - $g=\tilde{g}$
+- $\square$
