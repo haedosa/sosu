@@ -1,0 +1,36 @@
+#+title: Exercise 3.3.2
+
+Let $f:X\to Y$ and $g:X\to Y$ be functions. Show that if $f$ and $g$ are both injective,
+then so is $g\circ f$; similarly, show that if $f$ and $g$ are both surjective, then so is $g\circ f$.
+
+
+- $\bullet$ Show that $g\circ f$ is injective
+- -- P1: $f$ is injective
+- -- P2: $g$ is injective
+- $\Vdash$ $x\neq x'$
+- $\Rightarrow$ { P1 and [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $f(x)\neq f(x')$
+- $\Rightarrow$ { P2 and  [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $g(f(x))\neq g(f(x'))$
+- $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+  - $(g\circ f)(x)\neq(g\circ f)(x')$
+- $\Rightarrow$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $g\circ f$ is injective
+- $\square$
+
+
+- $\bullet$ Show that $g\circ f$ is surjective
+- -- P1: $f:X\to Y$ is surjective
+- -- P2: $g:Y\to Z$ is surjective
+- $\Vdash$ $\forall z\in Z$
+- $\Rightarrow$ { P2 and [[../definition-3.3.17.org][Definition 3.3.17]] }
+  - $\exists y\in Y,~g(y)=z$
+- $\Rightarrow$ { P1 and [[../definition-3.3.17.org][Definition 3.3.17 ]]}
+  - $(\exists y\in Y,~g(y)=z)\land (\forall y,\exists x\in X,~f(x)=y)$
+- $\Rightarrow$ { $\exists y\land(\forall y,\exists x)\Rightarrow\exists x$ }
+  - $\exists x\in X,~g(f(x))=z$
+- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $\exists x\in X,~(g\circ f)(x)=z$
+- $\Rightarrow$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+  - $g\circ f$ is surjective
+- $\square$
