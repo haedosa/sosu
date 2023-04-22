@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Ch1 – Sosu
+    Exercise 3.3.2 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Ch1' />
+      <meta property='og:title' content='Exercise 3.3.2' />
     
     
       <base href='/sosu/' />
@@ -290,8 +290,30 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Stillwell'>
-      Stillwell
+    <a href='Tao/Chapter3/Exercises'>
+      Exercises
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter3'>
+      Chapter3
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='Tao'>
+      Tao
     </a>
   </div>
 
@@ -306,6 +328,14 @@
     </a>
   </div>
 
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
   
 </li>
       
@@ -333,42 +363,177 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Ch1
+    Exercise 3.3.2
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  <nav>
-  <div class='mb-8'>
-    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './*'
-    </header>
-    <ul>
+  
+    <p class='mb-3'>
+      Let <span class='math inline'>\(f:X\to Y\)</span> and <span class='math inline'>\(g:X\to Y\)</span> be functions. Show that if <span class='math inline'>\(f\)</span> and <span class='math inline'>\(g\)</span> are both injective, then so is <span class='math inline'>\(g\circ f\)</span>; similarly, show that if <span class='math inline'>\(f\)</span> and <span class='math inline'>\(g\)</span> are both surjective, then so is <span class='math inline'>\(g\circ f\)</span>.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <div class='flex flex-wrap my-2'>
-            
-              <span data-nosnippet class='mr-2 text-right text-gray-600'>
-              </span>
-            
-            <a class='flex-1 text-purple-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='Stillwell/Ch1/Ex3'>
-              Ex3
-            </a>
-          </div>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is injective
+        </li>
+      
+        <li>
+          – P1: <span class='math inline'>\(f\)</span> is injective
+        </li>
+      
+        <li>
+          – P2: <span class='math inline'>\(g\)</span> is injective
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(x\neq x'\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { P1 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(f(x)\neq f(x')\)</span>
         </li>
       
     </ul>
-  </div>
-</nav><div class='text-gray-400 border-t-2 inline-block pt-0.5'>
-    <p class='mb-3'>
-      Note: To override the auto-generated content here, create a file named one of: <span class='font-mono text-sm'>Stillwell/Ch1.md, Stillwell/Ch1.org</span>
-    </p>
-  </div>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { P2 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g(f(x))\neq g(f(x'))\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.10' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.10</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((g\circ f)(x)\neq(g\circ f)(x')\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g\circ f\)</span> is injective
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is surjective
+        </li>
+      
+        <li>
+          – P1: <span class='math inline'>\(f:X\to Y\)</span> is surjective
+        </li>
+      
+        <li>
+          – P2: <span class='math inline'>\(g:Y\to Z\)</span> is surjective
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall z\in Z\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { P2 and <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists y\in Y,~g(y)=z\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { P1 and <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17 </a>}
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((\exists y\in Y,~g(y)=z)\land (\forall y,\exists x\in X,~f(x)=y)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { <span class='math inline'>\(\exists y\land(\forall y,\exists x)\Rightarrow\exists x\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists x\in X,~g(f(x))=z\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists x\in X,~(g\circ f)(x)=z\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g\circ f\)</span> is surjective
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
 
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Stillwell/Ch1.md'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/Exercises/exercise-3.3.2.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -380,6 +545,28 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3'>
+            Chapter3
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
+      <div><p><a href='Tao/Chapter3/Exercises/exercise-3.3.2' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise-3.3.2 with solution</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
