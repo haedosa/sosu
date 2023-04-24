@@ -4,33 +4,47 @@ Let $f:X\to Y$ and $g:X\to Y$ be functions. Show that if $f$ and $g$ are both in
 then so is $g\circ f$; similarly, show that if $f$ and $g$ are both surjective, then so is $g\circ f$.
 
 
-- $\bullet$ Show that $g\circ f$ is injective
-- -- P1: $f$ is injective
-- -- P2: $g$ is injective
+- $\bullet$ Show that $g\circ f$ is injective when
+- -- A1 : $f$ is injective
+- -- A2 : $g$ is injective
 - $\Vdash$ $x\neq x'$
-- $\Rightarrow$ { P1 and [[../definition-3.3.14.org][Definition 3.3.14]] }
+- $\Rightarrow$ { A1 and [[../definition-3.3.14.org][Definition 3.3.14]] }
   - $f(x)\neq f(x')$
-- $\Rightarrow$ { P2 and  [[../definition-3.3.14.org][Definition 3.3.14]] }
+- $\Rightarrow$ { A2 and  [[../definition-3.3.14.org][Definition 3.3.14]] }
   - $g(f(x))\neq g(f(x'))$
 - $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
   - $(g\circ f)(x)\neq(g\circ f)(x')$
-- $\Rightarrow$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+- $\vdash$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
   - $g\circ f$ is injective
 - $\square$
 
 
-- $\bullet$ Show that $g\circ f$ is surjective
-- -- P1: $f:X\to Y$ is surjective
-- -- P2: $g:Y\to Z$ is surjective
-- $\Vdash$ $\forall z\in Z$
-- $\Rightarrow$ { P2 and [[../definition-3.3.17.org][Definition 3.3.17]] }
-  - $\exists y\in Y,~g(y)=z$
-- $\Rightarrow$ { P1 and [[../definition-3.3.17.org][Definition 3.3.17 ]]}
-  - $(\exists y\in Y,~g(y)=z)\land (\forall y,\exists x\in X,~f(x)=y)$
-- $\Rightarrow$ { $\exists y\land(\forall y,\exists x)\Rightarrow\exists x$ }
-  - $\exists x\in X,~g(f(x))=z$
-- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
-  - $\exists x\in X,~(g\circ f)(x)=z$
-- $\Rightarrow$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+- $\bullet$ Show that $g\circ f$ is surjective when
+- -- A1: $g:Y\to Z$ is surjective
+- -- A2: $f:X\to Y$ is surjective
+- $\Vdash$ { Proof by let binding }
+  - $\Vdash$ $z' \in Z$
+  - $\vdash$ { A1 }
+    - $\forall z\in Z, \exists y\in Y,~g(y)=z$
+    - $\vdash$ { $\forall E(z'/z)$ }
+      - $\exists y\in Y,~g(y)=z'$
+      - $\vdash$ { $\exists E(t/y)$ }
+        - P1: $g(t)=z'$
+  - $\triangle$
+      - $\Vdash$ { A2 }
+        - $\forall y \in Y, \exists x\in X,~f(x)=y$
+        - $\vdash$ { $\forall E(t/y)$ }
+          - $\exists x\in X,~f(x)=t$
+          - $\vdash$ { $\exists E(t'/x)$ }
+            - P2: $f(t')=t$
+          - $\Vdash$ { P1, P2 }
+            - $g(f(t'))= z'$
+          - $\vdash$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+            - $(g\circ f)(t')=z'$
+        - $\vdash$ { $\exists I(x/t')$ }
+          - $\exists x\in X, (g\circ f)(x)=z'$
+- $\vdash$ { $\forall I(z/z')$ }
+  - $\forall z\in Z, \exists x\in X, (g\circ f)(x)=z$
+- $\vdash$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
   - $g\circ f$ is surjective
 - $\square$
