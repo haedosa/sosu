@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=07ab772a-7f9e-4525-b543-5dd464ace8d9' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=b1b07fae-f35e-4b40-a42b-0652245c58e7' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -376,15 +376,15 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is injective
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is injective when
         </li>
       
         <li>
-          – P1: <span class='math inline'>\(f\)</span> is injective
+          – A1 : <span class='math inline'>\(f\)</span> is injective
         </li>
       
         <li>
-          – P2: <span class='math inline'>\(g\)</span> is injective
+          – A2 : <span class='math inline'>\(g\)</span> is injective
         </li>
       
         <li>
@@ -392,7 +392,7 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { P1 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+          <span class='math inline'>\(\Rightarrow\)</span> { A1 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -404,7 +404,7 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { P2 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+          <span class='math inline'>\(\Rightarrow\)</span> { A2 and <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -428,7 +428,7 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+          <span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -448,27 +448,55 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is surjective
+          <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(g\circ f\)</span> is surjective when
         </li>
       
         <li>
-          – P1: <span class='math inline'>\(f:X\to Y\)</span> is surjective
+          – A1: <span class='math inline'>\(g:Y\to Z\)</span> is surjective
         </li>
       
         <li>
-          – P2: <span class='math inline'>\(g:Y\to Z\)</span> is surjective
+          – A2: <span class='math inline'>\(f:X\to Y\)</span> is surjective
         </li>
       
         <li>
-          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(\forall z\in Z\)</span>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { P2 and <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a> }
+          <span class='math inline'>\(\Vdash\)</span> { Proof by let binding }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\exists y\in Y,~g(y)=z\)</span>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(z' \in Z\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { A1 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall z\in Z, \exists y\in Y,~g(y)=z\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\forall E(z'/z)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists y\in Y,~g(y)=z'\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\exists E(t/y)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          P1: <span class='math inline'>\(g(t)=z'\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
         </li>
       
     </ul>
@@ -476,11 +504,31 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { P1 and <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17 </a>}
+          <span class='math inline'>\(\triangle\)</span>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\((\exists y\in Y,~g(y)=z)\land (\forall y,\exists x\in X,~f(x)=y)\)</span>
+          <span class='math inline'>\(\Vdash\)</span> { A2 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall y \in Y, \exists x\in X,~f(x)=y\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\forall E(t/y)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists x\in X,~f(x)=t\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\exists E(t'/x)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          P2: <span class='math inline'>\(f(t')=t\)</span>
         </li>
       
     </ul>
@@ -488,11 +536,11 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { <span class='math inline'>\(\exists y\land(\forall y,\exists x)\Rightarrow\exists x\)</span> }
+          <span class='math inline'>\(\Vdash\)</span> { P1, P2 }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\exists x\in X,~g(f(x))=z\)</span>
+          <span class='math inline'>\(g(f(t'))= z'\)</span>
         </li>
       
     </ul>
@@ -500,11 +548,15 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
+          <span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/definition-3.3.14' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.14</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <span class='math inline'>\(\exists x\in X,~(g\circ f)(x)=z\)</span>
+          <span class='math inline'>\((g\circ f)(t')=z'\)</span>
+        </li>
+      
+    </ul>
+  
         </li>
       
     </ul>
@@ -512,7 +564,43 @@
         </li>
       
         <li>
-          <span class='math inline'>\(\Rightarrow\)</span> { <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a> }
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\exists I(x/t')\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\exists x\in X, (g\circ f)(x)=z'\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <span class='math inline'>\(\forall I(z/z')\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\forall z\in Z, \exists x\in X, (g\circ f)(x)=z\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a> }
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
