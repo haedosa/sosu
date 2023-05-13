@@ -43,3 +43,50 @@ Is the same statement true if $f$ is not surjective?
 - $\equiv$ { [[../definition-3.3.7.org][Definition 3.3.7]] }
   - $g=\tilde{g}$
 - $\square$
+
+*** Another one
+
+*Exercise 3.3.4* In this section we give some cancellation laws for composition.
+Let $f : X \to Y$, $\tilde{f} : X \to Y$, $g : Y \to Z$, and $\tilde{g} : Y \to
+Z$ be functions. Show that if $g \cdot f = g \cdot \tilde{f}$ and $g$ is injective, then $f = \tilde{f}$. Is
+the same statement true if $g$ is not injective? Show that if $g \cdot f = \tilde{g} \cdot f$ and $f$
+is surjective, then $g = \tilde{g}$. Is the same statement true if f is not surjective?
+
+
+Claim 1
+- $\bullet$ If $g$ is injective, then there exists a $r$ function, such that $r \cdot g = \mathbb{1}$. The function $r$ is called /retraction/.
+
+Claim 2
+- $\bullet$ If $f$ is surjective, then there exists a $s$ function, such that $f \cdot s = \mathbb{1}$. The function $s$ is called /section/.
+
+
+Proof 1
+- $\bullet$ Show that if $g \cdot f = g \cdot \tilde{f}$ and $g$ is injective, then $f = \tilde{f}$.
+- - $f : X \to Y$, $\tilde{f} : X \to Y$, $g : Y \to Z$, and $\tilde{g} : Y \to Z$
+- - Claim 1: If $g$ is injective, then $\exists r,\  r \cdot g = \mathbb{1}$
+- $\Vdash$ $g \cdot f = g \cdot \tilde{f}$
+- $\vdash$ { Claim 1 }
+  - $r \cdot (g \cdot f) = r \cdot (g \cdot \tilde{f})$
+- $\vdash$ { Associativity of functions }
+  - $(r \cdot g) \cdot f = (r \cdot g) \cdot \tilde{f}$
+- $\vdash$ { Claim 1 }
+  - $\mathbb{1} \cdot f = \mathbb{1} \cdot \tilde{f}$
+- $\vdash$ { Definition of the identity function }
+  - $f = \tilde{f}$
+- $\square$
+
+
+Proof 2
+- $\bullet$ Show that if $g \cdot f = \tilde{g} \cdot f$ and $f$ is surjective, then $g = \tilde{g}$
+- - $f : X \to Y$, $\tilde{f} : X \to Y$, $g : Y \to Z$, and $\tilde{g} : Y \to Z$
+- - Claim 2: If $f$ is surjective, then $\exists s,\  f \cdot s = \mathbb{1}$
+- $\Vdash$ $g \cdot f = \tilde{g} \cdot f$
+- $\vdash$ { Claim 2 }
+  - $(g \cdot f) \cdot s = (\tilde{g} \cdot f) \cdot s$
+- $\vdash$ { Associativity of functions }
+  - $g \cdot (f \cdot s) = \tilde{g} \cdot (f \cdot s)$
+- $\vdash$ { Claim 1 }
+  - $g \cdot \mathbb{1} = \tilde{g} \cdot \mathbb{1}$
+- $\vdash$ { Definition of the identity function }
+  - $g = \tilde{g}$
+- $\square$
