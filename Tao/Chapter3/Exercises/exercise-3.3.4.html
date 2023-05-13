@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=b1b07fae-f35e-4b40-a42b-0652245c58e7' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=26f4dcfd-2b9f-4104-99f9-5ef038d2a1db' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -645,6 +645,187 @@
       <span class='math inline'>\(\square\)</span>
     </p>
   
+        </li>
+      
+    </ul>
+  <h3 class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Another one</h3>
+    <p class='mb-3'>
+      <strong>Exercise 3.3.4</strong> In this section we give some cancellation laws for composition. Let <span class='math inline'>\(f : X \to Y\)</span>, <span class='math inline'>\(\tilde{f} : X \to Y\)</span>, <span class='math inline'>\(g : Y \to Z\)</span>, and <span class='math inline'>\(\tilde{g} : Y \to
+Z\)</span> be functions. Show that if <span class='math inline'>\(g \cdot f = g \cdot \tilde{f}\)</span> and <span class='math inline'>\(g\)</span> is injective, then <span class='math inline'>\(f = \tilde{f}\)</span>. Is the same statement true if <span class='math inline'>\(g\)</span> is not injective? Show that if <span class='math inline'>\(g \cdot f = \tilde{g} \cdot f\)</span> and <span class='math inline'>\(f\)</span> is surjective, then <span class='math inline'>\(g = \tilde{g}\)</span>. Is the same statement true if f is not surjective?
+    </p>
+  
+    <p class='mb-3'>
+      Claim 1
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> If <span class='math inline'>\(g\)</span> is injective, then there exists a <span class='math inline'>\(r\)</span> function, such that <span class='math inline'>\(r \cdot g = \mathbb{1}\)</span>. The function <span class='math inline'>\(r\)</span> is called <em>retraction</em>.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      Claim 2
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> If <span class='math inline'>\(f\)</span> is surjective, then there exists a <span class='math inline'>\(s\)</span> function, such that <span class='math inline'>\(f \cdot s = \mathbb{1}\)</span>. The function <span class='math inline'>\(s\)</span> is called <em>section</em>.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      Proof 1
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that if <span class='math inline'>\(g \cdot f = g \cdot \tilde{f}\)</span> and <span class='math inline'>\(g\)</span> is injective, then <span class='math inline'>\(f = \tilde{f}\)</span>.
+        </li>
+      
+        <li>
+          - <span class='math inline'>\(f : X \to Y\)</span>, <span class='math inline'>\(\tilde{f} : X \to Y\)</span>, <span class='math inline'>\(g : Y \to Z\)</span>, and <span class='math inline'>\(\tilde{g} : Y \to Z\)</span>
+        </li>
+      
+        <li>
+          - Claim 1: If <span class='math inline'>\(g\)</span> is injective, then <span class='math inline'>\(\exists r,\  r \cdot g = \mathbb{1}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(g \cdot f = g \cdot \tilde{f}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Claim 1 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(r \cdot (g \cdot f) = r \cdot (g \cdot \tilde{f})\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Associativity of functions }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((r \cdot g) \cdot f = (r \cdot g) \cdot \tilde{f}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Claim 1 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\mathbb{1} \cdot f = \mathbb{1} \cdot \tilde{f}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Definition of the identity function }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(f = \tilde{f}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      Proof 2
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that if <span class='math inline'>\(g \cdot f = \tilde{g} \cdot f\)</span> and <span class='math inline'>\(f\)</span> is surjective, then <span class='math inline'>\(g = \tilde{g}\)</span>
+        </li>
+      
+        <li>
+          - <span class='math inline'>\(f : X \to Y\)</span>, <span class='math inline'>\(\tilde{f} : X \to Y\)</span>, <span class='math inline'>\(g : Y \to Z\)</span>, and <span class='math inline'>\(\tilde{g} : Y \to Z\)</span>
+        </li>
+      
+        <li>
+          - Claim 2: If <span class='math inline'>\(f\)</span> is surjective, then <span class='math inline'>\(\exists s,\  f \cdot s = \mathbb{1}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(g \cdot f = \tilde{g} \cdot f\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Claim 2 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\((g \cdot f) \cdot s = (\tilde{g} \cdot f) \cdot s\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Associativity of functions }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g \cdot (f \cdot s) = \tilde{g} \cdot (f \cdot s)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Claim 1 }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g \cdot \mathbb{1} = \tilde{g} \cdot \mathbb{1}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\vdash\)</span> { Definition of the identity function }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(g = \tilde{g}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
         </li>
       
     </ul>
