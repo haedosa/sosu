@@ -3,19 +3,19 @@
 When is the empty function injective? surjective? bijective?
 
 - $\bullet$ Show that $\forall X,f:\emptyset\to X$ is injective
-- $\Vdash$ $x,x'\in\emptyset,~x\neq x'\implies f(x)\neq f(x')$
+- $\Vdash$ $\forall X,f:\emptyset\to X$ is injective
+- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $\forall X, \forall x\in\emptyset, \forall x'\in\emptyset,~x\neq x'\implies f(x)\neq f(x')$
 - $\equiv$ { $x,x'\in\emptyset$ is always false }
   - Vacuosly true
-- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
-  - $\forall X,f:\emptyset\to X$ is injective
 - $\square$
 
 - $\bullet$ Show that $f:\emptyset\to \emptyset$ is surjective
-- $\Vdash$ $\forall x\in \emptyset, \exists x'\in\emptyset,~f(x') = x$
-- $\equiv$ { $\forall x\in\emptyset$ is always false }
-  - Vacuosly true
+- $\Vdash$ $f:\emptyset\to\emptyset$ is surjective
 - $\equiv$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
-  - $f:\emptyset\to\emptyset$ is surjective
+  - $\forall y\in \emptyset, \exists x\in\emptyset,~f(x) = y$
+- $\equiv$ { $\forall y\in\emptyset$ is always false }
+  - Vacuosly true
 - $\square$
 
 - $f:\emptyset\to\emptyset$ is bijective by [[../definition-3.3.20.org][Definition 3.3.20]] $\square$
