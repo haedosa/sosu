@@ -3,3 +3,13 @@
 Prove [[../lemma-3.4.9.org][Lemma 3.4.9]]. (Hint: start with the set $\{0,1\}^X$ and apply the [[../axiom-3.6.org][replacement axiom]],
 replacing each function $f$ with the object $f^{-1}(\{1\})$.)\\
 See also Exercise 3.5.11.
+
+
+- $\bullet$ Let $X$ be a set. Then the set $\{Y : Y\text{ is a subset of }X\}$ is a set.
+- -- Let set $F = \{0,1\}^X$
+- $\Vdash$ { [[../axiom-3.6.org][replacement axiom]] }
+  - For a given $x \in X$ and $f \in F$, a set $f^{-1}(\{1\}) = \{ x : f(x) = 1 \}$ exists and it a subset of $X$.
+- $\vdash$ { [[../axiom-3.6.org][replacement axiom]] }
+  - $\{ f^{-1}(\{1\}) : f(x) = 1 \text{ for } x \in f^{-1}(\{1\}) \text{ and } f \in F \}$ exists and a set.
+- $\vdash$ { For any subset $Y \subset X$, define $f(x) = \text{ if } x \in Y \text{ then } 1 \text{ else } 0$, then $S = f^{-1}(\{1\})$ and for any $f \in F$, $f^{-1}(\{1\})$ is a subset of X.}
+  - $\{Y :  Y\text{ is a subset of }X\}$ exists and a set.
