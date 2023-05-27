@@ -1,0 +1,48 @@
+#+title: Exercise 3.4.3
+
+Let $A,B$ be two subsets of a set $X$, and let $f:X\to Y$ be a function.
+Show that $f(A\cap B)\subseteq f(A)\cap f(B)$, that $f(A)\setminus f(B)\subseteq f(A\setminus B)$, $f(A\cup B)=f(A)\cup f(B)$.
+For the first two statements, is it true that the $\subseteq$ relation can be improved to $=$?
+
+- $\bullet$ Show that $f(A\cap B)\subseteq f(A)\cap f(B)$
+- $\Vdash$ $f(A\cap B)\subseteq f(A)\cap f(B)$
+- $\equiv$ { [[../definition-3.4.1.org][Definition 3.4.1]] }
+  - $\{f(x):x\in A\cap B\}\subseteq\{f(x):x\in A\}\cap \{f(x):x\in B\}$
+- $\equiv$ { [[../definition-3.1.23.org][Definition 3.1.23]] }
+  - $\{f(x):x\in\{a\in A:a\in B\}\}\subseteq\{f(x):x\in A\}\cap \{f(x):x\in B\}$
+- $\equiv$ { [[../definition-3.1.23.org][Definition 3.1.23]] }
+  - $\{f(x):x\in\{a\in A:a\in B\}\}\subseteq\{y\in\{f(x):x\in A\}: y\in \{f(x):x\in B\}\}$
+- $\equiv$ { $x\in\{a\in A:a\in B\}\equiv x\in A\land x\in B$ }
+  - $\{f(x):x\in A\land x\in B\}\subseteq\{y\in\{f(x):x\in A\}: y\in \{f(x):x\in B\}\}$
+- $\equiv$ { $\{a\in A: a\in B\}=\{a: a\in A\land a\in B\}$ }
+  - $\{f(x):x\in A\land x\in B\}\subseteq\{y:y\in\{f(x):x\in A\}\land y\in\{f(x):x\in B\}\}$
+- $\equiv$ { $\{a: a\in A\}=\{a\in A\}$ }
+  - $\{f(x):x\in A\land x\in B\}\subseteq\{f(x):x\in A\}\land \{f(x):x\in B\}$
+- $\equiv$ { [[../definition-3.1.15.org][Definition 3.1.15]] }
+  - True
+- $\square$
+
+- $\bullet$ Show that $f(A\cap B)\neq f(A)\cap f(B)$
+- -- H1: $A=\{1\}$
+- -- H2: $B=\{-1\}$
+- -- H3: $f(1)=1$
+- -- H4: $f(-1)=1$
+- $\Vdash$ $f(A\cap B)\neq f(A)\cap f(B)$
+- $\equiv$ { By H1 and H2, $A\cap B=\emptyset$ }
+  - $f(\emptyset)\neq f(A)\cap f(B)$
+- $\equiv$ { By  [[../definition-3.4.1.org][Definition 3.4.1]] $f(\emptyset)=\{f(x):x\in\emptyset\}=\emptyset$ }
+  - $\emptyset\neq f(A)\cap f(B)$
+- $\equiv$ { By  [[../definition-3.4.1.org][Definition 3.4.1]] and H1~4, $f(A)=\{1\},f(B)=\{1\}$ }
+  - $\emptyset\neq \{1\}$
+- $\square$
+
+  \\
+
+- $\bullet$ Show that $f(A)\setminus f(B)\subseteq f(A\setminus B)$
+- $\Vdash$ $f(A)\setminus f(B)\subseteq f(A\setminus B)$
+- $\equiv$ { [[../definition-3.4.1.org][Definition 3.4.1]] }
+  - $\{f(x):x\in A\}\setminus \{f(x):x\in B\}\subseteq\{f(x):x\in A\setminus B\}$
+- $\equiv$ { [[../definition-3.1.27.org][Definition 3.1.27]] }
+  - $\{y\in\{f(x):x\in A\}:y\notin\{f(x):x\in B\}\}\subseteq\{f(x):x\in A\setminus B\}$
+- $\equiv$ { [[../definition-3.1.27.org][Definition 3.1.27]] }
+  - $\{y\in\{f(x):x\in A\}:y\notin\{f(x):x\in B\}\}\subseteq\{f(x):x\in \{a\in A:a\notin B\}\}$

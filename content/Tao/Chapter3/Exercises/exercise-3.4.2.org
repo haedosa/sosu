@@ -1,0 +1,4 @@
+#+title: Exercise 3.4.2
+
+Let $f:X\to Y$ be a function from one set $X$ to another set $Y$, let $S$ be a subset of $X$, and let $U$ be a subset of $Y$.
+What, in general, can one say about $f^{-1}(f(S)) and $S$?. What about $f(f^{-1}(U)) and $U$?

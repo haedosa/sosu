@@ -16,3 +16,4 @@ thus the fact that both sets are denoted by $f^{-1}(V)$ will not lead to any inc
   - $\{x\in X:f(x)\in V\}$
 - $=$ { [[../definition-3.4.4.org][Definition 3.4.4]] }
   - Inverse image of $V$ under $f$
+- $\square$
