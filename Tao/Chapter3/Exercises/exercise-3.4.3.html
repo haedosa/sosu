@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Definition 3.3.17 – Sosu
+    Exercise 3.4.3 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Definition 3.3.17' />
+      <meta property='og:title' content='Exercise 3.4.3' />
     
     
       <base href='/sosu/' />
@@ -290,6 +290,17 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
+    <a href='Tao/Chapter3/Exercises'>
+      Exercises
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
     <a href='Tao/Chapter3'>
       Chapter3
     </a>
@@ -327,6 +338,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -348,23 +363,333 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Definition 3.3.17
+    Exercise 3.4.3
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <strong>Definition 3.3.17</strong> (Onto functions). A function <span class='math inline'>\(f\)</span> is <em>onto</em> (or <em>surjective</em>) if <span class='math inline'>\(f(X)=Y\)</span>, i.e., every element in <span class='math inline'>\(Y\)</span> comes from applying <span class='math inline'>\(f\)</span> to some element in <span class='math inline'>\(X\)</span>: <span class='math display'>$$
-\text{For every } y\in Y,\text{ there exists } x\in X \text{ such that } f(x)=y.
-$$</span>
+      Let <span class='math inline'>\(A,B\)</span> be two subsets of a set <span class='math inline'>\(X\)</span>, and let <span class='math inline'>\(f:X\to Y\)</span> be a function. Show that <span class='math inline'>\(f(A\cap B)\subseteq f(A)\cap f(B)\)</span>, that <span class='math inline'>\(f(A)\setminus f(B)\subseteq f(A\setminus B)\)</span>, <span class='math inline'>\(f(A\cup B)=f(A)\cup f(B)\)</span>. For the first two statements, is it true that the <span class='math inline'>\(\subseteq\)</span> relation can be improved to <span class='math inline'>\(=\)</span>?
     </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(f(A\cap B)\subseteq f(A)\cap f(B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(f(A\cap B)\subseteq f(A)\cap f(B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.4.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.1</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in A\cap B\}\subseteq\{f(x):x\in A\}\cap \{f(x):x\in B\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.1.23' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.23</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in\{a\in A:a\in B\}\}\subseteq\{f(x):x\in A\}\cap \{f(x):x\in B\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.1.23' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.23</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in\{a\in A:a\in B\}\}\subseteq\{y\in\{f(x):x\in A\}: y\in \{f(x):x\in B\}\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(x\in\{a\in A:a\in B\}\equiv x\in A\land x\in B\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in A\land x\in B\}\subseteq\{y\in\{f(x):x\in A\}: y\in \{f(x):x\in B\}\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(\{a\in A: a\in B\}=\{a: a\in A\land a\in B\}\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in A\land x\in B\}\subseteq\{y:y\in\{f(x):x\in A\}\land y\in\{f(x):x\in B\}\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(\{a: a\in A\}=\{a\in A\}\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in A\land x\in B\}\subseteq\{f(x):x\in A\}\land \{f(x):x\in B\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.1.15' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.15</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          True
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(f(A\cap B)\neq f(A)\cap f(B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – H1: <span class='math inline'>\(A=\{1\}\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – H2: <span class='math inline'>\(B=\{-1\}\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – H3: <span class='math inline'>\(f(1)=1\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      – H4: <span class='math inline'>\(f(-1)=1\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(f(A\cap B)\neq f(A)\cap f(B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { By H1 and H2, <span class='math inline'>\(A\cap B=\emptyset\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(f(\emptyset)\neq f(A)\cap f(B)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { By <a href='Tao/Chapter3/definition-3.4.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.1</a> <span class='math inline'>\(f(\emptyset)=\{f(x):x\in\emptyset\}=\emptyset\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\emptyset\neq f(A)\cap f(B)\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { By <a href='Tao/Chapter3/definition-3.4.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.1</a> and H1~4, <span class='math inline'>\(f(A)=\{1\},f(B)=\{1\}\)</span> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\emptyset\neq \{1\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\square\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      <br />
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(f(A)\setminus f(B)\subseteq f(A\setminus B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(f(A)\setminus f(B)\subseteq f(A\setminus B)\)</span>
+    </p>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.4.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.1</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f(x):x\in A\}\setminus \{f(x):x\in B\}\subseteq\{f(x):x\in A\setminus B\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.1.27' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.27</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{y\in\{f(x):x\in A\}:y\notin\{f(x):x\in B\}\}\subseteq\{f(x):x\in A\setminus B\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          
+    <p class='mb-3'>
+      <span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.1.27' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.1.27</a> }
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{y\in\{f(x):x\in A\}:y\notin\{f(x):x\in B\}\}\subseteq\{f(x):x\in \{a\in A:a\notin B\}\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
   
 
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/definition-3.3.17.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/Exercises/exercise-3.4.3.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -376,43 +701,6 @@ $$</span>
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.3.3'>
-            Exercise 3.3.3
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><span class='math inline'>\(\equiv\)</span> { <a href='Tao/Chapter3/definition-3.3.17' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.3.17</a> }</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.3.2'>
-            Exercise 3.3.2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/definition-3.3.17' class='text-gray-600 font-bold hover:bg-gray-50'>Definition 3.3.17</a> }</div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
