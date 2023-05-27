@@ -1,0 +1,18 @@
+#+title: Exercise 3.4.1
+
+Let $f:X\to Y$ be a bijective function, and let $f^{-1}:Y\to X$ be its inverse. Let $V$ be any subset of $Y$.
+Prove that the forward image of $V$ under $f^{-1}$ is the same set as the inverse image of $V$ under $f$;
+thus the fact that both sets are denoted by $f^{-1}(V)$ will not lead to any inconsistency.
+
+- $\bullet$ Show that Forward image of $V$ under $f^{-1}$ = Inverse image of $V$ under $f$
+- $\Vdash$ Forward image of $V$ under $f^{-1}$
+- $=$ { [[../definition-3.4.1.org][Definition 3.4.1]] }
+  - $\{f^{-1}(y):y\in V\}$
+- $=$ { $f$ is bijective $\Rightarrow f^{-1}$ is surjective \\
+                $\quad~~$ [[../definition-3.3.14.org][Definition 3.3.14]]: $\forall x\in X, \exists y\in Y, f^{-1}(y)=x$ }
+  - $\{x\in X:(x=f^{-1}(y))\land (y\in V)\}$
+- $=$ { $f$ is bijective $\Rightarrow f$ is surjective \\
+                $\quad~~$ [[../definition-3.3.14.org][Definition 3.3.14]]: $\forall y\in V, \exists x\in X, f(x)=y$ }
+  - $\{x\in X:f(x)\in V\}$
+- $=$ { [[../definition-3.4.4.org][Definition 3.4.4]] }
+  - Inverse image of $V$ under $f$

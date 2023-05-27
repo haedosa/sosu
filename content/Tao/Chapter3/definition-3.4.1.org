@@ -6,3 +6,7 @@ f(S):=\{f(x):x\in S\}
 $$
 this set is a subset of $Y$, and is sometimes called the /image/ of $S$ under the map $f$.
 We sometimes call $f(S)$ the /forward image/ of $S$ to distinguish it from the concept of the /inverse image/ $f^{-1}(S)$ of $S$, which is defined below.
+
+
+Note that the set $f(S)$ is well-defined thanks to the axiom of replacement ([[./axiom-3.6.org][Axiom 3.6]]).
+One can also define $f(S)$ using the axiom of specification ([[./axiom-3.5.org][Axiom 3.5]]) instead of replacement, but we leave this as a challenge to the reader.
