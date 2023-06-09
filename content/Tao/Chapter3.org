@@ -259,3 +259,9 @@
       [[./Chapter3/Exercises/exercise-3.4.6.org][Exercise-3.4.6 with solution]]
 \\
 \\
+
+ - *Exercise 3.4.8.* Show that Axiom 3.4 can be deduced from Axiom 3.1, Axiom 3.3 and Axiom 3.11.
+
+     [[./Chapter3/Exercises/exercise-3.4.8.org][Exercise-3.4.8 with solution]]
+\\
+\\
