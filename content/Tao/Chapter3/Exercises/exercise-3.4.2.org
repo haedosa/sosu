@@ -1,4 +1,26 @@
 #+title: Exercise 3.4.2
 
 Let $f:X\to Y$ be a function from one set $X$ to another set $Y$, let $S$ be a subset of $X$, and let $U$ be a subset of $Y$.
-What, in general, can one say about $f^{-1}(f(S)) and $S$?. What about $f(f^{-1}(U)) and $U$?
+What, in general, can one say about $f^{-1}(f(S))$ and $S$?. What about $f(f^{-1}(U))$ and $U$?
+
+- $\bullet$ Show that $f^{-1}(f(S))\subset S$
+- $\Vdash$ $f^{-1}(f(S))\subset S$
+- $\equiv$ { [[../definition-3.4.1.org][Definition 3.4.1]] }
+  - $f^{-1}(\{f(x):x\in S\})\subset S$
+- $\equiv$ { [[../definition-3.4.4.org][Definition 3.4.4]] }
+  - $\{x\in X:f(x)\in \{f(x):x\in S\}\}\subset S$
+- $\equiv$ { [[../definition-3.1.15.org][Definition 3.1.15]]  }
+  - $\text{True}$
+- $\square$
+
+\\
+
+- $\bullet$ Show that $f(f^{-1}(U))\subset U$
+- $\Vdash$ $f(f^{-1}(U))\subset U$
+- $\equiv$ { [[../definition-3.4.4.org][Definition 3.4.4]] }
+  - $f(\{x\in X: f(x)\in U\})\subset U$
+- $\equiv$ { [[../definition-3.4.1.org][Definition 3.4.1]] }
+  - $\{f(x):x\in\{x\in X: f(x)\in U\}\} \subset U$
+- $\equiv$ { [[../definition-3.1.15.org][Definition 3.1.15]]  }
+  - $\text{True}$
+- $\square$

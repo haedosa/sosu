@@ -4,10 +4,10 @@
 - -- $A$ and $B$ sets
 - $\Vdash$ { [[../axiom-3.3.org][Axiom 3.3]] }
   - $C = \{ A, B \}$ exists
-- $\vdash$ { [[../axiom-3.3.org][Axiom 3.11]] }
+- $\vdash$ { [[../axiom-3.11.org][Axiom 3.11]] }
   - There exists a set $\bigcup C$ such that $x\in\bigcup C\iff(x\in S\text{ for some }S\in C)$
-- $\vdash$ { [[../axiom-3.3.org][Axiom 3.1]], [[../axiom-3.3.org][Axiom 3.3]] $S$ can be either $A$ or $B$ }
+- $\vdash$ { [[../axiom-3.1.org][Axiom 3.1]], [[../axiom-3.3.org][Axiom 3.3]] $S$ can be either $A$ or $B$ }
   - There exists a set $\bigcup C$ such that $x\in\bigcup C\iff(x\in A \text{ or } x\in B \text{ or both})$
 - $\vdash$ { let $A \cup B := \bigcup C$ }
-  - [[../axiom-3.3.org][Axiom 3.4]]
+  - [[../axiom-3.4.org][Axiom 3.4]]
 - $\square$
