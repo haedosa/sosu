@@ -1,0 +1,67 @@
+#+title: Exercise 3.3.5
+
+Let $f:X\to Y$ and $g:Y\to Z$ be functions.
+Show that if $g\circ f$ is injective, then $f$ must be injective.
+Is it true that $g$ must also be injective?
+Show that if $g\circ f$ is surjective, then $g$ must be surjective.
+Is is true that $f$ must also be surjective?
+
+- $\bullet$ Show that $g\circ f$ is injective $\Rightarrow$ $f$ is injective.
+- $\Vdash$ { Proof by contradiction }
+  - $\bullet$ Show that there is a contradiction, when
+  - -- A1: $\lnot$ ($f$ is injective)
+  - $\Vdash$ $g\circ f$ is injective
+  - $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+    - $x\neq x'\implies (g\circ f)(x)\neq (g\circ f)(x')$
+  - $\Rightarrow$ { By [[../definition-3.3.14.org][Definition 3.3.14]] and A1: $\exists x_1,x_2\in X. (x_1\neq x_2)\land (f(x_1)=f(x_2))$ }
+    - $(g\circ f)(x_1)\neq (g\circ f)(x_2)$
+  - $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+    - $g(f(x_1))\neq g(f(x_2))$
+  - $\equiv$ { Let $f(x_1)=f(x_2)=y$ }
+    - $g(y)\neq g(y)$
+  - $\vdash$ $\bot$
+  - $\square$
+- $\square$
+
+- $\bullet$ Show that $g\circ f$ is not injective when $g$ is not injective.
+- $\Vdash$ $g$ is not injective
+- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $\exists y_1,y_2\in Y. (y_1\neq y_2)\land(g(f(x_1))=g(f(x_2)))$
+- $\Rightarrow$ { $f:X\to Y\Rightarrow \forall x\in X,\exists y\in Y. f(x)=y$ }
+  - $\exists x_1,x_2\in X, \exists f(x_1),f(x_2)\in Y.(x_1\neq x_2)\land(f(x_1)\neq f(x_2))\land (g(f(x_1))=g(f(x_2)))$
+- $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+  - $\exists x_1,x_2\in X.(x_1\neq x_2)\land ((g\circ f)(x_1)=(g\circ f)(x_2))$
+- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $g\circ f$ is not injective
+- $\square$
+
+\\
+\\
+
+- $\bullet$ Show that $g\circ f$ is surjective $\Rightarrow$ $g$ is surjective.
+- $\Vdash$ { Proof by contradiction }
+  - $\bullet$ Show that there is a contradiction, when
+  - -- A1: $\lnot$ ($g$ is surjective)
+  - $\Vdash$ $g\circ f$ is surjective
+  - $\equiv$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+    - $\forall z\in Z,\exists x\in X, (g\circ f)(x)=z$
+  - $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+    - $\forall z\in Z,\exists x\in X, g(f((x))=z$
+  - $\equiv$ { $f:X\to Y\implies\forall x\in X,\exists y\in Y. y=f(x)$ }
+    - $\forall z\in Z,\exists y\in Y, g(y)=z$
+  - $\vdash$ { By [[../definition-3.3.17.org][Definition 3.3.17]] and A1: $\exists z\in Z, \nexists y\in Y. g(y)=z$ }
+    - $\bot$
+  - $\square$
+- $\square$
+
+- $\bullet$ Show that $g\circ f$ is not surjective when $f$ is not surjective.
+- $\Vdash$ $f$ is not surjective
+- $\equiv$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+  - $\exists y\in Y,\nexists x\in X, f(x)=y$
+- $\Rightarrow$ { $g:Y\to Z\implies \forall y\in Y,\exists z\in Z.g(y)=z$ }
+  - $\exists z\in Z,\exists y\in Y,\nexists x\in X, g(f(x))=g(y)=z$
+- $\equiv$ { [[../definition-3.3.10.org][Definition 3.3.10]] }
+  - $\exists z\in Z,,\nexists x\in X, (g\circ f)(x)=z$
+- $\equiv$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+  - $g\circ f$ is not surjective
+- $\square$
