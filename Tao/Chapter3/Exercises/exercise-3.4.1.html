@@ -66,7 +66,7 @@
 </style>
 
   
-  <link href='tailwind.css?instanceId=f80eb7a3-2232-4896-877e-901d243762b8' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=b64132a4-1d1b-4fed-a9eb-452964d5a75f' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -413,6 +413,130 @@
       
         <li>
           <span class='math inline'>\(\{x\in X:f(x)\in V\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.4.4' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.4</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Inverse image of <span class='math inline'>\(V\)</span> under <span class='math inline'>\(f\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\square\)</span>
+        </li>
+      
+    </ul>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\bullet\)</span> Show that Forward image of <span class='math inline'>\(V\)</span> under <span class='math inline'>\(f^{-1}\)</span> = Inverse image of <span class='math inline'>\(V\)</span> under <span class='math inline'>\(f\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\Vdash\)</span> Forward image of <span class='math inline'>\(V\)</span> under <span class='math inline'>\(f^{-1}\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <a href='Tao/Chapter3/definition-3.4.1' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.4.1</a> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f^{-1}(y):y\in V\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f\)</span> is bijective <span class='math inline'>\(\Rightarrow f^{-1}\)</span> is surjective<br /><span class='math inline'>\(\quad~~\)</span> <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a>: <span class='math inline'>\(\forall f^{-1}(y)\in X, \exists y'\in Y, f^{-1}(y')=f^{-1}(y)\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f^{-1}(y)\in X:(\exists y'\in Y, f^{-1}(y')=f^{-1}(y))\land (y\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f\)</span> is surjective <span class='math inline'>\(\Rightarrow\)</span> <span class='math inline'>\(\forall y', \exists x'\in X, f(x')=y'\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f^{-1}(y)\in X:(\exists y'\in Y, \exists x'\in X, f^{-1}(f(x'))=f^{-1}(y))\land (y\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f\)</span> is bijective <span class='math inline'>\(\Rightarrow\)</span> <span class='math inline'>\(f^{-1}(f(x'))=x'\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{f^{-1}(y)\in X:(\exists x'\in X, x'=f^{-1}(y))\land(y\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f^{-1}(y)=x'\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{x'\in X:(x'=f^{-1}(y))\land(y\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f\)</span> is bijective <span class='math inline'>\(\Rightarrow\)</span> <span class='math inline'>\(x'=f^{-1}(y)\iff f(x')=y\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{x'\in X:(f(x')=y)\land (y\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(f\)</span> is bijective <span class='math inline'>\(\Rightarrow f\)</span> is surjective<br /><span class='math inline'>\(\quad~~\)</span> <a href='Tao/Chapter3/definition-3.3.17' class='text-purple-600 mavenLinkBold hover:underline'>Definition 3.3.17</a>: <span class='math inline'>\(\forall y\in V, \exists x\in X, f(x)=y\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{x'\in X:\exists x\in X, (f(x')=f(x))\land (f(x)\in V)\}\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <span class='math inline'>\(=\)</span> { <span class='math inline'>\(\exists x\in X, (f(x')=f(x))\land (f(x)\in V)\Rightarrow f(x')\in V\)</span> }
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\{x'\in X:f(x')\in V\}\)</span>
         </li>
       
     </ul>

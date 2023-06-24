@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Exercise 2.2.6 – Sosu
+    Exercise 3.3.6 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Exercise 2.2.6' />
+      <meta property='og:title' content='Exercise 3.3.6' />
     
     
       <base href='/sosu/' />
@@ -290,7 +290,7 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Tao/Chapter2/Exercises'>
+    <a href='Tao/Chapter3/Exercises'>
       Exercises
     </a>
   </div>
@@ -301,8 +301,8 @@
         <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='Tao/Chapter2'>
-      Chapter2
+    <a href='Tao/Chapter3'>
+      Chapter3
     </a>
   </div>
 
@@ -363,205 +363,21 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Exercise 2.2.6
+    Exercise 3.3.6
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      Let <span class='math inline'>\(n\)</span> be a natural number, and let <span class='math inline'>\(P(m)\)</span> be a property pertaining to the natural numbers such that whenever <span class='math inline'>\(P(m\pp)\)</span> is true, then <span class='math inline'>\(P(m)\)</span> is true. Suppose that <span class='math inline'>\(P(n)\)</span> is also true. Prove that <span class='math inline'>\(P(m)\)</span> is true for all natural numbers <span class='math inline'>\(m\leq n\)</span>; this is known as the <span class='math inline'>\(principle~of~backwards~induction\)</span>. (Hint: apply induction to the variable <span class='math inline'>\(n\)</span>.)
+      Let <span class='math inline'>\(f:X\to Y\)</span> be a bijective function, and let <span class='math inline'>\(f^{-1}:Y\to X\)</span> be its inverse. Verify the cancellation laws <span class='math inline'>\(f^{-1}(f(x))=x\)</span> for all <span class='math inline'>\(x\in X\)</span> and <span class='math inline'>\(f(f^{-1}(y))=y\)</span> for all <span class='math inline'>\(y\in Y\)</span>. Conclude that <span class='math inline'>\(f^{-1}\)</span> is also invertible, and has <span class='math inline'>\(f\)</span> as its inverse (thus <span class='math inline'>\((f^{-1})^{-1}=f\)</span>).
     </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Show that <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      – <span class='math inline'>\(P(m\pp)\implies P(m)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> { Proof by induction on <span class='math inline'>\(n\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Base case: show that <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      – <span class='math inline'>\(n=0\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(P(0)\implies \forall m\leq 0,~ P(m)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { By the <a href='Tao/Chapter2/definition-2.2.11' class='text-purple-600 mavenLinkBold hover:underline'>definition of ordering</a>, <span class='math inline'>\(m+a=0\)</span>, then by <a href='Tao/Chapter2/corollary-2.2.9' class='text-purple-600 mavenLinkBold hover:underline'>Corollary 2.2.9</a> <span class='math inline'>\(m=0\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(P(0)\implies P(0)\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\bullet\)</span> Inductive step: show that <span class='math inline'>\(P(n\pp)\implies \forall m\leq n\pp,~P(m)\)</span>, when
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      – <span class='math inline'>\(P(n)\implies \forall m\leq n,~P(m)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\Vdash\)</span> <span class='math inline'>\(P(n\pp)\implies \forall m\leq n\pp,~P(m)\)</span>
-    </p>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(\forall m\leq n\pp,~ P(m)\equiv \left((\forall m\leq n,~ P(m))\land P(n\pp)\right)\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(P(n\pp)\implies (\forall m\leq n,~ P(m))\land P(n\pp)\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(P\implies (Q\land R)\equiv (P\implies Q)\land (P\implies R)\)</span> (is it true????) }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\((P(n\pp)\implies (\forall m\leq n. P(m)))\land( P(n\pp)\implies P(n\pp))\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { <span class='math inline'>\(P\land T\equiv P\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(P(n\pp)\implies \forall m\leq n,~ P(m)\)</span>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\equiv\)</span> { from the assumption <span class='math inline'>\(P(m\pp)\implies  P(m)\)</span> and the inductive hypothesis<br /><span class='math inline'>\(\hspace{1cm} P(n\pp)\implies P(n)\implies \forall m\leq n,~P(m)\)</span> }
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          True
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          
-    <p class='mb-3'>
-      <span class='math inline'>\(\square\)</span>
-    </p>
-  
-        </li>
-      
-    </ul>
   
 
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter2/Exercises/exercise-2.2.6.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/Exercises/exercise-3.3.6.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -573,28 +389,6 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter2'>
-            Chapter2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p><a href='Tao/Chapter2/Exercises/exercise-2.2.6' class='text-gray-600 font-bold hover:bg-gray-50'>Exercise-2.2.6 with solution</a></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
