@@ -1,0 +1,30 @@
+#+title: Exercise 3.3.7
+
+Let $f:X\to Y$ and $g:Y\to Z$ be functions.
+Show that if $f$ and $g$ are bijective, then so is $g\circ f$, and we have $(g\circ f)^{-1}=f^{-1}\circ g^{-1}$.
+
+- $\bullet$ Show that $g\circ f$ is bijective, when
+- -- C1: $f$ is bijective
+- -- C2: $g$ is bijective
+- $\Vdash$ { Proof by showing that $g\circ f$ is injective and surjective }
+  - $\bullet$ Show that $g\circ f$ is injective
+  - $\Vdash$ $(g\circ f) (x)=(g\circ f) (x')$
+  - $\Rightarrow$ { $g$ is injective by C2 and [[../definition-3.3.14.org][Definition 3.3.14]] }
+    - $f(x)=f(x')$
+  - $\Rightarrow$ { $f$ is injective by C1 and [[../definition-3.3.14.org][Definition 3.3.14]] }
+    - $x=x'$
+  - $\Rightarrow$ { [[../definition-3.3.14.org][Definition 3.3.14]] }
+    - $g\circ f$ is injective
+  - $\square$
+  - $\bullet$ Show that $g\circ f$ is surjective
+  - $\Vdash$ $g$ is surjective by C1
+  - $\equiv$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+    - $\forall z\in Z,\exists y\in Y.~g(y)=z$
+  - $\Rightarrow$ { $f$ is surjective by C2, [[../definition-3.3.17.org][Definition 3.3.17]]:  }
+    - $\forall z\in Z,\exists y\in Y,[\forall y\in Y,\exists x\in X.~f(x)=y)]. g(y) = z$
+  - $\equiv$ { $\exists y\in Y,[\forall y\in Y, \exists x\in X. f(x)=y]. g(y)\Rightarrow \exists x. g(f(x))$ }
+    - $\forall z\in Z,\exists x\in X.~g(f(x))=z$
+  - $\equiv$ { [[../definition-3.3.17.org][Definition 3.3.17]] }
+    - $g\circ f$ is surjective
+  - $\square$
+- $\square$

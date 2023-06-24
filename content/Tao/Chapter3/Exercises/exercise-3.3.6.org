@@ -1,0 +1,5 @@
+#+title: Exercise 3.3.6
+
+Let $f:X\to Y$ be a bijective function, and let $f^{-1}:Y\to X$ be its inverse.
+Verify the cancellation laws $f^{-1}(f(x))=x$ for all $x\in X$ and $f(f^{-1}(y))=y$ for all $y\in Y$.
+Conclude that $f^{-1}$ is also invertible, and has $f$ as its inverse (thus $(f^{-1})^{-1}=f$).
