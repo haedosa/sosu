@@ -1,0 +1,10 @@
+#+title: Definition 3.5.1
+
+*Definition 3.5.1* (Ordered pair). If $x$ and $y$ are any objects (possibly equal),
+we define the /ordered pair/ $(x,y)$ to be a new object,
+consisting of $x$ as its first component and $y$ as its second component.
+Two ordered pairs $(x,y)$ and $(x',y')$ are considered equal if and only if
+both of their components match, i.e
+$$
+(x,y)=(x',y')\iff(x=x'\text{ and } y=y')
+$$

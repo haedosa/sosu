@@ -173,6 +173,48 @@
 \\
 \\
 
+- *Definition 3.5.1* (Ordered pair). If $x$ and $y$ are any objects (possibly equal),
+  we define the /ordered pair/ $(x,y)$ to be a new object,
+  consisting of $x$ as its first component and $y$ as its second component.
+  Two ordered pairs $(x,y)$ and $(x',y')$ are considered equal if and only if
+  both of their components match, i.e
+  $$
+  (x,y)=(x',y')\iff(x=x'\text{ and } y=y')
+  $$
+
+ \\
+ \\
+
+- *Definition 3.5.4* (Cartesian product). If $X$ and $Y$ are sets, then we define
+  /Cartesian product/ $X\times Y$ to the collection of ordered pairs,
+  whose first component lies in $X$ and second component lies in $Y$, thus
+  $$
+  X\times Y=\{(x,y):x\in X,y\in Y\}
+  $$
+  or equivalently
+  $$
+  a\in(X\times Y)\iff(a=(x,y) \text{ for some } x\in X\text{ and }y\in Y).
+  $$
+
+  \\
+  \\
+
+- *Definition 3.5.7* (Ordered $n$-tuple and $n$-fold Cartesian product). Let
+  $n$ be a natural number. An /ordered $n$-tuple/ $(x_i)_{1\leq i\leq n}$
+  (also denoted $(x_1,\cdots,x_n)$) is a collection of objects $x_i$,
+ one for every natural number $i$ between $1$ and $n$;
+ we refer to $x_i$ as the $i^{th}$ /component/ of the ordered $n$-tuple.
+ Two ordered $n$-tuples $(x_i)_{1\leq i\leq n}$ and $(y_i)_{1\leq 1\leq n}$
+ are said to be equal iff $x_i=y_i$ for all $1\leq i\leq n$.
+ If $(X_i)_{1\leq i\leq n}$ is an ordered $n$-tuple of sets,
+ we define their /Cartesian product/ $\prod_{1\leq i\leq n}X_i$
+ (also denoted $\prod_{i=1}^n X_i$ or $X_1\times\cdots X_n$) by
+ $$
+ \prod_{1\leq i\leq n}X_i:=\{(x_i)_{1\leq i\leq n}:x_i\in X_i\text{ for all }1\leq i\leq n\}
+ $$
+
+
+
 * Propositions
 
 - *Lemma 3.1.6.* (Single choice). /Let $A$ be a non-empty set. Then there exists an objet $x$ such that $x\in A$./

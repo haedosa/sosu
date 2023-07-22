@@ -1,0 +1,19 @@
+#+title: Definition 3.5.7
+
+ *Definition 3.5.7* (Ordered $n$-tuple and $n$-fold Cartesian product). Let
+ $n$ be a natural number. An /ordered $n$-tuple/ $(x_i)_{1\leq i\leq n}$
+ (also denoted $(x_1,\cdots,x_n)$) is a collection of objects $x_i$,
+one for every natural number $i$ between $1$ and $n$;
+we refer to $x_i$ as the $i^{th}$ /component/ of the ordered $n$-tuple.
+Two ordered $n$-tuples $(x_i)_{1\leq i\leq n}$ and $(y_i)_{1\leq 1\leq n}$
+are said to be equal iff $x_i=y_i$ for all $1\leq i\leq n$.
+If $(X_i)_{1\leq i\leq n}$ is an ordered $n$-tuple of sets,
+we define their /Cartesian product/ $\prod_{1\leq i\leq n}X_i$
+(also denoted $\prod_{i=1}^n X_i$ or $X_1\times\cdots X_n$) by
+$$
+\prod_{1\leq i\leq n}X_i:=\{(x_i)_{1\leq i\leq n}:x_i\in X_i\text{ for all }1\leq i\leq n\}
+$$
+Again, this definition simply postulates that an ordered $n$-tuple
+and a Cartesian product always exists when needed,
+but using the axioms of set theory one can explicitly construct
+these objects (Exercise 3.5.2)
