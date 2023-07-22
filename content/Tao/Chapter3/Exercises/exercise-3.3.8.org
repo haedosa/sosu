@@ -1,0 +1,69 @@
+#+title: Exercise 3.3.8
+
+
+If $X$ is a subset of $Y$ , let $\imath_{X \to Y} : X → Y$ be the inclusion map from $X$ to $Y$ , denoted by mapping $x \mapsto x$ for all $x \in X$, i.e., $\imath_{X \to Y} (x) := x$ for all $x \in X$. The map $\imath_{X \to X}$ is in particular called the identity map on $X$.
+
+    (a) Show that if $X \subseteq Y \subseteq Z$ then $\imath_{Y \to Z} \circ \imath_{X \to Y} = \imath_{X \to Z}$ . \\
+    (b) Show that if $f : A \to B$ is any function, then $f = f \circ \imath_{A \to A} = \imath_{B \to B} \circ f$ . \\
+    (c) Show that, if $f : A \to B$ is a bijective function, then $f \circ f^{-1} = \imath_{B \to B}$
+    and $f^{-1} \circ f = \imath_{A \to A}$. \\
+    (d) Show that if $X$ and $Y$ are disjoint sets, and $f : X \to Z$ and $g : Y → Z$
+    are functions, then there is a unique function $h : X \cup Y \to Z$ such that
+    $h \circ \imath_{X→X \cup Y} = f$ and $h \circ \imath_{Y \to X \cup Y} = g$.
+
+
+- $\bullet$ (a) Show that if $X \subseteq Y \subseteq Z$ then $\imath_{Y \to Z} \circ \imath_{X \to Y} = \imath_{X \to Z}$
+- $-$ Let $x$ be any element in $X$
+- $\Vdash$ $(\imath_{Y \to Z} \circ \imath_{X \to Y}) (x)$
+- $=$ { [[../definition-3.3.10.org][Definition 3.3.10]] : function composition }
+  - $(\imath_{Y \to Z}) (\imath_{X \to Y} (x))$
+- $=$ { $X \subseteq Y$ and definition of the inclusion map }
+  - $(\imath_{Y \to Z}) (x)$
+- $=$ { $Y \subseteq Z$ and definition of the inclusion map }
+  - $x$
+- $=$ { $X \subseteq Z$ and definition of the inclusion map }
+  - $(\imath_{X \to Z}) (x)$
+- $\vdash$ { [[../definition-3.3.7.org][Definition 3.3.7]] (Equality of functions)  }
+  - $\imath_{Y \to Z} \circ \imath_{X \to Y} = \imath_{X \to Z}$
+- $\square$
+
+
+- $\bullet$ (b) Show that if $f : A \to B$ is any function, then $f = f \circ \imath_{A \to A} = \imath_{B \to B} \circ f$ . \\
+- $-$ Let $a$ be any element in $A$
+- $\Vdash$ $f (a)$
+- $=$ { $A \subseteq A$ and definition of the inclusion map }
+  - $f (\imath_{A \to A} (a))$
+- $=$ { [[../definition-3.3.10.org][Definition 3.3.10]] : function composition }
+  - $(f \circ \imath_{A \to A}) (a)$
+- $=$ { $f (a) \in B$ and definition of the inclusion map }
+  - $(\imath_{B \to B}) (f (a))$
+- $=$ { [[../definition-3.3.10.org][Definition 3.3.10]] : function composition }
+  - $(\imath_{B \to B} \circ f) (a)$
+- $\vdash$ { [[../definition-3.3.7.org][Definition 3.3.7]] (Equality of functions)  }
+  - $f = f \circ \imath_{A \to A} = \imath_{B \to B} \circ f$
+
+- $\bullet$ (c) Show that, if $f : A \to B$ is a bijective function, then $f \circ f^{-1} = \imath_{B \to B}$ and $f^{-1} \circ f = \imath_{A \to A}$.
+- $\Vdash$ { Prove each case }
+  - $\bullet$ Show that $f \circ f^{-1} = \imath_{B \to B}$
+    - $-$ Let $b$ be any element in $B$
+    - \Vdash $(f \circ f^{-1})(b)$
+    - = { [[./exercise-3.3.7.org][Exercise-3.3.7]] }
+      - $b$
+    - = { Definition of the inclusion map }
+      - $\imath_{B \to B}(b)$
+  - $\square$
+  - $\bullet$ Show that $f^{-1} \circ f = \imath_{A \to A}$
+    - $-$ Let $a$ be any element in $A$
+    - \Vdash $(f^{-1} \circ f)(a)$
+    - = { [[./exercise-3.3.7.org][Exercise-3.3.7]] }
+      - $a$
+    - = { Definition of the inclusion map }
+      - $\imath_{A \to A}(b)$
+  - $\square$
+- $\square$
+
+
+- $\bullet$ (d) Show that there is a unique function $h : X \cup Y \to Z$ such that
+    $h \circ \imath_{X→X \cup Y} = f$ and $h \circ \imath_{Y \to X \cup Y} = g$ if
+- $-$ $X$ and $Y$ are disjoint sets
+- $-$ $f : X \to Z$ and $g : Y → Z$

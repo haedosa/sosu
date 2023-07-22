@@ -253,6 +253,20 @@
 \\
 \\
 
+ - *Exercise 3.3.8.* If $X$ is a subset of $Y$ , let $\imath_{X \to Y} : X → Y$ be the inclusion map from $X$ to $Y$ , denoted by mapping $x \mapsto x$ for all $x \in X$, i.e., $\imath_{X \to Y} (x) := x$ for all $x \in X$. The map $\imath_{X \to X}$ is in particular called the identity map on $X$.
+
+    (a) Show that if $X \subseteq Y \subseteq Z$ then $\imath_{Y \to Z} \circ \imath_{X \to Y} = \imath_{X \to Z}$ . \\
+    (b) Show that if $f : A \to B$ is any function, then $f = f \circ \imath_{A \to A} = \imath_{B \to B} \circ f$ . \\
+    (c) Show that, if $f : A \to B$ is a bijective function, then $f \circ f^{-1} = \imath_{B \to B}$
+    and $f^{-1} \circ f = \imath_{A \to A}$. \\
+    (d) Show that if $X$ and $Y$ are disjoint sets, and $f : X \to Z$ and $g : Y → Z$
+    are functions, then there is a unique function $h : X \cup Y \to Z$ such that
+    $h \circ \imath_{X→X \cup Y} = f$ and $h \circ \imath_{Y \to X \cup Y} = g$.
+
+    [[./Chapter3/Exercises/exercise-3.3.8.org][Exercise-3.3.8 with solution]]
+\\
+\\
+
 
  - *Exercise 3.4.6.* Prove [[./Chapter3/lemma-3.4.9.org][Lemma 3.4.9]]. (Hint: start with the set $\{0,1\}^X$ and apply the [[./Chapter3/axiom-3.6.org][replacement axiom]], replacing each function $f$ with the object $f^{-1}(\{1\})$.)\\ See also Exercise 3.5.11.
 
