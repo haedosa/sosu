@@ -8,7 +8,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Axiom 3.9 – Sosu
+    Definition 3.5.7 – Sosu
   </title>
   
     
@@ -16,7 +16,7 @@
       <meta property='og:site_name' content='Sosu' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Axiom 3.9' />
+      <meta property='og:title' content='Definition 3.5.7' />
     
     
       <base href='/sosu/' />
@@ -348,33 +348,23 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-purple-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Axiom 3.9
+    Definition 3.5.7
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <strong>Axiom 3.9.</strong> (Regularity). <em>If <span class='math inline'>\(A\)</span> is a non-empty set, then there is at least one element <span class='math inline'>\(x\)</span> of <span class='math inline'>\(A\)</span> which is either not a set, or is disjoint from <span class='math inline'>\(A\)</span>.</em>
-        </li>
-      
-    </ul>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Excerpt from <a href='https://en.wikipedia.org/wiki/Axiom_of_regularity' class='text-purple-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>wiki</a>: In first order logic, (ignoring urelement), it can be written as <span class='math inline'>\(\forall A (A \neq \emptyset \implies \exists x ( x \in A \land x \cap A = \emptyset))\)</span>
-        </li>
-      
-    </ul>
+    <p class='mb-3'>
+      <strong>Definition 3.5.7</strong> (Ordered <span class='math inline'>\(n\)</span>-tuple and <span class='math inline'>\(n\)</span>-fold Cartesian product). Let <span class='math inline'>\(n\)</span> be a natural number. An <em>ordered <span class='math inline'>\(n\)</span>-tuple</em> <span class='math inline'>\((x_i)_{1\leq i\leq n}\)</span> (also denoted <span class='math inline'>\((x_1,\cdots,x_n)\)</span>) is a collection of objects <span class='math inline'>\(x_i\)</span>, one for every natural number <span class='math inline'>\(i\)</span> between <span class='math inline'>\(1\)</span> and <span class='math inline'>\(n\)</span>; we refer to <span class='math inline'>\(x_i\)</span> as the <span class='math inline'>\(i^{th}\)</span> <em>component</em> of the ordered <span class='math inline'>\(n\)</span>-tuple. Two ordered <span class='math inline'>\(n\)</span>-tuples <span class='math inline'>\((x_i)_{1\leq i\leq n}\)</span> and <span class='math inline'>\((y_i)_{1\leq 1\leq n}\)</span> are said to be equal iff <span class='math inline'>\(x_i=y_i\)</span> for all <span class='math inline'>\(1\leq i\leq n\)</span>. If <span class='math inline'>\((X_i)_{1\leq i\leq n}\)</span> is an ordered <span class='math inline'>\(n\)</span>-tuple of sets, we define their <em>Cartesian product</em> <span class='math inline'>\(\prod_{1\leq i\leq n}X_i\)</span> (also denoted <span class='math inline'>\(\prod_{i=1}^n X_i\)</span> or <span class='math inline'>\(X_1\times\cdots X_n\)</span>) by <span class='math display'>$$
+\prod_{1\leq i\leq n}X_i:=\{(x_i)_{1\leq i\leq n}:x_i\in X_i\text{ for all }1\leq i\leq n\}
+$$</span> Again, this definition simply postulates that an ordered <span class='math inline'>\(n\)</span>-tuple and a Cartesian product always exists when needed, but using the axioms of set theory one can explicitly construct these objects (Exercise 3.5.2)
+    </p>
   
 
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/axiom-3.9.org'>
+      <a class='text-gray-300 hover:text-purple-600 text-sm' title='Edit this page on GitHub' href='${value:editBaseUrl}/Tao/Chapter3/definition-3.5.7.org'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -386,40 +376,6 @@
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
                 
                 
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-purple-600 mavenLinkBold hover:bg-purple-50' href='Tao/Chapter3/Exercises/exercise-3.2.2'>
-            Exercise 3.2.2
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div>- <a href='Tao/Chapter3/axiom-3.9' class='text-gray-600 font-bold hover:bg-gray-50'>axiom 3.9: the axiom of regularity</a></div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/axiom-3.9' class='text-gray-600 font-bold hover:bg-gray-50'>axiom 3.3</a>: <span class='math inline'>\(\exists y ( y \in \{A, B\}) \vdash y = A \lor y = B\)</span> }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><span class='math inline'>\(\vdash\)</span> { <a href='Tao/Chapter3/axiom-3.9' class='text-gray-600 font-bold hover:bg-gray-50'>axiom 3.9</a> and modus ponens }</div>
-    </div>
-  
-    <div class='pl-2 mt-2 border-l-2 border-purple-200 hover:border-purple-500'>
-      <div><p>Use <a href='Tao/Chapter3/axiom-3.9' class='text-gray-600 font-bold hover:bg-gray-50'>the axiom of regularity</a> (and <a href='Tao/Chapter3/axiom-3.3' class='text-gray-600 font-bold hover:bg-gray-50'>the singleton set axiom</a>) to show that if <span class='math inline'>\(A\)</span> is a set, then <span class='math inline'>\(A \in A\)</span>. Furthermore, show that if <span class='math inline'>\(A\)</span> and <span class='math inline'>\(B\)</span> are two sets, then either <span class='math inline'>\(A \notin B\)</span> or <span class='math inline'>\(B \notin A\)</span> (or both).</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
