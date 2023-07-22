@@ -47,7 +47,7 @@ If $X$ is a subset of $Y$ , let $\imath_{X \to Y} : X → Y$ be the inclusion ma
   - $\bullet$ Show that $f \circ f^{-1} = \imath_{B \to B}$
     - $-$ Let $b$ be any element in $B$
     - \Vdash $(f \circ f^{-1})(b)$
-    - = { [[./exercise-3.3.7.org][Exercise-3.3.7]] }
+    - = { [[./exercise-3.3.6.org][Exercise-3.3.6]] }
       - $b$
     - = { Definition of the inclusion map }
       - $\imath_{B \to B}(b)$
@@ -55,7 +55,7 @@ If $X$ is a subset of $Y$ , let $\imath_{X \to Y} : X → Y$ be the inclusion ma
   - $\bullet$ Show that $f^{-1} \circ f = \imath_{A \to A}$
     - $-$ Let $a$ be any element in $A$
     - \Vdash $(f^{-1} \circ f)(a)$
-    - = { [[./exercise-3.3.7.org][Exercise-3.3.7]] }
+    - = { [[./exercise-3.3.6.org][Exercise-3.3.6]] }
       - $a$
     - = { Definition of the inclusion map }
       - $\imath_{A \to A}(b)$
