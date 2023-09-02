@@ -1,0 +1,48 @@
+#+title: Exercise 4.1.1
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+
+*Exercise 4.1.1* /Verify that the definition of equality on the integers is both reflexive and symmetric./
+
+- $\bullet$ Show that $a—b= a—b$
+
+- $\Vdash$ $a + b = a + b$
+
+- $\equiv$ { [[../definition-4.1.1.org][Definition 4.1.1]] }
+
+  - $a—b= a—b$
+
+- $\square$
+
+- $\bullet$ Show that $a—b = c—d \implies c—d = a—b$
+
+- $\Vdash$ $a—b = c—d$
+
+- $\equiv$ { [[../definition-4.1.1.org][Definition 4.1.1]] }
+
+  - $a + d = c + b$
+
+- $\equiv$ { Symmetry of the equality on $\mathbb N$ }
+
+  - $c + b = a + d$
+
+- $\equiv$ { [[../definition-4.1.1.org][Definition 4.1.1]] }
+
+  - $c — d= a — b$
+
+- $\square$

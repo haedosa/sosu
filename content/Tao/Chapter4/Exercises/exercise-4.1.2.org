@@ -1,0 +1,45 @@
+#+title: Exercise 4.1.2
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+*Exercise 4.1.2* /Show that the definition of negation on the integers is well-defined in the sense that if $(a — b) = (a' — b')$, then $−(a — b) = −(a' — b')$ (so equal integers have equal negations)./
+
+- $\bullet$ Show that if $(a — b) = (a' — b')$, then $−(a — b) = −(a' — b')$
+
+- $\Vdash$ $(a — b) = (a' — b')$
+
+- $\equiv$ { [[../definition-4.1.1.org][Definition 4.1.1]] }
+
+  - $a + b' = a' + b$
+
+- $\equiv$ { Symmetry of the equality on $\mathbb N$ }
+
+  - $a' + b = a + b'$
+
+- $\equiv$ { Commutativity of the additon on $\mathbb N$ }
+
+  - $b + a' = b' + a$
+
+- $\equiv$ { [[../definition-4.1.1.org][Definition 4.1.1]] }
+
+  - $(b — a) = (b' — a')$
+
+- $\equiv$ { [[../definition-4.1.4.org][Definition 4.1.4]] }
+
+  - $−(a — b) = −(a' — b')$
+
+- $\square$
