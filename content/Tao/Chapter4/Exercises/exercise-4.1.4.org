@@ -1,0 +1,155 @@
+#+title: Exercise 4.1.4
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+*Exercise 4.1.4* /Prove the remaining identities in Proposition 4.1.6. (Hint: one can save some work by using some identities to prove others. For instance, once you know that $xy = yx$, you get for free that $x1 = 1x$, and once you also prove $x(y + z) = xy + xz$, you automatically get $(y + z)x = yx + zx$ for free.)/
+
+- $\bullet$ Show that $x + y = y + x$.
+
+- $\Vdash$ $x + y$
+
+- $=$ { $x = a — b$, $y = c — d$ }
+
+  - $(a — b) + (c — d)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a + c) — (b + d)$
+
+- $=$ { Commutativity of the additon on $\mathbb N$ }
+
+  - $(c + a) — (d + b)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(c — d) + (a — b)$
+
+- $=$ { $x = a — b$, $y = c — d$ }
+
+  - $y + x$
+
+- $\square$
+
+- $\bullet$ Show that $(x + y) + z = x + (y + z)$.
+
+- $\Vdash$ $(x + y) + z$
+
+- $=$ { $x = a — b$, $y = c — d$, $z = e — f$ }
+
+  - $((a — b) + (c — d)) + (e — f)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $((a + c) — (b + d)) + (e — f)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $((a + c) + e) — ((b + d) + f)$
+
+- $=$ { Associativity of the additon on $\mathbb N$ }
+
+  - $(a + (c + e)) — (b + (d + f))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a — b) + ((c + e) — (d + f))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a — b) + ((c — d) + (e — f))$
+
+- $=$ { $x = a — b$, $y = c — d$, $z = e — f$ }
+
+  - $x + (y + z)$
+
+- $\square$
+
+
+- $\bullet$ Show that $x + 0 = 0 + x = x$.
+
+- $-$ Let $c\in \mathbb N$ and $0 := c — c$
+
+- $\Vdash$ $x + 0$
+
+- $=$ { $x = a — b$, $0 = c — c$ }
+
+  - $(a — b) + (c — c)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a + c) — (b + c)$
+
+- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the additon on $\mathbb N$, $(a + c) + b = a + (b + c)$  }
+
+  - $a — b$
+
+- $=$ { $x = a — b$ }
+
+  - $x$
+
+- $=$ { $x = a — b$ }
+
+  - $a — b$
+
+- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the additon on $\mathbb N$, $a + (c + b) = (c + a) + b$  }
+
+  - $(c + a) — (c + b)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(c — c) + (a — b)$
+
+- $=$ { $x = a — b$, $0 = c — c$ }
+
+  - $0 + x$
+
+- $\square$
+
+- $\bullet$ .
+
+- $\Vdash$ $$
+
+- $=$ { $ $ }
+
+  - $x$
+
+- $=$ { $ $ }
+
+  - $$
+
+- $=$ { $ $ }
+
+  - $$
+
+- $\square$
+
+- $\bullet$ .
+
+- $\Vdash$ $$
+
+- $=$ { $ $ }
+
+  - $x$
+
+- $=$ { $ $ }
+
+  - $$
+
+- $=$ { $ $ }
+
+  - $$
+
+- $\square$
