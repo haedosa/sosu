@@ -29,7 +29,7 @@
 
   - $(a + c) — (b + d)$
 
-- $=$ { Commutativity of the additon on $\mathbb N$ }
+- $=$ { Commutativity of the addition on $\mathbb N$ }
 
   - $(c + a) — (d + b)$
 
@@ -59,7 +59,7 @@
 
   - $((a + c) + e) — ((b + d) + f)$
 
-- $=$ { Associativity of the additon on $\mathbb N$ }
+- $=$ { Associativity of the addition on $\mathbb N$ }
 
   - $(a + (c + e)) — (b + (d + f))$
 
@@ -92,7 +92,7 @@
 
   - $(a + c) — (b + c)$
 
-- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the additon on $\mathbb N$, $(a + c) + b = a + (b + c)$  }
+- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the addition on $\mathbb N$, $(a + c) + b = a + (b + c)$  }
 
   - $a — b$
 
@@ -104,7 +104,7 @@
 
   - $a — b$
 
-- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the additon on $\mathbb N$, $a + (c + b) = (c + a) + b$  }
+- $=$ { [[../definition-4.1.1.org][Definition 4.1.1]], Commutativity and associativity of the addition on $\mathbb N$, $a + (c + b) = (c + a) + b$  }
 
   - $(c + a) — (c + b)$
 
@@ -118,13 +118,39 @@
 
 - $\square$
 
-- $\bullet$ .
+- $\bullet$ Show that $xy = yx$.
 
-- $\Vdash$ $$
+- $\Vdash$ $xy$
 
-- $=$ { $ $ }
+- $=$ { $x = a — b$, $y = c — d$ }
 
-  - $x$
+  - $(a — b)(c — d)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(ac + bd) — (ad + bc)$
+
+- $=$ { Commutativity of the addition and the multiplication on $\mathbb N$ }
+
+  - $(ca + db) — (cb + da)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(c — d)(a — b)$
+
+- $=$ { $x = a — b$, $y = c — d$ }
+
+  - $yx$
+
+- $\square$
+
+- $\bullet$ Show that $x1 = 1x = x$.
+
+- $\bullet$ Show that $x((n+1)—n) = ((n+1)—n)x = x$.
+
+- $-$ Let $c\in \mathbb N$ and $0 := c — c$
+
+- $\Vdash$ $x1$
 
 - $=$ { $ $ }
 
@@ -133,6 +159,10 @@
 - $=$ { $ $ }
 
   - $$
+
+- $=$ { $ $ }
+
+  - $(xy)z$
 
 - $\square$
 
