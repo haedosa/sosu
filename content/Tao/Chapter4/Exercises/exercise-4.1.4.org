@@ -118,7 +118,7 @@
 
 - $\square$
 
-- $\bullet$ Show that $xy = yx$.
+- $\bullet$ (Commutative law of $\mathbb Z$) Show that $xy = yx$.
 
 - $\Vdash$ $xy$
 
@@ -144,42 +144,96 @@
 
 - $\square$
 
-- $\bullet$ Show that $x1 = 1x = x$.
+- $\bullet$ Show that $x1_Z = 1_Zx = x$.
 
-- $\bullet$ Show that $x((n+1)—n) = ((n+1)—n)x = x$.
+- $-$ Let $1_Z = 1_N — 0_N$, $x = a — b$
 
-- $-$ Let $c\in \mathbb N$ and $0 := c — c$
+- $\Vdash$ $x1_Z$
 
-- $\Vdash$ $x1$
+- $=$ { $1_Z = 1_N — 0_N$, $x = a — b$ }
 
-- $=$ { $ $ }
+  - $(a — b)(1_N — 0_N)$
 
-  - $$
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
 
-- $=$ { $ $ }
+  - $(a1_N + b0_N) — (a0_N + b1_N)$
 
-  - $$
+- $=$ { Multiplication on $\mathbb N$ }
 
-- $=$ { $ $ }
+  - $a — b$
 
-  - $(xy)z$
-
-- $\square$
-
-- $\bullet$ .
-
-- $\Vdash$ $$
-
-- $=$ { $ $ }
+- $=$ { $x = a — b$ }
 
   - $x$
 
-- $=$ { $ $ }
+- $=$ { $x = a — b$ }
 
-  - $$
+  - $a — b$
 
-- $=$ { $ $ }
+- $=$ { Multiplication on $\mathbb N$ }
 
-  - $$
+  - $(1_Na + 0_Nb) — (1_Nb + 0_Na)$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(1_N — 0_N)(a — b)$
+
+- $=$ { $1_Z = 1_N — 0_N$, $x = a — b$ }
+
+  - $1_Zx$
+
+- $\square$
+
+- $\bullet$ (Left distributive law of $\mathbb Z$) Show that $x(y + z) = xy + xz$.
+
+- $-$ Let $x = a — b$, $y = c — d$, $z = e — f$
+
+- $\Vdash$ $x(y + z)$
+
+- $=$ { $x = a — b$, $y = c — d$, $z = e — f$ }
+
+  - $(a — b)((c — d) + (e — f))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a — b)((c + e) — (d + f))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a(c + e) + b(d + f)) — (a(d + f) + b(c + e))$
+
+- $=$ { Commutative and Distributive law of $\mathbb N$ }
+
+  - $((ac + bd) + (ae + bf)) — ((ad + bc) + (af + be))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $((ac + bd) — (ad + bc)) + ((ae + bf) — (af + be))$
+
+- $=$ { [[../definition-4.1.2.org][Definition 4.1.2]] }
+
+  - $(a — b)(c — d) + (a — b)(e — f)$
+
+- $=$ { $x = a — b$, $y = c — d$, $z = e — f$ }
+
+  - $xy + xz$
+
+- $\square$
+
+- $\bullet$ $(y + z)x = yx + zx$.
+
+- $\Vdash$ $(y + z)x$
+
+- $=$ { Commutative law of $\mathbb Z$ }
+
+  - $x(y + z)$
+
+- $=$ { Left distributive law of $\mathbb Z$ }
+
+  - $xy + xz$
+
+- $=$ { Commutative law of $\mathbb Z$ }
+
+  - $yx + zx$
 
 - $\square$
