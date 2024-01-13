@@ -1,0 +1,52 @@
+#+title: Exercise 4.1.6
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+*Exercise 4.1.6* (Cancellation law for integers). /If $a, b, c$ are integers such that $ac = bc$ and $c$ is non-zero, then $a = b$./
+
+- $\Vdash$ { Proof by contradiction }
+- $\bullet$ Show that there is a contradiction, when
+- -- (1) $a \neq b$
+- -- (2) $ac = bc$
+- -- (3) $c \neq 0$
+
+- $\Vdash$ $ac = bc$
+- $\equiv$ { [[../lemma-4.1.3.org][Lemma 4.1.3]] }
+  - $ac + (-bc) = bc + (-bc)$
+
+- $\equiv$ { [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+  - $ac - bc = 0$
+
+- $\equiv$ { [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+  - $(a - b)c = 0$
+
+- $\equiv$ { [[../proposition-4.1.8.org][Proposition 4.1.8]] }
+  - $a - b = 0 \lor c = 0$
+
+- $\equiv$ { By assumption (3) and disjunction elimination }
+  - $a - b = 0$
+
+- $\equiv$ { [[../lemma-4.1.3.org][Lemma 4.1.3]] }
+  - $(a - b) + b = 0 + b$
+
+- $\equiv$ { [[../proposition-4.1.6.org][Proposition 4.1.6]]
+             (associative law and zero is identity of addition on integer) }
+  - $a = b$
+
+- $\vdash$ { It is contradict to assumption (1) }
+  - $\bot$
+
+- $\square$
