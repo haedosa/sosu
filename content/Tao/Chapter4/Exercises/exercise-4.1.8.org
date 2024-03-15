@@ -1,0 +1,83 @@
+#+title: Exercise 4.1.8
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+ *Exercise 4.1.8* /Show that the principle of induction (Axiom 2.5) does not apply directly to the integers. More precisely, give an example of a property $P(n)$ pertaining to an integer $n$ such that $P(0)$ is true, and that $P(n)$ implies $P(n\pp)$ for all integers $n$, but that $P(n)$ is not true for all integers $n$. Thus induction is not as useful a tool for dealing with the integers as it is with the natural numbers. (The situation becomes even worse with the rational and real numbers, which we shall define shortly.)./
+
+
+- $\bullet$ Give an example of a property $P(n)$.
+
+- $\Vdash$ $P(n) := n \ge 0$
+
+  - $\bullet$ Proof by case.
+
+  - $\bullet$ Show that $P(0)$ is true.
+
+    - $\Vdash$ $0 \ge 0$
+
+    - $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]] }
+
+      - $\exists p \ge 0, 0 = 0 + p$
+
+    - $\equiv$ { Let $p = 0$ }
+
+      - $\top$
+
+    - $\square$
+
+  - $\bullet$ Show that $\forall n, P(n) \Rightarrow P(n\pp)$ is true.
+
+    - $\Vdash$ $P(n)$
+
+    - $\equiv$ { By definition of $P(n)$ }
+
+      - $n \ge 0$
+
+    - $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]] }
+
+      - $\exists p \ge 0, n = 0 + p$
+
+    - $\equiv$ { Proposition 4.1.6 }
+
+      - $\exists p \ge 0, n + 1 = 0 + (p + 1)$
+
+    - $\equiv$ { Let $p' = p + 1$, [[../definition-4.1.10.org][Definition 4.1.10]] $\Rightarrow p' \ge 0$ }
+
+      - $\exists p' \ge 0, n + 1 = 0 + p'$
+
+    - $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]] }
+
+      - $n + 1 \ge 0$
+
+    - $\square$
+
+  - $\bullet$ Show that $P(-1)$ is false.
+
+    - $\Vdash$ $-1 \ge 0$
+
+    - $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]], [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+
+      - $\exists p \ge 0, -1 = 0 + p = p$
+
+    - $\equiv$ { $-1 < 0$ }
+
+      - $\bot$
+
+    - $\square$
+
+  - $\square$

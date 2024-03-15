@@ -1,0 +1,133 @@
+#+title: Exercise 4.1.11
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+ *Exercise 4.1.11* /(Properties of order). Let $a, b, c$ be integers./
+
+/(a) $a > b$ if and only if $a − b$ is a positive natural number./
+
+/(b) (Addition preserves order) If $a > b$, then $a + c > b + c$./
+
+/(c) (Positive multiplication preserves order) If $a > b$ and $c$ is positive, then $ac > bc$./
+
+/(d) (Negation reverses order) If $a > b$, then $−a < −b$./
+
+/(e) (Order is transitive) If $a > b$ and $b > c$, then $a > c$./
+
+/(f) (Order trichotomy) Exactly one of the statements $a > b$, $a < b$, or $a = b$ is true./
+
+
+- $\bullet$ $a > b$ if and only if $a − b$ is a positive natural number.
+
+- $\Vdash$ $a > b$
+
+- $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]] }
+
+  - $\exists p > 0, a = b + p$
+
+- $\equiv$ { $\forall a,b,c \in \mathbb Z, a = b \Rightarrow a + c = b + c$ (Property of Addition) }
+
+  - $\exists p > 0, a + (- b) = (b + p) + (- b)$
+
+- $\equiv$ { Definition of Substraction, [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+
+  - $\exists p > 0, a - b  = p$
+
+- $\equiv$ { $p > 0$ }
+
+  - $a - b  > 0$
+
+- $\square$
+
+- $\bullet$ If $a > b$, then $a + c > b + c$.
+
+  - $\Vdash$ $a > b$
+
+- $\equiv$ { $(a)$ }
+
+  - $a - b > 0$
+
+- $\equiv$ { Definition of Substraction, [[../proposition-4.1.6.org][Proposition 4.1.6]] $\Rightarrow (a - b) = (a + c) - (b + c)$ }
+
+  - $(a + c) - (b + c) > 0$
+
+- $\equiv$ { $(a)$ }
+
+  - $a + c > b + c$
+
+- $\square$
+
+- $\bullet$ If $a > b$ and $c$ is positive, then $ac > bc$.
+
+  - $\Vdash$ $a > b$
+
+- $\equiv$ { [[../definition-4.1.10.org][Definition 4.1.10]] }
+
+  - $\exists p > 0, a = b + p$
+
+- $\equiv$ { [[../proposition-4.1.6.org][Proposition 4.1.6]], $\forall a,b,c \in \mathbb Z, a = b \Rightarrow ac = bc$ (Property of Multiplication) }
+
+  - $\exists p > 0, \forall c > 0, ac - bc = pc$
+
+- $\equiv$ { [[../../Chapter2/lemma-2.3.3.org][Lemma 2.3.3]] $\Rightarrow pc > 0$ }
+
+  - $ac - bc  > 0$
+
+- $\equiv$ { $(a)$ }
+
+  - $ac > bc$
+
+- $\square$
+
+- $\bullet$ If $a > b$, then $−a < −b$.
+
+  - $\Vdash$ $a > b$
+
+- $\equiv$ { $(a)$ }
+
+  - $a - b > 0$
+
+- $\equiv$ { Definition of Substraction, [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+
+  - $(-b) - (-a) > 0$
+
+- $\equiv$ { $(a)$ }
+
+  - $-b > -a$
+
+- $\square$
+
+- $\bullet$ If $a > b$ and $b > c$, then $a > c$.
+
+  - $\Vdash$ $a > b \land b > c$
+
+- $\equiv$ { $(a)$ }
+
+  - $a - b > 0 \land b - c > 0$
+
+- $\equiv$ { [[../../Chapter2/proposition-2.2.8.org][Proposition 2.2.8]] }
+
+  - $(a - b) + (b - c) > 0$
+
+- $\equiv$ { [[../proposition-4.1.6.org][Proposition 4.1.6]] }
+
+  - $a - c > 0$
+
+- $\equiv$ { $(a)$ }
+
+  - $a > c$
+
+- $\bullet$ Exactly one of the statements $a > b$, $a < b$, or $a = b$ is true.
