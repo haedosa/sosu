@@ -15,6 +15,7 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
+
 *Exercise 4.1.4* /(Integers have no zero divisors) Let $a$ and $b$ be integers such that $ab = 0$. Then either $a = 0$ or $b = 0$ (or both)/
 
 - $\Vdash$ $a \neq 0_Z$ and $b \neq 0_Z$

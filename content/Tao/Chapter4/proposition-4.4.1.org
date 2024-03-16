@@ -1,4 +1,4 @@
-#+title: Definition 4.1.2
+#+title: Proposition 4.4.1
 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
@@ -16,4 +16,4 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-*Definition 4.1.2* /The sum of two integers, $(a — b) + (c —d)$, is defined by the formula $(a — b) + (c —d) := (a + c)— (b + d)$. The product of two integers, $(a — b) \times (c — d)$, is defined by $(a — b) \times (c — d) := (ac + bd) — (ad + bc)$./
+*Proposition 4.4.1* (Interspersing of integers by rationals). /Let $x$ be a rational number. Then there exists an integer $n$ such that $n ≤ x < n + 1$. In fact, this integer is unique (i.e., for each $x$ there is only one $n$ for which $n ≤ x < n + 1$). In particular, there exists a natural number $N$ such that $N > x$ (i.e., there is no such thing as a rational number which is larger than all the natural numbers)./

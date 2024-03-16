@@ -1,4 +1,4 @@
-#+title: Definition 4.1.2
+#+title: Proposition 4.4.4
 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
@@ -16,4 +16,4 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-*Definition 4.1.2* /The sum of two integers, $(a — b) + (c —d)$, is defined by the formula $(a — b) + (c —d) := (a + c)— (b + d)$. The product of two integers, $(a — b) \times (c — d)$, is defined by $(a — b) \times (c — d) := (ac + bd) — (ad + bc)$./
+*Proposition 4.4.4* /There does not exist any rational number $x$ for which $x^2 = 2$./
