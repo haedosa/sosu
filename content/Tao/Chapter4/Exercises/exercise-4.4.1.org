@@ -17,4 +17,30 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-*Exercise 4.4.1* /Prove [[../proposition-4.4.1.org][Proposition 4.4.1]]. (Hint: use [[../proposition-2.3.9.org][Proposition 2.3.9]].)/
+*Exercise 4.4.1* /Prove [[../proposition-4.4.1.org][Proposition 4.4.1]]. (Hint: use [[../../Chapter2/proposition-2.3.9.org][Proposition 2.3.9]].)/
+
+- $\bullet$ Show that there exists an integer $n$ such that $n \le x < n + 1$
+
+- $\Vdash$ $x\in \mathbb Q$
+
+- $\equiv$ { Definition 4.2.1 }
+
+  - $\exists a \in \mathbb Z ,\exists b \in \mathbb Z, b > 0 \land x = \frac{a}{b}$
+
+- $\vdash$ { Integer version of Proposition 2.3.9 }
+
+  - $\exists m \in \mathbb Z,\exists r \in \mathbb N, 0 \le r < b \land a = mb + r$
+
+- $\equiv$ { Axiom of equality, Proposition 4.2.9 }
+
+  - $\exists m \in \mathbb Z,\exists r \in \mathbb N, 0 \le \frac{r}{b} < 1 \land \frac{a}{b} = m + \frac{r}{b}$
+
+- $\equiv$ { $x = \frac{a}{b}$ }
+
+  - $\exists m \in \mathbb Z,\exists r \in \mathbb N, 0 \le \frac{r}{b} < 1 \land x = m + \frac{r}{b}$
+
+- $\equiv$ { Definition 4.2.8 }
+
+  - $\exists m \in \mathbb Z, m \le x < m + 1$
+
+- \square

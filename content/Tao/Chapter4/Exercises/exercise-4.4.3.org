@@ -1,4 +1,4 @@
-#+title: Exercise 4.4.1
+#+title: Exercise 4.4.3
 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amssymb}
@@ -17,12 +17,5 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-*Exercise 4.4.1* Prove Proposition 4.4.1. (Hint: use Proposition 2.3.9.)
-*Exercise 4.4.2* A definition: a sequence a0, a1, a2, . . . of numbers (natural numbers, integers, ratio-
-nals, or reals) is said to be in infinite descent if we have an > an+1 for all natural numbers n (i.e.,
-a0 > a1 > a2 > . . .).
-(a) Prove the principle of infinite descent: that it is not possible to have a sequence of natural
-numbers which is in infinite descent. (Hint: assume for sake of contradiction that you can find
-a sequence of natural numbers which is in infinite descent. Since all the an are natural numbers,
-you know that an ≥ 0 for all n. Now use induction to show in fact that an ≥ k for all k ∈ N
-and all n ∈ N, and obtain a contradiction.)
+*Exercise 4.4.3* /Fill in the gaps marked (why?) in the proof of [[../proposition-4.4.4.org][Proposition 4.4.4]]. Is the axiom of
+choice required to establish this proposition?/

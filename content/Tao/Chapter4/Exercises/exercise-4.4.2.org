@@ -17,7 +17,66 @@
 #+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
 #+HTML_HEAD: </style>
 
-*Exercise 4.4.2* /A definition: a sequence $a0, a1, a2, \dots$ of numbers (natural numbers, integers, rationals, or reals) is said to be in infinite descent if we have $a_n > $a_{n+1} for all natural numbers n (i.e., $a0 > a1 > a2 > \dots$)./
+*Exercise 4.4.2* /A definition: a sequence $a_0, a_1, a_2, \dots$ of numbers (natural numbers, integers, rationals, or reals) is said to be in infinite descent if we have $a_n > a_{n+1}$ for all natural numbers n (i.e., $a_0 > a_1 > a_2 > \dots$)./
 
-/(a) Prove the principle of infinite descent: that it is not possible to have a sequence of natural numbers which is in infinite descent. (Hint: assume for sake of contradiction that you can find a sequence of natural numbers which is in infinite descent. Since all the an are natural numbers, you know that $a_n ≥ 0$ for all $n$. Now use induction to show in fact that $a_n ≥ k$ for all $k \in N$
-and all $n \in N$, and obtain a contradiction.)/
+/(a) Prove the principle of infinite descent: that it is not possible to have a sequence of natural numbers which is in infinite descent. (Hint: assume for sake of contradiction that you can find a sequence of natural numbers which is in infinite descent. Since all the $a_n$ are natural numbers, you know that $a_n ≥ 0$ for all $n$. Now use induction to show in fact that $a_n ≥ k$ for all $k \in N$ and all $n \in N$, and obtain a contradiction.)/
+
+/(b) Does the principle of infinite descent work if the sequence $a1, a2, a3, \dots$ is allowed to take integer values instead of natural number values? What about if it is allowed to take positive rational values instead of natural numbers? Explain./
+
+- $\bullet$ (a)
+
+- $\Vdash$ { Proof by contradiction }
+
+  - $\bullet$ Show that there is a contradiction, when
+
+  - -- $\exists (a_n) \in {\mathbb N}^{\mathbb N}, a_0 > a_1 > a_2 > \dots$
+
+  - -- $P(k) = \forall n \in \mathbb N, a_n \ge k$
+
+    - $\bullet$ Show that $\forall k \in \mathbb N, \forall n \in \mathbb N, a_n \ge k$
+
+    - $\Vdash$ { Proof by induction }
+
+      - $\bullet$ $P(0)$
+
+      - $\Vdash$ { $\forall n \in \mathbb N, a_n \in \mathbb N$ }
+
+        - $\forall n \in \mathbb N, a_n \ge 0$
+
+      - \square
+
+      - $\bullet$ $P(m) \Rightarrow P(m + 1)$
+
+      - -- $P(m)$
+
+        - $\bullet$ $P(m + 1)$
+
+        - $\Vdash$ { Proof by contradiction }
+
+          - $\exists p \in \mathbb N, a_p < m + 1$
+
+        - $\equiv$ { Proposition 2.2.12 }
+
+          - $\exists p \in \mathbb N, a_p\pp \le m + 1$
+
+        - $\equiv$ { Lemma 2.2.2, Lemma 2.2.3 }
+
+          - $\exists p \in \mathbb N, a_p + 1 \le m + 1$
+
+        - $\equiv$ { Proposition 2.2.10 }
+
+          - $\exists p \in \mathbb N, a_p \le m$
+
+        - $\equiv$ { $(a_n)$ is an infinite descent sequence }
+
+          - $\exists p \in \mathbb N, a_{p + 1} < m$
+
+        - $\equiv$ { Contradiction to $P(m)$ }
+
+          - \bot
+
+        - \square
+
+  - \square
+
+- \bot
