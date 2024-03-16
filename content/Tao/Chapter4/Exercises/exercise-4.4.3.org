@@ -1,0 +1,28 @@
+#+title: Exercise 4.4.1
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+*Exercise 4.4.1* Prove Proposition 4.4.1. (Hint: use Proposition 2.3.9.)
+*Exercise 4.4.2* A definition: a sequence a0, a1, a2, . . . of numbers (natural numbers, integers, ratio-
+nals, or reals) is said to be in infinite descent if we have an > an+1 for all natural numbers n (i.e.,
+a0 > a1 > a2 > . . .).
+(a) Prove the principle of infinite descent: that it is not possible to have a sequence of natural
+numbers which is in infinite descent. (Hint: assume for sake of contradiction that you can find
+a sequence of natural numbers which is in infinite descent. Since all the an are natural numbers,
+you know that an ≥ 0 for all n. Now use induction to show in fact that an ≥ k for all k ∈ N
+and all n ∈ N, and obtain a contradiction.)
