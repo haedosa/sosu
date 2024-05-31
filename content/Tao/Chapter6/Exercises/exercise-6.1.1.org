@@ -1,0 +1,60 @@
+#+title: Exercise 6.1.1
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+Let $(a_n)^\infty_{n=0}$ be a sequence of real numbers, such that $a_{n+1}>a_n$ for each natural number $n$.
+Prove that whenever $n$ and $m$ are natural numbers such that $m>n$, then we have $a_m>a_n$.
+(We refer to these sequences as increasing sequences.)
+
+- $\bullet$ Show that $\forall k\in\mathbb{N}>0.~a_{n+1}>a_n\implies a_{n+k}>a_n$.
+
+- $\Vdash$ { Proof by induction on $k$ }
+
+  - $\bullet$ Base case: show that $a_{n+k}>a_n$, when
+
+  - -- $k=1$
+
+  - $\Vdash$ $a_{n+1}>a_n$
+
+  - $\equiv$ { Given condition for $(a_n)$ }
+
+    - True
+
+  - $\square$
+
+  - $\bullet$ Inductive step: show that $\forall k\in\mathbb{N}>0.~a_{n+k+1}>a_n$, when
+
+  - -- $a_{n+k}>a_n$
+
+  - $\Vdash$ $a_{n+k}>a_n\implies a_{n+k+1}>a_n$
+
+  - $\equiv$ { Proof by contradiction } (/Transitivity for the real number ordering is given in the next chapter!/)
+
+    - $\bullet$ Show that there is a contradiction, when
+
+    - -- $a_{n+k+1}\leq a_n$
+
+    - $\Vdash$ $a_{n+k}>a_n\implies a_{n+k+1}\leq a_n$
+
+    - $\equiv$ { $a_{n+k+1}>a_{n+k}$ }
+
+      - $(a_{n+k+1}>a_{n+k})\land(a_{n+k+1}\leq a_n)\land(a_{n+k}>a_n)$
+
+    - $\vdash$ $\bot$
+
+  - $\square$
+
+- $\square$

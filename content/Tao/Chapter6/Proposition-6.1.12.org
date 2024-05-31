@@ -1,0 +1,4 @@
+#+title: Proposition 6.1.12
+
+*Proposition 6.1.12* (Convergent sequences are Cauchy).
+/Suppose that $(a_n)^\infty_{n=m}$ is a convergent sequence of real numbers. Then $(a_n)^\infty_{n=m}$ is also a Cauchy sequence.
