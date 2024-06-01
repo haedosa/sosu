@@ -1,0 +1,19 @@
+#+title: Definition 6.1.5
+
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{}
+#+LATEX_HEADER: \renewcommand{\labelitemii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiii}{}
+#+LATEX_HEADER: \renewcommand{\labelitemiv}{}
+#+LaTeX_HEADER: \newcommand{\pp}{\hspace{-0.5pt}{+}\hspace{-4pt}{+}}
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc} \usepackage{titlesec}
+#+LaTeX_HEADER: \titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+#+LaTeX_HEADER: \titleformat{\section}[hang]{\bfseries\Large}{}{1em}{\thesection\enspace}
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#al { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+
+\textbf{Definition 6.1.5 (Convergence of sequences).} Let $\epsilon > 0$ be a real number, and let $L$ be a real number. A sequence $(a_n)_{n=N}^\infty$ of real numbers is said to be $\epsilon$-close to $L$ if and only if $a_n$ is $\epsilon$-close to $L$ for every $n \geq N$, i.e., we have $|a_n - L| \leq \epsilon$ for every $n \geq N$. We say that a sequence $(a_n)_{n=m}^\infty$ is eventually $\epsilon$-close to $L$ if and only if there exists an $N \geq m$ such that $(a_n)_{n=N}^\infty$ is $\epsilon$-close to $L$. We say that a sequence $(a_n)_{n=m}^\infty$ converges to $L$ if and only if it is eventually $\epsilon$-close to $L$ for every real $\epsilon > 0$.
